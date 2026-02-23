@@ -28,7 +28,7 @@ export default function EstimatePage() {
                   Get A Quote
                 </h1>
                 <div className="mt-4 font-sans text-xl font-medium text-gray-700 sm:text-2xl [&_em]:text-black">
-                  We'll get back to you shortly. Thank you for your interest in
+                  We&apos;ll get back to you shortly. Thank you for your interest in
                   ReLeather.
                 </div>
                 <div className="mt-6 flex flex-wrap gap-3">
