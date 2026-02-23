@@ -45,28 +45,28 @@ export default function HeaderTopBar({
     <header className="sticky top-0 z-[10000] bg-black text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Mobile: two rows — Row 1: Logo | Burger, Row 2: GET A QUOTE */}
-        <div className="flex flex-col gap-3 py-4 md:hidden">
-          <div className="flex min-h-[4rem] items-center justify-between gap-3">
+        <div className="flex flex-col gap-2 py-2 md:hidden">
+          <div className="flex min-h-0 items-center justify-between gap-2">
             <Link href="/" className="block shrink-0 max-w-[60%]">
               <Image
                 src={LOGO_URL}
                 alt="ReLeather"
                 width={375}
                 height={70}
-                className="h-10 w-auto max-w-full object-contain object-left"
+                className="h-8 w-auto max-w-full object-contain object-left"
                 priority
               />
             </Link>
             <button
               type="button"
-              className="inline-flex items-center justify-center border-2 border-white p-2.5 text-white transition hover:border-releather-orange hover:bg-releather-orange hover:text-black"
+              className="inline-flex items-center justify-center border-2 border-white p-2 text-white transition hover:border-releather-orange hover:bg-releather-orange hover:text-black"
               onClick={onToggleMobileMenu}
               aria-expanded={mobileMenuOpen}
               aria-controls="mobile-menu"
               aria-label="Toggle menu"
             >
               <svg
-                className="h-6 w-6"
+                className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
