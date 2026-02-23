@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
@@ -203,9 +204,7 @@ export default function LeatherFurnitureRepairInLosAngelesPage() {
                 <figure key={i} className="border-4 bg-releather-dark p-4" style={{ borderColor: "#23262f" }}>
                   <div className="flex flex-col gap-4 sm:flex-row sm:gap-6">
                     <div className="space-y-2">
-                      <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">Before</p>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
+                      <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">Before</p><Image
                         src={item.beforeSrc}
                         alt={item.beforeAlt}
                         width={300}
@@ -215,9 +214,7 @@ export default function LeatherFurnitureRepairInLosAngelesPage() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">After</p>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
+                      <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">After</p><Image
                         src={item.afterSrc}
                         alt={item.afterAlt}
                         width={300}

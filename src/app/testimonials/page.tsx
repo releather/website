@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
 import IntroductionSection from "@/components/IntroductionSection";
@@ -230,15 +231,14 @@ export default function TestimonialsPage() {
                           : undefined
                       }
                     >
-                      {hasImage && (
+                      {hasImage && t.image ? (
                         <div
                           className="relative min-h-[200px] bg-gray-200 sm:min-h-[260px]"
                           style={
                             index % 2 === 1 ? { direction: "ltr" } : undefined
                           }
                         >
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img
+                          <Image
                             src={t.image}
                             alt=""
                             width={600}
@@ -247,7 +247,7 @@ export default function TestimonialsPage() {
                             className="h-full w-full object-cover"
                           />
                         </div>
-                      )}
+                      ) : null}
                       <div
                         className={`flex flex-col justify-center ${hasImage ? "border-t-4 border-black p-4 sm:border-t-0 sm:border-l-4 sm:border-r-0 sm:p-6 lg:p-8" : "p-4 sm:p-6 lg:p-8"} ${index % 2 === 1 && hasImage ? "sm:border-l-0 sm:border-r-4" : ""}`}
                         style={

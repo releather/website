@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import { leatherDyeingColors } from "@/app/services/leatherDyeingColors";
 
@@ -48,8 +49,7 @@ export default function ColorOptions({
               className="block transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
               title={color.name}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={color.thumb}
                 alt={color.name}
                 width={100}
@@ -98,10 +98,11 @@ export default function ColorOptions({
               ×
             </button>
             <div className="pt-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={selectedColor.full}
                 alt={selectedColor.name}
+                width={800}
+                height={600}
                 className="max-h-[75vh] w-auto max-w-full rounded-lg object-contain"
               />
             </div>

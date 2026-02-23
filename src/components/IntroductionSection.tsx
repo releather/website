@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export type IntroductionCta = {
@@ -109,8 +110,7 @@ export default function IntroductionSection({
                 className="h-full w-full rounded-lg"
               />
             ) : image ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
+              <Image
                 src={image.src}
                 alt={image.alt}
                 title={image.title}

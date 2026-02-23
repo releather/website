@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
@@ -118,9 +119,7 @@ export default function LeatherForUpholsteryPage() {
               Choose your Leather!
             </h2>
             <div className="mt-4">
-              <figure className="brutalist-image-frame float-right ml-6 mb-4 w-[280px] shrink-0 sm:w-[320px]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <figure className="brutalist-image-frame float-right ml-6 mb-4 w-[280px] shrink-0 sm:w-[320px]"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_crop,g_south,h_240,w_435/v1654907997/leather/ReLeather-Leather-Types-Swatches-Selection-2.png"
                   alt="ReLeather leather types and swatches selection"
                   title="Leather types and swatches"

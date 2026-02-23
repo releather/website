@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const CLOUDINARY_BASE =
   "https://res.cloudinary.com/releather-com/image/upload";
@@ -54,7 +55,7 @@ export const leatherDyeingFaqItems = [
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src={`${CLOUDINARY_BASE}/c_crop,h_820/w_115,h_100,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Pigmented,co_rgb:ffffff,y_10/v1638909291/leather/PALETTE_tan_HI.jpg`}
               alt="Type of Leather - Pigmented Leather - for Leather Restoration"
               title="Type of Leather - Pigmented Leather - for Leather Restoration"
@@ -70,7 +71,7 @@ export const leatherDyeingFaqItems = [
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src={`${CLOUDINARY_BASE}/c_crop,h_820/w_115,h_100,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Aniline,co_rgb:ffffff,y_10/v1639529981/leather/Concerto_Saddle_HI.jpg`}
               alt="Type of Leather - Aniline Leather - for Leather Restoration"
               title="Type of Leather - Aniline Leather - for Leather Restoration"
@@ -86,7 +87,7 @@ export const leatherDyeingFaqItems = [
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src={`${CLOUDINARY_BASE}/c_crop,h_820/w_115,h_100,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Semi-Aniline,co_rgb:ffffff,y_10/v1636920011/leather/SEDONA_cashew_HI.jpg`}
               alt="Type of Leather - Semi-Aniline Leather - for Leather Restoration"
               title="Type of Leather - Semi-Aniline Leather - for Leather Restoration"
@@ -102,7 +103,7 @@ export const leatherDyeingFaqItems = [
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src={`${CLOUDINARY_BASE}/c_crop,h_820/w_115,h_100,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Nubuck,co_rgb:ffffff,y_10/v1652588630/leather/Apache_Chestnut_HI.jpg`}
               alt="Type of Leather - Nubuck Leather - for Leather Restoration"
               title="Type of Leather - Nubuck Leather - for Leather Restoration"
@@ -131,7 +132,7 @@ export const leatherDyeingFaqItems = [
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src={`${CLOUDINARY_BASE}/c_crop,h_820/w_104,h_90,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Natural,co_rgb:ffffff,y_10/v1653279850/before-after/leather-dyeing-natural-finish.jpg`}
               alt="Leather Couch Restoration Natural Finish Type Applied"
               title="Leather Couch Restoration Natural Finish Type Applied"
@@ -147,7 +148,7 @@ export const leatherDyeingFaqItems = [
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src={`${CLOUDINARY_BASE}/c_crop,h_820/w_104,h_90,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Glossy,co_rgb:ffffff,y_10/v1653279850/before-after/leather-dyeing-glossy-finish.jpg`}
               alt="Leather Couch Restoration Glossy Finish Type Applied"
               title="Leather Couch Restoration Glossy Finish Type Applied"
@@ -163,7 +164,7 @@ export const leatherDyeingFaqItems = [
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src={`${CLOUDINARY_BASE}/c_crop,h_820/w_104,h_90,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Matte,co_rgb:ffffff,y_10/v1653279850/before-after/leather-dyeing-matte-finish.jpg`}
               alt="Leather Couch Restoration Matte Finish Type Applied"
               title="Leather Couch Restoration Matte Finish Type Applied"

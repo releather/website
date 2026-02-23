@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 
 export type LeatherInfoLeather = {
@@ -120,8 +121,7 @@ export default function LeatherInfo({
                   title={leather.name}
                   className="block transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
                 >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={leather.thumb}
                     alt={leather.alt}
                     title={leather.alt}
@@ -170,11 +170,12 @@ export default function LeatherInfo({
               ×
             </button>
             <div className="pt-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={selectedLeather.full}
                 alt={selectedLeather.alt}
                 title={selectedLeather.alt}
+                width={1200}
+                height={900}
                 className="w-auto max-w-full object-contain"
                 style={{ maxHeight: popupImageMaxHeight }}
               />

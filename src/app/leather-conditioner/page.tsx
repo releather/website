@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
 import IntroductionSection from "@/components/IntroductionSection";
@@ -66,9 +67,7 @@ export default function LeatherConditionerPage() {
               </div>
             }
             rightContent={
-              <div className="flex flex-col items-center text-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="flex flex-col items-center text-center"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/v1643861241/logo/ReLeather-Leather-Conditioner.png"
                   alt="The Best Leather Conditioner for Leather Sofa Couch"
                   title="The Best Leather Conditioner for Leather Sofa Couch"

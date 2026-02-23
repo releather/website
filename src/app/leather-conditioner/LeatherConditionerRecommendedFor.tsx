@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import Image from "next/image";
 
 const leatherConditionerRecommended = [
   {
@@ -57,9 +58,7 @@ export default function LeatherConditionerRecommendedFor() {
             onClick={() => setSelectedLeather(item)}
             title={item.alt}
             className="inline-block transition opacity-90 hover:opacity-100 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange focus:ring-offset-2 focus:ring-offset-white"
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+          ><Image
               src={item.thumb}
               alt={item.alt}
               width={100}
@@ -107,9 +106,7 @@ export default function LeatherConditionerRecommendedFor() {
             >
               ×
             </button>
-            <div className="pt-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="pt-2"><Image
                 src={selectedLeather.full}
                 alt={selectedLeather.alt}
                 className="max-h-[75vh] w-auto max-w-full rounded-lg object-contain"

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
@@ -146,9 +147,7 @@ export default function LeatherDeskRestorationPage() {
               Color Fading, Surface Scratches, Stains, Cracking, Discoloration
             </p>
             <ul className="mt-6 grid list-none grid-cols-1 gap-6 p-0 sm:grid-cols-3">
-              <li className="flex flex-col items-center border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <li className="flex flex-col items-center border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_200,h_200/before-after/leather-restoration/example/leather-desk-discoloration-discolored-color-fading.png"
                   alt="Color Fading"
                   title="Color Fading"
@@ -158,9 +157,7 @@ export default function LeatherDeskRestorationPage() {
                 />
                 <strong className="mt-2 font-sans text-black">Color Fading</strong>
               </li>
-              <li className="flex flex-col items-center border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <li className="flex flex-col items-center border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_200,h_200/before-after/leather-restoration/example/leather-desk-stain-spotting.png"
                   alt="Stain Spotting"
                   title="Stain Spotting"
@@ -170,9 +167,7 @@ export default function LeatherDeskRestorationPage() {
                 />
                 <strong className="mt-2 font-sans text-black">Stain Spotting</strong>
               </li>
-              <li className="flex flex-col items-center border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <li className="flex flex-col items-center border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_200,h_200/before-after/leather-restoration/example/leather-desk-scraches.png"
                   alt="Surface Scratches"
                   title="Surface Scratches"
@@ -210,9 +205,7 @@ export default function LeatherDeskRestorationPage() {
                   </li>
                 ))}
               </ul>
-              <figure className="border-4 border-releather-orange p-2">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <figure className="border-4 border-releather-orange p-2"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/before-after/leather-restoration-desk-burgundy-two-tone-after.png"
                   alt="Step 1 of leather desk restoration showing assessment and cleaning process"
                   title="Step 1 of leather desk restoration showing assessment and cleaning process"
@@ -228,9 +221,7 @@ export default function LeatherDeskRestorationPage() {
           </section>
 
           <section id="spotlight" className="mt-12 border-t-4 border-black pt-12">
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,h_450,w_450,x_0,y_60/l_text:montserrat_40_style_light:Before,co_rgb:f8991d,g_south_west,y_25,x_25/bo_10px_solid_rgb:000000/before-after/leather-restoration-desk-burgundy-semi-aniline-faded-staining-top-two-tone-finish-restored-newport-coast-before.jpg"
                 alt="Leather restoration desk burgundy semi aniline faded staining top two tone finish restored newport coast before"
                 title="Leather Restoration Desk Burgundy Semi Aniline Faded Staining Top Two Tone Finish Restored Newport Coast Before"
@@ -238,9 +229,7 @@ export default function LeatherDeskRestorationPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-black object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,h_450,w_450,x_0,y_60/l_text:montserrat_40_style_light:After,co_rgb:f8991d,g_south_west,y_25,x_25/bo_10px_solid_rgb:000000/before-after/leather-restoration-desk-burgundy-semi-aniline-faded-staining-top-two-tone-finish-restored-newport-coast-after.jpg"
                 alt="Leather restoration desk burgundy semi aniline faded staining top two tone finish restored newport coast after"
                 title="Leather Restoration Desk Burgundy Semi Aniline Faded Staining Top Two Tone Finish Restored Newport Coast After"
@@ -260,9 +249,7 @@ export default function LeatherDeskRestorationPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               This elegant burgundy desk restoration addresses stain damage on a two-tone leather finish. Our process first involved masking the fine gilded decorative border to protect it from the dye. <strong>Gilding is the technique of applying thin gold leaf or metallic foil borders to a leather desk inlay. </strong>We then treated the spotting damage and restored the two-tone burgundy colors, while preserving the leather&apos;s natural texture as much as possible. We completed the treatment by applying a protective layer for added durability.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-desk-burgundy-two-tone-before.png"
                 alt="Leather restoration desk burgundy two tone before"
                 title="Leather Restoration Desk Burgundy Two Tone Before"
@@ -270,9 +257,7 @@ export default function LeatherDeskRestorationPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-releather-orange object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-desk-burgundy-two-tone-after.png"
                 alt="Leather restoration desk burgundy two tone after"
                 title="Leather Restoration Desk Burgundy Two Tone After"
@@ -309,9 +294,7 @@ export default function LeatherDeskRestorationPage() {
               </div>
               <div className="border-b border-gray-300 py-2">
                 <dt className="font-bold text-black">Color</dt>
-                <dd>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <dd><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_250,h_50/bo_2px_solid_rgb:f8991d/leather/Luxor_Merlot_HI.jpg"
                     alt="Burgundy leather color swatch for desk restoration"
                     title="Burgundy leather color for desk restoration"
@@ -332,9 +315,7 @@ export default function LeatherDeskRestorationPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               This burgundy leather desk restoration, located in <Link href="/leather-restoration-orange-county">Newport Beach</Link>, was part of a luxury <strong>yacht interior</strong>. The semi-aniline leather had fading and staining, and the restoration brought back its original rich burgundy color while keeping the leather&apos;s natural character. Normal wear was removed, and the color and subtle sheen were restored for a refreshed, consistent appearance.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-desk-burgundy-semi-aniline-faded-staining-top-two-tone-finish-restored-interior-ship-newport-coast-before.jpg"
                 alt="Leather restoration desk burgundy semi aniline faded staining top two tone finish restored interior ship newport coast before"
                 title="Leather Restoration Desk Burgundy Semi Aniline Faded Staining Top Two Tone Finish Restored Interior Ship Newport Coast Before"
@@ -342,9 +323,7 @@ export default function LeatherDeskRestorationPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-releather-orange object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-desk-burgundy-semi-aniline-faded-staining-top-two-tone-finish-restored-interior-ship-newport-coast-after.jpg"
                 alt="Leather restoration desk burgundy semi aniline faded staining top two tone finish restored interior ship newport coast after"
                 title="Leather Restoration Desk Burgundy Semi Aniline Faded Staining Top Two Tone Finish Restored Interior Ship Newport Coast After"
@@ -381,9 +360,7 @@ export default function LeatherDeskRestorationPage() {
               </div>
               <div className="border-b border-gray-300 py-2">
                 <dt className="font-bold text-black">Color</dt>
-                <dd>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <dd><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_250,h_50/bo_2px_solid_rgb:f8991d/leather/Luxor_Merlot_HI.jpg"
                     alt="Burgundy leather color swatch for desk restoration"
                     title="Burgundy leather color for desk restoration"
@@ -404,9 +381,7 @@ export default function LeatherDeskRestorationPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               This black desk restoration addresses normal scratching, fading, and scuffs, including a dull gilding pattern along the border. Our restoring involved masking the decorative border to protect it from the dye. We then resurfaced the scratches to smooth out the leather, and then restored the original black color. We complete the restoration by adding a protective coating to the leather.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-desk-black-pigmented-scratched-faded-surface-scuffs-newport-beach-before.jpg"
                 alt="Leather restoration desk black pigmented scratched faded surface scuffs newport beach before"
                 title="Leather Restoration Desk Black Pigmented Scratched Faded Surface Scuffs Newport Beach Before"
@@ -414,9 +389,7 @@ export default function LeatherDeskRestorationPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-releather-orange object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-desk-black-pigmented-scratched-faded-surface-scuffs-newport-beach-after.jpg"
                 alt="Leather restoration desk black pigmented scratched faded surface scuffs newport beach after"
                 title="Leather Restoration Desk Black Pigmented Scratched Faded Surface Scuffs Newport Beach After"
@@ -453,9 +426,7 @@ export default function LeatherDeskRestorationPage() {
               </div>
               <div className="border-b border-gray-300 py-2">
                 <dt className="font-bold text-black">Color</dt>
-                <dd>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <dd><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/leather/PALETTE_black_HI.jpg"
                     alt="Black leather color swatch for desk restoration"
                     title="Black leather color for desk restoration"
@@ -476,9 +447,7 @@ export default function LeatherDeskRestorationPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               This burgundy desk restoration, from a Newport Beach residence, addressed faded, dried, and dulled  leather. The desk needed color refreshing, repolishing, and a protective coating to restore its natural luster and sheen. The restoration evened out the color and brought back the subtle depth of the leather while preserving its character and enhancing durability.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-desk-burgundy-semi-aniline-two-tone-restored-before.jpg"
                 alt="Leather restoration desk burgundy semi aniline two tone restored before"
                 title="Leather Restoration Desk Burgundy Semi Aniline Two Tone Restored Before"
@@ -486,9 +455,7 @@ export default function LeatherDeskRestorationPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-releather-orange object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-desk-burgundy-semi-aniline-two-tone-restored-after.jpg"
                 alt="Leather restoration desk burgundy semi aniline two tone restored after"
                 title="Leather Restoration Desk Burgundy Semi Aniline Two Tone Restored After"
@@ -525,9 +492,7 @@ export default function LeatherDeskRestorationPage() {
               </div>
               <div className="border-b border-gray-300 py-2">
                 <dt className="font-bold text-black">Color</dt>
-                <dd>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <dd><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_250,h_50/bo_2px_solid_rgb:f8991d/leather/Luxor_Merlot_HI.jpg"
                     alt="Burgundy leather color swatch for desk restoration"
                     title="Burgundy leather color for desk restoration"
@@ -561,9 +526,7 @@ export default function LeatherDeskRestorationPage() {
                   This is typically a fine quality, thin leather, often made from sheepskin (lamb-skin). It&apos;s the most common and traditional choice for desk linings, especially antique and reproduction desks. The typical thickness for skiver material used in desk inlays is 0.4 mm to 0.7 mm, as its thinness is essential for properly receiving the fine detail of gilding (gold tooling).
                 </p>
               </div>
-              <div className="flex justify-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="flex justify-center"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/w_300,y_50,b_rgb:23262f,bo_5px_solid_rgb:f8991d/g_center,l_text:montserrat_40_style_light:Skiver,co_rgb:ffffff/leather/leather-skiver-desk-inlay-material.png"
                   alt="Skiver leather desk inlay material for desk restoration"
                   title="Skiver Leather Desk Inlay Material for Desk Restoration"
@@ -583,9 +546,7 @@ export default function LeatherDeskRestorationPage() {
                   This is generally a thicker, more durable leather, usually from cow hide (cattle). Cow hides are much larger than skivers, making them suitable for covering larger desktop surfaces in a single, seamless piece. It is often considered harder wearing but may not accept gold embossing as deeply or as well as skiver.
                 </p>
               </div>
-              <div className="flex justify-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="flex justify-center"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/w_300,y_50,b_rgb:23262f,bo_5px_solid_rgb:f8991d/g_center,l_text:montserrat_40_style_light:Hide,co_rgb:ffffff/leather/leather-hide-desk-inlay-material.png"
                   alt="Hide leather desk inlay material for desk restoration"
                   title="Hide Leather Desk Inlay Material for Desk Restoration"
@@ -616,9 +577,7 @@ export default function LeatherDeskRestorationPage() {
               Identifying common leather problems in desk restoration is essential for determining the most effective treatment approach. Each issue requires specific techniques and products to achieve optimal results while preserving the leather&apos;s integrity and appearance.
             </p>
             <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
-              <div className="border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_200,h_200/before-after/leather-restoration/example/leather-desk-discoloration-discolored-color-fading.png"
                   alt="Color fading issue example for desk restoration"
                   title="Color Fading Issue Example for Desk Restoration"
@@ -633,9 +592,7 @@ export default function LeatherDeskRestorationPage() {
                   Color fading occurs when leather loses its original color due to UV exposure, age, or improper cleaning. This common issue affects the leather&apos;s appearance and requires professional color restoration techniques.
                 </p>
               </div>
-              <div className="border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_200,h_200/before-after/leather-restoration/example/leather-desk-stain-spotting.png"
                   alt="Stains issue example for desk restoration"
                   title="Stains Issue Example for Desk Restoration"
@@ -650,9 +607,7 @@ export default function LeatherDeskRestorationPage() {
                   Stains on leather surfaces can be caused by spills, ink, or other substances. Professional stain removal requires careful assessment and appropriate cleaning solutions to avoid further damage.
                 </p>
               </div>
-              <div className="border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_200,h_200/before-after/leather-restoration/example/leather-desk-scraches.png"
                   alt="Surface scratches issue example for desk restoration"
                   title="Surface Scratches Issue Example for Desk Restoration"

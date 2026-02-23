@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import RecommendedForWithPop from "@/components/RecommendedForWithPop";
 
@@ -58,7 +59,7 @@ export default function ServicesSection() {
                 title={item.titleAttr}
                 className="flex flex-col items-center justify-center gap-2 bg-black py-5 px-4 transition hover:bg-releather-orange"
               >
-                <img
+                <Image
                   src={item.imgSrc}
                   alt={item.alt}
                   width={64}

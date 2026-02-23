@@ -1,4 +1,5 @@
 import { GuideSection } from "@/components/Guide";
+import Image from "next/image";
 
 export default function LeatherDyeingGuideContent() {
   return (
@@ -33,9 +34,7 @@ export default function LeatherDyeingGuideContent() {
         white leather to darker shades such as off-white, beige, bone, cream.
         So choose wisely!
       </p>
-      <p>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      <p><Image
           src="https://res.cloudinary.com/releather-com/image/upload/v1652831784/samples/leather-change-color-example.jpg"
           title="Leather Change Color Work Sample on Nubuck Leather Various Shades of Brown Dye"
           alt="Leather Change Color Work Sample on Nubuck Leather Various Shades of Brown Dye"

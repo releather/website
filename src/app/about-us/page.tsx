@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
@@ -161,9 +162,7 @@ export default function AboutUsPage() {
                 only Leather Restoration certified firm in Orange County with
                 the IICRC. We have a A+ rating with the BBB. We are licensed
                 Furniture Upholsterers
-              </p>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              </p><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/icons/certified-leather-restoration.jpg"
                 alt="Certified leather restoration"
                 width={150}
@@ -186,9 +185,7 @@ export default function AboutUsPage() {
                         rel="external noopener"
                         target="_blank"
                         className="inline-block"
-                      >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
+                      ><Image
                           src="https://businessbadges.siccode.com/badges/ea90/re-leather-llc-lnoa6d-detailed.png"
                           alt="ReLeather LLC - SIC Code 7641 - NAICS Code 811420 - Profile at SICCODE.com"
                           width={360}
@@ -196,19 +193,16 @@ export default function AboutUsPage() {
                           loading="lazy"
                         />
                       </Link>
-                    ) : (
-                      <>
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                          src={item.imgSrc}
-                          alt={item.imgAlt}
-                          width={200}
-                          height={120}
-                          loading="lazy"
-                          className="h-auto w-full object-contain"
-                        />
-                      </>
-                    )}
+                    ) : "imgSrc" in item && item.imgSrc ? (
+                      <Image
+                        src={item.imgSrc}
+                        alt={item.imgAlt}
+                        width={200}
+                        height={120}
+                        loading="lazy"
+                        className="h-auto w-full object-contain"
+                      />
+                    ) : null}
                     <strong className="mt-2 block px-2 py-2 font-sans text-sm font-bold text-black">
                       {item.title}
                     </strong>

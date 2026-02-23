@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import Image from "next/image";
 
 const ACCENT_ORANGE = "#f8991d";
 const BLOCK_BG = "#23262f";
@@ -112,9 +113,7 @@ export default function LuxorProductBlock() {
               onClick={openMain}
               className="mt-4 block transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange focus:ring-offset-2"
               title={luxorMainImage.title}
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            ><Image
                 src={luxorMainImage.thumb}
                 alt={luxorMainImage.alt}
                 title={luxorMainImage.title}
@@ -167,9 +166,7 @@ export default function LuxorProductBlock() {
                   onClick={() => openSwatch(swatch)}
                   title={`Luxor ${swatch.name}`}
                   className="block transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                ><Image
                     src={swatch.thumb}
                     alt={`Leather Hide Upholstery Luxor ${swatch.name} Thumb`}
                     width={90}
@@ -212,9 +209,7 @@ export default function LuxorProductBlock() {
             >
               ×
             </button>
-            <div className="pt-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="pt-2"><Image
                 src={popImage.full}
                 alt={popImage.alt}
                 title={popImage.alt}

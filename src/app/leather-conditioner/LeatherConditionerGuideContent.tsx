@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function LeatherConditionerGuideContent() {
   return (
@@ -50,9 +51,7 @@ export default function LeatherConditionerGuideContent() {
       </p>
 
       <div className="overflow-hidden">
-        <figure className="brutalist-image-frame float-right ml-6 mb-4 w-[280px] shrink-0 sm:w-[320px]">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <figure className="brutalist-image-frame float-right ml-6 mb-4 w-[280px] shrink-0 sm:w-[320px]"><Image
             src="https://res.cloudinary.com/releather-com/image/upload/v1654145295/icons/Leather-Restoration-Couch.png"
             alt="Leather Conditioning a Leather Sofa Couch Chair"
             title="Leather Conditioning a Leather Sofa Couch Chair"
@@ -68,9 +67,7 @@ export default function LeatherConditionerGuideContent() {
       </div>
 
       <div className="overflow-hidden">
-        <figure className="brutalist-image-frame float-left mr-6 mb-4 w-[280px] shrink-0 sm:w-[320px]">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <figure className="brutalist-image-frame float-left mr-6 mb-4 w-[280px] shrink-0 sm:w-[320px]"><Image
             src="https://res.cloudinary.com/releather-com/image/upload/v1654145295/icons/Leather-Restoration-Car-Seat.png"
             alt="Leather Conditioner for Car Seats"
             title="Leather Conditioner for Car Seats"

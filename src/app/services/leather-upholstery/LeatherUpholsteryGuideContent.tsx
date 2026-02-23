@@ -1,12 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function LeatherUpholsteryGuideContent() {
   return (
     <>
       <div className="overflow-hidden">
-        <figure className="brutalist-image-frame float-left mr-6 mb-4 w-[280px] shrink-0 sm:w-[320px]">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <figure className="brutalist-image-frame float-left mr-6 mb-4 w-[280px] shrink-0 sm:w-[320px]"><Image
             src="https://res.cloudinary.com/releather-com/image/upload/v1771656983/before-after/leather-reupholstery/reupholster-leather-wingback-chair.jpg"
             alt="Reupholster leather wingback chair"
             title="Leather reupholstery wingback chair"

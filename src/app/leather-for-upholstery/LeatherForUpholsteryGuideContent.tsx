@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { GuideSection } from "@/components/Guide";
 
 export default function LeatherForUpholsteryGuideContent() {
@@ -28,9 +29,7 @@ export default function LeatherForUpholsteryGuideContent() {
       <p>
         There are a few things to keep in mind in order to choose the right leather for your home and understanding the type of leather is essential. The first thing to consider is the level of wear and tear that the leather sofa will be subjected to. If you have active kids or pets, you&apos;ll want to choose a durable top grain leather that can withstand some abuse, stain resistant, and easy to clean. We recommend <strong>Protected</strong> aniline dyed leather upholstery such as <Link href="/types-of-leather#Pigmented-Leather" title="Pigmented Aniline Leather">Pigmented</Link>, <Link href="/types-of-leather#Corrected-Leather" title="Corrected Aniline Leather">Corrected grain</Link>, <Link href="/types-of-leather#Semi-Aniline-Leather" title="Semi-Aniline Leather">Semi-Aniline</Link> leather. These upholstery leather hides are more uniform in color or can have a two-tone texture finish. Secondly, consider the climate and direct sunlight in your home. If you live in a dry climate, you&apos;ll want to choose a leather that is treated for moisture resistance or routinely use a <Link href="/leather-conditioner" title="Leather Conditioner for Leather Upholstery Furniture">Leather Conditioner</Link> to keep your leather soft and moisturized.         If you live in a hot and humid climate, <strong>Unprotected</strong> leather material will fade and crack in the heat much faster because they are not finished with a protective coating.
       </p>
-      <figure className="brutalist-image-frame my-6 w-full overflow-hidden">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      <figure className="brutalist-image-frame my-6 w-full overflow-hidden"><Image
           src="https://res.cloudinary.com/releather-com/image/upload/c_fill,g_auto,h_250,w_970/b_rgb:ffffff,e_gradient_fade,y_-0.50/c_scale,co_rgb:ffffff,fl_relative,l_text:montserrat_45_style_light_align_center:Leather%20Benefits,w_0.5,y_0.18/v1642391599/furniture/sofas-sectionals/Americana_2530.png"
           alt="Leather Benefits"
           title="Leather Benefits"
@@ -52,9 +51,7 @@ export default function LeatherForUpholsteryGuideContent() {
       <p>→ Tanning Process</p>
 
       <div className="overflow-hidden">
-        <figure className="brutalist-image-frame float-left mr-6 mb-4 w-[280px] shrink-0 sm:w-[320px]">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <figure className="brutalist-image-frame float-left mr-6 mb-4 w-[280px] shrink-0 sm:w-[320px]"><Image
             src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_450/v1654909894/leather/Leather-Tanning-How-Leather-Is-Made.jpg"
             alt="Leather Tanning Process How Leather Is Made"
             title="Leather Tanning Process How Leather Is Made"
@@ -80,9 +77,7 @@ export default function LeatherForUpholsteryGuideContent() {
       <p>→ Faux Leather, Split Leather, Bonded Leather.</p>
 
       <div id="Browse" className="overflow-hidden">
-        <figure className="brutalist-image-frame float-right ml-6 mb-4 w-[280px] shrink-0 sm:w-[320px]">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <figure className="brutalist-image-frame float-right ml-6 mb-4 w-[280px] shrink-0 sm:w-[320px]"><Image
             src="https://res.cloudinary.com/releather-com/image/upload/l_,l_text:montserrat_35_style_bold:Bonded%20Leather,co_rgb:ffffff/v1654908428/leather/flaking-peeling-leather-bonded-faux.png"
             alt="Example of Bonded Leather Peeling"
             title="Example of Bonded Leather Peeling"

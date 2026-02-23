@@ -1,3 +1,4 @@
+import Image from "next/image";
 const C =
   "https://res.cloudinary.com/releather-com/image/upload";
 
@@ -26,9 +27,7 @@ export const leatherRestorationIssuesItems = [
       </p>
     ),
     media: (
-      <>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      <><Image
           src={`${C}/l_,l_text:montserrat_50_style_light:Faded%20Leather,co_rgb:ffffff/v1653700009/before-after/faded-leather-couch.png`}
           width={290}
           alt="Faded Leather Sofa"
@@ -63,9 +62,7 @@ export const leatherRestorationIssuesItems = [
       </p>
     ),
     media: (
-      <>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      <><Image
           src={`${C}/l_,l_text:montserrat_50_style_light:Cracked%20Leather,co_rgb:ffffff/v1653699338/before-after/cracked-leather-cushion-restoration.png`}
           width={300}
           alt="Cracked Leather Cushion"
@@ -101,9 +98,7 @@ export const leatherRestorationIssuesItems = [
       </p>
     ),
     media: (
-      <>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      <><Image
           src={`${C}/l_,l_text:montserrat_50_style_light:Scratched%20Leather,co_rgb:ffffff/v1653624183/before-after/scratched-leather-chair.png`}
           width={300}
           alt="Scratched Leather Chair"
@@ -143,9 +138,7 @@ export const leatherRestorationIssuesItems = [
       </p>
     ),
     media: (
-      <>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      <><Image
           src={`${C}/l_,l_text:montserrat_50_style_light:Stained%20Leather,co_rgb:ffffff/v1653624183/before-after/stained-leather-chair-restoration.png`}
           width={300}
           alt="Stained Leather Sofa Chair"

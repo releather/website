@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
@@ -127,9 +128,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
               Cracks, Discoloration, Fading, Oily, Wear
             </p>
             <ul className="mt-6 grid list-none grid-cols-1 gap-6 p-0 sm:grid-cols-2 lg:grid-cols-4">
-              <li className="flex flex-col items-center border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <li className="flex flex-col items-center border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_200,h_200,x_285,y_80,b_rgb:ffffff/bo_2px_solid_rgb:ccc/before-after/leather-restoration-car-steering-wheel-restoration-black-before.png"
                   alt="Cracks and Cracking Leather Steering Wheel Repair"
                   title="Cracks and Cracking Leather Steering Wheel Repair"
@@ -139,9 +138,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                 />
                 <strong className="mt-2 font-sans text-black">Cracks</strong>
               </li>
-              <li className="flex flex-col items-center border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <li className="flex flex-col items-center border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_200,h_200,x_375/before-after/leather-restoration-car-steering-wheel-repair-beige-before.jpg"
                   alt="Worn Discoloration Leather Steering Wheel Repair"
                   title="Worn Discoloration Leather Steering Wheel Repair"
@@ -151,9 +148,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                 />
                 <strong className="mt-2 font-sans text-black">Discolored</strong>
               </li>
-              <li className="flex flex-col items-center border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <li className="flex flex-col items-center border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_200,h_200/before-after/leather-restoration/example/oily-leather-steering-wheel-restored.png"
                   alt="Oily Leather Steering Wheel Repair"
                   title="Oily Leather Steering Wheel Repair"
@@ -163,9 +158,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                 />
                 <strong className="mt-2 font-sans text-black">Oily</strong>
               </li>
-              <li className="flex flex-col items-center border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <li className="flex flex-col items-center border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_200,h_200,x_50,y_400,b_rgb:ffffff/bo_2px_solid_rgb:ccc/before-after/leather-restoration-car-grey-pigmented-steering-wheel-lexus-fullerton-before.jpg"
                   alt="Wear"
                   title="Wear"
@@ -203,9 +196,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                   </li>
                 ))}
               </ul>
-              <figure className="border-4 border-releather-orange p-2">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <figure className="border-4 border-releather-orange p-2"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/before-after/leather-restoration-car-black-pigmented-worn-dirt-oils-steering-wheel-bmw-newport-beach-before.jpg"
                   alt="Steering wheel inspection and assessment process"
                   title="Steering wheel inspection and assessment process"
@@ -221,9 +212,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
           </section>
 
           <section id="spotlight" className="mt-12 border-t-4 border-black pt-12">
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,h_450,w_450,x_0,y_60,b_white/l_text:montserrat_40_style_light:Before,co_rgb:f8991d,g_south_west,y_25,x_25/bo_10px_solid_rgb:000000/before-after/leather-restoration-car-steering-wheel-restoration-black-before.png"
                 alt="Leather restoration car steering wheel restoration black before"
                 title="Leather Restoration Car Steering Wheel Restoration Black Before"
@@ -231,9 +220,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-black object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,h_450,w_450,x_0,y_60,b_white/l_text:montserrat_40_style_light:After,co_rgb:f8991d,g_south_west,y_25,x_25/bo_10px_solid_rgb:000000/before-after/leather-restoration-car-steering-wheel-restoration-black-after.png"
                 alt="Leather restoration car steering wheel restoration black after"
                 title="Leather Restoration Car Steering Wheel Restoration Black After"
@@ -254,9 +241,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               This showcase demonstrates our work in restoring a Mercedes-Benz steering wheel with  discoloration. The grey leather had developed areas darkened by oils and accumulated dirt, especially in the grip area, which required professional cleaning, color matching, and restoration techniques to achieve a restored and even appearance. The project included <Link href="/auto-leather-dyeing" title="Complete Auto Interior Leather Restoration">complete auto interior leather restoration</Link>.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-grey-pigmented-wear-steering-wheel-mercedes-benz-fullerton-before.jpg"
                 alt="Leather restoration car grey pigmented wear steering wheel mercedes benz fullerton before"
                 title="Leather Restoration Car Grey Pigmented Wear Steering Wheel Mercedes Benz Fullerton Before"
@@ -264,9 +249,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-releather-orange object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-grey-pigmented-wear-steering-wheel-mercedes-benz-fullerton-after.jpg"
                 alt="Leather restoration car grey pigmented wear steering wheel mercedes benz fullerton after"
                 title="Leather Restoration Car Grey Pigmented Wear Steering Wheel Mercedes Benz Fullerton After"
@@ -303,9 +286,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
               </div>
               <div className="border-b border-gray-300 py-2">
                 <dt className="font-bold text-black">Color</dt>
-                <dd>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <dd><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/leather/PALETTE_grey_HI.jpg"
                     alt="Grey pigmented wear steering wheel leather restoration"
                     title="Grey pigmented wear steering wheel leather restoration"
@@ -327,9 +308,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               This showcase restored a Porsche sports car racing steering wheel that was in need of color refresh . The grey and orange contrast leather had developed minor discoloration, which required deep cleaning, conditioning, and color treatment. We closely matched the car&apos;s unique color palette to achieve an even finish. This was part of the front bucket seat restoration.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-orange-pigmented-refinishing-steering-wheel-porsche-mission-viejo-before.jpg"
                 alt="Leather restoration car orange pigmented refinishing steering wheel porsche mission viejo before"
                 title="Leather Restoration Car Orange Pigmented Refinishing Steering Wheel Porsche Mission Viejo Before"
@@ -337,9 +316,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-releather-orange object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-orange-pigmented-refinishing-steering-wheel-porsche-mission-viejo-after.jpg"
                 alt="Leather restoration car orange pigmented refinishing steering wheel porsche mission viejo after"
                 title="Leather Restoration Car Orange Pigmented Refinishing Steering Wheel Porsche Mission Viejo After"
@@ -376,18 +353,14 @@ export default function LeatherCarSteeringWheelRestorationPage() {
               </div>
               <div className="border-b border-gray-300 py-2">
                 <dt className="font-bold text-black">Color</dt>
-                <dd>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <dd><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_175,h_50/bo_2px_solid_rgb:f8991d/leather/PALETTE_mango_HI.jpg"
                     alt="Orange pigmented refinishing steering wheel leather restoration"
                     title="Orange pigmented refinishing steering wheel leather restoration"
                     loading="lazy"
                     width={175}
                     height={50}
-                  />
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  /><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_175,h_50/bo_2px_solid_rgb:f8991d/leather/PALETTE_grey_HI.jpg"
                     alt="Grey pigmented steering wheel leather restoration"
                     title="Grey pigmented steering wheel leather restoration"
@@ -409,9 +382,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               This before-and-after showcase shows a steering wheel removed from the car and showing significant wear. The top coating had worn off and cracked along the grip areas, and the leather surface had become shiny from normal hand oils. The grey leather was  cleaned, resurfaced for a smooth finish, and color refinished to achieve a fully restored appearance. Even if you&apos;re outside our service area, you can still get your steering wheel professionally restored. <Link href="/estimate" title="Get Steering Wheel Restoration estimate">Get a quote and ship it to us today!</Link>
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-grey-pigmented-steering-wheel-lexus-fullerton-before.jpg"
                 alt="Leather restoration car grey pigmented steering wheel lexus fullerton before"
                 title="Leather Restoration Car Grey Pigmented Steering Wheel Lexus Fullerton Before"
@@ -419,9 +390,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-releather-orange object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-grey-pigmented-steering-wheel-lexus-fullerton-after.jpg"
                 alt="Leather restoration car grey pigmented steering wheel lexus fullerton after"
                 title="Leather Restoration Car Grey Pigmented Steering Wheel Lexus Fullerton After"
@@ -458,9 +427,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
               </div>
               <div className="border-b border-gray-300 py-2">
                 <dt className="font-bold text-black">Color</dt>
-                <dd>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <dd><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/leather/PALETTE_grey_HI.jpg"
                     alt="Grey pigmented steering wheel leather restoration"
                     title="Grey pigmented steering wheel leather restoration"
@@ -482,9 +449,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               This before-and-after showcase shows an all-leather Ford interior, including a steering wheel showing wear. The handle areas had the top surface chipped off, combined with fading and accumulated dirt and oils. The beige leather was professionally cleaned, conditioned, recolored, and sealed to restore its appearance and protect against future wear.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-beige-pigmented-oiled-wear-steering-wheel-ford-orange-county-before.jpg"
                 alt="Leather restoration car beige pigmented oiled wear steering wheel ford orange county before"
                 title="Leather Restoration Car Beige Pigmented Oiled Wear Steering Wheel Ford Orange County Before"
@@ -492,9 +457,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-releather-orange object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-beige-pigmented-oiled-wear-steering-wheel-ford-orange-county-after.jpg"
                 alt="Leather restoration car beige pigmented oiled wear steering wheel ford orange county after"
                 title="Leather Restoration Car Beige Pigmented Oiled Wear Steering Wheel Ford Orange County After"
@@ -531,9 +494,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
               </div>
               <div className="border-b border-gray-300 py-2">
                 <dt className="font-bold text-black">Color</dt>
-                <dd>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <dd><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/leather/PALETTE_mocha_HI.jpg"
                     alt="Beige pigmented oiled wear steering wheel leather restoration"
                     title="Beige pigmented oiled wear steering wheel leather restoration"
@@ -555,9 +516,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               This before-and-after showcase features a BMW steering wheel finished in black pigmented leather. The surface had become dull and uneven from normal hand oils, with signs of wear along the grip areas. The leather was carefully cleaned and conditioned, then recolored to achieve a deep, even black finish. A final protective coating was applied to maintain the restored look and guard against normal use.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-black-pigmented-worn-oily-wear-steering-wheel-bmw-fullerton-before.jpg"
                 alt="Leather restoration car black pigmented worn oily wear steering wheel bmw fullerton before"
                 title="Leather Restoration Car Black Pigmented Worn Oily Wear Steering Wheel Bmw Fullerton Before"
@@ -565,9 +524,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-releather-orange object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-black-pigmented-worn-oily-wear-steering-wheel-bmw-fullerton-after.jpg"
                 alt="Leather restoration car black pigmented worn oily wear steering wheel bmw fullerton after"
                 title="Leather Restoration Car Black Pigmented Worn Oily Wear Steering Wheel Bmw Fullerton After"
@@ -604,9 +561,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
               </div>
               <div className="border-b border-gray-300 py-2">
                 <dt className="font-bold text-black">Color</dt>
-                <dd>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <dd><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/leather/PALETTE_black_HI.jpg"
                     alt="Black pigmented worn oily wear steering wheel leather restoration"
                     title="Black pigmented worn oily wear steering wheel leather restoration"
@@ -628,9 +583,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               The Mercedes-Benz steering wheel in beige pigmented leather had developed light spotting and an uneven finish from normal use, signaling the need for a complete restoration. <Link href="/services/leather-cleaning" title="Leather Cleaning and Conditioning Steering Wheel">Leather cleaning and conditioning</Link> were performed, then the leather was recolored, evening out the tone and texture across the grip areas. This steering wheel restoration was part of a full interior project, where all beige leather surfaces in the car were fully refreshed and protected.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-beige-pigmented-worn-dirt-oils-steering-wheel-mercedes-benz-newport-beach-before.jpg"
                 alt="Leather restoration car beige pigmented worn dirt oils steering wheel mercedes benz newport beach before"
                 title="Leather Restoration Car Beige Pigmented Worn Dirt Oils Steering Wheel Mercedes Benz Newport Beach Before"
@@ -638,9 +591,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-releather-orange object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-beige-pigmented-worn-dirt-oils-steering-wheel-mercedes-benz-newport-beach-after.jpg"
                 alt="Leather restoration car beige pigmented worn dirt oils steering wheel mercedes benz newport beach after"
                 title="Leather Restoration Car Beige Pigmented Worn Dirt Oils Steering Wheel Mercedes Benz Newport Beach After"
@@ -677,9 +628,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
               </div>
               <div className="border-b border-gray-300 py-2">
                 <dt className="font-bold text-black">Color</dt>
-                <dd>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <dd><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/leather/PALETTE_mocha_HI.jpg"
                     alt="Beige pigmented worn dirt oils steering wheel leather restoration"
                     title="Beige pigmented worn dirt oils steering wheel leather restoration"
@@ -701,9 +650,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               The Mercedes-Benz steering wheel features a beige pigmented leather grip with wood trim, which had developed wear, dirt buildup, and discoloration from hand oils. The leather sections were restored with specialized cleaning and color treatments, while the wood trim was polished and resealed to bring back its natural luster. A final protective coating ensures the steering wheel maintains its appearance and resists future wear.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-steering-wheel-repair-beige-before.jpg"
                 alt="Leather restoration car steering wheel repair beige before"
                 title="Leather Restoration Car Steering Wheel Repair Beige Before"
@@ -711,9 +658,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-releather-orange object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-steering-wheel-repair-beige-after.jpg"
                 alt="Leather restoration car steering wheel repair beige after"
                 title="Leather Restoration Car Steering Wheel Repair Beige After"
@@ -750,9 +695,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
               </div>
               <div className="border-b border-gray-300 py-2">
                 <dt className="font-bold text-black">Color</dt>
-                <dd>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <dd><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/leather/PALETTE_mocha_HI.jpg"
                     alt="Beige pigmented worn dirt oils steering wheel leather restoration"
                     title="Beige pigmented worn dirt oils steering wheel leather restoration"
@@ -786,9 +729,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                   Pigmented leather features a protective coating that provides excellent durability and resistance to wear, making it ideal for high-traffic areas like steering wheels. It is the most common leather type used in luxury vehicles and known for its smooth or slightly textured surface and consistent color appearance. This leather offers superior color retention, is easy to maintain, and holds up well against daily use. For restoration, it should be refinished using water-based automotive leather colorants and sealers rather than aniline dyes.
                 </p>
               </div>
-              <div className="flex justify-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="flex justify-center"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_300,y_50,b_rgb:23262f,bo_5px_solid_rgb:f8991d/g_center,l_text:montserrat_40_style_light:Pigmented,co_rgb:ffffff/leather/PALETTE_tan_HI.jpg"
                   alt="Pigmented leather example for steering wheel restoration"
                   title="Pigmented leather example for steering wheel restoration"
@@ -808,9 +749,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                   Nappa leather is known for its exceptional softness and supple feel, making it a premium choice for luxury cars and exclusive models. Made from top-grain or <Link href="/types-of-leather" title="Full Grain Leather Explanation">full-grain hides</Link> that are lightly corrected and pigmented with a soft-touch finish, it offers a luxurious, natural feel while maintaining durability for daily driving. This leather type requires careful handling and specialized restoration techniques, and should be treated like other pigmented leathers—avoiding penetrating dyes and using water-based automotive leather colorants instead.
                 </p>
               </div>
-              <div className="flex justify-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="flex justify-center"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_300,y_50,b_rgb:23262f,bo_5px_solid_rgb:f8991d/g_center,l_text:montserrat_40_style_light:Nappa,co_rgb:ffffff/leather/full-grain-leather-example.jpg"
                   alt="Nappa leather example for steering wheel restoration"
                   title="Nappa leather example for steering wheel restoration"
@@ -841,9 +780,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
               Identifying common leather problems in steering wheels is essential for effective restoration. Early detection of issues like cracks, fading, scratches, wear, and stains allows for proper treatment planning and prevents further damage. Understanding these problems helps determine the most appropriate restoration techniques and materials needed for best results.
             </p>
             <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_300,h_285,x_185,y_80,b_rgb:ffffff/bo_5px_solid_rgb:f8991d/before-after/leather-restoration-car-steering-wheel-restoration-black-before.png"
                   alt="Cracks issue example for steering wheel restoration"
                   title="Cracks issue example for steering wheel restoration"
@@ -858,9 +795,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                   Cracks in steering wheel leather typically develop from prolonged use and exposure to UV rays, causing the leather to become <strong>brittle and split</strong>. These cracks can compromise the wheel&apos;s appearance and comfort.
                 </p>
               </div>
-              <div className="border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_300,h_285,x_375/bo_5px_solid_rgb:f8991d/before-after/leather-restoration-car-steering-wheel-repair-beige-before.jpg"
                   alt="Fading issue example for steering wheel restoration"
                   title="Fading issue example for steering wheel restoration"
@@ -875,9 +810,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                   Fading occurs when the leather&apos;s color deteriorates due to sun exposure and regular handling, resulting in an<strong> uneven or washed-out spotting </strong>that diminishes the wheel&apos;s aesthetic appeal.
                 </p>
               </div>
-              <div className="border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/w_300,h_285/bo_5px_solid_rgb:f8991d/before-after/leather-restoration/example/oily-leather-steering-wheel-restored.png"
                   alt="Scratches issue example for steering wheel restoration"
                   title="Scratches issue example for steering wheel restoration"
@@ -892,9 +825,7 @@ export default function LeatherCarSteeringWheelRestorationPage() {
                   Oils from your hand gripping can create a <strong>sticky, shiny, or slippery surface</strong> on your steering wheel. This buildup not only diminishes the leather&apos;s texture and grip but also leaves the wheel looking dull and worn.
                 </p>
               </div>
-              <div className="border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_300,h_285,y_400,x_50/bo_5px_solid_rgb:f8991d/before-after/leather-restoration-car-grey-pigmented-steering-wheel-lexus-fullerton-before.jpg"
                   alt="Wear issue example for steering wheel restoration"
                   title="Wear issue example for steering wheel restoration"

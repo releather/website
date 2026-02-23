@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
@@ -112,9 +113,7 @@ export default function LeatherFurnitureRepairInSanDiegoPage() {
               label: "(949) 529-4727",
             }}
             rightContent={
-              <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-lg">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-lg"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/v1632032856/before-after/releather-leather-restoration-san-diego-banner-after.jpg"
                   alt="ReLeather Leather Restoration San Diego Location"
                   title="ReLeather Leather Restoration San Diego Location"
@@ -157,9 +156,7 @@ export default function LeatherFurnitureRepairInSanDiegoPage() {
             </p>
             <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="space-y-2">
-                <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-gray-700">Before</h4>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-gray-700">Before</h4><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/v1771848613/before-after/leather-restoration/furniture/tan/Leather-Recolor-Tan-Sofa-Before.jpg"
                   alt="Before Picture of Leather Restoration in San Diego"
                   width={550}
@@ -169,9 +166,7 @@ export default function LeatherFurnitureRepairInSanDiegoPage() {
                 />
               </div>
               <div className="space-y-2">
-                <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-gray-700">After</h4>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-gray-700">After</h4><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/v1771848613/before-after/leather-restoration/furniture/tan/Leather-Recolor-Tan-Sofa-After.jpg"
                   alt="After Picture of Leather Restoration in San Diego"
                   width={550}
@@ -183,24 +178,16 @@ export default function LeatherFurnitureRepairInSanDiegoPage() {
             </div>
             <h5 className="mt-8 font-display text-lg font-normal tracking-tight text-black">Recommended Leather For Leather Restoration</h5>
             <div className="mt-4 flex flex-wrap gap-4">
-              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-protected-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={protectedLeatherThumb} alt="Type of leather Protected Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
+              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-protected-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center"><Image src={protectedLeatherThumb} alt="Type of leather Protected Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
                 <p className="font-sans text-sm text-gray-800">Protected Aniline Leather</p>
               </a>
-              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-pure-aniline-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={pureAnilineThumb} alt="Type of leather Pure Aniline Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
+              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-pure-aniline-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center"><Image src={pureAnilineThumb} alt="Type of leather Pure Aniline Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
                 <p className="font-sans text-sm text-gray-800">Pure Aniline Leather</p>
               </a>
-              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-semi-aniline-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={semiAnilineThumb} alt="Type of leather Semi Aniline Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
+              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-semi-aniline-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center"><Image src={semiAnilineThumb} alt="Type of leather Semi Aniline Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
                 <p className="font-sans text-sm text-gray-800">Semi Aniline Leather</p>
               </a>
-              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-nubuck-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={nubuckThumb} alt="Type of leather Nubuck Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
+              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-nubuck-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center"><Image src={nubuckThumb} alt="Type of leather Nubuck Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
                 <p className="font-sans text-sm text-gray-800">Nubuck Leather</p>
               </a>
             </div>
@@ -215,9 +202,7 @@ export default function LeatherFurnitureRepairInSanDiegoPage() {
             </p>
             <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="space-y-2">
-                <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-gray-700">Before</h4>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-gray-700">Before</h4><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/v1631068175/before-after/leather-cleaning-conditioning-recoloring-leather-sofa-before-1.jpg"
                   alt="Before Picture of Leather Cleaning Sofa in San Diego"
                   width={550}
@@ -227,9 +212,7 @@ export default function LeatherFurnitureRepairInSanDiegoPage() {
                 />
               </div>
               <div className="space-y-2">
-                <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-gray-700">After</h4>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-gray-700">After</h4><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/v1631068175/before-after/leather-cleaning-conditioning-recoloring-leather-sofa-after-1.jpg"
                   alt="After Picture of Leather Cleaning Sofa in San Diego"
                   width={550}
@@ -241,24 +224,16 @@ export default function LeatherFurnitureRepairInSanDiegoPage() {
             </div>
             <h3 className="mt-8 font-display text-lg font-normal tracking-tight text-black">Recommended Leather for Leather Cleaning:</h3>
             <div className="mt-4 flex flex-wrap gap-4">
-              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-protected-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={protectedLeatherThumb} alt="Type of leather Protected Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
+              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-protected-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center"><Image src={protectedLeatherThumb} alt="Type of leather Protected Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
                 <p className="font-sans text-sm text-gray-800">Protected Aniline Leather</p>
               </a>
-              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-pure-aniline-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={pureAnilineThumb} alt="Type of leather Pure Aniline Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
+              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-pure-aniline-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center"><Image src={pureAnilineThumb} alt="Type of leather Pure Aniline Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
                 <p className="font-sans text-sm text-gray-800">Pure Aniline Leather</p>
               </a>
-              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-semi-aniline-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={semiAnilineThumb} alt="Type of leather Semi Aniline Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
+              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-semi-aniline-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center"><Image src={semiAnilineThumb} alt="Type of leather Semi Aniline Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
                 <p className="font-sans text-sm text-gray-800">Semi Aniline Leather</p>
               </a>
-              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-wax-pull-up.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={waxPullUpThumb} alt="Type of leather Wax Pull Up Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
+              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-wax-pull-up.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center"><Image src={waxPullUpThumb} alt="Type of leather Wax Pull Up Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
                 <p className="font-sans text-sm text-gray-800">Wax Pull Up</p>
               </a>
             </div>
@@ -273,9 +248,7 @@ export default function LeatherFurnitureRepairInSanDiegoPage() {
             </p>
             <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="space-y-2">
-                <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-gray-700">Before</h4>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-gray-700">Before</h4><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/v1631165753/before-after/Leather-Dyeing-Chair-Change-Color-Before.jpg"
                   alt="Before Picture of Leather Dyeing Chair Sofa in San Diego"
                   width={550}
@@ -285,9 +258,7 @@ export default function LeatherFurnitureRepairInSanDiegoPage() {
                 />
               </div>
               <div className="space-y-2">
-                <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-gray-700">After</h4>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-gray-700">After</h4><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/v1631165753/before-after/Leather-Dyeing-Chair-Change-Color-After.jpg"
                   alt="After Picture of Leather Dyeing Chair Sofa in San Diego"
                   width={550}
@@ -299,14 +270,10 @@ export default function LeatherFurnitureRepairInSanDiegoPage() {
             </div>
             <h3 className="mt-8 font-display text-lg font-normal tracking-tight text-black">Recommended Leather for Leather Dyeing:</h3>
             <div className="mt-4 flex flex-wrap gap-4">
-              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-protected-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={protectedLeatherThumb} alt="Type of leather Protected Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
+              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-protected-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center"><Image src={protectedLeatherThumb} alt="Type of leather Protected Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
                 <p className="font-sans text-sm text-gray-800">Protected Aniline Leather</p>
               </a>
-              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-semi-aniline-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={semiAnilineThumb} alt="Type of leather Semi Aniline Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
+              <a href="https://res.cloudinary.com/releather-com/image/upload/v1630971788/before-after/type-of-leather-semi-aniline-leather.jpg" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-center"><Image src={semiAnilineThumb} alt="Type of leather Semi Aniline Leather" width={80} height={80} loading="lazy" className="border-2 border-[#23262f]" />
                 <p className="font-sans text-sm text-gray-800">Semi Aniline Leather</p>
               </a>
             </div>
@@ -322,9 +289,7 @@ export default function LeatherFurnitureRepairInSanDiegoPage() {
             <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="space-y-2">
                 <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-gray-700">Before</h4>
-                <div className="flex flex-wrap gap-2">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <div className="flex flex-wrap gap-2"><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/v1652226337/before-after/leather-reupholstery-thomasville-sofa-before.jpg"
                     alt="Before Picture of Leather Reupholstery Thomasville Leather Sofa in San Diego"
                     width={275}
@@ -336,9 +301,7 @@ export default function LeatherFurnitureRepairInSanDiegoPage() {
               </div>
               <div className="space-y-2">
                 <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-gray-700">After</h4>
-                <div className="flex flex-wrap gap-2">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <div className="flex flex-wrap gap-2"><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/v1652226731/before-after/leather-reupholstery-thomasville-sofa-after.jpg"
                     alt="After Picture of Leather Reupholstery Thomasville Sofa San Diego"
                     width={275}
@@ -361,9 +324,7 @@ export default function LeatherFurnitureRepairInSanDiegoPage() {
             <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="space-y-2">
                 <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-gray-700">Before</h4>
-                <div className="flex flex-wrap gap-2">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <div className="flex flex-wrap gap-2"><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/v1652227896/before-after/leather-sofa-foam-replacement-before.jpg"
                     alt="Before Picture of Leather Foam Replacement Leather Sofa in San Diego"
                     width={275}
@@ -375,9 +336,7 @@ export default function LeatherFurnitureRepairInSanDiegoPage() {
               </div>
               <div className="space-y-2">
                 <h4 className="font-sans text-sm font-bold uppercase tracking-wider text-gray-700">After</h4>
-                <div className="flex flex-wrap gap-2">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <div className="flex flex-wrap gap-2"><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/v1652227896/before-after/leather-sofa-foam-replacement-after.jpg"
                     alt="After Picture of Leather Foam Replacement Leather Sofa in San Diego"
                     width={275}
@@ -445,9 +404,7 @@ export default function LeatherFurnitureRepairInSanDiegoPage() {
                 <figure key={i} className="border-4 bg-releather-dark p-4" style={{ borderColor: "#23262f" }}>
                   <div className="flex flex-col gap-4 sm:flex-row sm:gap-6">
                     <div className="space-y-2">
-                      <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">Before</p>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
+                      <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">Before</p><Image
                         src={item.beforeSrc}
                         alt={item.beforeAlt}
                         width={300}
@@ -457,9 +414,7 @@ export default function LeatherFurnitureRepairInSanDiegoPage() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">After</p>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
+                      <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">After</p><Image
                         src={item.afterSrc}
                         alt={item.afterAlt}
                         width={300}

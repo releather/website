@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { GuideSection } from "@/components/Guide";
 import LeatherRestorationFinishes from "./LeatherRestorationFinishes";
 
@@ -78,9 +79,7 @@ export default function LeatherRestorationGuideContent() {
           leather lotion with a cloth to the leather surface in a circular motion
           and let dry.
         </p>
-        <div className="shrink-0">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <div className="shrink-0"><Image
             src="https://res.cloudinary.com/releather-com/image/upload/v1643861241/logo/ReLeather-Leather-Conditioner.png"
             width={120}
             height={120}
@@ -104,9 +103,7 @@ export default function LeatherRestorationGuideContent() {
           stains, dirt, dust, grime, and even soiling in the grain of pebble
           leather seats.
         </p>
-        <div className="shrink-0">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <div className="shrink-0"><Image
             src="https://res.cloudinary.com/releather-com/image/upload/c_crop,g_south,h_400,w_122/v1653615923/products/ReLeather-Best-Leather-Cleaner-For-Leather-Restoration.png"
             width={73}
             height={240}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
@@ -30,9 +31,7 @@ const rhFaqItems = [
     question: "Can you remove pen marks on my Restoration Hardware leather?",
     answer: (
       <p>
-        Pen and ink can penetrate the lightly treated aniline leather. While we can often conceal these marks with our color creams, the success of this method varies depending on the level of the damage. Our team will assess the condition of your leather during our initial assessment and advise you accordingly. As for scratches, natural aniline wax pull-up leather can typically be lightly scratched and rubbed out to restore its appearance. However, if the scratches are deep and penetrate the wax layer, the restoration may be limited.{" "}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        Pen and ink can penetrate the lightly treated aniline leather. While we can often conceal these marks with our color creams, the success of this method varies depending on the level of the damage. Our team will assess the condition of your leather during our initial assessment and advise you accordingly. As for scratches, natural aniline wax pull-up leather can typically be lightly scratched and rubbed out to restore its appearance. However, if the scratches are deep and penetrate the wax layer, the restoration may be limited.{" "}<Image
           src="https://res.cloudinary.com/releather-com/image/upload/v1715942429/before-after/leather-restoration/furniture/restoration-hardware/Aniline-Distressed-Leather-with-Pen-Ink-Mark-400px.jpg"
           alt="Aniline Distressed Leather with Pen Ink Mark Removal"
           title="Aniline Distressed Leather with Pen Ink Mark Removal"
@@ -46,9 +45,7 @@ const rhFaqItems = [
     question: "Can you remove scratch marks on my Restoration Hardware leather?",
     answer: (
       <p>
-        For scratch removal, natural aniline wax pull-up leather can typically be lightly scratched and rubbed out to restore its appearance. However, if the scratches are deep and penetrate the wax layer, the restoration may be limited.{" "}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        For scratch removal, natural aniline wax pull-up leather can typically be lightly scratched and rubbed out to restore its appearance. However, if the scratches are deep and penetrate the wax layer, the restoration may be limited.{" "}<Image
           src="https://res.cloudinary.com/releather-com/image/upload/v1715794039/samples/repairs/Restoration-Hardware-Leather-Sofa-Couch-Scratches-Scratch-200.jpg"
           alt="Leather Seat Cushion Replacement Fixes Ripped Torn Leather Couch Sofa Chair - Close Image"
           title="Leather Seat Cushion Replacement Fixes Ripped Torn Leather Couch Sofa Chair - Close Image"
@@ -156,9 +153,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
               RH Maxwell Sofa, Modena Chesterfield, Lancaster Sofa, Churchill Chairs and more.
             </p>
             <ul className="mt-6 grid list-none grid-cols-1 gap-6 p-0 sm:grid-cols-2 lg:grid-cols-4">
-              <li className="flex flex-col items-center border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <li className="flex flex-col items-center border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/v1715829379/samples/repairs/Restoration-Hardware-Leather-Sofa-Dry-Leather-Repair.jpg"
                   alt="Leather Seat Cushion Replacement Fixes Ripped Torn Leather Couch Sofa Chair - Close Image"
                   title="Leather Seat Cushion Replacement Fixes Ripped Torn Leather Couch Sofa Chair - Close Image"
@@ -169,9 +164,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
                 />
                 <span className="mt-2 font-sans text-black">Dry &amp; Rough</span>
               </li>
-              <li className="flex flex-col items-center border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <li className="flex flex-col items-center border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/v1715827232/samples/repairs/Restoration-Hardware-Leather-Sofa-Discoloration-Repair-200px.jpg"
                   alt="Leather Cushion Replacement replaces cracked split leather seat sofa couch cushions"
                   title="Leather Cushion Replacement replaces cracked split leather seat sofa couch cushions"
@@ -182,9 +175,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
                 />
                 <span className="mt-2 font-sans text-black">Discoloration</span>
               </li>
-              <li className="flex flex-col items-center border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <li className="flex flex-col items-center border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/v1697020657/before-after/leather-reupholstery/leather-couch-worn-tired-fix-leather-recover-service-thumb.jpg"
                   alt="Leather Couch Seat Replacement Covers replaces worn out tired leather seats cushion"
                   title="Leather Couch Seat Replacement Covers replaces worn out tired leather seats cushion"
@@ -195,9 +186,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
                 />
                 <span className="mt-2 font-sans text-black">Oily Stains</span>
               </li>
-              <li className="flex flex-col items-center border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <li className="flex flex-col items-center border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/v1715828703/samples/repairs/Restoration-Hardware-Leather-Sofa-Saggy-Flat-Restuffing-Refill-Repair-200px.jpg"
                   alt="Leather Couch Seat Replacement Covers replaces worn out tired leather seats cushion"
                   title="Leather Couch Seat Replacement Covers replaces worn out tired leather seats cushion"
@@ -253,9 +242,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
                   <li><strong>Quality Leather: </strong> RH sofas are typically made with high-quality aniline leather, which is known for its durability and ability to develop a beautiful patina over time.</li>
                 </ul>
               </div>
-              <div className="flex justify-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="flex justify-center"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/ar_1:1,w_450,h_350/v1715961720/before-after/leather-restoration/furniture/restoration-hardware/aniline-leather-fabric-sofa-distressed-wax-pull-up-restoration-service.jpg"
                   alt="Restoration Hardware Leather Sofa Repair Cleaning Restoration Restuffing Refilling Service"
                   title="Restoration Hardware Leather Sofa Repair Cleaning Restoration Restuffing Refilling Service"
@@ -283,9 +270,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
                   Top grain pure aniline leather is minimally treated to retain the hide&apos;s natural appearance and texture, making it the most luxurious and costly leather option. With minimal protective coating, it is more prone to staining, color fading, and surface scratches, thus requiring careful maintenance. This grade of leather upholstery is particularly valuable because it highlights the leather&apos;s inherent surface characteristics, adding unique character.
                 </p>
               </div>
-              <div className="flex justify-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="flex justify-center"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/r_max,c_crop,w_300,y_50,b_rgb:23262f,bo_5px_solid_rgb:f8991d/g_center,l_text:montserrat_40_style_light:Pure%20Aniline,co_rgb:ffffff/v1652587080/leather/Aniline_Mustard_HI.jpg"
                   alt="Restoration Hardware Sofa Type of Leather Wax-Pull Up Leather"
                   title="Restoration Hardware Sofa Type of Leather Wax-Pull Up Leather"
@@ -303,9 +288,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
                   Distressed finished leather is treated to have an aged or worn look from the start, offering a rugged and vintage style. It features a rougher texture and more pronounced markings, creating an antique appeal that is both distinctive and durable. As it ages, distressed leather develops a patina that further enhances its vintage look, ensuring it remains a stylish and enduring choice for any setting.
                 </p>
               </div>
-              <div className="flex justify-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="flex justify-center"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/r_max,c_crop,w_300,y_300,b_rgb:23262f,bo_5px_solid_rgb:f8991d/g_center,l_text:montserrat_40_style_light:Distressed,co_rgb:ffffff/v1639529300/leather/Concerto_Dark-Brown_HI.jpg"
                   alt="Restoration Hardware Sofa Type of Leather Wax-Pull Up Leather"
                   title="Restoration Hardware Sofa Type of Leather Wax-Pull Up Leather"
@@ -323,9 +306,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
                   Wax pull-up finished leather is enhanced with oils and waxes to create a glossy or weathered look. This type is distinctive because stretching it redistributes the oils or waxes, lightening the color in those areas. At Restoration Hardware, twelve layers of wax are applied by hand, enhancing the leather&apos;s durability while maintaining a soft and flexible feel. However, this finished upholstery needs special leather care as it is susceptible to fading under direct sunlight and can easily pick up stains from body oils and water.
                 </p>
               </div>
-              <div className="flex justify-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="flex justify-center"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/r_max,c_crop,w_300,y_400,b_rgb:23262f,bo_5px_solid_rgb:f8991d/g_center,l_text:montserrat_40_style_light:Wax%20Pull-Up,co_rgb:ffffff/v1653007848/leather/Harmony_Coffee_HI.jpg"
                   alt="Restoration Hardware Sofa Type of Leather Wax-Pull Up Leather"
                   title="Restoration Hardware Sofa Type of Leather Wax-Pull Up Leather"
@@ -388,9 +369,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
                   </li>
                 </ol>
               </div>
-              <div className="space-y-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="space-y-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/l_text:montserrat_40_style_light:Before,co_rgb:000000,g_south_west,y_25,x_25/v1715885519/before-after/leather-restoration/furniture/restoration-hardware/Restoration-Hardware-Leather-Tufted-Leather-Color-Restoration-400px.jpg"
                   alt="Tufted Distressed Wax Pull Up Sectional Sofa Color Restored - Before"
                   title="Tufted Distressed Wax Pull Up Sectional Sofa Color Restored - Before"
@@ -398,9 +377,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
                   width={375}
                   height={280}
                   className="w-full max-w-[375px] border-4 border-black object-cover"
-                />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                /><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/l_text:montserrat_40_style_light:After,co_rgb:000000,g_south_east,y_25,x_25/v1715886382/before-after/leather-restoration/furniture/restoration-hardware/Restoration-Hardware-Leather-Tufted-Leather-Color-Restoration-After-400px.jpg"
                   alt="Tufted Distressed Wax Pull Up Sectional Sofa Color Restored - After"
                   title="Tufted Distressed Wax Pull Up Sectional Sofa Color Restored - After"
@@ -408,9 +385,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
                   width={375}
                   height={280}
                   className="w-full max-w-[375px] border-4 border-black object-cover"
-                />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                /><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/g_north,y_12,x_12,l_text:montserrat_25_style_light:Before%20and%20After,co_rgb:000000/v1715961471/before-after/leather-restoration/furniture/restoration-hardware/Distressed-Wax-Pull-Up-Leather-Sofa-Comparison-Before-and-After-400px.jpg"
                   alt="Leather and Fabric Wax Pull Up Sectional Sofa Color Restored - After"
                   title="Leather and Fabric Distressed Wax Pull Up Sectional Sofa Color Restored - After"
@@ -473,9 +448,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
                 },
               ].map((item, index) => (
                 <li key={index} className="border-4 border-releather-orange bg-releather-dark p-2">
-                  <div className="flex justify-center">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                  <div className="flex justify-center"><Image
                       src={item.src}
                       alt={item.alt}
                       title={item.title}
@@ -503,9 +476,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               Yes, Restoration Hardware sofas and chairs can be restuffed and have their foam replaced. Our <Link href="/services/restuffing-foam-replacement" title="Cushion Refilling service for Restoration Hardware Leather Sofa and Chairs">Cushion Refilling service</Link> adds extra padding (dacron/fiber) to refresh your cushions, providing better support and restoring their original shape. Our <Link href="/services/restuffing-foam-replacement" title="Foam Replacement service for Restoration Hardware Leather Sofa and Chairs">Foam Replacement service</Link> involves replacing the foam core of seat cushions and refilling back cushions with added polyester/fiber padding. We offer various grades of HR foam, including soft, medium, and firm densities, to suit your comfort preferences.
             </p>
-            <figure className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <figure className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/w_400,bo_5px_solid_rgb:000000/v1631068175/before-after/leather-cleaning-conditioning-recoloring-leather-sofa-before-1.jpg"
                 alt=""
                 title=""
@@ -513,9 +484,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
                 width={450}
                 height={340}
                 className="w-full border-[5px] border-black object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/w_400,bo_5px_solid_rgb:000000/v1631068175/before-after/leather-cleaning-conditioning-recoloring-leather-sofa-after-1.jpg"
                 alt=""
                 title=""
@@ -532,9 +501,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
 
           <section className="mt-12 border-t-4 border-black pt-12">
             <BlogPostSubsection title="How Much Does It Cost to Restore a Leather Couch?" />
-            <div className="mt-6 overflow-hidden">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 overflow-hidden"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/w_250/b_rgb:23262f,bo_7px_solid_rgb:f8991d/v1716005399/samples/brands/restoration-hardware/Churchill-Leather-Recliner-Chair-300px.webp"
                 alt="How Much Does It Cost to Restore a Leather Couch or Chair?"
                 title="How Much Does It Cost to Restore a Leather Couch or Chair?"
@@ -578,9 +545,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
           <section className="mt-12 border-t-4 border-black pt-12">
             <BlogPostSubsection title="Meet Our Skilled Leather Restoration Technician:" />
             <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2 lg:items-center">
-              <div className="flex justify-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="flex justify-center"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/v1715938940/samples/people/Restoration-Hardware-Leather-Cleaning-Repair-Technician.jpg"
                   alt="Restoration Hardware Leather Technician Cleaning and Repair Service Center Sharing Experience"
                   title="Restoration Hardware Leather Technician Cleaning and Repair Service Center Sharing Experience"
@@ -604,9 +569,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
                   Restoration Hardware leather is a special type of aniline leather that requires high maintenance. Avoid from using harsh chemicals or abrasive cleaners, as they can damage the leather&apos;s finish.The leather is lightly treated, meaning that everyday use can wear down the integrity of your leather furniture, and exposure to direct sunlight can dry out its suppleness faster. To protect your investment, a cleaning and conditioning routine is needed to maintain its luxurious look and feel or scheduling professional services periodically to keep your sofa looking its best.
                 </p>
               </div>
-              <div className="flex justify-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="flex justify-center"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/f_webp/v1643861241/logo/ReLeather-Leather-Conditioner.png"
                   alt="ReLeather Best Leather Conditioner for Restoration Hardware Leather Sofa Couch Chair and More"
                   title="ReLeather Best Leather Conditioner for Restoration Hardware Leather Sofa Couch Chair and More"
@@ -624,9 +587,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               <Link href="/leather-conditioner" title="Leather Conditioner for Restoration Hardware Leather Sofa Couch Chair and More">ReLeather Leather Conditioner</Link> is ideal for Restoration Hardware leather furniture. Our conditioner offers protection and rejuvenation. Unlike traditional formulas, our leather conditioner is wax-free and non-oily, ensuring that your leather retains its natural sheen without an overly glossy finish. This makes a significant difference for aniline and distressed leather, as it restores its luster, enhancing the unique surface features of lightly treated leather. Apply our leather conditioner every 6 to 12 months to keep the leather hydrated and supple.
             </p>
-            <div className="mt-6 flex flex-wrap gap-4">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 flex flex-wrap gap-4"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/a_90,b_rgb:23262f,bo_5px_solid_rgb:f8991d/c_pad,w_190/g_center,l_text:montserrat_40_style_light:After,co_rgb:ffffff/v1715943111/before-after/leather-restoration/furniture/restoration-hardware/Leather-Conditioner-Restoration-Hardware-Leather-Application-2-300px.jpg"
                 alt=""
                 title=""
@@ -634,9 +595,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
                 width={190}
                 height={190}
                 className="border-[5px] border-releather-orange"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/a_90,b_rgb:23262f,bo_5px_solid_rgb:f8991d/c_pad,w_190/g_center,l_text:montserrat_40_style_light:Before,co_rgb:ffffff/v1715943111/before-after/leather-restoration/furniture/restoration-hardware/Leather-Conditioner-Restoration-Hardware-Leather-Application-1-300px.jpg"
                 alt=""
                 title=""
@@ -709,9 +668,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
                     <div className="space-y-2">
                       <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">
                         Before
-                      </p>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
+                      </p><Image
                         src={slide.beforeSrc}
                         alt={slide.beforeAlt}
                         width={300}
@@ -723,9 +680,7 @@ export default function RestorationHardwareLeatherSofaRepairPage() {
                     <div className="space-y-2">
                       <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">
                         After
-                      </p>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
+                      </p><Image
                         src={slide.afterSrc}
                         alt={slide.afterAlt}
                         width={300}

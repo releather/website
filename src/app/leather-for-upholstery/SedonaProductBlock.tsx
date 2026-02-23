@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import Image from "next/image";
 
 const SEDONA_ORANGE = "#f8991d";
 
@@ -93,9 +94,7 @@ export default function SedonaProductBlock() {
               onClick={openMain}
               className="mt-4 block transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange focus:ring-offset-2"
               title={sedonaMainImage.title}
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            ><Image
                 src={sedonaMainImage.thumb}
                 alt={sedonaMainImage.alt}
                 title={sedonaMainImage.title}
@@ -149,9 +148,7 @@ export default function SedonaProductBlock() {
                   onClick={() => openSwatch(swatch)}
                   title={`Sedona ${swatch.name}`}
                   className="block transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                ><Image
                     src={swatch.thumb}
                     alt={`Leather Hide Upholstery Sedona ${swatch.name} Thumb`}
                     width={90}
@@ -195,9 +192,7 @@ export default function SedonaProductBlock() {
             >
               ×
             </button>
-            <div className="pt-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="pt-2"><Image
                 src={popImage.full}
                 alt={popImage.alt}
                 title={popImage.alt}

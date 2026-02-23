@@ -1,3 +1,4 @@
+import Image from "next/image";
 export const restuffingFoamReplacementFaqItems = [
   {
     question:
@@ -54,9 +55,7 @@ export const restuffingFoamReplacementFaqItems = [
           supportive qualities, HR foam is an excellent choice for those looking
           to replace their old, worn-out seat cushions.
         </p>
-        <p>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <p><Image
             src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_250/f_webp/l_text:montserrat_20_style_light:HR%20Foam,co_rgb:000000,g_south_west,y_15,x_15/v1725785430/foam-replacement/HR-Medium-Density-Foam-For-Leather-Sofa-Seat-Cushions.jpg"
             alt="HR medium density foam for leather sofa seat cushion"
             title="HR medium density foam for leather sofa seat cushion"
@@ -139,9 +138,7 @@ export const restuffingFoamReplacementFaqItems = [
           before making your choice. The following before and after pictures
           show a seat cushion that has been replaced with HR 45 foam.
         </p>
-        <p>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <p><Image
             src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_250/f_webp/l_text:montserrat_20_style_light:Before,co_rgb:000000,g_south_east,y_5,x_5/v1725791527/foam-replacement/chair/leather-seat-cushion-soft-uncomfortable-loose-seat-cushions-refoamed-new-foam-before.jpg"
             alt="Can the foam be extra firm for strong support"
             title="Can the foam be extra firm for strong support"
@@ -149,9 +146,7 @@ export const restuffingFoamReplacementFaqItems = [
             height={188}
             loading="lazy"
           />
-          {" "}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          {" "}<Image
             src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_250/f_webp/l_text:montserrat_60_style_light:After,co_rgb:000000,g_south_east,y_5,x_5/v1725791526/foam-replacement/chair/leather-seat-cushion-soft-uncomfortable-loose-seat-cushions-refoamed-new-foam-after.jpg"
             alt="Can the foam be extra firm for strong support"
             title="Can the foam be extra firm for strong support"
@@ -177,9 +172,7 @@ export const restuffingFoamReplacementFaqItems = [
           lasting support. HR foam is available in various grades, and we
           generally recommend the standard medium-density grade, HR 35.
         </p>
-        <p>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <p><Image
             src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_250/f_webp/l_text:montserrat_20_style_light:HR%20Foam,co_rgb:000000,g_south_west,y_15,x_15/v1725785430/foam-replacement/HR-Medium-Density-Foam-For-Leather-Sofa-Seat-Cushions.jpg"
             alt="HR medium density foam for leather sofa seat cushion"
             title="HR medium density foam for leather sofa seat cushion"

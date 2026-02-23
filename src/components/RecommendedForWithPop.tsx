@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import HomepagePop from "@/components/HomepagePop";
 
@@ -56,11 +57,13 @@ export default function RecommendedForWithPop() {
             title={item.titleAttr}
             className="group relative block aspect-[4/3] w-full overflow-hidden border-0 bg-transparent p-0 text-left transition opacity-90 hover:opacity-100 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange focus:ring-offset-2 focus:ring-offset-black"
           >
-            <img
+            <Image
               src={item.imgSrc}
               alt={item.alt}
+              fill
+              sizes="(max-width: 1024px) 50vw, 25vw"
               loading="lazy"
-              className="absolute inset-0 h-full w-full object-cover object-center"
+              className="object-cover object-center"
             />
             <strong className="absolute bottom-0 left-0 right-0 bg-black/80 px-4 py-3 font-display text-2xl font-black uppercase leading-none tracking-tighter text-white group-hover:bg-releather-orange group-hover:text-black sm:text-3xl lg:text-4xl">
               {item.label}

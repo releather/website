@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export type BenefitItem = {
   /** Benefit title (e.g. "Preserve Quality") */
   title: string;
@@ -51,8 +53,7 @@ export default function Benefits({
         </div>
       ) : image ? (
         <p className="mt-6">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src={image.src}
             alt={image.alt}
             title={image.title ?? image.alt}

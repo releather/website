@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function LeatherCleaningGuideContent() {
   return (
@@ -119,9 +120,7 @@ export default function LeatherCleaningGuideContent() {
             href="https://res.cloudinary.com/releather-com/image/upload/g_center,l_text:montserrat_50_style_light:Ingrained%20Dirt,co_rgb:ffffff/v1653252682/before-after/dirty-leather-grain.jpg"
             title="Leather Cleaning - Ingrained Leather Soiling"
             aria-label="Leather Cleaning - Ingrained Leather Soiling"
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+          ><Image
               src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_200/g_center,l_text:montserrat_20_style_light:Ingrained%20Dirt,co_rgb:ffffff/v1653252682/before-after/dirty-leather-grain.jpg"
               alt="Leather Cleaning - Ingrained Leather Soiling"
               title="Leather Cleaning - Ingrained Leather Soiling"
@@ -141,9 +140,7 @@ export default function LeatherCleaningGuideContent() {
             href="https://res.cloudinary.com/releather-com/image/upload/g_center,l_text:montserrat_50_style_light:Protected%20Leather,co_rgb:ffffff/v1653250377/before-after/leather-cleaning-ingrained-surface-dirt-proteced-aniline-leather.jpg"
             title="Leather Cleaning - Ingrained Leather Soiling for Protected Leather"
             aria-label="Leather Cleaning - Ingrained Leather Soiling for Protected Leather"
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+          ><Image
               src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_200/g_center,l_text:montserrat_20_style_light:Protected%20Leather,co_rgb:ffffff/v1653250377/before-after/leather-cleaning-ingrained-surface-dirt-proteced-aniline-leather.jpg"
               alt="Leather Cleaning - Ingrained Leather Soiling for Protected Leather"
               title="Leather Cleaning - Ingrained Leather Soiling for Protected Leather"
@@ -163,9 +160,7 @@ export default function LeatherCleaningGuideContent() {
             href="https://res.cloudinary.com/releather-com/image/upload/g_center,l_text:montserrat_50_style_light:Unprotected%20Leather,co_rgb:ffffff/v1653250377/before-after/leather-cleaning-natural-unprotected-aniline-leather-dirty.jpg"
             title="Leather Cleaning - Ingrained Leather Soiling for Unprotected Leather"
             aria-label="Leather Cleaning - Ingrained Leather Soiling for Unprotected Leather"
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+          ><Image
               src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_200/g_center,l_text:montserrat_18_style_light:Unprotected%20Leather,co_rgb:ffffff/v1653250377/before-after/leather-cleaning-natural-unprotected-aniline-leather-dirty.jpg"
               alt="Leather Cleaning - Ingrained Leather Soiling for Unprotected Leather"
               title="Leather Cleaning - Ingrained Leather Soiling for Unprotected Leather"
@@ -185,9 +180,7 @@ export default function LeatherCleaningGuideContent() {
             href="https://res.cloudinary.com/releather-com/image/upload/v1653248981/before-after/leather-cleaning-ingrained-surface-dirt-before-after.jpg"
             title="Leather Cleaning - Ingrained Leather Soiling"
             aria-label="Leather Cleaning - Ingrained Leather Soiling"
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+          ><Image
               src="https://res.cloudinary.com/releather-com/image/upload/v1653248981/before-after/leather-cleaning-ingrained-surface-dirt-before-after.jpg"
               alt="Leather Cleaning - Ingrained Leather Soiling"
               width={200}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 const C = "https://res.cloudinary.com/releather-com/image/upload";
 
 export const leatherCleaningIssuesHeading = "5 Common Issues Cleaning Leather Sofa";
@@ -20,9 +21,7 @@ export const leatherCleaningIssuesItems = [
         href={`${C}/g_center,l_text:montserrat_50_style_light:Ingrained%20Dirt,co_rgb:ffffff/v1653252682/before-after/dirty-leather-grain.jpg`}
         title="Leather Cleaning - Ingrained Leather Soiling"
         aria-label="Leather Cleaning - Ingrained Leather Soiling"
-      >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      ><Image
           src={`${C}/c_scale,w_200/g_center,l_text:montserrat_20_style_light:Ingrained%20Dirt,co_rgb:ffffff/v1653252682/before-after/dirty-leather-grain.jpg`}
           alt="Leather Cleaning - Ingrained Leather Soiling"
           title="Leather Cleaning - Ingrained Leather Soiling"
@@ -59,9 +58,7 @@ export const leatherCleaningIssuesItems = [
       </p>
     ),
     media: (
-      <div className="flex justify-center">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      <div className="flex justify-center"><Image
           src={`${C}/g_center,l_text:montserrat_50_style_light:Ink%20Mark,co_rgb:ffffff/v1655096099/leather/ink-mark-on-leather-sofa-cushion.jpg`}
           alt="Pen Ink mark on leather sofa couch cushion"
           title="Pen Ink mark on leather sofa couch cushion"

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
@@ -180,9 +181,7 @@ export default function BlogPage() {
                     aria-labelledby={`blog-title-${post.href.replace(/\//g, "-")}`}
                   >
                     <div className="relative min-h-[200px] bg-gray-200 sm:min-h-[260px]">
-                      <Link href={post.href} className="block h-full focus:outline-none focus:ring-2 focus:ring-releather-orange focus:ring-offset-2">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
+                      <Link href={post.href} className="block h-full focus:outline-none focus:ring-2 focus:ring-releather-orange focus:ring-offset-2"><Image
                           src={post.image}
                           alt={post.imageAlt}
                           title={post.imageAlt}

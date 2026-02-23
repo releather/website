@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
 import IntroductionSection from "@/components/IntroductionSection";
@@ -141,9 +142,7 @@ export default function TypesOfLeatherPage() {
                     </p>
                   ))}
                 </div>
-                <div className="flex justify-center">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <div className="flex justify-center"><Image
                     src={type.imgSrc}
                     alt={type.alt}
                     width={550}

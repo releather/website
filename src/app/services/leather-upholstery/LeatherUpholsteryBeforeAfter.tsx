@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import Image from "next/image";
 import type { BeforeAfterItem } from "@/components/BeforeAfter";
 
 type PopImage = { src: string; alt: string; label: string };
@@ -71,9 +72,7 @@ export default function LeatherUpholsteryBeforeAfter({ items }: Props) {
                     }
                     className="block w-full transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
                     title={item.beforeTitle}
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                  ><Image
                       src={item.beforeSrc}
                       alt={item.beforeAlt}
                       title={item.beforeTitle}
@@ -99,9 +98,7 @@ export default function LeatherUpholsteryBeforeAfter({ items }: Props) {
                     }
                     className="block w-full transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
                     title={item.afterTitle}
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                  ><Image
                       src={item.afterSrc}
                       alt={item.afterAlt}
                       title={item.afterTitle}
@@ -164,9 +161,7 @@ export default function LeatherUpholsteryBeforeAfter({ items }: Props) {
             >
               ×
             </button>
-            <div className="flex justify-center pt-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="flex justify-center pt-2"><Image
                 src={popImage.src}
                 alt={popImage.alt}
                 className="max-h-[75vh] w-auto max-w-full rounded-lg object-contain"

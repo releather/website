@@ -103,7 +103,7 @@ export default function MainNavbar({
                               href={sub.href}
                               className="flex items-center gap-2 px-4 py-3 font-bold tracking-wide text-white transition-colors hover:bg-releather-orange hover:text-black md:px-6 lg:px-8"
                             >
-                              {"icon" in sub && sub.icon && <i className={`fa fa-fw ${sub.icon}`} aria-hidden />}
+                              {"icon" in sub && sub.icon ? <i className={`fa fa-fw ${(sub as { icon: string }).icon}`} aria-hidden /> : null}
                               {sub.label}
                             </Link>
                           </li>
@@ -160,7 +160,7 @@ export default function MainNavbar({
                             onClick={onCloseMobileMenu}
                             className="flex items-center gap-2 px-2 py-2 font-medium text-gray-300 hover:text-releather-orange"
                           >
-                            {"icon" in sub && sub.icon && <i className={`fa fa-fw ${sub.icon}`} aria-hidden />}
+                            {"icon" in sub && sub.icon ? <i className={`fa fa-fw ${(sub as { icon: string }).icon}`} aria-hidden /> : null}
                             {sub.label}
                           </Link>
                         </li>

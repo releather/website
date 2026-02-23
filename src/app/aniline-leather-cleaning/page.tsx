@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Image from "next/image";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
 import IntroductionSection from "@/components/IntroductionSection";
@@ -171,9 +171,7 @@ export default function AnilineLeatherCleaningPage() {
             </p>
             <ul className="mt-6 grid list-none grid-cols-1 gap-6 p-0 sm:grid-cols-2 lg:grid-cols-4">
               {recommendationItems.map((item, index) => (
-                <li key={index} className="flex flex-col items-center border-4 border-black p-4">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <li key={index} className="flex flex-col items-center border-4 border-black p-4"><Image
                     src={item.src}
                     alt={item.alt}
                     title={item.title}
@@ -212,9 +210,7 @@ export default function AnilineLeatherCleaningPage() {
                   </li>
                 ))}
               </ul>
-              <figure className="border-4 border-releather-orange p-2">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <figure className="border-4 border-releather-orange p-2"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/v1747235785/before-after/leather-restoration/furniture/brown/aniline/aniline-leather-cushion-color-faded.png"
                   alt="Aniline leather cleaning closeup showing color faded sofa restoration"
                   title="Aniline leather cleaning closeup showing color faded sofa restoration"
@@ -227,9 +223,7 @@ export default function AnilineLeatherCleaningPage() {
                 </figcaption>
               </figure>
             </div>
-            <figure className="mt-8 border-4 border-releather-orange p-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <figure className="mt-8 border-4 border-releather-orange p-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload//before-after/leather-restoration/furniture/blue/aniline/Leather-Restoration-Faded-Distressed-Blue-Leather-Seat-Cushions.png"
                 alt="Leather Restoration of Faded Distressed Blue Leather Seat Cushions"
                 title="Leather Restoration of Faded Distressed Blue Leather Seat Cushions"
@@ -266,9 +260,7 @@ export default function AnilineLeatherCleaningPage() {
                     {type.body}
                   </p>
                 </div>
-                <div className="flex justify-center">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <div className="flex justify-center"><Image
                     src={type.src}
                     alt={type.alt}
                     title={type.titleAttr}
@@ -292,9 +284,7 @@ export default function AnilineLeatherCleaningPage() {
               tagline={<em> → From color fading to soiling</em>}
             />
             <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2">
-              <div className="border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/v1747476567/before-after/leather-restoration/furniture/brown/aniline/aniline-leather-couch-cleaning-color-restoration-tan-before.png"
                   alt="Faded aniline leather couch before restoration showing discoloration and wear"
                   title="Faded aniline leather couch before restoration showing discoloration and wear"
@@ -309,9 +299,7 @@ export default function AnilineLeatherCleaningPage() {
                   This tan aniline leather couch shows discoloration and spotting after years in a sunlit room—typical for high-end furniture.
                 </p>
               </div>
-              <div className="border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/v1747476568/before-after/leather-restoration/furniture/brown/aniline/aniline-leather-couch-cleaning-color-restoration-tan-after.png"
                   alt="Restored aniline leather couch with rich and even color after treatment"
                   title="Restored aniline leather couch with rich and even color after treatment"
@@ -326,9 +314,7 @@ export default function AnilineLeatherCleaningPage() {
                   We treated superficial marks and revived the aniline leather with a consistent, refreshed color while preserving its natural beauty.
                 </p>
               </div>
-              <div className="border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/v1747486849/before-after/leather-restoration/furniture/brown/aniline/aniline-leather-couch-armrest-dryness-before.png"
                   alt="Dry aniline leather armrest before restoration on Thomasville sofa"
                   title="Dry aniline leather armrest before restoration on Thomasville sofa"
@@ -343,9 +329,7 @@ export default function AnilineLeatherCleaningPage() {
                   Closer look at a Thomasville sofa armrest with dry aniline leather. The surface felt rough to the touch.
                 </p>
               </div>
-              <div className="border-4 border-black p-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="border-4 border-black p-4"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/v1747486848/before-after/leather-restoration/furniture/brown/aniline/aniline-leather-couch-armrest-dryness-after.png"
                   alt="Moisturized aniline leather armrest after restoration on Thomasville sofa"
                   title="Moisturized aniline leather armrest after restoration on Thomasville sofa"
@@ -371,9 +355,7 @@ export default function AnilineLeatherCleaningPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               This designer distressed leather sofa set features reversible leather and fabric cushions. Over time, the leather developed a faded patina. Our Aniline Color Restoration service revived the deep brown color and restored a uniform, rich tone throughout.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/v1715954710/before-after/leather-restoration/furniture/restoration-hardware/aniline-leather-cleaning-restoration-couch.jpg"
                 alt="before image of aniline distressed leather sofa restoration"
                 title="before image of aniline distressed leather sofa restoration"
@@ -381,9 +363,7 @@ export default function AnilineLeatherCleaningPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-releather-orange object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/v1715954710/before-after/leather-restoration/furniture/restoration-hardware/aniline-leather-cleaning-restoration-sofa.jpg"
                 alt="after image of aniline distressed leather sofa restoration"
                 title="after image of aniline distressed leather sofa restoration"
@@ -417,9 +397,7 @@ export default function AnilineLeatherCleaningPage() {
               <div className="border-b border-gray-300 py-2">
                 <dt className="font-bold text-black"><strong>Color:</strong></dt>
                 <dd>
-                  <a href="https://res.cloudinary.com/releather-com/image/upload/leather/Concerto_Dark-Brown_HI.jpg" title="Concerto Dark Brown Leather Sample" target="_blank" rel="noopener noreferrer">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                  <a href="https://res.cloudinary.com/releather-com/image/upload/leather/Concerto_Dark-Brown_HI.jpg" title="Concerto Dark Brown Leather Sample" target="_blank" rel="noopener noreferrer"><Image
                       src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1715954710/leather/Concerto_Dark-Brown_HI.jpg"
                       alt="Concerto dark brown leather sample used in restoration"
                       title="Concerto dark brown leather sample used in restoration"
@@ -441,9 +419,7 @@ export default function AnilineLeatherCleaningPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               These luxury antiqued-style side chairs by designer Alfonso Marina were sun-bleached and needing moisturizing. Our aniline recoloring treatment restored the original richness and character, reviving their visual appeal while preserving their supple texture.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/v1747226151/before-after/leather-restoration/furniture/brown/aniline/Aniline-Leather-Cleaning-Chair-Color-Restoration-Before-2.png"
                 alt="Before aniline leather cleaning on brown chair showing faded color"
                 title="Before aniline leather cleaning on brown chair showing faded color"
@@ -451,9 +427,7 @@ export default function AnilineLeatherCleaningPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-releather-orange object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/v1747226149/before-after/leather-restoration/furniture/brown/aniline/Aniline-Leather-Cleaning-Chair-Color-Restoration-After-2.png"
                 alt="After aniline leather cleaning on brown chair showing restored color"
                 title="After aniline leather cleaning on brown chair showing restored color"
@@ -487,9 +461,7 @@ export default function AnilineLeatherCleaningPage() {
               <div className="border-b border-gray-300 py-2">
                 <dt className="font-bold text-black"><strong>Color:</strong></dt>
                 <dd>
-                  <a href="https://res.cloudinary.com/releather-com/image/upload/leather/Aniline_Mustard_HI.jpg" title="Aniline Mustard Leather Sample" target="_blank" rel="noopener noreferrer">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                  <a href="https://res.cloudinary.com/releather-com/image/upload/leather/Aniline_Mustard_HI.jpg" title="Aniline Mustard Leather Sample" target="_blank" rel="noopener noreferrer"><Image
                       src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1747845144/leather/Aniline_Mustard_HI.jpg"
                       alt="Aniline Mustard Leather Sample for Side Chairs"
                       title="Aniline Mustard Leather Sample for Side Chairs"
@@ -511,9 +483,7 @@ export default function AnilineLeatherCleaningPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               This designer tufted club chair, originally tan, had faded into a pale patina with visible dirt buildup. We professionally cleaned and recolored the aniline leather, restoring its richness while retaining its natural surface character.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/v1747382339/before-after/leather-restoration/furniture/chair/aniline/tan/Aniline-Leather-Restoration-Tufted-Club-Chair-Before.png"
                 alt="Before photo of Aniline leather restoration on tufted club chair in Seal Beach"
                 title="Before photo of Aniline leather restoration on tufted club chair in Seal Beach"
@@ -521,9 +491,7 @@ export default function AnilineLeatherCleaningPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-releather-orange object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/v1747382339/before-after/leather-restoration/furniture/chair/aniline/tan/Aniline-Leather-Restoration-Tufted-Club-Chair-After.png"
                 alt="After photo of Aniline leather restoration on tufted club chair in Seal Beach"
                 title="After photo of Aniline leather restoration on tufted club chair in Seal Beach"
@@ -557,9 +525,7 @@ export default function AnilineLeatherCleaningPage() {
               <div className="border-b border-gray-300 py-2">
                 <dt className="font-bold text-black"><strong>Color:</strong></dt>
                 <dd>
-                  <a href="https://res.cloudinary.com/releather-com/image/upload/leather/Concerto_Saddle_HI.jpg" title="View Concerto Saddle leather sample" target="_blank" rel="noopener noreferrer">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                  <a href="https://res.cloudinary.com/releather-com/image/upload/leather/Concerto_Saddle_HI.jpg" title="View Concerto Saddle leather sample" target="_blank" rel="noopener noreferrer"><Image
                       src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1747382339/leather/Concerto_Saddle_HI.jpg"
                       alt="Concerto Saddle leather sample used in aniline leather chair restoration"
                       title="Concerto Saddle leather sample used in aniline leather chair restoration"
@@ -581,9 +547,7 @@ export default function AnilineLeatherCleaningPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               This designer tan aniline leather ottoman sectional had noticeable discoloration, fading, and minor surface wear. We enriched the faded color, treated surface spotting, and restored uniformity across each ottoman to bring back its premium appearance.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/v1747845144/before-after/leather-restoration/furniture/brown/aniline/tan-aniline-leather-ottoman-set-faded-color-restored-comparison.png"
                 alt="Before photo of faded tan aniline leather ottoman sectional"
                 title="Before photo of faded tan aniline leather ottoman sectional"
@@ -591,9 +555,7 @@ export default function AnilineLeatherCleaningPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-releather-orange object-cover"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              /><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/v1747845144/before-after/leather-restoration/furniture/brown/aniline/tan-aniline-leather-ottoman-set-faded-color-restored.png"
                 alt="After photo of restored tan aniline leather ottoman sectional"
                 title="After photo of restored tan aniline leather ottoman sectional"
@@ -627,9 +589,7 @@ export default function AnilineLeatherCleaningPage() {
               <div className="border-b border-gray-300 py-2">
                 <dt className="font-bold text-black"><strong>Color:</strong></dt>
                 <dd>
-                  <a href="https://res.cloudinary.com/releather-com/image/upload/leather/Concerto_Saddle_HI.jpg" title="Concerto Saddle Leather Sample" target="_blank" rel="noopener noreferrer">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                  <a href="https://res.cloudinary.com/releather-com/image/upload/leather/Concerto_Saddle_HI.jpg" title="Concerto Saddle Leather Sample" target="_blank" rel="noopener noreferrer"><Image
                       src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1747845144/leather/Concerto_Saddle_HI.jpg"
                       alt="Concerto Saddle Aniline Leather Sample"
                       title="Concerto Saddle Aniline Leather Sample"
@@ -653,9 +613,7 @@ export default function AnilineLeatherCleaningPage() {
                 <figure key={index} className="border-4 bg-releather-dark p-4" style={{ borderColor: "#23262f" }}>
                   <div className="flex flex-col gap-4 sm:flex-row sm:gap-6">
                     <div className="space-y-2">
-                      <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">Before</p>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
+                      <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">Before</p><Image
                         src={slide.beforeSrc}
                         alt={slide.beforeAlt}
                         width={200}
@@ -665,9 +623,7 @@ export default function AnilineLeatherCleaningPage() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">After</p>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
+                      <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">After</p><Image
                         src={slide.afterSrc}
                         alt={slide.afterAlt}
                         width={200}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
@@ -67,9 +68,7 @@ const beforeAfterItems: LeatherRestorationBeforeAfterItem[] = [
         title="View Sedona Pinto Leather Sample"
         target="_blank"
         rel="noopener noreferrer"
-      >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      ><Image
           src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1636920011/leather/SEDONA_pinto_HI.jpg"
           alt="Sedona Pinto Semi-Aniline Leather Sample"
           title="Sedona Pinto Semi-Aniline Leather Sample"
@@ -106,9 +105,7 @@ const beforeAfterItems: LeatherRestorationBeforeAfterItem[] = [
         title="View Palette Tan Protected Leather Sample"
         target="_blank"
         rel="noopener noreferrer"
-      >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      ><Image
           src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1638909286/leather/PALETTE_tan_HI.jpg"
           alt="Palette Tan Protected Leather Sample"
           title="Palette Tan Protected Leather Sample"
@@ -145,9 +142,7 @@ const beforeAfterItems: LeatherRestorationBeforeAfterItem[] = [
         title="View Exotic Cowhide Leather in Chestnut"
         target="_blank"
         rel="noopener noreferrer"
-      >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      ><Image
           src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1747049357/leather/cowhide/Cowhide_Leather_Chestnut.png"
           alt="Exotic Cowhide Leather in Chestnut"
           title="Exotic Cowhide Leather in Chestnut"
@@ -199,9 +194,7 @@ const beforeAfterItems: LeatherRestorationBeforeAfterItem[] = [
         title="View Cowhide Leather Zebra Sample"
         target="_blank"
         rel="noopener noreferrer"
-      >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      ><Image
           src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_250,h_50/bo_2px_solid_rgb:f8991d/v1747049369/leather/cowhide/Cowhide_Leather_Zebra.jpg"
           alt="Zebra print hair-on-hide leather swatch from Exotic collection"
           title="Zebra print hair-on-hide leather swatch from Exotic collection"
@@ -233,9 +226,7 @@ const beforeAfterItems: LeatherRestorationBeforeAfterItem[] = [
         href="https://res.cloudinary.com/releather-com/image/upload/v1639529981/leather/Concerto_Saddle_HI.jpg"
         target="_blank"
         rel="noopener noreferrer"
-      >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      ><Image
           src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1639529981/leather/Concerto_Saddle_HI.jpg"
           alt="Concerto Saddle Leather Sample"
           title="Concerto Saddle Leather Sample"
@@ -368,9 +359,7 @@ export default function LeatherRestorationDiningChairsPage() {
             <ul className="mt-8 grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 lg:gap-4 lg:px-2">
               {recommendationImages.map((item) => (
                 <li key={item.label} className="text-center">
-                  <div className="mx-auto max-w-[200px] border-4 border-black">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                  <div className="mx-auto max-w-[200px] border-4 border-black"><Image
                       src={item.src}
                       alt={item.alt}
                       title={item.title}
@@ -403,9 +392,7 @@ export default function LeatherRestorationDiningChairsPage() {
             </p>
             <h5>Can Your Leather Chairs Be Restored?</h5>
             <div className="float-right ml-6 mb-4 w-[280px] shrink-0 sm:w-[320px]">
-              <figure className="brutalist-image-frame">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <figure className="brutalist-image-frame"><Image
                   src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_450,h_450/bo_10px_solid_rgb:f8991d/v1747051827/before-after/leather-restoration/furniture/dining-chair/brown/Leather-Restoration-Tan-Leather-Dining-Chair-Set.jpg"
                   alt="leather restoration tan dining chair set"
                   title="leather restoration tan dining chair set"

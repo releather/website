@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import Image from "next/image";
 
 const CLOUDINARY_BASE =
   "https://res.cloudinary.com/releather-com/image/upload";
@@ -103,9 +104,7 @@ export default function LeatherRestorationFinishes() {
               }
               title={finish.alt}
               className="mt-3 block w-full transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            ><Image
                 src={finish.src}
                 alt={finish.alt}
                 loading="lazy"
@@ -146,9 +145,7 @@ export default function LeatherRestorationFinishes() {
             >
               ×
             </button>
-            <div className="pt-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="pt-2"><Image
                 src={selected.src}
                 alt={selected.alt}
                 title={selected.alt}

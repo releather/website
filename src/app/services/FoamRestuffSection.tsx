@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 
 const foamRestuffRecommended = [
@@ -173,9 +174,7 @@ export default function FoamRestuffSection() {
           <div className="mt-6 space-y-4">
             <p className="font-sans text-sm font-bold text-gray-700">
               HR Foam Seat Core:
-            </p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            </p><Image
               src="https://res.cloudinary.com/releather-com/image/upload/v1767522530/samples/foam-core-with-dacron-polyester-padding-material.jpg"
               alt="Foam core with dacron polyester padding material"
               title="Foam core with dacron polyester padding material"
@@ -186,9 +185,7 @@ export default function FoamRestuffSection() {
             />
             <p className="font-sans text-sm font-bold text-gray-700">
               Dacron Padding:
-            </p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            </p><Image
               src="https://res.cloudinary.com/releather-com/image/upload/samples/refill-cushions-dacron-padding-material.jpg"
               alt="Refill cushions with dacron padding material"
               title="Refill cushions with dacron padding material"
@@ -212,9 +209,7 @@ export default function FoamRestuffSection() {
                 onClick={() => setSelectedLeather(leather)}
                 className="block transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
                 title={leather.name}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              ><Image
                   src={leather.thumb}
                   alt={leather.alt}
                   width={150}
@@ -230,9 +225,7 @@ export default function FoamRestuffSection() {
               href="/services/restuffing-foam-replacement"
               title="Furniture"
               className="flex flex-col items-center gap-1 text-center text-gray-700 transition hover:text-releather-orange"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            ><Image
                 src="https://res.cloudinary.com/leathera/image/upload/w_100,c_fill,ar_1:1,g_auto,r_max,bo_1px_solid_rgb:f5f5f5,b_rgb:f5f5f5/v1702140740/icons/chairs_svg.svg"
                 alt="Furniture"
                 width={60}
@@ -246,9 +239,7 @@ export default function FoamRestuffSection() {
               href="/replacement-cushions-for-leather-couch"
               title="Cushions"
               className="flex flex-col items-center gap-1 text-center text-gray-700 transition hover:text-releather-orange"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            ><Image
                 src="https://res.cloudinary.com/releather-com/image/upload/w_100,c_fill,ar_1:1,g_auto,r_max,bo_1px_solid_rgb:f5f5f5,b_rgb:f5f5f5/icons/leather-cushion.svg"
                 alt="Cushions"
                 width={60}
@@ -298,9 +289,7 @@ export default function FoamRestuffSection() {
             >
               ×
             </button>
-            <div className="pt-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="pt-2"><Image
                 src={selectedLeather.full}
                 alt={selectedLeather.alt}
                 className="max-h-[75vh] w-auto max-w-full rounded-lg object-contain"

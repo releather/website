@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import Image from "next/image";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
 import IntroductionSection from "@/components/IntroductionSection";
@@ -400,9 +401,7 @@ export default function GalleryPage() {
                         }
                         className="block w-full transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
                         title={item.beforeTitle}
-                      >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
+                      ><Image
                           src={item.beforeSrc}
                           alt={item.beforeAlt}
                           width={300}
@@ -428,9 +427,7 @@ export default function GalleryPage() {
                         }
                         className="block w-full transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
                         title={item.afterTitle}
-                      >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
+                      ><Image
                           src={item.afterSrc}
                           alt={item.afterAlt}
                           width={300}
@@ -491,9 +488,7 @@ export default function GalleryPage() {
             >
               ×
             </button>
-            <div className="flex justify-center pt-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="flex justify-center pt-2"><Image
                 src={popImage.src}
                 alt={popImage.alt}
                 className="max-h-[75vh] w-auto max-w-full rounded-lg object-contain"

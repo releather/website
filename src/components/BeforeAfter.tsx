@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export type BeforeAfterItem = {
   beforeSrc: string;
   beforeAlt: string;
@@ -82,8 +84,7 @@ export default function BeforeAfter({
                 <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">
                   Before
                 </p>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={item.beforeSrc}
                   alt={item.beforeAlt}
                   title={item.beforeTitle}
@@ -97,8 +98,7 @@ export default function BeforeAfter({
                 <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">
                   After
                 </p>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={item.afterSrc}
                   alt={item.afterAlt}
                   title={item.afterTitle}

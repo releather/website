@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
 import IntroductionSection from "@/components/IntroductionSection";
@@ -426,9 +427,7 @@ export default function LeatherRestorationJacketsCoatsPage() {
             <ul className="mt-8 grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5 lg:gap-4 lg:px-2">
               {recommendationImages.map((item) => (
                 <li key={item.label} className="text-center">
-                  <div className="mx-auto max-w-[200px] border-4 border-black">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                  <div className="mx-auto max-w-[200px] border-4 border-black"><Image
                       src={item.src}
                       alt={item.alt}
                       title={item.title}
@@ -460,9 +459,7 @@ export default function LeatherRestorationJacketsCoatsPage() {
             <div className="my-6 overflow-hidden">
               {/* 1 row × 3 columns: Before | After | Process */}
               <div className="grid grid-cols-1 gap-4 py-4 sm:grid-cols-3">
-                <figure>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <figure><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/f_webp/l_text:montserrat_20_style_light:Before,co_rgb:000000,g_north_west,y_15,x_15/bo_10px_solid_rgb:f8991d/v1725782401/before-after/leather-restoration/jackets/purple/Leather-Restoration-Jacket-Stain-Discoloration-Spot-Area-Before.jpg"
                     alt="Leather Restoration: Bringing a Deep Purple Jacket Back to Life - Before"
                     title="Leather Restoration: Bringing a Deep Purple Jacket Back to Life - Before"
@@ -475,9 +472,7 @@ export default function LeatherRestorationJacketsCoatsPage() {
                     Before
                   </figcaption>
                 </figure>
-                <figure>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <figure><Image
                     src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/f_webp/l_text:montserrat_20_style_light:After,co_rgb:000000,g_north_west,y_15,x_15/bo_10px_solid_rgb:f8991d/v1725782401/before-after/leather-restoration/jackets/purple/Leather-Restoration-Jacket-Stain-Discoloration-Spot-Area-After.jpg"
                     alt="Leather Restoration: Bringing a Deep Purple Jacket Back to Life - After"
                     title="Leather Restoration: Bringing a Deep Purple Jacket Back to Life - After"
@@ -490,9 +485,7 @@ export default function LeatherRestorationJacketsCoatsPage() {
                     After
                   </figcaption>
                 </figure>
-                <figure className="border-4 border-black">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <figure className="border-4 border-black"><Image
                     src="https://res.cloudinary.com/releather-com/image/upload//l_text:montserrat_20_style_light:Process,co_rgb:000000,g_north_west,y_15,x_15/v1725782401/before-after/leather-restoration/jackets/purple/Leather-Restoration-Jacket-Stain-Discoloration-Spot-Area-Process.jpg"
                     alt="Leather Restoration: Bringing a Deep Purple Jacket Back to Life - Process"
                     title="Leather Restoration: Bringing a Deep Purple Jacket Back to Life - Process"
