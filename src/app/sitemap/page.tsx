@@ -109,7 +109,7 @@ export default function SitemapPage() {
     <>
       <HeaderWrapper />
       <main className="min-h-screen bg-white">
-        <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-3xl px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
           <h1 className="mb-8 font-display text-3xl font-normal tracking-tight text-black sm:text-4xl">
             Sitemap
           </h1>

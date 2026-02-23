@@ -92,7 +92,7 @@ export default function HeaderTopBar({
           {!isEstimatePage && (
             <Link
               href="/estimate"
-              className="flex w-full items-center justify-center border-2 border-[#f8991d] bg-[#f8991d] py-3 font-bold uppercase tracking-widest text-white transition hover:bg-[#e08a1a] hover:border-[#e08a1a] focus:outline-none focus:ring-2 focus:ring-[#f8991d] focus:ring-offset-2 focus:ring-offset-black"
+              className="flex w-full items-center justify-center border-2 border-[#f8991d] bg-[#f8991d] py-2 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-[#e08a1a] hover:border-[#e08a1a] focus:outline-none focus:ring-2 focus:ring-[#f8991d] focus:ring-offset-2 focus:ring-offset-black"
               aria-label="Get a quote"
             >
               GET A QUOTE

@@ -47,7 +47,7 @@ export default function AboutUsPage() {
     <>
       <HeaderWrapper />
       <main className="min-h-screen bg-white">
-        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
           <IntroductionSection
             title="Who is ReLeather?"
             subtitle="We are a family owned and operated business with over 25 years of experience in the leather repair and upholstery industry. We are Southern California's leading leather restoration specialists dedicated to giving new life to your leather furniture, bags, garments, and more. We offer quality and certified leather cleaning, restoration, dyeing, and reupholstery services."

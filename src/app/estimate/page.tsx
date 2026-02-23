@@ -20,18 +20,14 @@ export default function EstimatePage() {
     <>
       <HeaderWrapper />
       <main className="min-h-screen bg-white">
-        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
           <section id="introduction" className="mb-12">
-            <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
+            <div className="grid gap-8 lg:grid-cols-[minmax(0,20rem)_1fr] lg:items-start">
               <div>
-                <h1 className="font-display text-4xl font-normal tracking-tight text-black sm:text-5xl">
-                  Get A Quote
-                </h1>
-                <div className="mt-4 font-sans text-xl font-medium text-gray-700 sm:text-2xl [&_em]:text-black">
-                  We&apos;ll get back to you shortly. Thank you for your interest in
-                  ReLeather.
-                </div>
-                <div className="mt-6 flex flex-wrap gap-3">
+                <div className="flex flex-wrap items-center gap-3">
+                  <h1 className="font-display text-4xl font-normal tracking-tight text-black sm:text-5xl">
+                    Get A Quote
+                  </h1>
                   <Link
                     href="tel:+19495294727"
                     title="Call ReLeather"
@@ -42,6 +38,10 @@ export default function EstimatePage() {
                     Call Us
                   </Link>
                 </div>
+                <p className="mt-4 hidden font-sans text-xl font-medium text-gray-700 sm:block sm:text-2xl [&_em]:text-black">
+                  We&apos;ll get back to you shortly. Thank you for your interest in
+                  ReLeather.
+                </p>
               </div>
               <FilloutEmbed />
             </div>
