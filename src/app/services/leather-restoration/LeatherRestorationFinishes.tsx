@@ -104,7 +104,7 @@ export default function LeatherRestorationFinishes() {
               }
               title={finish.alt}
               className="mt-3 block w-full transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
-            ><Image
+            ><Image unoptimized
                 src={finish.src}
                 alt={finish.alt}
                 loading="lazy"
@@ -145,7 +145,7 @@ export default function LeatherRestorationFinishes() {
             >
               ×
             </button>
-            <div className="pt-2"><Image
+            <div className="pt-2"><Image unoptimized
                 src={selected.src}
                 alt={selected.alt}
                 title={selected.alt}

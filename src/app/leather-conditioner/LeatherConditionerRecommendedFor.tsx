@@ -58,7 +58,7 @@ export default function LeatherConditionerRecommendedFor() {
             onClick={() => setSelectedLeather(item)}
             title={item.alt}
             className="inline-block transition opacity-90 hover:opacity-100 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange focus:ring-offset-2 focus:ring-offset-white"
-          ><Image
+          ><Image unoptimized
               src={item.thumb}
               alt={item.alt}
               width={100}
@@ -106,7 +106,7 @@ export default function LeatherConditionerRecommendedFor() {
             >
               ×
             </button>
-            <div className="pt-2"><Image
+            <div className="pt-2"><Image unoptimized
                 src={selectedLeather.full}
                 alt={selectedLeather.alt}
                 className="max-h-[75vh] w-auto max-w-full rounded-lg object-contain"

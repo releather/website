@@ -57,7 +57,7 @@ export default function RecommendedForWithPop() {
             title={item.titleAttr}
             className="group relative block aspect-[4/3] w-full overflow-hidden border-0 bg-transparent p-0 text-left transition opacity-90 hover:opacity-100 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange focus:ring-offset-2 focus:ring-offset-black"
           >
-            <Image
+            <Image unoptimized
               src={item.imgSrc}
               alt={item.alt}
               fill

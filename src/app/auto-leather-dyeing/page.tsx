@@ -85,7 +85,7 @@ const issuesData = [
     ),
     media: (
       /* eslint-disable-next-line @next/next/no-img-element */
-      <Image
+      <Image unoptimized
         src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-light-beige-pigmented-worn-dirt-uneven-driver-seat-ashton-martin-newport-beach-before.jpg"
         alt="Auto leather dyeing and restoration"
         title="Auto leather dyeing and restoration"
@@ -104,7 +104,7 @@ const issuesData = [
     ),
     media: (
       /* eslint-disable-next-line @next/next/no-img-element */
-      <Image
+      <Image unoptimized
         src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-steering-wheel-repair-beige-before.jpg"
         alt="Stained leather car seat restoration"
         title="Stained leather car seat restoration"
@@ -123,7 +123,7 @@ const issuesData = [
     ),
     media: (
       /* eslint-disable-next-line @next/next/no-img-element */
-      <Image
+      <Image unoptimized
         src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-car-grey-pigmented-wear-driver-seat-mercedes-benz-fullerton-before.jpg"
         alt="Dry cracked car leather conditioning"
         title="Dry cracked car leather conditioning"
@@ -303,7 +303,7 @@ export default function AutoLeatherDyeingPage() {
               Auto Leather Dyeing
             </h2>
             <div className="my-6 overflow-hidden">
-              <div className="float-right ml-6 mb-4 w-[280px] shrink-0 sm:w-[320px]"><Image
+              <div className="float-right ml-6 mb-4 w-[280px] shrink-0 sm:w-[320px]"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/before-after/auto-leather-dyeing.png"
                   alt="Before and after auto leather dyeing"
                   title="Before and after auto leather dyeing"

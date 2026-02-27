@@ -87,7 +87,7 @@ export default function ConcertoProductBlock() {
               onClick={openMain}
               className="mt-4 block transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange focus:ring-offset-2"
               title={concertoMainImage.title}
-            ><Image
+            ><Image unoptimized
                 src={concertoMainImage.thumb}
                 alt={concertoMainImage.alt}
                 title={concertoMainImage.title}
@@ -140,7 +140,7 @@ export default function ConcertoProductBlock() {
                   onClick={() => openSwatch(swatch)}
                   title={`Concerto ${swatch.name}`}
                   className="block transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
-                ><Image
+                ><Image unoptimized
                     src={swatch.thumb}
                     alt={`Leather Hide Upholstery Concerto ${swatch.name} Thumb`}
                     width={90}
@@ -183,7 +183,7 @@ export default function ConcertoProductBlock() {
             >
               ×
             </button>
-            <div className="pt-2"><Image
+            <div className="pt-2"><Image unoptimized
                 src={popImage.full}
                 alt={popImage.alt}
                 title={popImage.alt}

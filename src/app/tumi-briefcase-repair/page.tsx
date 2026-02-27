@@ -247,7 +247,7 @@ export default function TumiBriefcaseRepairPage() {
               title="Why You Need Tumi Repair Services"
               tagline={<em> →Restore your leather investment!</em>}
             />
-            <div className="overflow-hidden"><Image
+            <div className="overflow-hidden"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/v1715323863/before-after/leather-restoration/briefcase/tumi/Tumi-Leather-Briefcase-Repair-Restore-Cleaning-400px.jpg"
                 alt="Tumi Leather Briefcase Restoration Service"
                 title="Tumi Leather Briefcase Restoration Service"
@@ -271,7 +271,7 @@ export default function TumiBriefcaseRepairPage() {
               title="How We Clean Tumi Bags"
               tagline={<em> → Step by Step.</em>}
             />
-            <figure className="border-4 border-black p-2"><Image
+            <figure className="border-4 border-black p-2"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/g_south,l_text:montserrat_50_style_light:Signs%20of%20Normal%20Wear%20%26%20Tear,co_rgb:000000/v1715339438/before-after/leather-restoration/briefcase/tumi/Tumi-Bag-Restored-Example.jpg"
                 alt="Leather Restored Tumi Black Leather Briefcase - Before"
                 loading="lazy"
@@ -348,7 +348,7 @@ export default function TumiBriefcaseRepairPage() {
             <ul className="mt-6 grid list-none grid-cols-1 gap-6 p-0 sm:grid-cols-2 lg:grid-cols-3">
               {commonRepairs.map((item, index) => (
                 <li key={index} className="border-4 border-releather-orange bg-releather-dark p-2">
-                  <div className="flex justify-center"><Image
+                  <div className="flex justify-center"><Image unoptimized
                       src={item.src}
                       alt={item.alt}
                       title={item.title}
@@ -376,7 +376,7 @@ export default function TumiBriefcaseRepairPage() {
             <p className="font-sans text-base leading-relaxed text-gray-800">
               Tumi backpacks often show wear along the bottom and piping after years of use — but we can help bring them back to life. One recent project involved a black Tumi Alpha backpack with heavy surface wear and scratches on the base and welting. Using our leather color-matching and resurfacing expertise, we restored the finish while preserving the original look.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration/briefcase/tumi/Tumi-Alpha-Backpack-Leather-Color-Restored-Redyed-Recolor-Before.png"
                 alt="Tumi Alpha backpack before leather restoration – worn surface and faded color – Before"
                 title="Tumi Alpha backpack before restoration – Before"
@@ -384,7 +384,7 @@ export default function TumiBriefcaseRepairPage() {
                 height={450}
                 loading="lazy"
                 className="w-full border-[10px] border-releather-orange object-cover"
-              /><Image
+              /><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration/briefcase/tumi/Tumi-Alpha-Backpack-Leather-Color-Restored-Redyed-Recolor-After.png"
                 alt="Tumi Alpha backpack before leather restoration – worn surface and faded color – After"
                 title="Tumi Alpha backpack before restoration – After"
@@ -399,7 +399,7 @@ export default function TumiBriefcaseRepairPage() {
           <section className="mt-12 border-t-4 border-black pt-12">
             <BlogPostSubsection title="Meet Our Skilled Leather Restoration Technician:" />
             <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2 lg:items-center">
-              <div className="flex justify-center"><Image
+              <div className="flex justify-center"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/v1715338300/samples/people/Leather-Technician-Service-Tumi-Leather-Briefcase-Shop-Center.jpg"
                   alt="Leather Technician Service Center Tumi Leather Briefcase Sharing Customer Experience"
                   title="Leather Technician Service Center Tumi Leather Briefcase Sharing Customer Experience"
@@ -417,7 +417,7 @@ export default function TumiBriefcaseRepairPage() {
 
           <section className="mt-12 border-t-4 border-black pt-12">
             <BlogPostSubsection title="Tumi Leather Care" />
-            <div className="overflow-hidden"><Image
+            <div className="overflow-hidden"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/h_300/v1643861241/logo/ReLeather-Leather-Conditioner.png"
                 alt="ReLeather Best Leather Conditioner for Tumi Leather Briefcase Brief Backpack Luggage Bag Wallet"
                 title="ReLeather Best Leather Conditioner for Tumi Leather Briefcase Brief Backpack Luggage Bag Wallet"
@@ -475,7 +475,7 @@ export default function TumiBriefcaseRepairPage() {
               title="Tumi Repair Near me"
               tagline={<em> → Drop it off or Mail it to us!</em>}
             />
-            <div className="overflow-hidden"><Image
+            <div className="overflow-hidden"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/ar_1:1,b_rgb:23262f,bo_5px_solid_rgb:f8991d,c_fill,g_auto,r_max,w_175/l_,l_text:montserrat_30_style_light:Drop%20Off,co_rgb:ffffff,g_south,y_200/v1715337184/samples/service/Tumi-Bag-Repair-Where-Drop-Off-Service-Center-Leather-Repair.jpg"
                 alt="Bring us your Tumi Briefcase for Restoring"
                 title="Bring us your Tumi Briefcase for Restoring"
@@ -503,7 +503,7 @@ export default function TumiBriefcaseRepairPage() {
               </a>{" "}
               for in-person service, where our expert team will assess its condition and recommend the best restoration solutions.
             </p>
-            <div className="mt-6 overflow-hidden"><Image
+            <div className="mt-6 overflow-hidden"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/ar_1:1,b_rgb:23262f,bo_5px_solid_rgb:f8991d,c_fill,g_auto,r_max,w_175/l_,l_text:montserrat_30_style_light:Mailing,co_rgb:ffffff,g_south,y_200/v1715337185/samples/service/Tumi-Bag-Repair-Where-Ship-Mail-Service-Center-Leather-Repair.jpg"
                 alt="Mail us your Tumi Briefcase, Brief, Bag, Duffle, Backpack for Refurbishing"
                 title="Mail us your Tumi Briefcase, Brief, Bag, Duffle, Backpack for Refurbishing"
@@ -549,7 +549,7 @@ export default function TumiBriefcaseRepairPage() {
                     <div className="space-y-2">
                       <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">
                         Before
-                      </p><Image
+                      </p><Image unoptimized
                         src={slide.beforeSrc}
                         alt={slide.beforeAlt}
                         width={300}
@@ -561,7 +561,7 @@ export default function TumiBriefcaseRepairPage() {
                     <div className="space-y-2">
                       <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">
                         After
-                      </p><Image
+                      </p><Image unoptimized
                         src={slide.afterSrc}
                         alt={slide.afterAlt}
                         width={300}
@@ -581,7 +581,7 @@ export default function TumiBriefcaseRepairPage() {
 
           <section className="mt-12 border-t-4 border-black pt-12">
             <BlogPostSubsection title="Conclusion" />
-            <div className="overflow-hidden"><Image
+            <div className="overflow-hidden"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/ar_1:1,b_rgb:23262f,bo_5px_solid_rgb:f8991d,c_fill,g_auto,r_max,w_175/v1715340616/before-after/leather-restoration/briefcase/tumi/Restored-Tumi-Briefcase-400px.jpg"
                 alt="Repair your Tumi Leather Bag and Save Money and Restore Value to your Leather Investment"
                 title="Repair your Tumi Leather Bag and Save Money and Restore Value to your Leather Investment"

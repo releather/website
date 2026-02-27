@@ -299,7 +299,7 @@ export default function ReplacementCushionsForLeatherCouchPage() {
               title="Understanding the Need for Replacement Cushions "
               tagline={<em> → Leather Cushion Wear & Tear </em>}
             />
-            <div className="overflow-hidden"><Image
+            <div className="overflow-hidden"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/v1697183842/before-after/leather-reupholstery/leather-cushion-replacement-couch.jpg"
                 alt="Leather Seat Cushion Replacements by ReLeather - Before Image"
                 loading="lazy"
@@ -326,7 +326,7 @@ export default function ReplacementCushionsForLeatherCouchPage() {
             </p>
             <ul className="mt-6 grid list-none grid-cols-1 gap-6 p-0 sm:grid-cols-2 lg:grid-cols-3">
               {recommendedItems.map((item, index) => (
-                <li key={index} className="flex flex-col items-center border-4 border-black p-4"><Image
+                <li key={index} className="flex flex-col items-center border-4 border-black p-4"><Image unoptimized
                     src={item.src}
                     alt={item.alt}
                     title={item.title}
@@ -367,7 +367,7 @@ export default function ReplacementCushionsForLeatherCouchPage() {
               </a>{" "}
               services, allowing you to choose the level of restoration that suits your needs. Whether you need to replace all the cushions or just a few, we&apos;ve got you covered.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/g_south,y_10,l_text:montserrat_50_style_light:Before,co_rgb:000000/w_400,c_crop,g_south_west/v1697294434/before-after/leather-reupholstery/leather-cushion-replaced-with-new-black-leather-before.jpg"
                 alt="Leather Cushion Seat Replaced With New Black Leather - Before"
                 title="Leather Cushion Seat Replaced With New Black Leather - Before"
@@ -375,7 +375,7 @@ export default function ReplacementCushionsForLeatherCouchPage() {
                 width={400}
                 height={300}
                 className="w-full rounded object-cover"
-              /><Image
+              /><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/g_south,y_10,l_text:montserrat_50_style_light:After,co_rgb:000000/w_400,c_crop,,g_south_west/v1697294434/before-after/leather-reupholstery/leather-cushion-replaced-with-new-black-leather-after.jpg"
                 alt="Leather Cushion Seat Replaced With New Black Leather - After"
                 title="Leather Cushion Seat Replaced With New Black Leather - After"
@@ -406,7 +406,7 @@ export default function ReplacementCushionsForLeatherCouchPage() {
             </p>
             <ul className="mt-6 grid list-none grid-cols-1 gap-6 p-0 sm:grid-cols-2 lg:grid-cols-4">
               {leatherMatchingItems.map((item, index) => (
-                <li key={index} className="flex flex-col items-center border-4 border-releather-orange p-4"><Image
+                <li key={index} className="flex flex-col items-center border-4 border-releather-orange p-4"><Image unoptimized
                     src={item.src}
                     alt={item.alt}
                     title={item.title}
@@ -428,7 +428,7 @@ export default function ReplacementCushionsForLeatherCouchPage() {
               title="Types of Cushions"
               tagline={<em> → We reupholster various cushion styles</em>}
             />
-            <div className="overflow-hidden"><Image
+            <div className="overflow-hidden"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/v1697304553/before-after/leather-reupholstery/leather-replacement-cushion-recover-these-types-of-leather-cushions.png"
                 alt="Leather Seat Cushion Replacements Types of Cushions"
                 loading="lazy"
@@ -464,7 +464,7 @@ export default function ReplacementCushionsForLeatherCouchPage() {
             <ul className="mt-6 grid list-none grid-cols-1 gap-6 p-0 sm:grid-cols-2 lg:grid-cols-3">
               {commonIssues.map((item, index) => (
                 <li key={index} className="border-4 border-releather-orange bg-releather-dark p-2">
-                  <div className="flex justify-center"><Image
+                  <div className="flex justify-center"><Image unoptimized
                       src={item.src}
                       alt={item.alt}
                       title={item.title}
@@ -503,7 +503,7 @@ export default function ReplacementCushionsForLeatherCouchPage() {
                     <div className="space-y-2">
                       <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">
                         Before
-                      </p><Image
+                      </p><Image unoptimized
                         src={slide.beforeSrc}
                         alt={slide.beforeAlt}
                         width={300}
@@ -515,7 +515,7 @@ export default function ReplacementCushionsForLeatherCouchPage() {
                     <div className="space-y-2">
                       <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">
                         After
-                      </p><Image
+                      </p><Image unoptimized
                         src={slide.afterSrc}
                         alt={slide.afterAlt}
                         width={300}
@@ -535,7 +535,7 @@ export default function ReplacementCushionsForLeatherCouchPage() {
 
           <section className="mt-12 border-t-4 border-black pt-12">
             <BlogPostSubsection title="Conclusion" />
-            <div className="overflow-hidden"><Image
+            <div className="overflow-hidden"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/v1697388318/before-after/leather-reupholstery/leather-cushions-recovered.jpg"
                 alt="Leather Seat Cushion Replacements by ReLeather"
                 title="Leather Seat Cushion Replacements by ReLeather"

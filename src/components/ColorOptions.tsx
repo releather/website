@@ -49,7 +49,7 @@ export default function ColorOptions({
               className="block transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
               title={color.name}
             >
-              <Image
+              <Image unoptimized
                 src={color.thumb}
                 alt={color.name}
                 width={100}
@@ -98,7 +98,7 @@ export default function ColorOptions({
               ×
             </button>
             <div className="pt-2">
-              <Image
+              <Image unoptimized
                 src={selectedColor.full}
                 alt={selectedColor.name}
                 width={800}

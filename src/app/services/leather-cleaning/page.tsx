@@ -262,7 +262,7 @@ export default function LeatherCleaningPage() {
             <ul className="mt-8 grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-3 sm:gap-4 lg:grid-cols-3 lg:gap-4 lg:px-2">
               {conditionImages.map((item) => (
                 <li key={item.label} className="text-center">
-                  <div className="mx-auto max-w-[200px] border-4 border-black"><Image
+                  <div className="mx-auto max-w-[200px] border-4 border-black"><Image unoptimized
                       src={item.src}
                       alt={item.alt}
                       title={item.title}

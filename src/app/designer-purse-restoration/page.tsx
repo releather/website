@@ -115,7 +115,7 @@ const designerPurseFaqItems = [
       <>
         <p>
           Yes, we specialize in treating and blending unsightly spots on leather purses. By mixing colors to match your purse and carefully recoloring the affected area, we ensure a seamless blend that restores the appearance of your purse. However, please note that we cannot restore natural patina finishes as they are intrinsic to the leather&apos;s aging process.
-        </p><Image
+        </p><Image unoptimized
           src="https://res.cloudinary.com/releather-com/image/upload/v1714900100/before-after/leather-restoration/handbag-purse-bag/before-examples/Designer-Purse-Leather-Restoration-Spots-Closeup-400px.jpg"
           title="Leather Purse Spot Removed Removing"
           alt="Leather Purse Spot Removed Removing"
@@ -133,7 +133,7 @@ const designerPurseFaqItems = [
       <>
         <p>
           While we can treat many pen marks on leather surfaces, ink penetration may pose challenges. In some cases, the ink cannot be lifted or removed entirely. However, we offer solutions such as redyeing the leather to its original color. Depending on the extent of the marks, we may need to dye the surrounding area for a seamless blend, ensuring the treated area is indistinguishable from the rest of the purse.
-        </p><Image
+        </p><Image unoptimized
           src="https://res.cloudinary.com/releather-com/image/upload/v1714899406/before-after/leather-restoration/handbag-purse-bag/before-examples/Designer-Purse-Leather-Restoration-Staining-Pen-Marks-Sharpie-Marker-400px.jpg"
           title="Leather Purse Pen Mark Removed Removing"
           alt="Leather Purse Pen Mark Removed Removing"
@@ -151,7 +151,7 @@ const designerPurseFaqItems = [
       <>
         <p>
           We do not offer custom services for repairing or replacing purse linings. However, if your purse lining is lightly soiled or dirty, we provide complimentary light cleaning services for the interior of the purse. This ensures that not only the exterior but also the interior of your purse maintains its condition.
-        </p><Image
+        </p><Image unoptimized
           src="https://res.cloudinary.com/releather-com/image/upload/v1714900435/before-after/leather-restoration/handbag-purse-bag/before-examples/Leather-Purse-Restoration-Lining.jpg"
           title="Can you clean the lining of my designer leather purse? - Prada Purse"
           alt="Can you clean the lining of my designer leather purse? - Prada Purse"
@@ -221,7 +221,7 @@ export default function DesignerPurseRestorationPage() {
               title="Designer Purse Restoration Service Guide"
               tagline={<em> → ReLeather Leather Restoration&apos;s Expert Services </em>}
             />
-            <div className="overflow-hidden"><Image
+            <div className="overflow-hidden"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/v1714892183/before-after/leather-restoration/handbag-purse-bag/before-examples/Designer-Purse-Restoration-Black-Leather-Recolored-Restored-Closeup-400px.jpg"
                 alt="Designer Purse Restoration Black Leather Recolored Restored Closeup"
                 title="Designer Purse Restoration Black Leather Recolored Restored Closeup"
@@ -304,14 +304,14 @@ export default function DesignerPurseRestorationPage() {
                 <h4 className="font-display text-xl font-normal text-black">Leather Protection</h4>: We apply a protective coating to shield your handbag from stains and UV damage, ensuring lasting elegance.
               </li>
             </ol>
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/g_south,x_-120,y_10,l_text:montserrat_50_style_light:Before,co_rgb:000000/v1714566267/before-after/leather-restoration/handbag-purse-bag/red/Leather-Restored-LOEWE-Designer-Red-Leather-Purse-Handbag-Before_400px.jpg"
                 alt="Leather Restored Loewe Designer Red Leather Purse Handbag - Before"
                 title="Leather Restored Loewe Designer Red Leather Purse Handbag - Before"
                 width={400}
                 loading="lazy"
                 className="w-full rounded object-cover"
-              /><Image
+              /><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/g_south,x_-120,y_10,l_text:montserrat_50_style_light:After,co_rgb:000000/v1714566267/before-after/leather-restoration/handbag-purse-bag/red/Leather-Restored-LOEWE-Designer-Red-Leather-Purse-Handbag-After_400px.jpg"
                 alt="Leather Restored Loewe Designer Red Leather Purse Handbag - After"
                 title="Leather Restored Loewe Designer Red Leather Purse Handbag - After"
@@ -344,7 +344,7 @@ export default function DesignerPurseRestorationPage() {
             <ul className="mt-6 grid list-none grid-cols-1 gap-6 p-0 sm:grid-cols-2 lg:grid-cols-3">
               {commonIssues.map((item, index) => (
                 <li key={index} className="border-4 border-releather-orange bg-releather-dark p-2">
-                  <div className="flex justify-center"><Image
+                  <div className="flex justify-center"><Image unoptimized
                       src={item.src}
                       alt={item.alt}
                       title={item.title}
@@ -369,7 +369,7 @@ export default function DesignerPurseRestorationPage() {
               title="Transformation with Color Change Service"
               tagline={<em> → Redyeing your purse and handbag to any custom color</em>}
             />
-            <div className="overflow-hidden"><Image
+            <div className="overflow-hidden"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/v1714893944/before-after/leather-dyeing/handbag-purse-bag/examples/Designer-Purse-Restoration-Recolor-Custom-Color-Change-200px.jpg"
                 alt="Leather Restoration Recolor Custom Color Change Service"
                 title="Leather Restoration Recolor Custom Color Change Service"
@@ -426,7 +426,7 @@ export default function DesignerPurseRestorationPage() {
               title="Convenient Solutions for Every Customer:"
               tagline={<em> → Drop it off or Mail it to us!</em>}
             />
-            <div className="overflow-hidden"><Image
+            <div className="overflow-hidden"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/ar_1:1,b_rgb:23262f,bo_5px_solid_rgb:f8991d,c_fill,g_auto,r_max,w_175/l_,l_text:montserrat_30_style_light:Drop%20Off,co_rgb:ffffff,g_south,y_200/v1714571173/samples/service/leather-restoration-service-drop-off-purse-handbag-shop-200px.jpg"
                 alt="Bring us your Purse for Restoring"
                 title="Bring us your Purse for Restoring"
@@ -443,7 +443,7 @@ export default function DesignerPurseRestorationPage() {
                 for in-person service, where our team of experts will assess the condition of your bag and recommend the appropriate restoration solutions.
               </p>
             </div>
-            <div className="mt-6 overflow-hidden"><Image
+            <div className="mt-6 overflow-hidden"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/ar_1:1,b_rgb:23262f,bo_5px_solid_rgb:f8991d,c_fill,g_auto,r_max,w_175/l_,l_text:montserrat_30_style_light:Mailing,co_rgb:ffffff,g_south,y_200/v1714570998/samples/service/leather-restoration-mail-leather-purse-handbag-for-repair-200px.jpg"
                 alt="Mail us your Purse for Refurbishing"
                 title="Mail us your Purse for Refurbishing"
@@ -477,7 +477,7 @@ export default function DesignerPurseRestorationPage() {
                     <div className="space-y-2">
                       <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">
                         Before
-                      </p><Image
+                      </p><Image unoptimized
                         src={slide.beforeSrc}
                         alt={slide.beforeAlt}
                         width={300}
@@ -489,7 +489,7 @@ export default function DesignerPurseRestorationPage() {
                     <div className="space-y-2">
                       <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">
                         After
-                      </p><Image
+                      </p><Image unoptimized
                         src={slide.afterSrc}
                         alt={slide.afterAlt}
                         width={300}
@@ -509,7 +509,7 @@ export default function DesignerPurseRestorationPage() {
 
           <section className="mt-12 border-t-4 border-black pt-12">
             <BlogPostSubsection title="Conclusion" />
-            <div className="overflow-hidden"><Image
+            <div className="overflow-hidden"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/v1714892172/before-after/leather-restoration/handbag-purse-bag/before-examples/Designer-Purse-Restoration-Brown-Leather-Recolored-Restored-400px.jpg"
                 alt="Designer Purse Restoration Brown Leather Recolored Restored"
                 title="Designer Purse Restoration Brown Leather Recolored Restored"

@@ -15,7 +15,7 @@ export const leatherUpholsteryIssuesItems = [
       </p>
     ),
     media: (
-      <div className="flex justify-center"><Image
+      <div className="flex justify-center"><Image unoptimized
           src="https://res.cloudinary.com/releather-com/image/upload/before-after/leather-reupholstery/leather-recover-tear-hole-cushion-sofa.png"
           alt="Fix torn leather sofa cushion - Recover and Reupholster"
           title="Fix torn leather sofa cushion - Recover and Reupholster"
@@ -37,7 +37,7 @@ export const leatherUpholsteryIssuesItems = [
       </p>
     ),
     media: (
-      <div className="flex justify-center"><Image
+      <div className="flex justify-center"><Image unoptimized
           src="https://res.cloudinary.com/releather-com/image/upload/before-after/leather-reupholstery/recover-leather-ripped-seams-cushion.png"
           alt="Fix ripped seams leather sofa cushion - Recover and Reupholster Leather"
           title="Fix ripped seams leather sofa cushion - Recover and Reupholster Leather"
@@ -59,7 +59,7 @@ export const leatherUpholsteryIssuesItems = [
       </p>
     ),
     media: (
-      <div className="flex justify-center"><Image
+      <div className="flex justify-center"><Image unoptimized
           src="https://res.cloudinary.com/releather-com/image/upload/before-after/leather-reupholstery/recover-oil-stained-headrest-cushion-sofa.png"
           alt="Fix Oil Stained leather sofa cushion - Recover and Reupholster"
           title="Fix Oil Stained leather sofa cushion - Recover and Reupholster"
@@ -81,7 +81,7 @@ export const leatherUpholsteryIssuesItems = [
       </p>
     ),
     media: (
-      <div className="flex justify-center"><Image
+      <div className="flex justify-center"><Image unoptimized
           src="https://res.cloudinary.com/releather-com/image/upload/before-after/leather-reupholstery/fix-chewed-leather-dog-pet-damage-leather-sofa-cushion.png"
           alt="Fix chewed leather scratched pet damage - Recover and Reupholster Leather Sofa"
           title="Fix chewed leather scratched pet damage - Recover and Reupholster Leather Sofa"
@@ -103,7 +103,7 @@ export const leatherUpholsteryIssuesItems = [
       </p>
     ),
     media: (
-      <div className="flex justify-center"><Image
+      <div className="flex justify-center"><Image unoptimized
           src="https://res.cloudinary.com/releather-com/image/upload/before-after/leather-reupholstery/fix-faded-leather-recover-reupholstery-couch-cushion.png"
           alt="Fix faded leather cushion sofa couch - Recover and Reupholster"
           title="Fix faded leather cushion sofa couch - Recover and Reupholster"
@@ -124,7 +124,7 @@ export const leatherUpholsteryIssuesItems = [
       </p>
     ),
     media: (
-      <div className="flex justify-center"><Image
+      <div className="flex justify-center"><Image unoptimized
           src="https://res.cloudinary.com/releather-com/image/upload/before-after/leather-reupholstery/fix-cracked-leather-recovering-sofa-couch.png"
           alt="Fix cracking and cracked leather cushion sofa couch - Recover and Reupholster Leather"
           title="Fix cracking and cracked leather cushion sofa couch - Recover and Reupholster Leather"
@@ -146,7 +146,7 @@ export const leatherUpholsteryIssuesItems = [
       </p>
     ),
     media: (
-      <div className="flex justify-center"><Image
+      <div className="flex justify-center"><Image unoptimized
           src="https://res.cloudinary.com/releather-com/image/upload/before-after/leather-reupholstery/replace-bonded-fake-leather-reupholster-recover-sofa.png"
           alt="Fix bonded leather replace with leather sofa couch - Recover and Reupholster Leather"
           title="Fix bonded leather replace with leather sofa couch - Recover and Reupholster Leather"
@@ -168,7 +168,7 @@ export const leatherUpholsteryIssuesItems = [
       </p>
     ),
     media: (
-      <div className="flex justify-center"><Image
+      <div className="flex justify-center"><Image unoptimized
           src="https://res.cloudinary.com/releather-com/image/upload/before-after/leather-reupholstery/replace-fabric-sofa-with-leather.png"
           alt="Fix fabric sofa replace with leather sofa couch - Recover and Reupholster Leather"
           title="Fix fabric sofa replace with leather sofa couch - Recover and Reupholster Leather"

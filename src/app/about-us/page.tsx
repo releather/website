@@ -161,7 +161,7 @@ export default function AboutUsPage() {
                 only Leather Restoration certified firm in Orange County with
                 the IICRC. We have a A+ rating with the BBB. We are licensed
                 Furniture Upholsterers
-              </p><Image
+              </p><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/icons/certified-leather-restoration.jpg"
                 alt="Certified leather restoration"
                 width={150}
@@ -184,7 +184,7 @@ export default function AboutUsPage() {
                         rel="external noopener"
                         target="_blank"
                         className="inline-block"
-                      ><Image
+                      ><Image unoptimized
                           src="https://businessbadges.siccode.com/badges/ea90/re-leather-llc-lnoa6d-detailed.png"
                           alt="ReLeather LLC - SIC Code 7641 - NAICS Code 811420 - Profile at SICCODE.com"
                           width={360}
@@ -193,7 +193,7 @@ export default function AboutUsPage() {
                         />
                       </Link>
                     ) : "imgSrc" in item && item.imgSrc ? (
-                      <Image
+                      <Image unoptimized
                         src={item.imgSrc}
                         alt={item.imgAlt}
                         width={200}

@@ -147,7 +147,7 @@ export default function EamesChairRepairPage() {
 
           <section className="mt-12 border-t-4 border-black pt-12">
             <BlogPostSubsection title="How Much Do Herman Miller Chairs Cost?" />
-            <div className="mt-4 flex flex-col items-center"><Image
+            <div className="mt-4 flex flex-col items-center"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/v1656013497/before-after/Eames-Chair.png"
                 title="Herman Miller Eames Lounge Chair and Ottoman"
                 alt="Herman Miller Eames Lounge Chair and Ottoman"
@@ -202,7 +202,7 @@ export default function EamesChairRepairPage() {
           <section className="mt-12 border-t-4 border-black pt-12">
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               {commonIssues.map((item, index) => (
-                <figure key={index} className="flex flex-col items-center border-4 border-releather-orange p-4"><Image
+                <figure key={index} className="flex flex-col items-center border-4 border-releather-orange p-4"><Image unoptimized
                     src={item.src}
                     alt={item.alt}
                     title={item.title}
@@ -261,7 +261,7 @@ export default function EamesChairRepairPage() {
 
           <section className="mt-12 border-t-4 border-black pt-12">
             <BlogPostSubsection title="Reupholster Your Quality Eames Chair and Restore Its Value!" />
-            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image
+            <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/g_north,l_text:montserrat_90_style_light:Before,co_rgb:fff,y_10/v1656022128/before-after/leather-eames-chair-ottoman-reupholstered-before-1.jpg"
                 title="Reupholster Eames Chair and Ottoman with New Leather Before Picture"
                 alt="Reupholster Eames Chair and Ottoman with New Leather Before Picture"
@@ -269,7 +269,7 @@ export default function EamesChairRepairPage() {
                 height={300}
                 loading="lazy"
                 className="w-full rounded-[25px] object-cover"
-              /><Image
+              /><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/g_north,l_text:montserrat_90_style_light:After,co_rgb:fff,y_10/v1656022128/before-after/leather-eames-chair-ottoman-reupholstered-after-1.jpg"
                 title="Reupholster Eames Chair and Ottoman with New Leather After Picture"
                 alt="Reupholster Eames Chair and Ottoman with New Leather After Picture"
@@ -294,7 +294,7 @@ export default function EamesChairRepairPage() {
                 </em>
               }
             />
-            <div className="overflow-hidden"><Image
+            <div className="overflow-hidden"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/c_crop,g_south,h_400,w_122/v1653615923/products/ReLeather-Best-Leather-Cleaner-For-Leather-Restoration.png"
                 width={122}
                 height={400}
@@ -323,7 +323,7 @@ export default function EamesChairRepairPage() {
               Even the best furniture needs a little TLC from time to time. Fortunately, it&apos;s easy to keep your Eames chair looking rich and feeling supple to the touch. Just follow these simple steps: using our ReLeather Leather Conditioner, apply the leather lotion to the entire leather upholstery with a dry terry towel and let dry. Feel free to apply the leather lotion to the wood panels. Once the leather is completely dry, buff the surfaces with a soft, lint-free cloth. By following these simple steps, you can ensure that your Eames chair will stay looking as good as new for years to come.
             </p>
             <div className="mt-6 flex justify-center">
-              <a href="https://www.releather.com/leather-conditioner" target="_blank" rel="noopener noreferrer"><Image
+              <a href="https://www.releather.com/leather-conditioner" target="_blank" rel="noopener noreferrer"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/v1643861241/logo/ReLeather-Leather-Conditioner.png"
                   width={150}
                   title="ReLeather Leather Conditioner Image"

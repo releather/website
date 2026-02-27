@@ -84,7 +84,7 @@ export default function BeforeAfter({
                 <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">
                   Before
                 </p>
-                <Image
+                <Image unoptimized
                   src={item.beforeSrc}
                   alt={item.beforeAlt}
                   title={item.beforeTitle}
@@ -98,7 +98,7 @@ export default function BeforeAfter({
                 <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">
                   After
                 </p>
-                <Image
+                <Image unoptimized
                   src={item.afterSrc}
                   alt={item.afterAlt}
                   title={item.afterTitle}

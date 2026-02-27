@@ -119,7 +119,7 @@ export default function LeatherForUpholsteryPage() {
               Choose your Leather!
             </h2>
             <div className="mt-4">
-              <figure className="brutalist-image-frame float-right ml-6 mb-4 w-[280px] shrink-0 sm:w-[320px]"><Image
+              <figure className="brutalist-image-frame float-right ml-6 mb-4 w-[280px] shrink-0 sm:w-[320px]"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/c_crop,g_south,h_240,w_435/v1654907997/leather/ReLeather-Leather-Types-Swatches-Selection-2.png"
                   alt="ReLeather leather types and swatches selection"
                   title="Leather types and swatches"

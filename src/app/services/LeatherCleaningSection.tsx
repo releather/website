@@ -158,7 +158,7 @@ export default function LeatherCleaningSection() {
                 onClick={() => setSelectedLeather(leather)}
                 className="block transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
                 title={leather.name}
-              ><Image
+              ><Image unoptimized
                   src={leather.thumb}
                   alt={leather.alt}
                   width={150}
@@ -174,7 +174,7 @@ export default function LeatherCleaningSection() {
               href="/leather-sofa-dyeing"
               title="Leather Restoration for Furniture Sofa, Couches, Chairs"
               className="flex flex-col items-center gap-1 text-center text-gray-700 transition hover:text-releather-orange"
-            ><Image
+            ><Image unoptimized
                 src="https://res.cloudinary.com/leathera/image/upload/w_100,c_fill,ar_1:1,g_auto,r_max,bo_1px_solid_rgb:f5f5f5,b_rgb:f5f5f5/v1702140740/icons/chairs_svg.svg"
                 alt="Leather furniture restoration"
                 width={60}
@@ -188,7 +188,7 @@ export default function LeatherCleaningSection() {
               href="/auto-leather-dyeing"
               title="Leather Restoration for Car Seats Seat Auto Automotive"
               className="flex flex-col items-center gap-1 text-center text-gray-700 transition hover:text-releather-orange"
-            ><Image
+            ><Image unoptimized
                 src="https://res.cloudinary.com/leathera/image/upload/w_100,c_fill,ar_1:1,g_auto,r_max,bo_1px_solid_rgb:f5f5f5,b_rgb:f5f5f5/v1702139656/icons/car-seat_svg.svg"
                 alt="Automotive leather repair"
                 width={60}
@@ -202,7 +202,7 @@ export default function LeatherCleaningSection() {
               href="/aircraft-leather-cleaning"
               title="Aviation leather repair icon"
               className="flex flex-col items-center gap-1 text-center text-gray-700 transition hover:text-releather-orange"
-            ><Image
+            ><Image unoptimized
                 src="https://res.cloudinary.com/leathera/image/upload/w_100,c_fill,ar_1:1,g_auto,r_max,bo_1px_solid_rgb:f5f5f5,b_rgb:f5f5f5/icons/aviation_svg.svg"
                 alt="Aviation leather repair"
                 width={60}
@@ -216,7 +216,7 @@ export default function LeatherCleaningSection() {
               href="/gallery/leather-redyeing-handbag"
               title="Leather Restoration for Bag, Handbag, Purse"
               className="flex flex-col items-center gap-1 text-center text-gray-700 transition hover:text-releather-orange"
-            ><Image
+            ><Image unoptimized
                 src="https://res.cloudinary.com/leathera/image/upload/w_100,c_fill,ar_1:1,g_auto,r_max,bo_1px_solid_rgb:f5f5f5,b_rgb:f5f5f5/icons/handbag_svg.svg"
                 alt="Leather handbag restoration"
                 width={60}
@@ -230,7 +230,7 @@ export default function LeatherCleaningSection() {
               href="/leather-restoration-jackets-coats"
               title="Leather Restoration for Jacket, Coat"
               className="flex flex-col items-center gap-1 text-center text-gray-700 transition hover:text-releather-orange"
-            ><Image
+            ><Image unoptimized
                 src="https://res.cloudinary.com/leathera/image/upload/w_100,c_fill,ar_1:1,g_auto,r_max,bo_1px_solid_rgb:f5f5f5,b_rgb:f5f5f5/v1702145196/icons/garment_svg.svg"
                 alt="Leather garment restoration"
                 width={60}
@@ -280,7 +280,7 @@ export default function LeatherCleaningSection() {
             >
               ×
             </button>
-            <div className="pt-2"><Image
+            <div className="pt-2"><Image unoptimized
                 src={selectedLeather.full}
                 alt={selectedLeather.alt}
                 className="max-h-[75vh] w-auto max-w-full rounded-lg object-contain"

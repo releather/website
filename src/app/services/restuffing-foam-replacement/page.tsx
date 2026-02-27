@@ -114,7 +114,7 @@ const restuffingBenefits = [
           <li>various high density grades available</li>
           <li>⊕ soft ⊕ medium ⊕ firm ⊕ extra firm</li>
         </ul>
-        <p className="mt-3 flex justify-center"><Image
+        <p className="mt-3 flex justify-center"><Image unoptimized
             src="https://res.cloudinary.com/releather-com/image/upload/v1682585176/samples/foam-padding-seat-cushion-sample.png"
             alt="Leather Cushion Foam Material Cushion Insert"
             title="Leather Cushion Foam Material Cushion Insert"
@@ -135,7 +135,7 @@ const restuffingBenefits = [
           <li>Polyester loose fiber filling</li>
           <li>1 - 2 oz. dacron filling</li>
         </ul>
-        <p className="mt-3 flex justify-center"><Image
+        <p className="mt-3 flex justify-center"><Image unoptimized
             src="https://res.cloudinary.com/releather-com/image/upload/v1682585887/samples/refill-cushions-dacron-padding-material.jpg"
             alt="Refill Restuffing Cushions with Dacron Padding"
             title="Refill Cushions with Dacron Padding Refill Restuffing Cushions with Dacron Padding"
@@ -247,7 +247,7 @@ export default function RestuffingFoamReplacementPage() {
             <ul className="mt-8 grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-3 sm:gap-4 lg:grid-cols-3 lg:gap-4 lg:px-2">
               {conditionImages.map((item) => (
                 <li key={item.label} className="text-center">
-                  <div className="mx-auto max-w-[200px] border-4 border-black"><Image
+                  <div className="mx-auto max-w-[200px] border-4 border-black"><Image unoptimized
                       src={item.src}
                       alt={item.alt}
                       title={item.title}
@@ -270,7 +270,7 @@ export default function RestuffingFoamReplacementPage() {
             title="How Does Foam Replacement & Restuffing Work?"
             steps={restuffingProcessSteps}
             extraMedia={
-              <figure className="brutalist-image-frame w-full max-w-[320px]"><Image
+              <figure className="brutalist-image-frame w-full max-w-[320px]"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/bo_32px_solid_white/a_10/b_rgb:23262f/before-after/restuffed-refilled-leather-couch-cushions-sectional.jpg"
                   alt="Restuffed refilled leather couch cushions sectional"
                   title="Restuffed refilled leather couch cushions sectional"

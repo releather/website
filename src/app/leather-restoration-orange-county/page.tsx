@@ -98,13 +98,13 @@ const locationFaqItems = [
           We treat and restore the following protected and unprotected aniline leather.
         </p>
         <p className="mt-3 flex flex-wrap gap-2">
-          <a href="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/g_center,l_text:montserrat_90_style_light:Pigmented,co_rgb:ffffff,y_10/v1638909291/leather/PALETTE_tan_HI.jpg" target="_blank" rel="noopener noreferrer" title="Pigmented Leather"><Image src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/w_115,h_100,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Pigmented,co_rgb:ffffff,y_10/v1638909291/leather/PALETTE_tan_HI.jpg" alt="Type of Leather - Pigmented Leather" width={115} height={100} loading="lazy" className="border-2 border-releather-orange object-cover" />
+          <a href="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/g_center,l_text:montserrat_90_style_light:Pigmented,co_rgb:ffffff,y_10/v1638909291/leather/PALETTE_tan_HI.jpg" target="_blank" rel="noopener noreferrer" title="Pigmented Leather"><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/w_115,h_100,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Pigmented,co_rgb:ffffff,y_10/v1638909291/leather/PALETTE_tan_HI.jpg" alt="Type of Leather - Pigmented Leather" width={115} height={100} loading="lazy" className="border-2 border-releather-orange object-cover" />
           </a>
-          <a href="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/g_center,l_text:montserrat_90_style_light:Aniline,co_rgb:ffffff,y_10/v1639529981/leather/Concerto_Saddle_HI.jpg" target="_blank" rel="noopener noreferrer" title="Aniline Leather"><Image src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/w_115,h_100,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Aniline,co_rgb:ffffff,y_10/v1639529981/leather/Concerto_Saddle_HI.jpg" alt="Type of Leather - Aniline Leather" width={115} height={100} loading="lazy" className="border-2 border-releather-orange object-cover" />
+          <a href="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/g_center,l_text:montserrat_90_style_light:Aniline,co_rgb:ffffff,y_10/v1639529981/leather/Concerto_Saddle_HI.jpg" target="_blank" rel="noopener noreferrer" title="Aniline Leather"><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/w_115,h_100,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Aniline,co_rgb:ffffff,y_10/v1639529981/leather/Concerto_Saddle_HI.jpg" alt="Type of Leather - Aniline Leather" width={115} height={100} loading="lazy" className="border-2 border-releather-orange object-cover" />
           </a>
-          <a href="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/g_center,l_text:montserrat_90_style_light:Semi-Aniline,co_rgb:ffffff,y_10/v1636920011/leather/SEDONA_cashew_HI.jpg" target="_blank" rel="noopener noreferrer" title="Semi-Aniline Leather"><Image src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/w_115,h_100,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Semi-Aniline,co_rgb:ffffff,y_10/v1636920011/leather/SEDONA_cashew_HI.jpg" alt="Type of Leather - Semi-Aniline Leather" width={115} height={100} loading="lazy" className="border-2 border-releather-orange object-cover" />
+          <a href="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/g_center,l_text:montserrat_90_style_light:Semi-Aniline,co_rgb:ffffff,y_10/v1636920011/leather/SEDONA_cashew_HI.jpg" target="_blank" rel="noopener noreferrer" title="Semi-Aniline Leather"><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/w_115,h_100,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Semi-Aniline,co_rgb:ffffff,y_10/v1636920011/leather/SEDONA_cashew_HI.jpg" alt="Type of Leather - Semi-Aniline Leather" width={115} height={100} loading="lazy" className="border-2 border-releather-orange object-cover" />
           </a>
-          <a href="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/g_center,l_text:montserrat_90_style_light:Nubuck,co_rgb:ffffff,y_10/v1652588630/leather/Apache_Chestnut_HI.jpg" target="_blank" rel="noopener noreferrer" title="Nubuck Leather"><Image src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/w_115,h_100,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Nubuck,co_rgb:ffffff,y_10/v1652588630/leather/Apache_Chestnut_HI.jpg" alt="Type of Leather - Nubuck Leather" width={115} height={100} loading="lazy" className="border-2 border-releather-orange object-cover" />
+          <a href="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/g_center,l_text:montserrat_90_style_light:Nubuck,co_rgb:ffffff,y_10/v1652588630/leather/Apache_Chestnut_HI.jpg" target="_blank" rel="noopener noreferrer" title="Nubuck Leather"><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/w_115,h_100,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Nubuck,co_rgb:ffffff,y_10/v1652588630/leather/Apache_Chestnut_HI.jpg" alt="Type of Leather - Nubuck Leather" width={115} height={100} loading="lazy" className="border-2 border-releather-orange object-cover" />
           </a>
         </p>
       </>
@@ -118,11 +118,11 @@ const locationFaqItems = [
           Choose from a natural, matte, or gloss sealant, designed to maintain the leather&apos;s original natural appearance.
         </p>
         <p className="mt-3 flex flex-wrap gap-2">
-          <a href="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_300/l_,l_text:montserrat_30_style_light:Natural%20Finish,co_rgb:ffffff/v1653279850/before-after/leather-dyeing-natural-finish.jpg" target="_blank" rel="noopener noreferrer" title="Natural Finish"><Image src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/w_104,h_90,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Natural,co_rgb:ffffff,y_10/v1653279850/before-after/leather-dyeing-natural-finish.jpg" alt="Leather Couch Restoration Natural Finish Type Applied" width={104} height={90} loading="lazy" className="border-2 border-releather-orange object-cover" />
+          <a href="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_300/l_,l_text:montserrat_30_style_light:Natural%20Finish,co_rgb:ffffff/v1653279850/before-after/leather-dyeing-natural-finish.jpg" target="_blank" rel="noopener noreferrer" title="Natural Finish"><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/w_104,h_90,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Natural,co_rgb:ffffff,y_10/v1653279850/before-after/leather-dyeing-natural-finish.jpg" alt="Leather Couch Restoration Natural Finish Type Applied" width={104} height={90} loading="lazy" className="border-2 border-releather-orange object-cover" />
           </a>
-          <a href="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_300/l_,l_text:montserrat_30_style_light:Glossy%20Finish,co_rgb:ffffff/v1653279850/before-after/leather-dyeing-glossy-finish.jpg" target="_blank" rel="noopener noreferrer" title="Glossy Finish"><Image src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/w_104,h_90,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Glossy,co_rgb:ffffff,y_10/v1653279850/before-after/leather-dyeing-glossy-finish.jpg" alt="Leather Couch Restoration Glossy Finish Type Applied" width={104} height={90} loading="lazy" className="border-2 border-releather-orange object-cover" />
+          <a href="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_300/l_,l_text:montserrat_30_style_light:Glossy%20Finish,co_rgb:ffffff/v1653279850/before-after/leather-dyeing-glossy-finish.jpg" target="_blank" rel="noopener noreferrer" title="Glossy Finish"><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/w_104,h_90,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Glossy,co_rgb:ffffff,y_10/v1653279850/before-after/leather-dyeing-glossy-finish.jpg" alt="Leather Couch Restoration Glossy Finish Type Applied" width={104} height={90} loading="lazy" className="border-2 border-releather-orange object-cover" />
           </a>
-          <a href="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_300/l_,l_text:montserrat_30_style_light:Matte%20Finish,co_rgb:ffffff/v1653279850/before-after/leather-dyeing-matte-finish.jpg" target="_blank" rel="noopener noreferrer" title="Matte Finish"><Image src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/w_104,h_90,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Matte,co_rgb:ffffff,y_10/v1653279850/before-after/leather-dyeing-matte-finish.jpg" alt="Leather Couch Restoration Matte Finish Type Applied" width={104} height={90} loading="lazy" className="border-2 border-releather-orange object-cover" />
+          <a href="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_300/l_,l_text:montserrat_30_style_light:Matte%20Finish,co_rgb:ffffff/v1653279850/before-after/leather-dyeing-matte-finish.jpg" target="_blank" rel="noopener noreferrer" title="Matte Finish"><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/w_104,h_90,c_scale/r_10:40:25/b_rgb:23262f/g_center,l_text:montserrat_16_style_light:Matte,co_rgb:ffffff,y_10/v1653279850/before-after/leather-dyeing-matte-finish.jpg" alt="Leather Couch Restoration Matte Finish Type Applied" width={104} height={90} loading="lazy" className="border-2 border-releather-orange object-cover" />
           </a>
         </p>
       </>
@@ -175,7 +175,7 @@ export default function LeatherRestorationOrangeCountyPage() {
                   ))}
                 </ul>
               </div>
-              <div className="flex justify-center"><Image
+              <div className="flex justify-center"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/ar_1:1,b_rgb:23262f,bo_5px_solid_rgb:f8991d,c_fill,g_auto,r_max,w_125/v1683467763/before-after/leather-sofa-restoration-customer-orange-county.jpg"
                   alt="The best leather restoration company - Satisfied Customer from Orange County"
                   title="The best leather restoration company - Satisfied Customer from Orange County"
@@ -207,7 +207,7 @@ export default function LeatherRestorationOrangeCountyPage() {
                 751 S State College Blvd, Unit 38, Fullerton, CA 92831
               </a>
             </p>
-            <div className="mt-6 flex flex-wrap items-center gap-6"><Image
+            <div className="mt-6 flex flex-wrap items-center gap-6"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/v1654055821/icons/ReLeather-Delivery-Van.png"
                 alt="Leather Couch Restoration Free Pick Up and Delivery in Orange County"
                 title="Leather Couch Restoration Free Pick Up and Delivery in Orange County"
@@ -219,7 +219,7 @@ export default function LeatherRestorationOrangeCountyPage() {
                 <strong>Free Pick Up &amp; Delivery in Orange County</strong>
               </p>
             </div>
-            <div className="mt-8 flex flex-wrap items-center gap-6"><Image
+            <div className="mt-8 flex flex-wrap items-center gap-6"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/v1654055599/logo/logo.png"
                 alt="ReLeather Leather Restoration Logo"
                 title="ReLeather Leather Restoration Logo"
@@ -232,7 +232,7 @@ export default function LeatherRestorationOrangeCountyPage() {
             <p className="mt-6 font-sans text-base leading-relaxed text-gray-800">
               ReLeather is the trusted name in leather restoration Orange County and recommended by leather furniture manufacturers. We provide quality leather restoration and dyeing services designed to restore the original look and feel of your leather furniture and goods. Let our experienced and certified leather technicians by IICRC (Institute of Inspection Cleaning and Restoration Certification) repair and care for your valuable leather. When you hire us, your leather is in the hands of technicians trained and accredited to provide you with dependable service that meets the industry standard of care. Restoring your leather not only makes a difference in preserving the quality of your leather but also saves you money.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-6"><Image
+            <div className="mt-8 flex flex-wrap items-center gap-6"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/ar_1:1,b_rgb:23262f,w_270/e_vignette/v1685467689/company/leather-couch-restoration-expert-worker-in-orange-county.jpg"
                 alt="ReLeather Orange County Leather Sofa Restoration Shop Experts"
                 title="ReLeather Orange County Leather Sofa Restoration Experts"
@@ -297,7 +297,7 @@ export default function LeatherRestorationOrangeCountyPage() {
                 <figure key={i} className="border-4 bg-releather-dark p-4" style={{ borderColor: "#23262f" }}>
                   <div className="flex flex-col gap-4 sm:flex-row sm:gap-6">
                     <div className="space-y-2">
-                      <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">Before</p><Image
+                      <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">Before</p><Image unoptimized
                         src={item.beforeSrc}
                         alt={item.beforeAlt}
                         width={300}
@@ -307,7 +307,7 @@ export default function LeatherRestorationOrangeCountyPage() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">After</p><Image
+                      <p className="font-sans text-xs font-bold uppercase tracking-wider text-releather-orange">After</p><Image unoptimized
                         src={item.afterSrc}
                         alt={item.afterAlt}
                         width={300}
@@ -362,7 +362,7 @@ export default function LeatherRestorationOrangeCountyPage() {
               → 4 Common Problems
             </h6>
             <ul className="mt-6 grid list-none grid-cols-1 gap-6 p-0 sm:grid-cols-2 lg:grid-cols-4">
-              <li className="border-4 border-black p-4"><Image
+              <li className="border-4 border-black p-4"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_250,w_250,x_165,y_370//ar_1:1,b_rgb:23262f,bo_5px_solid_rgb:f8991d,c_fill,g_auto,r_max,w_175/l_,l_text:montserrat_30_style_light:Faded,co_rgb:ffffff/v1653700009/before-after/faded-leather-couch.png"
                   alt="Color Faded and Discolored of a Aniline Leather Sofa"
                   title="Color Faded and Discolored of a Aniline Leather Sofa"
@@ -375,7 +375,7 @@ export default function LeatherRestorationOrangeCountyPage() {
                   Discolored leather from direct sunlight exposure especially in leathers with minimal protection.
                 </p>
               </li>
-              <li className="border-4 border-black p-4"><Image
+              <li className="border-4 border-black p-4"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_150,w_200,x_210,y_400//ar_1:1,b_rgb:23262f,bo_5px_solid_rgb:f8991d,c_fill,g_auto,r_max,w_175/l_,l_text:montserrat_30_style_light:Cracked,co_rgb:ffffff/v1653699338/before-after/cracked-leather-cushion-restoration.png"
                   alt="Cracking of a Aniline Leather Sofa"
                   title="Cracking of Aniline Leather Sofa"
@@ -388,7 +388,7 @@ export default function LeatherRestorationOrangeCountyPage() {
                   Cracking leather from loss of moisture makes your leather texture rough and easy to rip.
                 </p>
               </li>
-              <li className="border-4 border-black p-4"><Image
+              <li className="border-4 border-black p-4"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_250,w_250,x_200,y_460//ar_1:1,b_rgb:23262f,bo_5px_solid_rgb:f8991d,c_fill,g_auto,r_max,w_175/l_,l_text:montserrat_30_style_light:Scratched,co_rgb:ffffff/v1653624183/before-after/scratched-leather-chair.png"
                   alt="Scratched of a Aniline Leather Sofa"
                   title="Scratched of Aniline Leather Sofa"
@@ -401,7 +401,7 @@ export default function LeatherRestorationOrangeCountyPage() {
                   Scratched leather from damage to the leather surface results in visible scuffs, marks, abrasions.
                 </p>
               </li>
-              <li className="border-4 border-black p-4"><Image
+              <li className="border-4 border-black p-4"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_225,w_225,x_274,y_23/ar_1:1,b_rgb:23262f,bo_5px_solid_rgb:f8991d,c_fill,g_auto,r_max,w_175/l_,l_text:montserrat_30_style_light:Stained,co_rgb:ffffff/v1653624183/before-after/stained-leather-chair-restoration.png"
                   alt="Stained of a Aniline Leather Sofa"
                   title="Stained of Aniline Leather Sofa"
@@ -444,13 +444,13 @@ export default function LeatherRestorationOrangeCountyPage() {
             </h6>
             <ul className="list-none space-y-10 p-0">
               <li className="border-4 border-black p-6">
-                <div className="flex flex-wrap items-center gap-4"><Image
+                <div className="flex flex-wrap items-center gap-4"><Image unoptimized
                     src="https://res.cloudinary.com/releather-com/image/upload/v1655688729/icons/google-review-leather-restoration.png"
                     alt="Google 5 Star Reviews Leather Couch Restoration - ReLeather"
                     width={150}
                     height={50}
                     loading="lazy"
-                  /><Image
+                  /><Image unoptimized
                     src="https://res.cloudinary.com/releather-com/image/upload/ar_1:1,b_rgb:ffffff,bo_5px_solid_rgb:f8991d,c_fill,g_auto,r_max,w_125/v1685126530/before-after/leather-restoration-couch-positive-review-customer-from-orange-county.jpg"
                     alt="Leather Restoration Technician Repairing a Leather Couch"
                     width={125}
@@ -464,13 +464,13 @@ export default function LeatherRestorationOrangeCountyPage() {
                 </p>
               </li>
               <li className="border-4 border-black p-6">
-                <div className="flex flex-wrap items-center gap-4"><Image
+                <div className="flex flex-wrap items-center gap-4"><Image unoptimized
                     src="https://res.cloudinary.com/releather-com/image/upload/v1655689091/icons/facebook-reviews-leather-restoration.png"
                     alt="Facebook 5 Star Reviews Leather Couch Restoration - ReLeather"
                     width={150}
                     height={50}
                     loading="lazy"
-                  /><Image
+                  /><Image unoptimized
                     src="https://res.cloudinary.com/releather-com/image/upload/ar_1:1,b_rgb:ffffff,bo_5px_solid_rgb:f8991d,c_fill,g_auto,r_max,w_125/v1685124929/before-after/leather-restoration-technician-working-on-couch.jpg"
                     alt="Leather Restoration Technician Repairing a Leather Couch"
                     width={125}
@@ -484,13 +484,13 @@ export default function LeatherRestorationOrangeCountyPage() {
                 </p>
               </li>
               <li className="border-4 border-black p-6">
-                <div className="flex flex-wrap items-center gap-4"><Image
+                <div className="flex flex-wrap items-center gap-4"><Image unoptimized
                     src="https://res.cloudinary.com/releather-com/image/upload/v1683479486/logo/yelp-5-star-leather-couch-restoration-company-best.png"
                     alt="Yelp 5 Star Reviews Leather Couch Restoration - ReLeather"
                     width={150}
                     height={50}
                     loading="lazy"
-                  /><Image
+                  /><Image unoptimized
                     src="https://res.cloudinary.com/releather-com/image/upload/ar_1:1,b_rgb:ffffff,bo_5px_solid_rgb:f8991d,c_fill,g_auto,r_max,w_125/v1685123026/before-after/positive-review-from-leather-restoration-customer-in-orange-county.jpg"
                     alt="The best leather restoration company - Satisfied Customer from Orange County"
                     width={125}

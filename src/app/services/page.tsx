@@ -99,7 +99,7 @@ export default function ServicesPage() {
                     title={item.title}
                   >
                     <span className="flex h-[200px] shrink-0 overflow-hidden border-b-4 border-black">
-                      <Image
+                      <Image unoptimized
                         src={item.imgSrc}
                         alt={item.alt}
                         title={item.title}

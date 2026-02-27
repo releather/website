@@ -109,7 +109,7 @@ export default function IntroductionSection({
                 embedParams="rel=0"
               />
             ) : image ? (
-              <Image
+              <Image unoptimized
                 src={image.src}
                 alt={image.alt}
                 title={image.title}

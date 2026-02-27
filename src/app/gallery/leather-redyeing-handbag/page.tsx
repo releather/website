@@ -88,7 +88,7 @@ const issuesData = [
     ),
     media: (
       /* eslint-disable-next-line @next/next/no-img-element */
-      <Image
+      <Image unoptimized
         src="https://res.cloudinary.com/releather-com/image/upload/before-after/leather-dyeing/handbag-purse-bag/dirty-leather-handbag.jpg"
         alt="Dirty Soiled Leather Handbag Purse"
         title="Dirty Soiled Leather Handbag Purse"
@@ -107,7 +107,7 @@ const issuesData = [
     ),
     media: (
       /* eslint-disable-next-line @next/next/no-img-element */
-      <Image
+      <Image unoptimized
         src="https://res.cloudinary.com/releather-com/image/upload/before-after/leather-dyeing/handbag-purse-bag/sun-color-faded-leather-handbag.jpg"
         alt="Sun Color Faded Leather Handbag Purse"
         title="Sun Color Faded Leather Handbag Purse"
@@ -126,7 +126,7 @@ const issuesData = [
     ),
     media: (
       /* eslint-disable-next-line @next/next/no-img-element */
-      <Image
+      <Image unoptimized
         src="https://res.cloudinary.com/releather-com/image/upload/before-after/leather-dyeing/handbag-purse-bag/stained-spot-leather-handbag.jpg"
         alt="Stain Spot Leather Handbag Purse"
         title="Stain Spot Leather Handbag Purse"
@@ -145,7 +145,7 @@ const issuesData = [
     ),
     media: (
       /* eslint-disable-next-line @next/next/no-img-element */
-      <Image
+      <Image unoptimized
         src="https://res.cloudinary.com/releather-com/image/upload/before-after/leather-dyeing/handbag-purse-bag/dry-stiff-leather-handbag.jpg"
         alt="Dried Out Stiff Leather Handbag Purse"
         title="Dried Out Stiff Leather Handbag Purse"
@@ -164,7 +164,7 @@ const issuesData = [
     ),
     media: (
       /* eslint-disable-next-line @next/next/no-img-element */
-      <Image
+      <Image unoptimized
         src="https://res.cloudinary.com/releather-com/image/upload/before-after/leather-dyeing/handbag-purse-bag/scratched-scuffed-leather-handbag.jpg"
         alt="Scratched Scuffed Leather Handbag Purse"
         title="Scratched Scuffed Leather Handbag Purse"
@@ -183,7 +183,7 @@ const issuesData = [
     ),
     media: (
       /* eslint-disable-next-line @next/next/no-img-element */
-      <Image
+      <Image unoptimized
         src="https://res.cloudinary.com/releather-com/image/upload/before-after/leather-dyeing/handbag-purse-bag/change-color-leather-handbag.jpg"
         alt="Change Color Dye Leather Handbag Purse"
         title="Change Color Dye Leather Handbag Purse"

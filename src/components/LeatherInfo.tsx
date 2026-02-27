@@ -121,7 +121,7 @@ export default function LeatherInfo({
                   title={leather.name}
                   className="block transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
                 >
-                  <Image
+                  <Image unoptimized
                     src={leather.thumb}
                     alt={leather.alt}
                     title={leather.alt}
@@ -170,7 +170,7 @@ export default function LeatherInfo({
               ×
             </button>
             <div className="pt-2">
-              <Image
+              <Image unoptimized
                 src={selectedLeather.full}
                 alt={selectedLeather.alt}
                 title={selectedLeather.alt}

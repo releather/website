@@ -72,7 +72,7 @@ export default function LeatherUpholsteryBeforeAfter({ items }: Props) {
                     }
                     className="block w-full transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
                     title={item.beforeTitle}
-                  ><Image
+                  ><Image unoptimized
                       src={item.beforeSrc}
                       alt={item.beforeAlt}
                       title={item.beforeTitle}
@@ -98,7 +98,7 @@ export default function LeatherUpholsteryBeforeAfter({ items }: Props) {
                     }
                     className="block w-full transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
                     title={item.afterTitle}
-                  ><Image
+                  ><Image unoptimized
                       src={item.afterSrc}
                       alt={item.afterAlt}
                       title={item.afterTitle}
@@ -161,7 +161,7 @@ export default function LeatherUpholsteryBeforeAfter({ items }: Props) {
             >
               ×
             </button>
-            <div className="flex justify-center pt-2"><Image
+            <div className="flex justify-center pt-2"><Image unoptimized
                 src={popImage.src}
                 alt={popImage.alt}
                 className="max-h-[75vh] w-auto max-w-full rounded-lg object-contain"

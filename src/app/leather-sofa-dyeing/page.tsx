@@ -144,7 +144,7 @@ const faqItems = [
       <>
         <p>
           The frequency depends on use and exposure. Many owners schedule professional leather restoration or dyeing every 5 to 7 years. Regular conditioning and keeping the sofa out of direct sun can extend the time between full restorations.
-        </p><Image
+        </p><Image unoptimized
           src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-sofa-brown-nubuck-faded-change-to-pigmented-finish-sectional-arizona-leather-lake-forest-after.png"
           alt="Leather sectional after restoration and pigmented finish"
           title="Leather sectional after restoration and pigmented finish"
@@ -161,7 +161,7 @@ const faqItems = [
       <>
         <p>
           Yes. We offer leather dyeing and color change for sofas, sectionals, and sleepers. We can restore the original color or change it to a new shade (e.g., brown to expresso, tan to grey). The process includes preparation, dye application, and protection for a durable, even finish.
-        </p><Image
+        </p><Image unoptimized
           src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-dyeing-sofa-brown-pigmented-change-color-to-expresso-sleeper-american-leather-laguna-hills-after-extra.jpg"
           alt="Sleeper sofa after leather dyeing color change"
           title="Sleeper sofa after leather dyeing color change"
@@ -178,7 +178,7 @@ const faqItems = [
       <>
         <p>
           Aniline and nubuck leather can be refinished with a pigmented (protected) top coat. This adds durability and stain resistance while refreshing color. It is a good option when the leather is faded, stained, or you want easier maintenance without reupholstering.
-        </p><Image
+        </p><Image unoptimized
           src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-sofa-brown-aniline-faded-discoloration-surface-changed-to-pigmented-coating-morris-stickley-newport-beach-after.jpg"
           alt="Aniline sofa after conversion to pigmented coating"
           title="Aniline sofa after conversion to pigmented coating"
@@ -236,7 +236,7 @@ export default function LeatherSofaDyeingPage() {
             subtitle="→ A Smart Investment"
             intro={
               <>
-                <figure className="brutalist-image-frame w-[280px] sm:w-[320px]"><Image
+                <figure className="brutalist-image-frame w-[280px] sm:w-[320px]"><Image unoptimized
                     src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_350/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-sofa-burgundy-protected-american-leather-after.png"
                     alt="Leather sofa restoration and dyeing results"
                     title="Leather sofa restoration and dyeing results"

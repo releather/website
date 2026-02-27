@@ -21,7 +21,7 @@ export const leatherCleaningIssuesItems = [
         href={`${C}/g_center,l_text:montserrat_50_style_light:Ingrained%20Dirt,co_rgb:ffffff/v1653252682/before-after/dirty-leather-grain.jpg`}
         title="Leather Cleaning - Ingrained Leather Soiling"
         aria-label="Leather Cleaning - Ingrained Leather Soiling"
-      ><Image
+      ><Image unoptimized
           src={`${C}/c_scale,w_200/g_center,l_text:montserrat_20_style_light:Ingrained%20Dirt,co_rgb:ffffff/v1653252682/before-after/dirty-leather-grain.jpg`}
           alt="Leather Cleaning - Ingrained Leather Soiling"
           title="Leather Cleaning - Ingrained Leather Soiling"
@@ -58,7 +58,7 @@ export const leatherCleaningIssuesItems = [
       </p>
     ),
     media: (
-      <div className="flex justify-center"><Image
+      <div className="flex justify-center"><Image unoptimized
           src={`${C}/g_center,l_text:montserrat_50_style_light:Ink%20Mark,co_rgb:ffffff/v1655096099/leather/ink-mark-on-leather-sofa-cushion.jpg`}
           alt="Pen Ink mark on leather sofa couch cushion"
           title="Pen Ink mark on leather sofa couch cushion"

@@ -190,7 +190,7 @@ const issuesData = [
     ),
     media: (
       /* eslint-disable-next-line @next/next/no-img-element */
-      <Image
+      <Image unoptimized
         src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_300,h_285,y_100,x_30/bo_5px_solid_rgb:f8991d/v1725867177/before-after/leather-restoration/furniture/blue/chair/leather-restoration-century-blue-leather-club-chair-nailhead-trim-faded-cushion.jpg"
         alt="Sun-damaged and discolored leather on a blue club chair"
         title="Sun-damaged and discolored leather on a blue club chair"
@@ -209,7 +209,7 @@ const issuesData = [
     ),
     media: (
       /* eslint-disable-next-line @next/next/no-img-element */
-      <Image
+      <Image unoptimized
         src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_300,h_285,y_135,x_25/bo_5px_solid_rgb:f8991d/v1725867178/before-after/leather-restoration/furniture/blue/chair/leather-restoration-century-blue-leather-club-chair-nailhead-trim-faded-discoloration.jpg"
         alt="Cracked and dried leather cushion on a blue chair"
         title="Cracked and dried leather cushion on a blue chair"
@@ -228,7 +228,7 @@ const issuesData = [
     ),
     media: (
       /* eslint-disable-next-line @next/next/no-img-element */
-      <Image
+      <Image unoptimized
         src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_300,h_285,y_100,x_25/bo_5px_solid_rgb:f8991d/v1725867177/before-after/leather-restoration/furniture/blue/chair/leather-restoration-century-blue-leather-club-chair-nailhead-trim-faded-cushion.jpg"
         alt="Cracked and dried leather cushion on a blue chair"
         title="Cracked and dried leather cushion on a blue chair"
@@ -250,7 +250,7 @@ const beforeAfterItems: LeatherRestorationBeforeAfterItem[] = [
     afterTitle: "After espresso brown leather dyeing of designer tub armchair in Los Angeles",
     serviceType: "Custom Color Change",
     furniture: "Designer Tub Chair",
-    color: <a href="https://res.cloudinary.com/releather-com/image/upload/v1639529981/leather/Luxor_Espresso_HI.jpg" title="Espresso leather swatch - custom color change option" target="_blank" rel="noopener noreferrer"><Image src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1639529981/leather/Luxor_Espresso_HI.jpg" alt="Espresso leather swatch for custom color change" title="Espresso leather swatch - custom color change option" width={250} height={50} loading="lazy" /></a>,
+    color: <a href="https://res.cloudinary.com/releather-com/image/upload/v1639529981/leather/Luxor_Espresso_HI.jpg" title="Espresso leather swatch - custom color change option" target="_blank" rel="noopener noreferrer"><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1639529981/leather/Luxor_Espresso_HI.jpg" alt="Espresso leather swatch for custom color change" title="Espresso leather swatch - custom color change option" width={250} height={50} loading="lazy" /></a>,
     leatherType: "Semi-Aniline Leather",
     problem: "Custom redyeing espresso brown",
     location: "Los Angeles, CA",
@@ -265,7 +265,7 @@ const beforeAfterItems: LeatherRestorationBeforeAfterItem[] = [
     afterTitle: "Leather Upholstery Cromwellian Chairs San Diego After Restoration",
     serviceType: "Leather Recovering",
     furniture: "Cromwellian Chair",
-    color: <a href="https://res.cloudinary.com/releather-com/image/upload/v1639529981/leather/Concerto_Saddle_HI.jpg" target="_blank" rel="noopener noreferrer"><Image src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1639529981/leather/Concerto_Saddle_HI.jpg" alt="Concerto Saddle Leather Sample" title="Concerto Saddle Leather Sample" width={250} height={50} loading="lazy" /></a>,
+    color: <a href="https://res.cloudinary.com/releather-com/image/upload/v1639529981/leather/Concerto_Saddle_HI.jpg" target="_blank" rel="noopener noreferrer"><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1639529981/leather/Concerto_Saddle_HI.jpg" alt="Concerto Saddle Leather Sample" title="Concerto Saddle Leather Sample" width={250} height={50} loading="lazy" /></a>,
     leatherType: "Aniline Leather",
     problem: "Tears stains dryness age",
     location: "Oceanside / San Diego, CA",
@@ -280,7 +280,7 @@ const beforeAfterItems: LeatherRestorationBeforeAfterItem[] = [
     afterTitle: "After restoration of metallic gold leather swivel chair in Indian Wells",
     serviceType: "Leather Restoration",
     furniture: "Swivel Chair",
-    color: <a href="https://res.cloudinary.com/leathera/image/upload/b_rgb:000000/l_text:montserrat_80_style_light:Mushroom,co_rgb:ffffff/leather/Metallic/Metallic_Leather_Mushroom.jpg" target="_blank" rel="noopener noreferrer"><Image src="https://res.cloudinary.com/leathera/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/leather/Metallic/Metallic_Leather_Mushroom.jpg" alt="Metallic Mushroom leather swatch used for restoration" title="Metallic Mushroom leather swatch used for restoration" width={250} height={50} loading="lazy" /></a>,
+    color: <a href="https://res.cloudinary.com/leathera/image/upload/b_rgb:000000/l_text:montserrat_80_style_light:Mushroom,co_rgb:ffffff/leather/Metallic/Metallic_Leather_Mushroom.jpg" target="_blank" rel="noopener noreferrer"><Image unoptimized src="https://res.cloudinary.com/leathera/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/leather/Metallic/Metallic_Leather_Mushroom.jpg" alt="Metallic Mushroom leather swatch used for restoration" title="Metallic Mushroom leather swatch used for restoration" width={250} height={50} loading="lazy" /></a>,
     leatherType: "Protected leather",
     problem: "Faded wear cracking spotting",
     location: "Indian Wells Palm Desert, CA",
@@ -295,7 +295,7 @@ const beforeAfterItems: LeatherRestorationBeforeAfterItem[] = [
     afterTitle: "Leather reupholstery of high back dining chairs in Orange County",
     serviceType: "Leather Recovering",
     furniture: "High Back Dining Chairs",
-    color: <a href="https://res.cloudinary.com/releather-com/image/upload/v1638909286/leather/PALETTE_espresso_HI.jpg" title="Espresso color leather sample used in dining chair reupholstery" target="_blank" rel="noopener noreferrer"><Image src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1638909286/leather/PALETTE_espresso_HI.jpg" alt="Espresso brown leather swatch for high back dining chairs" title="Espresso brown leather swatch for high back dining chairs" width={250} height={50} loading="lazy" /></a>,
+    color: <a href="https://res.cloudinary.com/releather-com/image/upload/v1638909286/leather/PALETTE_espresso_HI.jpg" title="Espresso color leather sample used in dining chair reupholstery" target="_blank" rel="noopener noreferrer"><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1638909286/leather/PALETTE_espresso_HI.jpg" alt="Espresso brown leather swatch for high back dining chairs" title="Espresso brown leather swatch for high back dining chairs" width={250} height={50} loading="lazy" /></a>,
     leatherType: "Protected Leather",
     problem: "Wear cracking bonded leather",
     location: "Orange County, CA",
@@ -310,7 +310,7 @@ const beforeAfterItems: LeatherRestorationBeforeAfterItem[] = [
     afterTitle: "Leather reupholstery for brown Chippendale style wingback chair",
     serviceType: "Leather Recovering",
     furniture: "Wingback Chair",
-    color: <a href="https://res.cloudinary.com/releather-com/image/upload/v1636920011/leather/SEDONA_pinto_HI.jpg" title="Sedona Pinto Leather Sample" target="_blank" rel="noopener noreferrer"><Image src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1636920011/leather/SEDONA_pinto_HI.jpg" alt="Sedona pinto leather sample for reupholstery" title="Sedona pinto leather sample for reupholstery" width={250} height={50} loading="lazy" /></a>,
+    color: <a href="https://res.cloudinary.com/releather-com/image/upload/v1636920011/leather/SEDONA_pinto_HI.jpg" title="Sedona Pinto Leather Sample" target="_blank" rel="noopener noreferrer"><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1636920011/leather/SEDONA_pinto_HI.jpg" alt="Sedona pinto leather sample for reupholstery" title="Sedona pinto leather sample for reupholstery" width={250} height={50} loading="lazy" /></a>,
     leatherType: "Protected Leather",
     problem: "Ripped worn Chippendale style",
     location: "Irvine, CA",
@@ -325,7 +325,7 @@ const beforeAfterItems: LeatherRestorationBeforeAfterItem[] = [
     afterTitle: "Century Furniture leather recliner restored in Newport Beach",
     serviceType: "Leather Restoration",
     furniture: "Bustle Back Recliner",
-    color: <a href="https://res.cloudinary.com/releather-com/image/upload/v1638909286/leather/PALETTE_harness-brown_HI.jpg" title="Palette Harness Brown Leather Sample" target="_blank" rel="noopener noreferrer"><Image src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1638909286/leather/PALETTE_harness-brown_HI.jpg" alt="Palette harness brown leather sample for restoration" title="Palette harness brown leather sample for restoration" width={250} height={50} loading="lazy" /></a>,
+    color: <a href="https://res.cloudinary.com/releather-com/image/upload/v1638909286/leather/PALETTE_harness-brown_HI.jpg" title="Palette Harness Brown Leather Sample" target="_blank" rel="noopener noreferrer"><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1638909286/leather/PALETTE_harness-brown_HI.jpg" alt="Palette harness brown leather sample for restoration" title="Palette harness brown leather sample for restoration" width={250} height={50} loading="lazy" /></a>,
     leatherType: "Protected Leather",
     problem: "Oil stains bustle pillow",
     location: "Newport Beach, CA",
@@ -340,7 +340,7 @@ const beforeAfterItems: LeatherRestorationBeforeAfterItem[] = [
     afterTitle: "Distressed brown leather and zebra print chair upholstery",
     serviceType: "Leather Recovering",
     furniture: "Wingback Chair",
-    color: <a href="https://res.cloudinary.com/releather-com/image/upload/v1639529300/leather/Concerto_Mushroom_HI.jpg" title="Concerto Mushroom Leather Sample" target="_blank" rel="noopener noreferrer"><Image src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1639529300/leather/Concerto_Mushroom_HI.jpg" alt="Concerto mushroom leather sample for chair recovering" title="Concerto mushroom leather sample for chair recovering" width={250} height={50} loading="lazy" /></a>,
+    color: <a href="https://res.cloudinary.com/releather-com/image/upload/v1639529300/leather/Concerto_Mushroom_HI.jpg" title="Concerto Mushroom Leather Sample" target="_blank" rel="noopener noreferrer"><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d/v1639529300/leather/Concerto_Mushroom_HI.jpg" alt="Concerto mushroom leather sample for chair recovering" title="Concerto mushroom leather sample for chair recovering" width={250} height={50} loading="lazy" /></a>,
     leatherType: "Distressed Leather, Hair-on-Hide",
     problem: "Custom zebra distressed recover",
     location: "Huntington Beach, CA",
@@ -355,7 +355,7 @@ const beforeAfterItems: LeatherRestorationBeforeAfterItem[] = [
     afterTitle: "Leather Restoration Century Furniture Recliner Chair Huntington Beach",
     serviceType: "Leather Restoration",
     furniture: "Bustle Back Chair",
-    color: <a href="https://res.cloudinary.com/releather-com/image/upload/v1636920011/leather/SEDONA_pinto_HI.jpg" title="SEDONA Pinto Leather Swatch" target="_blank" rel="noopener noreferrer"><Image src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d//v1636920011/leather/SEDONA_pinto_HI.jpg" alt="SEDONA Pinto Leather Swatch" title="SEDONA Pinto Leather Swatch" width={250} height={50} loading="lazy" /></a>,
+    color: <a href="https://res.cloudinary.com/releather-com/image/upload/v1636920011/leather/SEDONA_pinto_HI.jpg" title="SEDONA Pinto Leather Swatch" target="_blank" rel="noopener noreferrer"><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d//v1636920011/leather/SEDONA_pinto_HI.jpg" alt="SEDONA Pinto Leather Swatch" title="SEDONA Pinto Leather Swatch" width={250} height={50} loading="lazy" /></a>,
     leatherType: "Semi-Aniline Leather",
     problem: "Fading two-tone recoloring",
     location: "Huntington Beach, CA",
@@ -370,7 +370,7 @@ const beforeAfterItems: LeatherRestorationBeforeAfterItem[] = [
     afterTitle: "Leather Restoration Morris Recliner Chair Irvine",
     serviceType: "Leather Restoration",
     furniture: "Recliner Chair",
-    color: <a href="https://res.cloudinary.com/releather-com/image/upload/v1638909286/leather/PALETTE_sandstone_HI.jpg" title="PALETTE Sandstone Leather Swatch" target="_blank" rel="noopener noreferrer"><Image src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d//v1638909286/leather/PALETTE_sandstone_HI.jpg" alt="PALETTE Sandstone Leather Swatch" title="PALETTE Sandstone Leather Swatch" width={250} height={50} loading="lazy" /></a>,
+    color: <a href="https://res.cloudinary.com/releather-com/image/upload/v1638909286/leather/PALETTE_sandstone_HI.jpg" title="PALETTE Sandstone Leather Swatch" target="_blank" rel="noopener noreferrer"><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_crop,w_250,h_50/bo_2px_solid_rgb:f8991d//v1638909286/leather/PALETTE_sandstone_HI.jpg" alt="PALETTE Sandstone Leather Swatch" title="PALETTE Sandstone Leather Swatch" width={250} height={50} loading="lazy" /></a>,
     leatherType: "Protected Leather",
     problem: "Cracked beige embedded soil",
     location: "Irvine, CA",
@@ -393,7 +393,7 @@ const beforeAfterItems: LeatherRestorationBeforeAfterItem[] = [
 ];
 
 const processExtraMedia = (
-  <figure className="border-4 border-black bg-white p-4"><Image
+  <figure className="border-4 border-black bg-white p-4"><Image unoptimized
       src="https://res.cloudinary.com/releather-com/image/upload/c_crop,h_465,w_410,x_12,y_60/l_text:montserrat_40_style_light:Faded!,co_rgb:000000,g_south_west,y_25,x_25/v1725867178/before-after/leather-restoration/furniture/blue/chair/leather-restoration-century-blue-leather-club-chair-nailhead-trim-faded-discoloration.jpg"
       alt="Faded brand-name leather chair before restoration"
       title="Faded brand-name leather chair before restoration"
@@ -413,7 +413,7 @@ const faqItems = [
     question: "How often should I have my leather chairs restored?",
     answer: (
       <>
-        <p>The frequency of leather restoration depends on usage and wear. Typically, professional restoration every 5 to 7 years maintains appearance and durability. Regular care—like conditioning and cleaning—helps extend time between restorations.</p><Image src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_450,h_450/bo_10px_solid_rgb:f8991d/v1725867177/before-after/leather-restoration/furniture/blue/chair/leather-restoration-century-blue-leather-club-chair-nailhead-trim-faded-cushion.jpg" alt="leather restoration faded blue club chair" title="leather restoration faded blue club chair" width={450} height={450} loading="lazy" />
+        <p>The frequency of leather restoration depends on usage and wear. Typically, professional restoration every 5 to 7 years maintains appearance and durability. Regular care—like conditioning and cleaning—helps extend time between restorations.</p><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_450,h_450/bo_10px_solid_rgb:f8991d/v1725867177/before-after/leather-restoration/furniture/blue/chair/leather-restoration-century-blue-leather-club-chair-nailhead-trim-faded-cushion.jpg" alt="leather restoration faded blue club chair" title="leather restoration faded blue club chair" width={450} height={450} loading="lazy" />
       </>
     ),
   },
@@ -421,7 +421,7 @@ const faqItems = [
     question: "Can leather restoration fix deep scratches and cracks?",
     answer: (
       <>
-        <p>We can resurface scratches and cracks during restoration. However, if the crack is too deep, it can&apos;t be fully repaired without compromising the leather&apos;s integrity. We assess the damage and tailor our service to restore the leather effectively and safely.</p><Image src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_450,h_450/bo_10px_solid_rgb:f8991d/v1715794039/samples/repairs/Restoration-Hardware-Leather-Sofa-Couch-Scratches-Scratch-200.jpg" alt="leather restoration for sofa with scratches" title="leather restoration for sofa with scratches" width={450} height={450} loading="lazy" />
+        <p>We can resurface scratches and cracks during restoration. However, if the crack is too deep, it can&apos;t be fully repaired without compromising the leather&apos;s integrity. We assess the damage and tailor our service to restore the leather effectively and safely.</p><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_450,h_450/bo_10px_solid_rgb:f8991d/v1715794039/samples/repairs/Restoration-Hardware-Leather-Sofa-Couch-Scratches-Scratch-200.jpg" alt="leather restoration for sofa with scratches" title="leather restoration for sofa with scratches" width={450} height={450} loading="lazy" />
       </>
     ),
   },
@@ -429,7 +429,7 @@ const faqItems = [
     question: "What will be done to the nail heads of my chair during restoration?",
     answer: (
       <>
-        <p>We may either carefully mask each nail head with tape to protect it or remove and replace them with new matching ones, depending on the condition and your preference. Our goal is to preserve the original look while restoring the leather.</p><Image src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_450,h_450/bo_10px_solid_rgb:f8991d/v1725867178/before-after/leather-restoration/furniture/blue/chair/leather-restoration-century-blue-leather-club-chair-nailhead-trim-faded-nailhead.jpg" alt="leather chair nailhead restoration process" title="leather chair nailhead restoration process" width={450} height={450} loading="lazy" />
+        <p>We may either carefully mask each nail head with tape to protect it or remove and replace them with new matching ones, depending on the condition and your preference. Our goal is to preserve the original look while restoring the leather.</p><Image unoptimized src="https://res.cloudinary.com/releather-com/image/upload/c_scale,w_450,h_450/bo_10px_solid_rgb:f8991d/v1725867178/before-after/leather-restoration/furniture/blue/chair/leather-restoration-century-blue-leather-club-chair-nailhead-trim-faded-nailhead.jpg" alt="leather chair nailhead restoration process" title="leather chair nailhead restoration process" width={450} height={450} loading="lazy" />
       </>
     ),
   },
@@ -493,7 +493,7 @@ export default function LeatherRestorationLoungeChairsPage() {
             <ul className="mt-8 grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-3 sm:gap-4 lg:grid-cols-3 lg:gap-4 lg:px-2">
               {recommendationImages.map((item) => (
                 <li key={item.label} className="text-center">
-                  <div className="mx-auto max-w-[200px] border-4 border-black"><Image
+                  <div className="mx-auto max-w-[200px] border-4 border-black"><Image unoptimized
                       src={item.src}
                       alt={item.alt}
                       title={item.title}
@@ -517,7 +517,7 @@ export default function LeatherRestorationLoungeChairsPage() {
             subtitle="→ A Smart Investment"
             intro={
               <>
-                <figure className="brutalist-image-frame w-[280px] sm:w-[320px]"><Image
+                <figure className="brutalist-image-frame w-[280px] sm:w-[320px]"><Image unoptimized
                     src="https://res.cloudinary.com/releather-com/image/upload/ar_1:1,w_450,h_350/v1725878772/samples/service/Leather-Restoration-Chair.png"
                     alt="Leather restoration of premium brand chair using expert repair techniques"
                     title="Restoring leather chair with expert restoration and renewal techniques"

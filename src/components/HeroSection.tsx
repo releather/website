@@ -82,7 +82,7 @@ export default function HeroSection() {
         {/* Row 3: Hero image left, highlights list right */}
         <div className="mt-8 grid gap-8 lg:grid-cols-2 lg:items-start lg:gap-16">
           <div className="flex justify-center lg:justify-end">
-            <Image
+            <Image unoptimized
               src={HERO_COUCH_IMG}
               alt="Leather restoration couch sofa before and after"
               width={520}

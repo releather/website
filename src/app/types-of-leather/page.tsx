@@ -142,7 +142,7 @@ export default function TypesOfLeatherPage() {
                     </p>
                   ))}
                 </div>
-                <div className="flex justify-center"><Image
+                <div className="flex justify-center"><Image unoptimized
                     src={type.imgSrc}
                     alt={type.alt}
                     width={550}

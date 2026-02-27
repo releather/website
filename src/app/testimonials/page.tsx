@@ -238,7 +238,7 @@ export default function TestimonialsPage() {
                             index % 2 === 1 ? { direction: "ltr" } : undefined
                           }
                         >
-                          <Image
+                          <Image unoptimized
                             src={t.image}
                             alt=""
                             width={600}

@@ -48,7 +48,7 @@ export default function HeaderTopBar({
         <div className="flex flex-col gap-2 py-2 md:hidden">
           <div className="flex min-h-0 items-center justify-between gap-2">
             <Link href="/" className="block shrink-0 max-w-[60%]">
-              <Image
+              <Image unoptimized
                 src={LOGO_URL}
                 alt="ReLeather"
                 width={375}
@@ -104,7 +104,7 @@ export default function HeaderTopBar({
         <div className="hidden min-h-[4rem] items-center justify-between gap-4 py-4 md:flex md:flex-row md:py-4">
           <div className="flex shrink-0 justify-start">
             <Link href="/" className="block">
-              <Image
+              <Image unoptimized
                 src={LOGO_URL}
                 alt="ReLeather"
                 width={375}
@@ -134,7 +134,7 @@ export default function HeaderTopBar({
             </a>
           </nav>
           <div className="shrink-0">
-            <Image
+            <Image unoptimized
               src={VAN_URL}
               alt=""
               width={180}

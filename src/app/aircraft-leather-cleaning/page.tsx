@@ -215,7 +215,7 @@ export default function AircraftLeatherCleaningPage() {
               Before &amp; After
             </h3>
             <div className="my-6 grid grid-cols-1 gap-4 border-4 border-black bg-white p-4 shadow-[6px_6px_0_0_#f8991d] sm:grid-cols-2 sm:gap-6 sm:p-5">
-              <figure className="overflow-hidden border-4 border-black"><Image
+              <figure className="overflow-hidden border-4 border-black"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-before/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-aircraft-beige-pigmented-soiled-faded-private-jet-project-interior-newport-beach-before.jpg"
                   alt="Aircraft leather interior before restoration – Newport Beach"
                   width={450}
@@ -227,7 +227,7 @@ export default function AircraftLeatherCleaningPage() {
                   Before
                 </figcaption>
               </figure>
-              <figure className="overflow-hidden border-4 border-black"><Image
+              <figure className="overflow-hidden border-4 border-black"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/c_fill,w_450,h_450/bo_10px_solid_rgb:f8991d/u_image:upload:background:background/c_thumb,w_1.0,h_1.0,fl_relative.layer_apply/l_image:upload:background:repair-after/c_scale,fl_relative,w_0.96/o_100/fl_layer_apply,g_south_west,x_0.02,y_0.04/before-after/leather-restoration-aircraft-beige-pigmented-soiled-faded-private-jet-project-interior-newport-beach-after.jpg"
                   alt="Aircraft leather interior after restoration – Newport Beach"
                   width={450}

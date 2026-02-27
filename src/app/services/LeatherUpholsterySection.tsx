@@ -174,7 +174,7 @@ export default function LeatherUpholsterySection() {
               href="#leather-upholstery"
               title="Furniture"
               className="flex flex-col items-center gap-1 text-center text-gray-700 transition hover:text-releather-orange"
-            ><Image
+            ><Image unoptimized
                 src="https://res.cloudinary.com/leathera/image/upload/w_100,c_fill,ar_1:1,g_auto,r_max,bo_1px_solid_rgb:f5f5f5,b_rgb:f5f5f5/v1702140740/icons/chairs_svg.svg"
                 alt="Furniture"
                 width={60}
@@ -188,7 +188,7 @@ export default function LeatherUpholsterySection() {
               href="/replacement-cushions-for-leather-couch"
               title="Cushions"
               className="flex flex-col items-center gap-1 text-center text-gray-700 transition hover:text-releather-orange"
-            ><Image
+            ><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/w_100,c_fill,ar_1:1,g_auto,r_max,bo_1px_solid_rgb:f5f5f5,b_rgb:f5f5f5/icons/leather-cushion.svg"
                 alt="Cushions"
                 width={101}
@@ -213,7 +213,7 @@ export default function LeatherUpholsterySection() {
                 onClick={() => setSelectedLeather(leather)}
                 className="block transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
                 title={leather.name}
-              ><Image
+              ><Image unoptimized
                   src={leather.thumb}
                   alt={leather.alt}
                   width={150}
@@ -263,7 +263,7 @@ export default function LeatherUpholsterySection() {
             >
               ×
             </button>
-            <div className="pt-2"><Image
+            <div className="pt-2"><Image unoptimized
                 src={selectedLeather.full}
                 alt={selectedLeather.alt}
                 className="max-h-[75vh] w-auto max-w-full rounded-lg object-contain"

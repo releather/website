@@ -59,7 +59,7 @@ export default function ServicesSection() {
                 title={item.titleAttr}
                 className="flex flex-col items-center justify-center gap-2 bg-black py-5 px-4 transition hover:bg-releather-orange"
               >
-                <Image
+                <Image unoptimized
                   src={item.imgSrc}
                   alt={item.alt}
                   width={64}

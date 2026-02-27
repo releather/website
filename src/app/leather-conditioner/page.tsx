@@ -67,7 +67,7 @@ export default function LeatherConditionerPage() {
               </div>
             }
             rightContent={
-              <div className="flex flex-col items-center text-center"><Image
+              <div className="flex flex-col items-center text-center"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/v1643861241/logo/ReLeather-Leather-Conditioner.png"
                   alt="The Best Leather Conditioner for Leather Sofa Couch"
                   title="The Best Leather Conditioner for Leather Sofa Couch"

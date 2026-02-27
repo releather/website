@@ -70,7 +70,7 @@ export default function HighlightsSection() {
                   index % 2 === 1 ? "lg:order-2 lg:border-r-0 lg:border-l-4" : ""
                 }`}
               >
-                <Image
+                <Image unoptimized
                   src={item.imgSrc}
                   alt={item.imgAlt}
                   title={item.imgAlt}

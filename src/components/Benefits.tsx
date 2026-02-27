@@ -53,7 +53,7 @@ export default function Benefits({
         </div>
       ) : image ? (
         <p className="mt-6">
-          <Image
+          <Image unoptimized
             src={image.src}
             alt={image.alt}
             title={image.title ?? image.alt}

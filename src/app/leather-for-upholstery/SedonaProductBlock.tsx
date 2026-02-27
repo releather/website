@@ -94,7 +94,7 @@ export default function SedonaProductBlock() {
               onClick={openMain}
               className="mt-4 block transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange focus:ring-offset-2"
               title={sedonaMainImage.title}
-            ><Image
+            ><Image unoptimized
                 src={sedonaMainImage.thumb}
                 alt={sedonaMainImage.alt}
                 title={sedonaMainImage.title}
@@ -148,7 +148,7 @@ export default function SedonaProductBlock() {
                   onClick={() => openSwatch(swatch)}
                   title={`Sedona ${swatch.name}`}
                   className="block transition opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
-                ><Image
+                ><Image unoptimized
                     src={swatch.thumb}
                     alt={`Leather Hide Upholstery Sedona ${swatch.name} Thumb`}
                     width={90}
@@ -192,7 +192,7 @@ export default function SedonaProductBlock() {
             >
               ×
             </button>
-            <div className="pt-2"><Image
+            <div className="pt-2"><Image unoptimized
                 src={popImage.full}
                 alt={popImage.alt}
                 title={popImage.alt}
