@@ -1,4 +1,5 @@
 import Image from "next/image";
+import LiteYouTube from "@/components/LiteYouTube";
 
 const HERO_BG =
   "https://res.cloudinary.com/releather-com/image/upload/f_auto/f_webp/v1654065902/background/background-leather-gradient.png";
@@ -62,12 +63,10 @@ export default function HeroSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Row 1: Video on its own line */}
         <div className="mx-auto max-w-2xl overflow-hidden rounded-lg">
-          <iframe
+          <LiteYouTube
+            videoId="2JhDAV8UJcs"
             title="ReLeather restoration video"
-            src="https://www.youtube.com/embed/2JhDAV8UJcs?start=3&rel=0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="aspect-video w-full rounded-lg"
+            embedParams="start=3&rel=0"
           />
         </div>
 

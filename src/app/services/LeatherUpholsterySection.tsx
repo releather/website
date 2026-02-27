@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import LiteYouTube from "@/components/LiteYouTube";
 import { useCallback, useEffect, useState } from "react";
 
 const leatherUpholsteryOptions = [
@@ -159,14 +160,10 @@ export default function LeatherUpholsterySection() {
             </div>
           </div>
           <div className="mt-6 aspect-video w-full overflow-hidden rounded-lg">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/BpivfJnFUxs?rel=0&showinfo=0"
+            <LiteYouTube
+              videoId="BpivfJnFUxs"
               title="Leather Upholstery"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="h-full w-full"
+              embedParams="rel=0&showinfo=0"
             />
           </div>
           <h3 className="mt-6 font-sans text-sm font-bold uppercase tracking-wider text-gray-500">

@@ -11,6 +11,7 @@ import Benefits from "@/components/Benefits";
 import Process from "@/components/Process";
 import Guide from "@/components/Guide";
 import Issues from "@/components/Issues";
+import LiteYouTube from "@/components/LiteYouTube";
 
 const title = "Leather Dyeing Handbags & Purses | ReLeather";
 const description =
@@ -360,14 +361,11 @@ export default function LeatherRedyeingHandbagPage() {
             </h2>
             <div className="my-6 overflow-hidden">
               <div className="float-right ml-6 mb-4 w-[280px] shrink-0 sm:w-[320px]">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/tZ_fUWosXCU?rel=0&showinfo=0"
+                <LiteYouTube
+                  videoId="tZ_fUWosXCU"
                   title="Leather handbag restoration and dyeing"
-                  allow="encrypted-media"
-                  allowFullScreen
-                  className="max-w-full border-4 border-black"
+                  embedParams="rel=0&showinfo=0"
+                  className="border-4 border-black"
                 />
               </div>
               <p>

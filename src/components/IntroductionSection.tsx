@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import LiteYouTube from "@/components/LiteYouTube";
 
 export type IntroductionCta = {
   href: string;
@@ -102,12 +103,10 @@ export default function IntroductionSection({
             {rightContent ? (
               rightContent
             ) : videoEmbed ? (
-              <iframe
+              <LiteYouTube
+                videoId={videoEmbed.youtubeId}
                 title={videoEmbed.title ?? "Video"}
-                src={`https://www.youtube.com/embed/${videoEmbed.youtubeId}?rel=0`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="h-full w-full rounded-lg"
+                embedParams="rel=0"
               />
             ) : image ? (
               <Image

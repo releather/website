@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import LiteYouTube from "@/components/LiteYouTube";
 import { useCallback, useEffect, useState } from "react";
 
 const leatherRestorationRecommended = [
@@ -131,11 +132,10 @@ export default function LeatherRestorationSection() {
               </Link>
             </li>
             <li className="border-t border-gray-200 pt-4 aspect-video w-full overflow-hidden rounded-lg">
-              <iframe
-                src="https://www.youtube.com/embed/Po1Rx119hJA?rel=0&showinfo=0"
+              <LiteYouTube
+                videoId="Po1Rx119hJA"
                 title="Leather Restoration"
-                allowFullScreen
-                className="h-full w-full"
+                embedParams="rel=0&showinfo=0"
               />
             </li>
             <li className="border-t border-gray-200 pt-4">

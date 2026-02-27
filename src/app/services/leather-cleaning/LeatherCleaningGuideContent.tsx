@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import LiteYouTube from "@/components/LiteYouTube";
 
 export default function LeatherCleaningGuideContent() {
   return (
@@ -13,12 +14,10 @@ export default function LeatherCleaningGuideContent() {
       </p>
 
       <div className="my-8 aspect-video w-full overflow-hidden rounded-lg">
-        <iframe
+        <LiteYouTube
+          videoId="YZDDasKPRKk"
           title="Leather cleaning guide video"
-          src="https://www.youtube.com/embed/YZDDasKPRKk?rel=0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className="h-full w-full"
+          embedParams="rel=0"
         />
       </div>
 

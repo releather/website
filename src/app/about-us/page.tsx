@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import HeaderWrapper from "@/components/HeaderWrapper";
+import LiteYouTube from "@/components/LiteYouTube";
 import Footer from "@/components/Footer";
 import IntroductionSection from "@/components/IntroductionSection";
 
@@ -65,13 +66,11 @@ export default function AboutUsPage() {
             }}
             rightContent={
               <>
-                <div className="aspect-[4/3] w-full overflow-hidden rounded-lg">
-                  <iframe
+                <div className="aspect-video w-full overflow-hidden rounded-lg">
+                  <LiteYouTube
+                    videoId="fIRl2aWCs2c"
                     title="ReLeather"
-                    src="https://www.youtube.com/embed/fIRl2aWCs2c?rel=0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="h-full w-full rounded-lg"
+                    embedParams="rel=0"
                   />
                 </div>
                 <div

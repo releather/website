@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import LiteYouTube from "@/components/LiteYouTube";
 
 export default function LeatherConditionerGuideContent() {
   return (
@@ -23,11 +24,10 @@ export default function LeatherConditionerGuideContent() {
       </p>
 
       <div className="overflow-hidden">
-        <iframe
+        <LiteYouTube
+          videoId="8lyJrU-PcA8"
           title="Leather conditioner guide"
-          src="https://www.youtube.com/embed/8lyJrU-PcA8?rel=0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
+          embedParams="rel=0"
           className="float-right ml-6 mb-4 h-[200px] w-[356px] max-w-full rounded-lg sm:h-[225px] sm:w-[400px]"
         />
         <p className="font-display text-2xl font-normal leading-tight text-black sm:text-3xl">

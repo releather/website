@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: "res.cloudinary.com",
         pathname: "/leathera/**",
       },
+      {
+        protocol: "https",
+        hostname: "img.youtube.com",
+        pathname: "/vi/**",
+      },
     ],
   },
   // Reduce file watcher load to avoid EMFILE (too many open files) on macOS
