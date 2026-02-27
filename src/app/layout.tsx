@@ -28,14 +28,6 @@ export const metadata: Metadata = {
   title: "ReLeather | Professional Leather Repair & Restoration",
   description:
     "Certified leather restoration and repair for furniture, automotive, garments, and handbags. Get a free quote.",
-  icons: {
-    icon: [
-      {
-        url: "https://res.cloudinary.com/releather-com/image/upload/v1771752856/logo/releather-emblem.png",
-        type: "image/png",
-      },
-    ],
-  },
   // Open Graph and Twitter defaults; pages merge with title/description/canonical
   openGraph: {
     siteName: "ReLeather",
@@ -88,11 +80,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${bebasNeue.variable} ${spaceGrotesk.variable}`}>
       <head>
-        <link
-          rel="icon"
-          type="image/png"
-          href="https://res.cloudinary.com/releather-com/image/upload/v1771752856/logo/releather-emblem.png"
-        />
       </head>
       <body className="font-sans antialiased">
         {/* Google Tag Manager: script (afterInteractive) + noscript fallback */}
