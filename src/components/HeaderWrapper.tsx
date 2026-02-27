@@ -8,7 +8,7 @@ export default function HeaderWrapper() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <>
+    <div className="sticky top-0 z-[10000]">
       <HeaderTopBar
         mobileMenuOpen={mobileMenuOpen}
         onToggleMobileMenu={() => setMobileMenuOpen((o) => !o)}
@@ -17,6 +17,6 @@ export default function HeaderWrapper() {
         mobileMenuOpen={mobileMenuOpen}
         onCloseMobileMenu={() => setMobileMenuOpen(false)}
       />
-    </>
+    </div>
   );
 }
