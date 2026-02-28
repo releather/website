@@ -30,6 +30,7 @@ export const leatherRestorationIssuesItems = [
       <><Image unoptimized
           src={`${C}/l_,l_text:montserrat_50_style_light:Faded%20Leather,co_rgb:ffffff/v1653700009/before-after/faded-leather-couch.png`}
           width={290}
+          height={218}
           alt="Faded Leather Sofa"
           title="Faded Leather Sofa"
           loading="lazy"
@@ -65,6 +66,7 @@ export const leatherRestorationIssuesItems = [
       <><Image unoptimized
           src={`${C}/l_,l_text:montserrat_50_style_light:Cracked%20Leather,co_rgb:ffffff/v1653699338/before-after/cracked-leather-cushion-restoration.png`}
           width={300}
+          height={225}
           alt="Cracked Leather Cushion"
           title="Cracked Leather Cushion"
           loading="lazy"
@@ -101,6 +103,7 @@ export const leatherRestorationIssuesItems = [
       <><Image unoptimized
           src={`${C}/l_,l_text:montserrat_50_style_light:Scratched%20Leather,co_rgb:ffffff/v1653624183/before-after/scratched-leather-chair.png`}
           width={300}
+          height={225}
           alt="Scratched Leather Chair"
           title="Scratched Leather Chair"
           loading="lazy"
@@ -141,6 +144,7 @@ export const leatherRestorationIssuesItems = [
       <><Image unoptimized
           src={`${C}/l_,l_text:montserrat_50_style_light:Stained%20Leather,co_rgb:ffffff/v1653624183/before-after/stained-leather-chair-restoration.png`}
           width={300}
+          height={225}
           alt="Stained Leather Sofa Chair"
           title="Stained Leather Sofa Chair"
           loading="lazy"

@@ -326,6 +326,7 @@ export default function EamesChairRepairPage() {
               <a href="https://www.releather.com/leather-conditioner" target="_blank" rel="noopener noreferrer"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/v1643861241/logo/ReLeather-Leather-Conditioner.png"
                   width={150}
+                  height={150}
                   title="ReLeather Leather Conditioner Image"
                   alt="ReLeather Leather Conditioner Image"
                   loading="lazy"

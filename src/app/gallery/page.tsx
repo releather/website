@@ -491,6 +491,8 @@ export default function GalleryPage() {
             <div className="flex justify-center pt-2"><Image unoptimized
                 src={popImage.src}
                 alt={popImage.alt}
+                width={1200}
+                height={900}
                 className="max-h-[75vh] w-auto max-w-full rounded-lg object-contain"
               />
             </div>

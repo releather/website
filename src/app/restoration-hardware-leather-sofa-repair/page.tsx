@@ -35,6 +35,8 @@ const rhFaqItems = [
           src="https://res.cloudinary.com/releather-com/image/upload/v1715942429/before-after/leather-restoration/furniture/restoration-hardware/Aniline-Distressed-Leather-with-Pen-Ink-Mark-400px.jpg"
           alt="Aniline Distressed Leather with Pen Ink Mark Removal"
           title="Aniline Distressed Leather with Pen Ink Mark Removal"
+          width={400}
+          height={300}
           loading="lazy"
           className="mx-auto my-4 block"
         />
@@ -49,6 +51,8 @@ const rhFaqItems = [
           src="https://res.cloudinary.com/releather-com/image/upload/v1715794039/samples/repairs/Restoration-Hardware-Leather-Sofa-Couch-Scratches-Scratch-200.jpg"
           alt="Leather Seat Cushion Replacement Fixes Ripped Torn Leather Couch Sofa Chair - Close Image"
           title="Leather Seat Cushion Replacement Fixes Ripped Torn Leather Couch Sofa Chair - Close Image"
+          width={200}
+          height={150}
           loading="lazy"
           className="mx-auto my-4 block"
         />

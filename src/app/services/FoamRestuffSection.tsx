@@ -292,6 +292,8 @@ export default function FoamRestuffSection() {
             <div className="pt-2"><Image unoptimized
                 src={selectedLeather.full}
                 alt={selectedLeather.alt}
+                width={1200}
+                height={900}
                 className="max-h-[75vh] w-auto max-w-full rounded-lg object-contain"
               />
             </div>

@@ -16,6 +16,8 @@ export default function RestuffingFoamReplacementGuideContent() {
               src="https://res.cloudinary.com/releather-com/image/upload/v1682419314/samples/refilled-foam-seat-cushions-service.jpg"
               alt="Restored Refilled New Foam Leather Seat Cushion Service"
               title="Restored Refilled New Foam Leather Seat Cushion Service"
+              width={400}
+              height={300}
               loading="lazy"
             />
           </p>
@@ -31,6 +33,8 @@ export default function RestuffingFoamReplacementGuideContent() {
               src="https://res.cloudinary.com/releather-com/image/upload/v1682842235/samples/restuff-refilled-back-reclining-leather-cushions-service.jpg"
               alt="Restored Refilled New Foam Leather Back Reclining Cushion"
               title="Restored Refilled New Foam Leather Back Reclining Cushion"
+              width={400}
+              height={300}
               loading="lazy"
             />
           </p>
@@ -54,6 +58,8 @@ export default function RestuffingFoamReplacementGuideContent() {
           src="https://res.cloudinary.com/releather-com/image/upload/v1682531123/samples/HR-Foam-Seat-Cushion-Restuffing-Refilling-Service.jpg"
           alt="High Resiliency Seat Cushion Foam Example"
           title="High Resiliency Seat Cushion Foam Example"
+          width={400}
+          height={300}
           loading="lazy"
         />
       </p>
@@ -87,6 +93,8 @@ export default function RestuffingFoamReplacementGuideContent() {
           src="https://res.cloudinary.com/releather-com/image/upload/v1682573801/samples/foam-cushion-soft-medium-firm-HR-foam-for-couch.jpg"
           alt="HR Foam Cushion Grades Soft Medium Firm"
           title="HR Foam Cushion Grades Soft Medium Firm"
+          width={400}
+          height={300}
           loading="lazy"
         />
       </p>
@@ -101,6 +109,8 @@ export default function RestuffingFoamReplacementGuideContent() {
           src="https://res.cloudinary.com/releather-com/image/upload/v1682940906/samples/leather-couch-seat-cushion-restuffed-refilled-with-dacron-polyester-padding-wrap.jpg"
           alt="Leather Couch Seat Cushion Restuffed Refilled with Dacron Polyester Padding - Types of Wrapping"
           title="Leather Couch Seat Cushion Restuffed Refilled with Dacron Polyester Padding - Types of Wrapping"
+          width={400}
+          height={300}
           loading="lazy"
         />
       </p>

@@ -196,6 +196,8 @@ export default function SedonaProductBlock() {
                 src={popImage.full}
                 alt={popImage.alt}
                 title={popImage.alt}
+                width={1200}
+                height={900}
                 className="max-h-[75vh] w-auto max-w-full object-contain"
               />
             </div>

@@ -309,14 +309,16 @@ export default function DesignerPurseRestorationPage() {
                 alt="Leather Restored Loewe Designer Red Leather Purse Handbag - Before"
                 title="Leather Restored Loewe Designer Red Leather Purse Handbag - Before"
                 width={400}
+                height={300}
                 loading="lazy"
                 className="w-full rounded object-cover"
               /><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/g_south,x_-120,y_10,l_text:montserrat_50_style_light:After,co_rgb:000000/v1714566267/before-after/leather-restoration/handbag-purse-bag/red/Leather-Restored-LOEWE-Designer-Red-Leather-Purse-Handbag-After_400px.jpg"
                 alt="Leather Restored Loewe Designer Red Leather Purse Handbag - After"
                 title="Leather Restored Loewe Designer Red Leather Purse Handbag - After"
-                loading="lazy"
                 width={400}
+                height={300}
+                loading="lazy"
                 className="w-full rounded object-cover"
               />
             </div>

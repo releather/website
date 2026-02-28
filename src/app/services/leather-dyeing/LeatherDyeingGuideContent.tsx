@@ -38,6 +38,8 @@ export default function LeatherDyeingGuideContent() {
           src="https://res.cloudinary.com/releather-com/image/upload/v1652831784/samples/leather-change-color-example.jpg"
           title="Leather Change Color Work Sample on Nubuck Leather Various Shades of Brown Dye"
           alt="Leather Change Color Work Sample on Nubuck Leather Various Shades of Brown Dye"
+          width={400}
+          height={300}
           loading="lazy"
         />
       </p>

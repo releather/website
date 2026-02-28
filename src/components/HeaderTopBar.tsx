@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 const LOGO_URL =
   "https://res.cloudinary.com/releather-com/image/upload/f_auto/f_webp/v1654055599/logo/logo.png";
@@ -38,66 +37,52 @@ export default function HeaderTopBar({
   mobileMenuOpen,
   onToggleMobileMenu,
 }: HeaderTopBarProps) {
-  const pathname = usePathname();
-  const isEstimatePage = pathname === "/estimate";
-
   return (
     <header className="bg-black text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Mobile: two rows — Row 1: Logo | Burger, Row 2: GET A QUOTE */}
-        <div className="flex flex-col gap-2 py-2 md:hidden">
-          <div className="flex min-h-0 items-center justify-between gap-2">
-            <Link href="/" className="block shrink-0 max-w-[60%]">
-              <Image unoptimized
-                src={LOGO_URL}
-                alt="ReLeather"
-                width={375}
-                height={70}
-                className="h-8 w-auto max-w-full object-contain object-left"
-                priority
-              />
-            </Link>
-            <button
-              type="button"
-              className="inline-flex items-center justify-center border-2 border-white p-2 text-white transition hover:border-releather-orange hover:bg-releather-orange hover:text-black"
-              onClick={onToggleMobileMenu}
-              aria-expanded={mobileMenuOpen}
-              aria-controls="mobile-menu"
-              aria-label="Toggle menu"
+        {/* Mobile: single row — Logo | Burger only (GET A QUOTE is inside burger menu) */}
+        <div className="flex min-h-0 items-center justify-between gap-2 py-2 md:hidden">
+          <Link href="/" className="block shrink-0 max-w-[60%]">
+            <Image unoptimized
+              src={LOGO_URL}
+              alt="ReLeather"
+              width={375}
+              height={70}
+              className="h-8 w-auto max-w-full object-contain object-left"
+              priority
+            />
+          </Link>
+          <button
+            type="button"
+            className="inline-flex items-center justify-center border-2 border-white p-2 text-white transition hover:border-releather-orange hover:bg-releather-orange hover:text-black"
+            onClick={onToggleMobileMenu}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-menu"
+            aria-label="Toggle menu"
+          >
+            <svg
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+              aria-hidden
             >
-              <svg
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-                aria-hidden
-              >
-                {mobileMenuOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                )}
-              </svg>
-            </button>
-          </div>
-          {!isEstimatePage && (
-            <Link
-              href="/estimate"
-              className="flex w-full items-center justify-center border-2 border-[#f8991d] bg-[#f8991d] py-2 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-[#e08a1a] hover:border-[#e08a1a] focus:outline-none focus:ring-2 focus:ring-[#f8991d] focus:ring-offset-2 focus:ring-offset-black"
-              aria-label="Get a quote"
-            >
-              GET A QUOTE
-            </Link>
-          )}
+              {mobileMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
         </div>
 
         {/* Desktop: single row — Logo | GET A QUOTE + Phone | Van */}

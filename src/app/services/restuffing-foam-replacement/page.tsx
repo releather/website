@@ -139,6 +139,8 @@ const restuffingBenefits = [
             src="https://res.cloudinary.com/releather-com/image/upload/v1682585887/samples/refill-cushions-dacron-padding-material.jpg"
             alt="Refill Restuffing Cushions with Dacron Padding"
             title="Refill Cushions with Dacron Padding Refill Restuffing Cushions with Dacron Padding"
+            width={400}
+            height={300}
             loading="lazy"
           />
         </p>

@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -54,6 +55,8 @@ export default function MainNavbar({
   onCloseMobileMenu,
 }: MainNavbarProps) {
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
+  const pathname = usePathname();
+  const isEstimatePage = pathname === "/estimate";
 
   return (
     <nav
@@ -129,6 +132,18 @@ export default function MainNavbar({
           id="mobile-menu"
           className={`md:hidden ${mobileMenuOpen ? "block" : "hidden"} border-t-2 border-releather-orange py-2`}
         >
+          {!isEstimatePage && (
+            <div className="px-4 pb-3">
+              <Link
+                href="/estimate"
+                onClick={onCloseMobileMenu}
+                className="flex w-full items-center justify-center border-2 border-[#f8991d] bg-[#f8991d] py-2.5 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-[#e08a1a] hover:border-[#e08a1a] focus:outline-none focus:ring-2 focus:ring-[#f8991d] focus:ring-offset-2 focus:ring-offset-[#23262f]"
+                aria-label="Get a quote"
+              >
+                GET A QUOTE
+              </Link>
+            </div>
+          )}
           <ul className="flex flex-col gap-1">
             {navItems.map((item) => (
               <li key={item.label}>

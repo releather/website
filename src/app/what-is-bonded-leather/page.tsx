@@ -95,6 +95,7 @@ export default function WhatIsBondedLeatherPage() {
             <div className="overflow-hidden"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/blog/bonded/flaking-peeling-leather.png"
                 width={350}
+                height={300}
                 alt="Peeling and Flaking Leather"
                 loading="lazy"
                 className="float-right ml-4 mb-4"
@@ -108,6 +109,8 @@ export default function WhatIsBondedLeatherPage() {
           <section className="mt-12 border-t-4 border-black pt-12">
             <div className="overflow-hidden"><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/blog/bonded/what-is-bonded-leather-survey.png"
+                width={400}
+                height={300}
                 alt="What is Bonded Leather! Consumer Survey"
                 loading="lazy"
                 className="float-left mr-4 mb-4"
@@ -133,6 +136,8 @@ export default function WhatIsBondedLeatherPage() {
             <div className="overflow-hidden">
               <figure className="float-right ml-4 mb-4"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/blog/bonded/anatomy-of-bonded-leather.png"
+                  width={400}
+                  height={300}
                   alt="Anatomy of Bonded Leather"
                   loading="lazy"
                 />
@@ -159,6 +164,7 @@ export default function WhatIsBondedLeatherPage() {
                 src="https://res.cloudinary.com/releather-com/image/upload/blog/bonded/bonded-leather-real-leather.jpg"
                 alt="Bonded Leather vs Real Leather Comparison"
                 width={500}
+                height={375}
                 loading="lazy"
                 className="float-right ml-4 mb-4"
               />
@@ -241,30 +247,35 @@ export default function WhatIsBondedLeatherPage() {
                 src="https://res.cloudinary.com/releather-com/image/upload/blog/bonded/leather-reupholstery-bonded-leather-chair.jpg"
                 alt="Bonded Leather Chair Upholstered to Real Leather"
                 width={350}
+                height={263}
                 loading="lazy"
                 className="w-full border-4 border-black object-cover"
               /><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/blog/bonded/leather-reupholstery-bonded-chair.jpg"
                 alt="Bonded Leather Dining Chair Upholstered to Real Leather"
                 width={350}
+                height={263}
                 loading="lazy"
                 className="w-full border-4 border-black object-cover"
               /><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/blog/bonded/bonded-leather-bar-stool-repair.jpg"
                 alt="Bonded Leather Bar Stool Upholstered to Real Leather"
                 width={350}
+                height={263}
                 loading="lazy"
                 className="w-full border-4 border-black object-cover"
               /><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/blog/bonded/bonded-leather-reupholster-chair.jpg"
                 alt="Bonded Leather Elegant Dining Room Upholstered to Real Leather"
                 width={350}
+                height={263}
                 loading="lazy"
                 className="w-full border-4 border-black object-cover"
               /><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/blog/bonded/bonded-leather-bar-stools-repair.jpg"
                 alt="Bonded Leather Bar Stools Room Upholstered to Real Leather White Color"
                 width={350}
+                height={263}
                 loading="lazy"
                 className="w-full border-4 border-black object-cover"
               />
@@ -277,12 +288,14 @@ export default function WhatIsBondedLeatherPage() {
                 src="https://res.cloudinary.com/releather-com/image/upload/blog/bonded/bonded-leather-sofa-reupholstery.jpg"
                 alt="Bonded Leather Sofa Upholstered to Real Leather"
                 width={350}
+                height={263}
                 loading="lazy"
                 className="w-full border-4 border-black object-cover"
               /><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/blog/bonded/bonded-leather-sofa-reupholstery-after.jpg"
                 alt="Bonded Leather Sofa Upholstered to Real Leather"
                 width={350}
+                height={263}
                 loading="lazy"
                 className="w-full border-4 border-black object-cover"
               />
@@ -295,18 +308,21 @@ export default function WhatIsBondedLeatherPage() {
                 src="https://res.cloudinary.com/releather-com/image/upload/blog/bonded/bi-cast-split-leather-chair-repair.jpg"
                 alt="Bi-Cast Lounge Recliner Chair Upholstered to Real Leather"
                 width={350}
+                height={263}
                 loading="lazy"
                 className="w-full border-4 border-black object-cover"
               /><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/blog/bonded/bi-cast-split-leather-chair.jpg"
                 alt="Bi-Cast Lounge Recliner Chair Upholstered to Real Leather"
                 width={350}
+                height={263}
                 loading="lazy"
                 className="w-full border-4 border-black object-cover"
               /><Image unoptimized
                 src="https://res.cloudinary.com/releather-com/image/upload/blog/bonded/bonded-leather-red-lounge-chair.jpg"
                 alt="Bonded Lounge Red Chair Upholstered to Real Leather"
                 width={350}
+                height={263}
                 loading="lazy"
                 className="w-full border-4 border-black object-cover"
               />

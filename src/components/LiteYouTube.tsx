@@ -56,16 +56,15 @@ export default function LiteYouTube({
             className="object-cover"
           />
           <span
-            className="absolute flex h-14 w-20 items-center justify-center rounded-lg bg-red-600 text-white shadow-lg transition hover:bg-red-700 hover:scale-105"
+            className="absolute flex h-9 w-12 items-center justify-center rounded-lg bg-red-600/80 shadow-lg transition hover:bg-red-700/80 hover:scale-105"
             aria-hidden
           >
             <svg
-              className="ml-1 h-10 w-10"
+              className="ml-0.5 h-6 w-6"
               viewBox="0 0 68 48"
-              fill="currentColor"
+              fill="none"
               aria-hidden
             >
-              <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.58 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 12.38 0 24 0 24s.06 11.62 1.58 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.42-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 35.62 68 24 68 24s-.06-11.62-1.58-16.26z" />
               <path d="M45 24L27 14v20" fill="#fff" />
             </svg>
           </span>

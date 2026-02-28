@@ -107,6 +107,8 @@ export default function LeatherRestorationFinishes() {
             ><Image unoptimized
                 src={finish.src}
                 alt={finish.alt}
+                width={300}
+                height={225}
                 loading="lazy"
                 className="w-full border-2 border-black object-cover"
               />
@@ -149,6 +151,8 @@ export default function LeatherRestorationFinishes() {
                 src={selected.src}
                 alt={selected.alt}
                 title={selected.alt}
+                width={1200}
+                height={900}
                 className="max-h-[75vh] w-auto max-w-full object-contain"
               />
             </div>
