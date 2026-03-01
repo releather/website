@@ -148,13 +148,21 @@ export default function LeatherForUpholsteryPage() {
             benefits={leatherForUpholsteryBenefits}
           />
 
-          <SedonaProductBlock />
+          <section id="sedona-leather" className="scroll-mt-24">
+            <SedonaProductBlock />
+          </section>
 
-          <PaletteProductBlock />
+          <section id="palette-leather" className="scroll-mt-24">
+            <PaletteProductBlock />
+          </section>
 
-          <LuxorProductBlock />
+          <section id="luxor-leather" className="scroll-mt-24">
+            <LuxorProductBlock />
+          </section>
 
-          <ConcertoProductBlock />
+          <section id="concerto-leather" className="scroll-mt-24">
+            <ConcertoProductBlock />
+          </section>
 
           <Guide
             id="guide"

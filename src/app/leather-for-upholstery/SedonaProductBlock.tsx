@@ -7,8 +7,8 @@ const SEDONA_ORANGE = "#f8991d";
 
 const sedonaMainImage = {
   thumb:
-    "https://res.cloudinary.com/releather-com/image/upload/ar_1:1,b_rgb:23262f,bo_5px_solid_rgb:f8991d,c_crop,g_south,r_max,w_300,y_257/v1636920011/leather/SEDONA_cashew_HI.jpg",
-  full: "https://res.cloudinary.com/releather-com/image/upload/ar_1:1,b_rgb:23262f,bo_5px_solid_rgb:f8991d,c_crop,g_south,r_max,w_500,y_257/v1636920011/leather/SEDONA_cashew_HI.jpg",
+    "https://res.cloudinary.com/releather-com/image/upload/ar_1:1,b_rgb:23262f,bo_5px_solid_rgb:f8991d,c_crop,g_south,w_300,y_257/v1636920011/leather/SEDONA_cashew_HI.jpg",
+  full: "https://res.cloudinary.com/releather-com/image/upload/ar_1:1,b_rgb:23262f,bo_5px_solid_rgb:f8991d,c_crop,g_south,w_500,y_257/v1636920011/leather/SEDONA_cashew_HI.jpg",
   alt: "Close up of Two-Tone Leather",
   title: "Close up of Two-Tone Leather",
 };
