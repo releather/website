@@ -130,7 +130,7 @@ export default function MainNavbar({
         {/* Mobile menu */}
         <div
           id="mobile-menu"
-          className={`md:hidden ${mobileMenuOpen ? "block" : "hidden"} border-t-2 border-releather-orange py-2`}
+          className={`md:hidden ${mobileMenuOpen ? "block" : "hidden"} max-h-[calc(100dvh-3.5rem)] overflow-y-auto overscroll-contain border-t-2 border-releather-orange py-2`}
         >
           {!isEstimatePage && (
             <div className="px-4 pb-3">

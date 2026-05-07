@@ -14,11 +14,11 @@ export default function HeaderWrapper() {
           mobileMenuOpen={mobileMenuOpen}
           onToggleMobileMenu={() => setMobileMenuOpen((o) => !o)}
         />
+        <MainNavbar
+          mobileMenuOpen={mobileMenuOpen}
+          onCloseMobileMenu={() => setMobileMenuOpen(false)}
+        />
       </div>
-      <MainNavbar
-        mobileMenuOpen={mobileMenuOpen}
-        onCloseMobileMenu={() => setMobileMenuOpen(false)}
-      />
     </>
   );
 }
