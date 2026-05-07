@@ -4,6 +4,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./globals.css";
 import JsonLd from "@/components/JsonLd";
 import GoogleTagManager from "@/components/GoogleTagManager";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -87,6 +88,7 @@ export default function RootLayout({
         {/* JSON-LD structured data for SEO */}
         <JsonLd data={organizationSchema} />
         <JsonLd data={localBusinessSchema} />
+        <ScrollToTopButton />
         {children}
       </body>
     </html>
