@@ -9,11 +9,13 @@ export default function HeaderWrapper() {
 
   return (
     <>
-      <div className="sticky top-0 z-[10000] bg-black shadow-md">
-        <HeaderTopBar
-          mobileMenuOpen={mobileMenuOpen}
-          onToggleMobileMenu={() => setMobileMenuOpen((o) => !o)}
-        />
+      <div className="sticky top-0 z-[10000] bg-black shadow-md md:contents">
+        <div className="md:sticky md:top-0 md:z-[10000] md:bg-black md:shadow-md">
+          <HeaderTopBar
+            mobileMenuOpen={mobileMenuOpen}
+            onToggleMobileMenu={() => setMobileMenuOpen((o) => !o)}
+          />
+        </div>
         <MainNavbar
           mobileMenuOpen={mobileMenuOpen}
           onCloseMobileMenu={() => setMobileMenuOpen(false)}
