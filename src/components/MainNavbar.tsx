@@ -14,8 +14,8 @@ const servicesDropdown = [
 ];
 
 const productsDropdown = [
-  { label: "Leather Conditioner", href: "/leather-conditioner", icon: "fa-droplet" },
-  { label: "Leather Material", href: "/leather-for-upholstery", icon: "fa-couch" },
+  { label: "Leather Care", href: "/leather-conditioner", icon: "fa-droplet" },
+  { label: "Leather Material", href: "/leather-for-upholstery", icon: "fa-swatchbook" },
 ];
 
 const worksDropdown = [
@@ -92,7 +92,13 @@ export default function MainNavbar({
                       </span>
                     )}
                     <div
-                      className={`pointer-events-none absolute top-full z-[10000] border-t-4 border-releather-orange bg-[#23262f] opacity-0 shadow-none transition-opacity duration-150 group-hover:pointer-events-auto group-hover:opacity-100 ${item.label === "SERVICES" || item.label === "WORKS" ? "left-0 min-w-[28rem]" : "left-0 right-0"}`}
+                      className={`pointer-events-none absolute top-full z-[10000] border-t-4 border-releather-orange bg-[#23262f] opacity-0 shadow-none transition-opacity duration-150 group-hover:pointer-events-auto group-hover:opacity-100 ${
+                        item.label === "SERVICES" || item.label === "WORKS"
+                          ? "left-0 min-w-[28rem]"
+                          : item.label === "PRODUCTS"
+                            ? "left-0 w-max"
+                            : "left-0 right-0"
+                      }`}
                     >
                       <ul
                         className={`w-full py-0 ${item.label === "SERVICES" || item.label === "WORKS" ? "grid grid-cols-2" : ""}`}
@@ -104,10 +110,19 @@ export default function MainNavbar({
                           >
                             <Link
                               href={sub.href}
-                              className="flex items-center gap-2 px-4 py-3 font-bold tracking-wide text-white transition-colors hover:bg-releather-orange hover:text-black md:px-6 lg:px-8"
+                              className={
+                                item.label === "PRODUCTS"
+                                  ? "flex min-h-[3rem] w-full min-w-0 items-center gap-2 whitespace-nowrap px-4 py-3 font-bold tracking-wide text-white transition-colors hover:bg-releather-orange hover:text-black"
+                                  : "flex min-h-[3rem] w-full min-w-0 items-center gap-2 whitespace-nowrap px-4 py-3 font-bold tracking-wide text-white transition-colors hover:bg-releather-orange hover:text-black md:px-6 lg:px-8"
+                              }
                             >
-                              {"icon" in sub && sub.icon ? <i className={`fa fa-fw ${(sub as { icon: string }).icon}`} aria-hidden /> : null}
-                              {sub.label}
+                              {"icon" in sub && sub.icon ? (
+                                <i
+                                  className={`fa fa-fw shrink-0 ${(sub as { icon: string }).icon}`}
+                                  aria-hidden
+                                />
+                              ) : null}
+                              <span className="min-w-0">{sub.label}</span>
                             </Link>
                           </li>
                         ))}
@@ -173,10 +188,15 @@ export default function MainNavbar({
                           <Link
                             href={sub.href}
                             onClick={onCloseMobileMenu}
-                            className="flex items-center gap-2 px-2 py-2 font-medium text-gray-300 hover:text-releather-orange"
+                            className="flex min-w-0 items-center gap-2 whitespace-nowrap px-2 py-2 font-medium text-gray-300 hover:text-releather-orange"
                           >
-                            {"icon" in sub && sub.icon ? <i className={`fa fa-fw ${(sub as { icon: string }).icon}`} aria-hidden /> : null}
-                            {sub.label}
+                            {"icon" in sub && sub.icon ? (
+                              <i
+                                className={`fa fa-fw shrink-0 ${(sub as { icon: string }).icon}`}
+                                aria-hidden
+                              />
+                            ) : null}
+                            <span className="min-w-0">{sub.label}</span>
                           </Link>
                         </li>
                       ))}

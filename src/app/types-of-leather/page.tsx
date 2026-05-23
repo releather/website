@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const leatherTypes = [
   {
-    id: "Pure-Aniline",
+    slug: "pure-aniline-leather",
     title: "Pure Aniline Leather ",
     imgSrc: "https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/g_center,l_text:montserrat_90_style_light:Pure%20Aniline,co_rgb:ffffff,y_10/v1652587080/leather/Aniline_Mustard_HI.jpg",
     alt: "Pure-Aniline",
@@ -27,7 +27,7 @@ const leatherTypes = [
     ],
   },
   {
-    id: "Wax-Pull-Up-Leather",
+    slug: "wax-pull-up-leather",
     title: "Wax Pull Up Leather",
     imgSrc: "https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/g_center,l_text:montserrat_90_style_light:Wax%20Pull-Up,co_rgb:ffffff,y_10/v1639529981/leather/Concerto_Saddle_HI.jpg",
     alt: "Wax-Pull-Up-Leather",
@@ -36,7 +36,7 @@ const leatherTypes = [
     ],
   },
   {
-    id: "Oil-Pull-Up-Leather",
+    slug: "oil-pull-up-leather",
     title: "Oil Pull Up Leather ",
     imgSrc: "https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/g_center,l_text:montserrat_90_style_light:Oil%20Pull%20Up,co_rgb:ffffff,y_10/v1653007847/leather/Harmony_Brandy_HI.jpg",
     alt: "Oil-Pull-Up-Leather",
@@ -45,7 +45,7 @@ const leatherTypes = [
     ],
   },
   {
-    id: "Nubuck",
+    slug: "nubuck-leather",
     title: "Nubuck Leather ",
     imgSrc: "https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/g_center,l_text:montserrat_90_style_light:Nubuck,co_rgb:ffffff,y_10/v1652588630/leather/Apache_Chestnut_HI.jpg",
     alt: "Nubuck",
@@ -54,7 +54,7 @@ const leatherTypes = [
     ],
   },
   {
-    id: "Semi-Aniline-Leather",
+    slug: "semi-aniline-leather",
     title: "Semi-Aniline Leather ",
     imgSrc: "https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/g_center,l_text:montserrat_90_style_light:Semi-Aniline,co_rgb:ffffff,y_10/v1636920011/leather/SEDONA_cashew_HI.jpg",
     alt: "Semi-Aniline-Leather",
@@ -63,7 +63,7 @@ const leatherTypes = [
     ],
   },
   {
-    id: "Pigmented-Leather",
+    slug: "pigmented-leather",
     title: "Pigmented Leather ",
     imgSrc: "https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/g_center,l_text:montserrat_90_style_light:Pigmented,co_rgb:ffffff,y_10/v1638909291/leather/PALETTE_tan_HI.jpg",
     alt: "Pigmented-Leather",
@@ -72,7 +72,7 @@ const leatherTypes = [
     ],
   },
   {
-    id: "Corrected-Leather",
+    slug: "corrected-leather",
     title: "Corrected Leather",
     imgSrc: "https://res.cloudinary.com/releather-com/image/upload/c_crop,h_820/g_center,l_text:montserrat_90_style_light:Corrected,co_rgb:ffffff,y_10/v1653008190/leather/Supple_Khaki_HI.jpg",
     alt: "Corrected-Leather",
@@ -81,7 +81,7 @@ const leatherTypes = [
     ],
   },
   {
-    id: "Bonded-Leather",
+    slug: "bonded-leather",
     title: "Bonded Leather ",
     imgSrc: "https://res.cloudinary.com/releather-com/image/upload/g_center,l_text:montserrat_90_style_light:Bonded,co_rgb:ffffff,y_10/v1653008720/leather/Bonded-Leather.jpg",
     alt: "Bonded-Leather",
@@ -127,13 +127,16 @@ export default function TypesOfLeatherPage() {
 
           {leatherTypes.map((type) => (
             <section
-              key={type.id}
-              id={type.id}
+              key={type.slug}
+              aria-labelledby={type.slug}
               className="mt-12 border-t-4 border-black pt-12"
             >
               <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
                 <div>
-                  <h2 className="font-display text-2xl font-normal tracking-tight text-black sm:text-3xl">
+                  <h2
+                    id={type.slug}
+                    className="scroll-mt-24 font-display text-2xl font-normal tracking-tight text-black sm:text-3xl"
+                  >
                     {type.title}
                   </h2>
                   {type.paragraphs.map((para, i) => (

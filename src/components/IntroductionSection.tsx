@@ -37,6 +37,12 @@ export type IntroductionSectionProps = {
   };
   /** Custom right column content (takes precedence over videoEmbed and image when set) */
   rightContent?: React.ReactNode;
+  /** Override the lg+ grid layout (default: equal two columns) */
+  gridClassName?: string;
+  /** Gap between grid columns (default: gap-10) */
+  gridGapClassName?: string;
+  /** Optional class for the left column wrapper */
+  leftColumnClassName?: string;
 };
 
 export default function IntroductionSection({
@@ -49,13 +55,18 @@ export default function IntroductionSection({
   image,
   videoEmbed,
   rightContent,
+  gridClassName,
+  gridGapClassName,
+  leftColumnClassName,
 }: IntroductionSectionProps) {
   const hasMedia = rightContent || videoEmbed || image;
 
   return (
     <section id="introduction" className="mb-12">
-      <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-        <div>
+      <div
+        className={`grid ${gridGapClassName ?? "gap-10"} ${gridClassName ?? "lg:grid-cols-2 lg:items-center"}`}
+      >
+        <div className={`min-w-0 ${leftColumnClassName ?? ""}`}>
           <h1 className="font-display text-4xl font-normal tracking-tight text-black sm:text-5xl">
             {title}
           </h1>
@@ -96,7 +107,7 @@ export default function IntroductionSection({
           <div
             className={
               rightContent
-                ? "w-full"
+                ? "min-w-0 w-full"
                 : "aspect-[4/3] w-full overflow-hidden rounded-lg lg:min-h-0"
             }
           >

@@ -313,21 +313,21 @@ export default function LeatherRestorationDiningChairsPage() {
                 . Old leather can be replaced with a custom leather option. We
                 stock{" "}
                 <a
-                  href="https://www.releather.com/types-of-leather#aniline"
+                  href="https://www.releather.com/types-of-leather#pure-aniline-leather"
                   aria-label="Learn more about Aniline leather"
                 >
                   Aniline
                 </a>
                 ,{" "}
                 <a
-                  href="https://www.releather.com/types-of-leather#semi-aniline"
+                  href="https://www.releather.com/types-of-leather#semi-aniline-leather"
                   aria-label="Learn more about Semi-Aniline leather"
                 >
                   Semi-Aniline
                 </a>
                 , and{" "}
                 <a
-                  href="https://www.releather.com/types-of-leather#pigmented"
+                  href="https://www.releather.com/types-of-leather#pigmented-leather"
                   aria-label="Learn more about Protected (pigmented) leather"
                 >
                   Protected

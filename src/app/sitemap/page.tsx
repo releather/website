@@ -38,6 +38,10 @@ const productLinks = [
   { href: "/leather-for-upholstery", label: "Leather for Upholstery" },
 ];
 
+const upholsteryLeatherCollectionLinks = [
+  { href: "/distressed-leather", label: "Distressed Leather" },
+];
+
 const worksLinks = [
   { href: "/gallery", label: "Gallery (Featured)" },
   { href: "/leather-sofa-dyeing", label: "Couches" },
@@ -120,6 +124,10 @@ export default function SitemapPage() {
             <LinkSection title="Main" links={mainLinks} />
             <LinkSection title="Services" links={serviceLinks} />
             <LinkSection title="Products" links={productLinks} />
+            <LinkSection
+              title="Upholstery leather collections"
+              links={upholsteryLeatherCollectionLinks}
+            />
             <LinkSection title="Works &amp; Gallery" links={worksLinks} />
             <LinkSection title="Blog" links={blogLinks} />
             <LinkSection title="Locations" links={locationLinks} />

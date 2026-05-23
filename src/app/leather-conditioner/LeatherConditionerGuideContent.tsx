@@ -11,10 +11,10 @@ export default function LeatherConditionerGuideContent() {
 
       <p>
         ReLeather Care is a specialized wax-free leather lotion formulated to clean, condition, protect finished, exotic, and naked leathers. Keeps leather soft and supple. Renews leathers natural sheen that repels water spotting and cracking. Safely removes dirt, soil without sticky residue, and will not darken finish. Recommended for finished{" "}
-        <Link href="/types-of-leather#Wax-Pull-Up-Leather">aniline</Link> (included distressed, wax pull-up, oil pull-up) and{" "}
-        <Link href="/types-of-leather#Semi-Aniline-Leather">semi-aniline</Link> leather,{" "}
-        <Link href="/types-of-leather#Pigmented-Leather">pigmented or protected</Link> leathers. Not intended for use on{" "}
-        <Link href="/types-of-leather#Nubuck">nubuck</Link> or suede leather.
+        <Link href="/types-of-leather#wax-pull-up-leather">aniline</Link> (included distressed, wax pull-up, oil pull-up) and{" "}
+        <Link href="/types-of-leather#semi-aniline-leather">semi-aniline</Link> leather,{" "}
+        <Link href="/types-of-leather#pigmented-leather">pigmented or protected</Link> leathers. Not intended for use on{" "}
+        <Link href="/types-of-leather#nubuck-leather">nubuck</Link> or suede leather.
       </p>
 
       <p>

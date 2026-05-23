@@ -12,10 +12,14 @@ import SedonaProductBlock from "./SedonaProductBlock";
 import PaletteProductBlock from "./PaletteProductBlock";
 import LuxorProductBlock from "./LuxorProductBlock";
 import ConcertoProductBlock from "./ConcertoProductBlock";
+import UpholsteryLeatherHub from "@/components/UpholsteryLeatherHub";
+import UpholsteryLeatherCollectionGrid from "@/components/UpholsteryLeatherCollectionGrid";
+import LeatherMaterialQuoteEmbed from "./LeatherMaterialQuoteEmbed";
+import { LEATHER_MATERIAL_QUOTE_URL } from "@/lib/upholsteryLeatherCollections";
 
 const title = "Leather for Upholstery | ReLeather";
 const description =
-  "Finest leather for upholstery. Italian leather hides, full grain and top grain. Get a leather material quote. Reupholstery service available.";
+  "Italian upholstery leather and leather hides for furniture: sofa leather, furniture leather, and leather upholstery material by collection—distressed, aniline, pull-up, and more. Material quotes and reupholstery.";
 export const metadata: Metadata = {
   title,
   description,
@@ -72,9 +76,6 @@ const leatherForUpholsteryBenefits = [
   },
 ];
 
-const LEATHER_MATERIAL_QUOTE_URL =
-  "https://forms.fillout.com/t/bPHjQmSpEVus";
-
 export default function LeatherForUpholsteryPage() {
   return (
     <>
@@ -89,7 +90,7 @@ export default function LeatherForUpholsteryPage() {
                   Express any decorating style
                 </em>
                 <br />
-                with our versatile Italian leather hides!
+                with our Italian leather!
               </>
             }
             primaryCta={{
@@ -98,14 +99,20 @@ export default function LeatherForUpholsteryPage() {
               "aria-label": "Leather for Upholstery Material Estimate",
               label: "Get Leather Material Quote!",
             }}
-            image={{
-              src: "https://res.cloudinary.com/releather-com/image/upload/c_fill,g_auto,h_450,w_970/b_rgb:000000,e_gradient_fade,y_-0.50/c_scale,co_rgb:ffffff,fl_relative,l_text:montserrat_45_style_light_align_center:Shop%20Now,w_0.5,y_0.18/v1654915228/leather/Leather-Material.jpg",
-              alt: "Buy Leather Upholstery Material",
-              title: "Buy Leather Upholstery Material",
-              width: 970,
-              height: 450,
-            }}
+            rightContent={<LeatherMaterialQuoteEmbed />}
+            gridClassName="lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:items-start xl:grid-cols-[minmax(0,5fr)_minmax(0,8fr)]"
+            gridGapClassName="gap-8 lg:gap-10"
           />
+
+          <section
+            id="collections"
+            className="scroll-mt-24 mt-8 lg:mt-10"
+            aria-label="Browse upholstery leather collections"
+          >
+            <UpholsteryLeatherCollectionGrid />
+          </section>
+
+          <UpholsteryLeatherHub />
 
           <section
             id="intro"
@@ -116,7 +123,7 @@ export default function LeatherForUpholsteryPage() {
               id="intro-heading"
               className="font-display text-2xl font-normal tracking-tight text-black sm:text-3xl"
             >
-              Choose your Leather!
+              Choose your line: Sedona, Palette, Luxor &amp; Concerto
             </h2>
             <div className="mt-4">
               <figure className="brutalist-image-frame float-right ml-6 mb-4 w-[280px] shrink-0 sm:w-[320px]"><Image unoptimized
@@ -130,7 +137,11 @@ export default function LeatherForUpholsteryPage() {
                 />
               </figure>
               <p className="font-sans text-lg leading-relaxed text-gray-800">
-                We pride ourselves in offering the finest leather for upholstery in the market. Our leather is sourced from the highest quality hides and include a wide variety of colors and textures, so you&apos;re sure to find the perfect match for your project. In addition, we offer our clients <Link href="/services/leather-upholstery"><strong>leather reupholstery service</strong></Link>. So if you&apos;re looking for the best leather for your next upholstery project, look no further than ReLeather. Thanks for choosing us!
+                Beyond the <Link href="/leather-for-upholstery#collections" className="font-semibold text-black underline decoration-releather-orange decoration-2 underline-offset-2 hover:text-releather-orange">style collections above</Link>, we stock named Italian lines below—each tuned for real upholstery work. Our hides span colors and grains so you can match a project precisely. We also offer our clients{" "}
+                <Link href="/services/leather-upholstery">
+                  <strong>leather reupholstery service</strong>
+                </Link>{" "}
+                when you want the material and the craft under one roof.
               </p>
             </div>
           </section>

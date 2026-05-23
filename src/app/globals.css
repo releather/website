@@ -20,6 +20,15 @@ body {
   font-weight: 600;
 }
 
+@layer base {
+  em {
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: var(--releather-orange);
+    text-underline-offset: 0.12em;
+  }
+}
+
 /* Comic-book style: inked drop shadow on display headings (works on light + dark) */
 .font-display {
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.18);

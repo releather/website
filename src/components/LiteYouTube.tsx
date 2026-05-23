@@ -12,6 +12,14 @@ export type LiteYouTubeProps = {
   embedParams?: string;
   /** Optional className for the wrapper (e.g. for aspect overrides) */
   className?: string;
+  /** Custom poster URL — uses a plain img (no Next/Image). Defaults to YouTube hqdefault. */
+  posterSrc?: string;
+  posterAlt?: string;
+  /** Tailwind aspect class on the wrapper (default aspect-video). */
+  aspectClass?: string;
+  /** Controlled play state (shows embed when true). */
+  activated?: boolean;
+  onActivatedChange?: (activated: boolean) => void;
 };
 
 const THUMBNAIL_BASE = "https://img.youtube.com/vi";
@@ -21,15 +29,28 @@ export default function LiteYouTube({
   title = "Play video",
   embedParams = "rel=0",
   className = "",
+  posterSrc,
+  posterAlt = "",
+  aspectClass = "aspect-video",
+  activated: activatedProp,
+  onActivatedChange,
 }: LiteYouTubeProps) {
-  const [activated, setActivated] = useState(false);
+  const [activatedInternal, setActivatedInternal] = useState(false);
+  const isControlled = activatedProp !== undefined;
+  const activated = isControlled ? activatedProp : activatedInternal;
 
-  const thumbnailUrl = `${THUMBNAIL_BASE}/${videoId}/hqdefault.jpg`;
+  const activate = () => {
+    if (isControlled) onActivatedChange?.(true);
+    else setActivatedInternal(true);
+  };
+
+  const thumbnailUrl =
+    posterSrc ?? `${THUMBNAIL_BASE}/${videoId}/hqdefault.jpg`;
   const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&${embedParams}`;
 
   return (
     <div
-      className={`relative aspect-video w-full overflow-hidden rounded-lg bg-black ${className}`}
+      className={`relative w-full overflow-hidden rounded-lg bg-black ${aspectClass} ${className}`}
     >
       {activated ? (
         <iframe
@@ -43,18 +64,29 @@ export default function LiteYouTube({
       ) : (
         <button
           type="button"
-          onClick={() => setActivated(true)}
+          onClick={activate}
           className="absolute inset-0 flex h-full w-full items-center justify-center border-0 bg-transparent p-0 cursor-pointer focus:outline-none focus:ring-2 focus:ring-releather-orange focus:ring-offset-2 focus:ring-offset-black"
           aria-label={title}
         >
-          <Image
-            src={thumbnailUrl}
-            alt=""
-            fill
-            sizes="(max-width: 768px) 100vw, 50vw"
-            loading="lazy"
-            className="object-cover"
-          />
+          {posterSrc ? (
+            // eslint-disable-next-line @next/next/no-img-element -- custom Cloudinary poster
+            <img
+              src={thumbnailUrl}
+              alt={posterAlt}
+              loading="eager"
+              decoding="async"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          ) : (
+            <Image
+              src={thumbnailUrl}
+              alt=""
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
+              className="object-cover"
+            />
+          )}
           <span
             className="absolute flex h-9 w-12 items-center justify-center rounded-lg bg-red-600/80 shadow-lg transition hover:bg-red-700/80 hover:scale-105"
             aria-hidden
