@@ -10,6 +10,7 @@ import {
   getSampleCheckoutSuccessUrl,
   getStripe,
 } from "@/lib/stripe";
+import { LEATHER_SAMPLES_ORDER_TYPE } from "@/lib/sampleOrderEmail";
 
 const MAX_DESCRIPTION_LENGTH = 500;
 
@@ -165,7 +166,14 @@ export async function POST(request: Request) {
           },
         },
       ],
+      phone_number_collection: {
+        enabled: true,
+      },
+      shipping_address_collection: {
+        allowed_countries: ["US", "CA"],
+      },
       metadata: {
+        orderType: LEATHER_SAMPLES_ORDER_TYPE,
         sampleCount: String(validSwatchCount),
         collectionSlugs: collectionSlugs.join(","),
         swatchKeys: lines
