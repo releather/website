@@ -1,3 +1,7 @@
+import type { FilloutQuestionSubmission } from "@/lib/filloutTypes";
+
+export type { FilloutQuestionSubmission };
+
 /** Fillout field IDs for the leather material quote form (wG2Wv3fqKYus). */
 export const LEATHER_QUOTE_FIELD_IDS = {
   name: "mR2q",
@@ -13,8 +17,8 @@ export const LEATHER_QUOTE_FIELD_IDS = {
   mailingList: "ggko",
 } as const;
 
-/** Display size for quote-form leather swatches (matches 3-col grid cell width on desktop). */
-export const LEATHER_QUOTE_SWATCH_SIZE = 240;
+/** Display size for quote-form leather swatches (matches 4-col grid cell width on desktop). */
+export const LEATHER_QUOTE_SWATCH_SIZE = 180;
 
 export function leatherQuoteSwatchUrl(imagePath: string): string {
   const transforms = `f_auto,ar_1:1,b_rgb:ffffff,bo_3px_solid_rgb:f8991d,c_fit,h_${LEATHER_QUOTE_SWATCH_SIZE}`;
@@ -209,11 +213,6 @@ export function validateLeatherMaterialQuoteForm(
 
   return errors;
 }
-
-export type FilloutQuestionSubmission = {
-  id: string;
-  value: unknown;
-};
 
 export function buildFilloutQuestionSubmissions(
   values: LeatherMaterialQuoteFormValues,

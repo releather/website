@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
-import FilloutEmbed from "./FilloutEmbed";
+import EstimateForm from "./EstimateForm";
 
 const title = "Estimate | ReLeather";
 const description =
@@ -43,7 +43,7 @@ export default function EstimatePage() {
                   ReLeather.
                 </p>
               </div>
-              <FilloutEmbed />
+              <EstimateForm />
             </div>
           </section>
         </div>

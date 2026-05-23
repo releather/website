@@ -352,7 +352,7 @@ export default function LeatherMaterialQuoteForm() {
           What leather are you interested in?
         </legend>
         <div
-          className="grid grid-cols-2 gap-2 sm:grid-cols-3"
+          className="grid grid-cols-2 gap-2 sm:grid-cols-4"
           role="radiogroup"
           aria-label="Leather service"
         >

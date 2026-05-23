@@ -1,5 +1,6 @@
+import { ESTIMATE_FORM_ID } from "@/lib/estimateForm";
+import type { FilloutQuestionSubmission } from "@/lib/filloutTypes";
 import { LEATHER_MATERIAL_QUOTE_FORM_ID } from "@/lib/upholsteryLeatherCollections";
-import type { FilloutQuestionSubmission } from "@/lib/leatherMaterialQuoteForm";
 
 const DEFAULT_FILLOUT_API_BASE = "https://api.fillout.com/v1/api";
 
@@ -58,4 +59,10 @@ export async function createLeatherMaterialQuoteSubmission(
   questions: FilloutQuestionSubmission[],
 ): Promise<CreateFilloutSubmissionResult> {
   return createFilloutSubmission(LEATHER_MATERIAL_QUOTE_FORM_ID, questions);
+}
+
+export async function createEstimateSubmission(
+  questions: FilloutQuestionSubmission[],
+): Promise<CreateFilloutSubmissionResult> {
+  return createFilloutSubmission(ESTIMATE_FORM_ID, questions);
 }
