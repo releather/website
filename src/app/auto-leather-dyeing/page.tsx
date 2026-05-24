@@ -7,7 +7,7 @@ import LeatherRestorationBeforeAfter from "@/app/leather-restoration-lounge-chai
 import type { LeatherRestorationBeforeAfterItem } from "@/app/leather-restoration-lounge-chairs/LeatherRestorationBeforeAfter";
 import Benefits from "@/components/Benefits";
 import Process from "@/components/Process";
-import Guide from "@/components/Guide";
+import Guide, { GuideSection } from "@/components/Guide";
 import Issues from "@/components/Issues";
 
 const title = "Car Seat Leather Restoration & Dyeing | ReLeather";
@@ -299,9 +299,7 @@ export default function AutoLeatherDyeingPage() {
           />
 
           <Guide id="guide">
-            <h2 className="border-b-2 border-releather-orange pb-1 font-display text-2xl font-normal tracking-tight text-black sm:text-3xl">
-              Auto Leather Dyeing
-            </h2>
+            <GuideSection>Auto Leather Dyeing</GuideSection>
             <div className="my-6 overflow-hidden">
               <div className="float-right ml-6 mb-4 w-[280px] shrink-0 sm:w-[320px]"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/before-after/auto-leather-dyeing.png"

@@ -7,7 +7,7 @@ import LeatherRestorationBeforeAfter from "@/app/leather-restoration-lounge-chai
 import type { LeatherRestorationBeforeAfterItem } from "@/app/leather-restoration-lounge-chairs/LeatherRestorationBeforeAfter";
 import Benefits from "@/components/Benefits";
 import Process from "@/components/Process";
-import Guide from "@/components/Guide";
+import Guide, { GuideSection } from "@/components/Guide";
 import Issues from "@/components/Issues";
 
 const title = "Aircraft Leather Restoration | ReLeather";
@@ -174,9 +174,9 @@ export default function AircraftLeatherCleaningPage() {
           />
 
           <Guide id="guide">
-            <h2 className="border-b-2 border-releather-orange pb-1 font-display text-2xl font-normal tracking-tight text-black sm:text-3xl">
+            <GuideSection>
               The Best Way To Restore &amp; Protect Your Aircraft Leather Seats
-            </h2>
+            </GuideSection>
             <p className="mt-2 font-sans text-lg font-semibold text-black">
               John Wayne Airport, Orange County, CA
             </p>

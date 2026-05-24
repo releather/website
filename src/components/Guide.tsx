@@ -16,6 +16,10 @@ export type GuideProps = {
   id?: string;
 };
 
+/** Shared h2 styling for product/service guide section headings. */
+export const guideSectionHeadingClassName =
+  "scroll-mt-24 mt-12 border-b-2 border-releather-orange pb-2 font-display text-2xl font-normal tracking-tight text-black first:mt-0 sm:text-3xl";
+
 /** Reusable section heading with orange underline (magazine editorial style) */
 export function GuideSection({
   children,
@@ -25,10 +29,7 @@ export function GuideSection({
   id?: string;
 }) {
   return (
-    <h2
-      id={id}
-      className="border-b-2 border-releather-orange pb-1 font-display text-2xl font-normal tracking-tight text-black sm:text-3xl"
-    >
+    <h2 id={id} className={guideSectionHeadingClassName}>
       <i className="fa fa-check-square mr-2 text-releather-orange" aria-hidden />
       {children}
     </h2>
@@ -76,7 +77,7 @@ export default function Guide({ header, children, id }: GuideProps) {
         </header>
       )}
 
-      <div className="guide-prose font-sans text-base leading-relaxed text-gray-800 [&_h4]:mt-6 [&_h4]:font-display [&_h4]:text-xl [&_h4]:font-normal [&_h4]:tracking-tight [&_h4]:text-gray-900 [&_h5]:mt-6 [&_h5]:font-display [&_h5]:text-xl [&_h5]:font-light [&_p]:mt-5 [&_p]:mb-5 [&_p]:first:mt-0 [&_p]:last:mb-0 [&_a]:font-medium [&_a]:text-releather-orange [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-black [&_strong]:font-bold [&_strong]:text-black [&_em]:italic">
+      <div className="guide-prose font-sans text-base leading-relaxed text-gray-800 [&_h2:not(:first-child)]:mt-12 [&_h2:first-child]:mt-0 [&_h2]:mb-4 [&_h4]:mt-6 [&_h4]:font-display [&_h4]:text-xl [&_h4]:font-normal [&_h4]:tracking-tight [&_h4]:text-gray-900 [&_h5]:mt-6 [&_h5]:font-display [&_h5]:text-xl [&_h5]:font-light [&_p]:mt-5 [&_p]:mb-5 [&_p]:first:mt-0 [&_p]:last:mb-0 [&_a]:font-medium [&_a]:text-releather-orange [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-black [&_strong]:font-bold [&_strong]:text-black [&_em]:italic">
         {children}
       </div>
     </article>

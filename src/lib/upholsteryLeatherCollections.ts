@@ -168,6 +168,21 @@ export const UPHOLSTERY_LEATHER_COLLECTIONS: UpholsteryLeatherCollection[] = [
     ],
   },
   {
+    slug: "sauvage-leather",
+    name: "Sauvage Leather",
+    overlayText: "Sauvage",
+    imageFile: "Vibrant-Leather-Main.jpg",
+    metaTitle: "Sauvage Leather for Upholstery | Italian Hides | ReLeather",
+    metaDescription:
+      "Sauvage upholstery leather hides in bold, saturated hues for modern furniture and statement seating. Italian-finished leather hides for furniture. Request a material quote.",
+    tagline:
+      "Confident color and contemporary energy—Italian hides finished for upholstery that makes a statement.",
+    paragraphs: [
+      "Sauvage leather brings vivid, fashion-forward color to upholstery panels without sacrificing the hand and structure expected on sofas, sectionals, and accent seating.",
+      "Specify Sauvage when you want leather upholstery material with strong chroma and a refined pebble grain—ideal for residential showpieces and hospitality lounges that need color with real hide character.",
+    ],
+  },
+  {
     slug: "pull-up-leather",
     name: "Pull-Up Leather",
     overlayText: "Pull Up",
@@ -182,17 +197,52 @@ export const UPHOLSTERY_LEATHER_COLLECTIONS: UpholsteryLeatherCollection[] = [
       "If you are specifying pull-up for large sofa leather layouts, discuss lot matching and expected variation up front so yardage and paneling stay predictable through production.",
     ],
   },
+  {
+    slug: "western-leather",
+    name: "Western Leather",
+    overlayText: "Western",
+    imageFile: "Western-Leather-Main.jpg",
+    metaTitle: "Western Leather for Upholstery | Italian Hides | ReLeather",
+    metaDescription:
+      "Western-style upholstery leather with rugged grain and earthy tones for furniture and hospitality. Italian leather hides for furniture. Get a leather material quote.",
+    tagline:
+      "Earthy tones and tactile grain—leather with ranch-house warmth and upholstery-grade performance.",
+    paragraphs: [
+      "Western leather pairs rich browns, navy, and natural grain stories for interiors that feel grounded and authentic—without the inconsistency of commodity splits.",
+      "Use Western hides when you want furniture leather with visible texture on club chairs, sectionals, and commercial seating that calls for character and durability.",
+    ],
+  },
+  {
+    slug: "vintage-leather",
+    name: "Vintage Leather",
+    overlayText: "Vintage",
+    imageFile: "Vintage-Leather-Main.jpg",
+    metaTitle: "Vintage Leather for Upholstery | Italian Hides | ReLeather",
+    metaDescription:
+      "Vintage-look upholstery leather for classic frames, libraries, and curated residential seating. Italian leather hides for furniture. Request samples and a quote.",
+    tagline:
+      "Timeworn depth and softened color—specified when the frame deserves a believable aged finish.",
+    paragraphs: [
+      "Vintage leather collections emphasize warm, layered tones and natural marking that read as heritage rather than uniform coating—well suited to reupholstery and designer restorations.",
+      "If you are sourcing leather hides for furniture that must feel collected over time, Vintage is a practical direction for sofas, wing chairs, and hospitality pieces with traditional silhouettes.",
+    ],
+  },
 ];
 
-/** Finish-style filters for the /leather-for-upholstery collection grid */
+/** Finish- and grain-style filters for the /leather-for-upholstery collection grid */
 export type UpholsteryCollectionFilterId =
   | "all"
   | "aniline"
   | "semi-aniline"
   | "pigmented"
   | "wax-pull-up"
+  | "oil-pull-up"
   | "distressed"
-  | "nubuck";
+  | "nubuck"
+  | "fine-grain"
+  | "pebble-grain"
+  | "natural-grain"
+  | "smooth-grain";
 
 export type UpholsteryCollectionFilterOption = {
   id: UpholsteryCollectionFilterId;
@@ -212,7 +262,7 @@ export const UPHOLSTERY_COLLECTION_FILTERS: readonly UpholsteryCollectionFilterO
     {
       id: "semi-aniline",
       label: "Semi-Aniline",
-      slugs: ["antique-leather"],
+      slugs: ["antique-leather", "sauvage-leather"],
     },
     {
       id: "pigmented",
@@ -222,17 +272,48 @@ export const UPHOLSTERY_COLLECTION_FILTERS: readonly UpholsteryCollectionFilterO
     {
       id: "wax-pull-up",
       label: "Wax Pull Up",
-      slugs: ["waxed-leather", "pull-up-leather"],
+      slugs: ["waxed-leather", "pull-up-leather", "western-leather"],
+    },
+    {
+      id: "oil-pull-up",
+      label: "Oil Pull Up",
+      slugs: ["vintage-leather"],
     },
     {
       id: "distressed",
       label: "Distressed",
-      slugs: ["distressed-leather", "restoration-leather"],
+      slugs: ["distressed-leather", "restoration-leather", "vintage-leather"],
     },
     {
       id: "nubuck",
       label: "Nubuck",
       slugs: ["nubuck-leather"],
+    },
+    {
+      id: "fine-grain",
+      label: "Fine Grain",
+      slugs: ["antique-leather", "colorful-leather"],
+    },
+    {
+      id: "pebble-grain",
+      label: "Pebble Grain",
+      slugs: ["designer-leather", "sauvage-leather"],
+    },
+    {
+      id: "natural-grain",
+      label: "Natural Grain",
+      slugs: ["western-leather", "restoration-leather"],
+    },
+    {
+      id: "smooth-grain",
+      label: "Smooth Grain",
+      slugs: [
+        "waxed-leather",
+        "pull-up-leather",
+        "vintage-leather",
+        "nubuck-leather",
+        "aniline-leather",
+      ],
     },
   ];
 

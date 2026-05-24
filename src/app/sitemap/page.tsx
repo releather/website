@@ -36,6 +36,7 @@ const serviceLinks = [
 const productLinks = [
   { href: "/leather-conditioner", label: "Leather Conditioner" },
   { href: "/leather-for-upholstery", label: "Leather for Upholstery" },
+  { href: "/leather-calculator", label: "Leather Calculator" },
 ];
 
 const upholsteryLeatherCollectionLinks = [

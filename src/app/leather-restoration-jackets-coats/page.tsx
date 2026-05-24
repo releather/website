@@ -6,7 +6,7 @@ import IntroductionSection from "@/components/IntroductionSection";
 import LeatherRestorationBeforeAfter from "@/app/leather-restoration-lounge-chairs/LeatherRestorationBeforeAfter";
 import type { LeatherRestorationBeforeAfterItem } from "@/app/leather-restoration-lounge-chairs/LeatherRestorationBeforeAfter";
 import Process from "@/components/Process";
-import Guide from "@/components/Guide";
+import Guide, { GuideSection } from "@/components/Guide";
 import Faq from "@/components/Faq";
 
 const title = "Leather Restoration Jackets and Coats | ReLeather";
@@ -453,9 +453,9 @@ export default function LeatherRestorationJacketsCoatsPage() {
           />
 
           <Guide id="guide">
-            <h2 className="border-b-2 border-releather-orange pb-1 font-display text-2xl font-normal tracking-tight text-black sm:text-3xl">
+            <GuideSection>
               Leather Restoration: Bringing a Deep Purple Jacket Back to Life
-            </h2>
+            </GuideSection>
             <div className="my-6 overflow-hidden">
               {/* 1 row × 3 columns: Before | After | Process */}
               <div className="grid grid-cols-1 gap-4 py-4 sm:grid-cols-3">

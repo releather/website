@@ -5,11 +5,15 @@ export type BenefitItem = {
   title: string;
   /** Benefit description – string or ReactNode */
   description: React.ReactNode;
+  /** Optional label shown beside the check icon */
+  badge?: string;
+  /** Optional icon replacing the default check mark */
+  icon?: React.ReactNode;
 };
 
 export type BenefitsProps = {
   /** Section heading (e.g. "Why Choose Leather Cleaning?") */
-  title: string;
+  title?: string;
   /** Optional subheading (e.g. "3 Benefits of Leather Cleaning") */
   subtitle?: string;
   /** Optional intro content (e.g. paragraph with floated image) rendered after subtitle, before the benefits list */
@@ -20,6 +24,8 @@ export type BenefitsProps = {
   benefits: BenefitItem[];
   /** Optional id for the section (for anchor links) */
   id?: string;
+  /** Nested inside another section — no top border or standalone heading spacing */
+  embedded?: boolean;
 };
 
 export default function Benefits({
@@ -29,19 +35,28 @@ export default function Benefits({
   image,
   benefits,
   id,
+  embedded = false,
 }: BenefitsProps) {
+  const headingId = id && title ? `${id}-heading` : undefined;
+
   return (
     <section
       id={id}
-      className="mt-12 border-t-4 border-releather-orange pt-12"
-      aria-labelledby={id ? `${id}-heading` : undefined}
+      className={
+        embedded
+          ? "mt-6"
+          : "mt-12 border-t-4 border-releather-orange pt-12"
+      }
+      aria-labelledby={headingId}
     >
-      <h2
-        id={id ? `${id}-heading` : undefined}
-        className="font-display text-3xl font-normal tracking-tight text-black sm:text-4xl"
-      >
-        {title}
-      </h2>
+      {title ? (
+        <h2
+          id={headingId}
+          className="font-display text-3xl font-normal tracking-tight text-black sm:text-4xl"
+        >
+          {title}
+        </h2>
+      ) : null}
       {subtitle && (
         <p className="mt-2 font-sans text-lg font-bold text-releather-orange">
           {subtitle}
@@ -64,22 +79,35 @@ export default function Benefits({
           />
         </p>
       ) : null}
-      <ul className={`mt-8 grid list-none grid-cols-1 gap-6 p-0 sm:grid-cols-2 lg:grid-cols-3 ${intro != null ? "clear-left" : ""}`}>
+      <ul
+        className={`${title || intro || image ? "mt-8" : "mt-0"} grid list-none grid-cols-1 gap-6 p-0 sm:grid-cols-2 lg:grid-cols-3 ${intro != null ? "clear-left" : ""}`}
+      >
         {benefits.map((item, index) => (
           <li
             key={index}
             className="flex flex-col border-4 border-releather-orange bg-white p-5"
           >
-            <span
-              className="mb-3 flex h-12 w-12 shrink-0 items-center justify-center border-2 border-releather-orange bg-releather-orange text-black"
-              aria-hidden
+            <div className="mb-3 flex items-center gap-3">
+              {item.icon ?? (
+                <span
+                  className="flex h-12 w-12 shrink-0 items-center justify-center border-2 border-releather-orange bg-releather-orange text-black"
+                  aria-hidden
+                >
+                  <i className="fa fa-check text-xl" aria-hidden />
+                </span>
+              )}
+              {item.badge ? (
+                <span className="font-display text-2xl font-normal tracking-tight text-black sm:text-3xl">
+                  {item.badge}
+                </span>
+              ) : null}
+            </div>
+            <h3
+              className={`font-display text-xl font-normal tracking-tight text-black${embedded ? " border-t-2 border-releather-orange pt-2" : ""}`}
             >
-              <i className="fa fa-check text-xl" aria-hidden />
-            </span>
-            <h3 className="font-display text-xl font-normal tracking-tight text-black">
               {item.title}
             </h3>
-            <div className="mt-2 font-sans text-base font-medium leading-relaxed text-gray-700">
+            <div className="mt-2 overflow-hidden font-sans text-base font-medium leading-relaxed text-gray-700">
               {item.description}
             </div>
           </li>

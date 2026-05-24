@@ -4,17 +4,18 @@ import Link from "next/link";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
 import IntroductionSection from "@/components/IntroductionSection";
-import Process from "@/components/Process";
-import Benefits from "@/components/Benefits";
 import Guide from "@/components/Guide";
+import Faq from "@/components/Faq";
+import JsonLd from "@/components/JsonLd";
 import LeatherForUpholsteryGuideContent from "./LeatherForUpholsteryGuideContent";
-import SedonaProductBlock from "./SedonaProductBlock";
-import PaletteProductBlock from "./PaletteProductBlock";
-import LuxorProductBlock from "./LuxorProductBlock";
-import ConcertoProductBlock from "./ConcertoProductBlock";
-import UpholsteryLeatherHub from "@/components/UpholsteryLeatherHub";
 import UpholsteryLeatherCollectionGrid from "@/components/UpholsteryLeatherCollectionGrid";
 import LeatherMaterialQuoteEmbed from "./LeatherMaterialQuoteEmbed";
+import LeatherForUpholsteryBenefits from "./LeatherForUpholsteryBenefits";
+import LeatherForUpholsteryQuickTools from "./LeatherForUpholsteryQuickTools";
+import {
+  leatherForUpholsteryFaqItems,
+  leatherForUpholsteryFaqSchema,
+} from "./leatherForUpholsteryFaq";
 import { LEATHER_MATERIAL_QUOTE_URL } from "@/lib/upholsteryLeatherCollections";
 
 const title = "Leather for Upholstery | ReLeather";
@@ -28,57 +29,10 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" as const, title, description },
 };
 
-const leatherForUpholsteryProcessSteps = [
-  {
-    title: "Get Quote",
-    description: "Choose leather. Fill out form.",
-  },
-  {
-    title: "Place Order",
-    description: "Accept quote and pay invoice.",
-  },
-  {
-    title: "Delivery",
-    description: "Average lead time is 1 week.",
-  },
-];
-
-const leatherForUpholsteryBenefits = [
-  {
-    title: "Italian Finished Upholstery Leather",
-    description:
-      "Our leather is finished in Italy, known for its quality and craftsmanship. Expect rich color, beautiful texture, and a refined look.",
-  },
-  {
-    title: "Large Range of Colors & Textures",
-    description:
-      "We stock high-end upholstery leather in many colors, grains, and finishes — from smooth and modern to natural and textured.",
-  },
-  {
-    title: "Built for Residential & Commercial Use",
-    description:
-      "Our leather is durable and made to last. Ideal for sofas, chairs, offices, hospitality spaces, and high-traffic areas.",
-  },
-  {
-    title: "Expert Leather Matching",
-    description:
-      "We can match your existing leather in both color and texture, making repairs and additions seamless.",
-  },
-  {
-    title: "Samples Available",
-    description:
-      "Order leather samples to see and feel the material before you commit. Check the color and finish in your own space.",
-  },
-  {
-    title: "Trusted by Designers & Upholsterers",
-    description:
-      "We supply premium upholstery leather to designers, homeowners, and commercial projects that require quality materials.",
-  },
-];
-
 export default function LeatherForUpholsteryPage() {
   return (
     <>
+      <JsonLd data={leatherForUpholsteryFaqSchema} />
       <HeaderWrapper />
       <main className="min-h-screen bg-white">
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
@@ -99,6 +53,7 @@ export default function LeatherForUpholsteryPage() {
               "aria-label": "Leather for Upholstery Material Estimate",
               label: "Get Leather Material Quote!",
             }}
+            leftContent={<LeatherForUpholsteryQuickTools />}
             rightContent={<LeatherMaterialQuoteEmbed />}
             gridClassName="lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:items-start xl:grid-cols-[minmax(0,5fr)_minmax(0,8fr)]"
             gridGapClassName="gap-8 lg:gap-10"
@@ -112,20 +67,18 @@ export default function LeatherForUpholsteryPage() {
             <UpholsteryLeatherCollectionGrid />
           </section>
 
-          <UpholsteryLeatherHub />
-
           <section
             id="intro"
-            className="border-t-4 border-black pt-12"
+            className="scroll-mt-24 mt-8 lg:mt-10"
             aria-labelledby="intro-heading"
           >
             <h2
               id="intro-heading"
               className="font-display text-2xl font-normal tracking-tight text-black sm:text-3xl"
             >
-              Choose your line: Sedona, Palette, Luxor &amp; Concerto
+              Why choose our leather?
             </h2>
-            <div className="mt-4">
+            <div className="mt-4 overflow-hidden">
               <figure className="brutalist-image-frame float-right ml-6 mb-4 w-[280px] shrink-0 sm:w-[320px]"><Image unoptimized
                   src="https://res.cloudinary.com/releather-com/image/upload/c_crop,g_south,h_240,w_435/v1654907997/leather/ReLeather-Leather-Types-Swatches-Selection-2.png"
                   alt="ReLeather leather types and swatches selection"
@@ -137,53 +90,52 @@ export default function LeatherForUpholsteryPage() {
                 />
               </figure>
               <p className="font-sans text-lg leading-relaxed text-gray-800">
-                Beyond the <Link href="/leather-for-upholstery#collections" className="font-semibold text-black underline decoration-releather-orange decoration-2 underline-offset-2 hover:text-releather-orange">style collections above</Link>, we stock named Italian lines below—each tuned for real upholstery work. Our hides span colors and grains so you can match a project precisely. We also offer our clients{" "}
+                At ReLeather, our{" "}
+                <Link
+                  href="/leather-for-upholstery#collections"
+                  title="Browse upholstery leather collections"
+                  className="font-semibold text-black underline decoration-releather-orange decoration-2 underline-offset-2 hover:text-releather-orange"
+                >
+                  <strong>leather hides for furniture</strong>
+                </Link>{" "}
+                are finished in Italy and curated as a wide{" "}
+                <Link
+                  href="/types-of-leather"
+                  title="Types of leather for upholstery"
+                  className="font-semibold text-black underline decoration-releather-orange decoration-2 underline-offset-2 hover:text-releather-orange"
+                >
+                  <strong>leather upholstery material</strong>
+                </Link>{" "}
+                so you can match color, grain, sheen, and hand. Typical{" "}
+                <strong>upholstery leather</strong> applications include
+                residential sofas and sectionals, accent chairs, headboards,
+                office seating, and hospitality pieces where durability and
+                appearance both matter. We also offer our clients{" "}
                 <Link href="/services/leather-upholstery">
                   <strong>leather reupholstery service</strong>
                 </Link>{" "}
                 when you want the material and the craft under one roof.
               </p>
             </div>
-          </section>
-
-          <Process
-            id="how-it-works"
-            title="How Does It Work? Easy..."
-            subtitle="Get Quote, Place Order, Delivery"
-            steps={leatherForUpholsteryProcessSteps}
-          />
-
-          <Benefits
-            id="benefits"
-            title="Leather Benefits"
-            benefits={leatherForUpholsteryBenefits}
-          />
-
-          <section id="sedona-leather" className="scroll-mt-24">
-            <SedonaProductBlock />
-          </section>
-
-          <section id="palette-leather" className="scroll-mt-24">
-            <PaletteProductBlock />
-          </section>
-
-          <section id="luxor-leather" className="scroll-mt-24">
-            <LuxorProductBlock />
-          </section>
-
-          <section id="concerto-leather" className="scroll-mt-24">
-            <ConcertoProductBlock />
+            <LeatherForUpholsteryBenefits />
           </section>
 
           <Guide
             id="guide"
             header={{
               badge: "Product Guide",
-              title: "Leather for Upholstery",
+              title: "Start ReLeathering",
             }}
           >
             <LeatherForUpholsteryGuideContent />
           </Guide>
+
+          <Faq
+            id="faq"
+            heading="Frequently Asked Questions"
+            items={leatherForUpholsteryFaqItems}
+            defaultOpenFirst
+          />
         </div>
       </main>
       <Footer />

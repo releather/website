@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import LiteYouTube from "@/components/LiteYouTube";
+import { GuideSection } from "@/components/Guide";
 
 export default function LeatherCleaningGuideContent() {
   return (
@@ -75,43 +76,37 @@ export default function LeatherCleaningGuideContent() {
         .
       </p>
 
-      <div className="mt-12">
-        <h2 className="border-b-2 border-releather-orange pb-1 font-display text-2xl font-normal tracking-tight text-black sm:text-3xl">
-          <i className="fa fa-check-square mr-2 text-releather-orange" aria-hidden />
-          Leather Cleaning
-        </h2>
-        <p className="mt-4">
-          Deep cleaning the leather surface removes ingrained dirt and grease
-          build up. Agitation and wiping down the upholstery loosens the dirt
-          and grime in the pores and within the grain texture of the leather.
-          Leather heavily soiled with dirt not only darkens the finish but also
-          stiffens the leather surface because the pores are filled with dirt.
-        </p>
-        <p>
-          When it comes to leather sofa cleaning, there is no one-size-fits-all
-          solution. The{" "}
-          <Link
-            href="/blog/how-to-safely-clean-your-leather-sofa"
-            title="DIY Leather Cleaning Sofa"
-            aria-label="DIY Leather Cleaning Sofa"
-          >
-            <em>best way to clean your leather sofa</em>
-          </Link>{" "}
-          may vary depending on the type of leather and the condition it is in.
-          For example, leather that is highly textured or has a lot of dirt and
-          grime buildup may require a more vigorous cleaning method. On the
-          other hand, leather that is delicate or has been treated with a
-          protective coating may need a gentler approach.
-        </p>
-        <p>
-          We test any cleaning solution on an inconspicuous area of the leather
-          chair or couch first to make sure they won&apos;t damage the leather
-          because some cleaners can cause the leather to fade or discolor, so
-          it&apos;s best to err on the side of caution. Thus, we avoid harsh
-          chemicals or abrasive cleaners that can cause damage to the leather.
-        </p>
-
-      </div>
+      <GuideSection>Leather Cleaning</GuideSection>
+      <p>
+        Deep cleaning the leather surface removes ingrained dirt and grease
+        build up. Agitation and wiping down the upholstery loosens the dirt
+        and grime in the pores and within the grain texture of the leather.
+        Leather heavily soiled with dirt not only darkens the finish but also
+        stiffens the leather surface because the pores are filled with dirt.
+      </p>
+      <p>
+        When it comes to leather sofa cleaning, there is no one-size-fits-all
+        solution. The{" "}
+        <Link
+          href="/blog/how-to-safely-clean-your-leather-sofa"
+          title="DIY Leather Cleaning Sofa"
+          aria-label="DIY Leather Cleaning Sofa"
+        >
+          <em>best way to clean your leather sofa</em>
+        </Link>{" "}
+        may vary depending on the type of leather and the condition it is in.
+        For example, leather that is highly textured or has a lot of dirt and
+        grime buildup may require a more vigorous cleaning method. On the
+        other hand, leather that is delicate or has been treated with a
+        protective coating may need a gentler approach.
+      </p>
+      <p>
+        We test any cleaning solution on an inconspicuous area of the leather
+        chair or couch first to make sure they won&apos;t damage the leather
+        because some cleaners can cause the leather to fade or discolor, so
+        it&apos;s best to err on the side of caution. Thus, we avoid harsh
+        chemicals or abrasive cleaners that can cause damage to the leather.
+      </p>
 
       <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
         <p>
@@ -195,20 +190,15 @@ export default function LeatherCleaningGuideContent() {
         </p>
       </div>
 
-      <div className="mt-12">
-        <h2 className="border-b-2 border-releather-orange pb-1 font-display text-2xl font-normal tracking-tight text-black sm:text-3xl">
-          <i className="fa fa-check-square mr-2 text-releather-orange" aria-hidden />
-          Leather Conditioning
-        </h2>
-        <p className="mt-4">
-          Leather cleaning is only half of the treatment. Rejuvenating the
-          supple feel means treating the dry and hard leather surface. Proper
-          moisturizing ensures the leather is nourished with natural oils.
-          <br />
-          Application of leather lotions and oils renews the moisture and
-          original sheen leaving the leather soft and supple to the touch.
-        </p>
-      </div>
+      <GuideSection>Leather Conditioning</GuideSection>
+      <p>
+        Leather cleaning is only half of the treatment. Rejuvenating the
+        supple feel means treating the dry and hard leather surface. Proper
+        moisturizing ensures the leather is nourished with natural oils.
+        <br />
+        Application of leather lotions and oils renews the moisture and
+        original sheen leaving the leather soft and supple to the touch.
+      </p>
     </>
   );
 }

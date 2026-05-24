@@ -9,7 +9,7 @@ import LeatherRestorationBeforeAfter from "@/app/leather-restoration-lounge-chai
 import type { LeatherRestorationBeforeAfterItem } from "@/app/leather-restoration-lounge-chairs/LeatherRestorationBeforeAfter";
 import Benefits from "@/components/Benefits";
 import Process from "@/components/Process";
-import Guide from "@/components/Guide";
+import Guide, { GuideSection } from "@/components/Guide";
 import Issues from "@/components/Issues";
 import LiteYouTube from "@/components/LiteYouTube";
 
@@ -356,9 +356,9 @@ export default function LeatherRedyeingHandbagPage() {
           />
 
           <Guide id="guide">
-            <h2 className="border-b-2 border-releather-orange pb-1 font-display text-2xl font-normal tracking-tight text-black sm:text-3xl">
+            <GuideSection>
               Handbag and Purse Leather Cleaning, Restoration, and Dyeing
-            </h2>
+            </GuideSection>
             <div className="my-6 overflow-hidden">
               <div className="float-right ml-6 mb-4 w-[280px] shrink-0 sm:w-[320px]">
                 <LiteYouTube
