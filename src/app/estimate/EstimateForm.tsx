@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useMemo, useState, type ReactNode } from "react";
+import { useCallback, useState, type ReactNode } from "react";
 import Image from "next/image";
 import {
   EMPTY_ESTIMATE_FORM,
@@ -22,18 +22,10 @@ import {
   type EstimateFileUploadFieldId,
   type EstimateFormValues,
 } from "@/lib/estimateForm";
+import { formatPhoneInput } from "@/lib/formatPhoneInput";
 
 const inputClassName =
   "w-full border-2 border-black bg-white px-3 py-2 font-sans text-sm text-black placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-releather-orange focus:ring-offset-1";
-
-const FILE_UPLOAD_LABELS: Record<EstimateFileUploadFieldId, string> = {
-  hqD5MA1798MKCjs6dA9aUQ: "Upload a file (1)",
-  jmLoCZjxjFRNv1T8KX6V7Q: "Upload a file (2)",
-  nMmCATSigGoBiNdbe2syvm: "Upload a file (3)",
-  sB7FqLvgeZyrodg8gKQCMS: "Upload a file (4)",
-  vTCUfmzeqRrxVpv5ZWPruW: "Upload a file (5)",
-  dGWv99x7UELapkuBj6LhTJ: "Upload a file",
-};
 
 function FieldLabel({
   htmlFor,
@@ -135,15 +127,6 @@ export default function EstimateForm() {
   const showSofa = showEstimateSofaCount(values.itemTypes);
   const showChair = showEstimateChairCount(values.itemTypes);
   const showCushion = showEstimateCushionCount(values.itemTypes);
-
-  const totalSelectedFiles = useMemo(
-    () =>
-      Object.values(filesByField).reduce(
-        (count, files) => count + (files?.length ?? 0),
-        0,
-      ),
-    [filesByField],
-  );
 
   const update = useCallback(
     <K extends keyof EstimateFormValues>(
@@ -414,6 +397,24 @@ export default function EstimateForm() {
 
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
+          <FieldLabel htmlFor="estimate-phone" required>
+            Phone Number
+          </FieldLabel>
+          <input
+            id="estimate-phone"
+            type="tel"
+            autoComplete="tel"
+            required
+            value={values.phone}
+            disabled={isSubmitting}
+            onChange={(e) => update("phone", formatPhoneInput(e.target.value))}
+            className={inputClassName}
+            aria-invalid={Boolean(errors.phone)}
+            aria-describedby={errors.phone ? "estimate-phone-error" : undefined}
+          />
+          <FieldError id="estimate-phone-error" message={errors.phone} />
+        </div>
+        <div>
           <FieldLabel htmlFor="estimate-email" required>
             Email
           </FieldLabel>
@@ -430,24 +431,6 @@ export default function EstimateForm() {
             aria-describedby={errors.email ? "estimate-email-error" : undefined}
           />
           <FieldError id="estimate-email-error" message={errors.email} />
-        </div>
-        <div>
-          <FieldLabel htmlFor="estimate-phone" required>
-            Phone Number
-          </FieldLabel>
-          <input
-            id="estimate-phone"
-            type="tel"
-            autoComplete="tel"
-            required
-            value={values.phone}
-            disabled={isSubmitting}
-            onChange={(e) => update("phone", e.target.value)}
-            className={inputClassName}
-            aria-invalid={Boolean(errors.phone)}
-            aria-describedby={errors.phone ? "estimate-phone-error" : undefined}
-          />
-          <FieldError id="estimate-phone-error" message={errors.phone} />
         </div>
       </div>
 
@@ -485,7 +468,7 @@ export default function EstimateForm() {
           What type of leather item?<span className="ml-0.5 text-releather-orange">*</span>
         </legend>
         <div
-          className="grid grid-cols-2 gap-2 sm:grid-cols-3"
+          className="grid grid-cols-6 gap-1 sm:gap-1.5"
           role="group"
           aria-label="Leather item types"
         >
@@ -497,7 +480,7 @@ export default function EstimateForm() {
               <label
                 key={option.id}
                 htmlFor={inputId}
-                className={`cursor-pointer border-2 border-black transition ${
+                className={`flex min-w-0 cursor-pointer flex-col overflow-hidden border-2 border-black transition ${
                   selected
                     ? "bg-releather-orange"
                     : "bg-white hover:bg-gray-50"
@@ -511,15 +494,17 @@ export default function EstimateForm() {
                   disabled={isSubmitting}
                   onChange={() => toggleItemType(option.value)}
                 />
-                <Image
-                  unoptimized
-                  src={option.imageUrl}
-                  alt=""
-                  width={160}
-                  height={160}
-                  className="aspect-square w-full object-cover"
-                />
-                <span className="block border-t-2 border-black px-1 py-1.5 text-center font-sans text-[11px] font-semibold leading-tight text-black sm:text-xs">
+                <div className="relative aspect-square w-full overflow-hidden bg-white">
+                  <Image
+                    unoptimized
+                    src={option.imageUrl}
+                    alt=""
+                    fill
+                    sizes="(max-width: 640px) 16vw, 120px"
+                    className="object-contain p-1"
+                  />
+                </div>
+                <span className="block border-t-2 border-black px-0.5 py-1 text-center font-sans text-[11px] font-semibold leading-tight text-black sm:text-xs">
                   {option.label}
                 </span>
               </label>
@@ -688,22 +673,24 @@ export default function EstimateForm() {
 
       {values.attachPhotos ? (
         <div className="space-y-3 border-2 border-black bg-gray-50 p-4">
-          <p className="font-sans text-sm font-semibold text-gray-800">
-            Upload photos ({totalSelectedFiles} selected)
+          <p className="font-sans text-sm font-semibold text-black">
+            Upload photos
           </p>
-          {ESTIMATE_FILE_UPLOAD_FIELD_IDS.map((fieldId) => {
+          {ESTIMATE_FILE_UPLOAD_FIELD_IDS.map((fieldId, index) => {
             const selectedFiles = filesByField[fieldId] ?? [];
             return (
               <div key={fieldId}>
-                <FieldLabel htmlFor={`estimate-file-${fieldId}`}>
-                  {FILE_UPLOAD_LABELS[fieldId]}
-                </FieldLabel>
                 <input
                   id={`estimate-file-${fieldId}`}
                   type="file"
                   multiple
                   disabled={isSubmitting}
                   accept="image/*,.pdf,.heic,.heif"
+                  aria-label={
+                    ESTIMATE_FILE_UPLOAD_FIELD_IDS.length > 1
+                      ? `Upload photo ${index + 1}`
+                      : "Upload photo"
+                  }
                   onChange={(e) => handleFilesChange(fieldId, e.target.files)}
                   className="block w-full font-sans text-sm text-gray-800 file:mr-3 file:border-2 file:border-black file:bg-white file:px-3 file:py-1.5 file:font-sans file:text-sm file:font-semibold file:text-black hover:file:bg-gray-100"
                 />

@@ -11,6 +11,7 @@ import {
   type LeatherMaterialQuoteFieldErrors,
   type LeatherMaterialQuoteFormValues,
 } from "@/lib/leatherMaterialQuoteForm";
+import { formatPhoneInput } from "@/lib/formatPhoneInput";
 
 const inputClassName =
   "w-full border-2 border-black bg-white px-3 py-2 font-sans text-sm text-black placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-releather-orange focus:ring-offset-1";
@@ -320,7 +321,7 @@ export default function LeatherMaterialQuoteForm() {
             required
             value={values.phone}
             disabled={isSubmitting}
-            onChange={(e) => update("phone", e.target.value)}
+            onChange={(e) => update("phone", formatPhoneInput(e.target.value))}
             className={inputClassName}
             aria-invalid={Boolean(errors.phone)}
             aria-describedby={errors.phone ? "quote-phone-error" : undefined}
