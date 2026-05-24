@@ -4,6 +4,11 @@ import {
   ESTIMATE_MAX_FILES_PER_FIELD,
   type EstimateFileUploadFieldId,
 } from "@/lib/estimateForm";
+import {
+  isCloudinaryConfigured,
+  isHostedHttpsUrl,
+  uploadFileToCloudinary,
+} from "@/lib/cloudinaryUpload";
 
 export type ParsedEstimateUploads = Partial<
   Record<
@@ -17,16 +22,11 @@ function sanitizeFilename(name: string): string {
   return base.replace(/[^\w.\-() ]+/g, "_").slice(0, 180) || "upload";
 }
 
-async function fileToDataUrl(file: File): Promise<string> {
-  const buffer = Buffer.from(await file.arrayBuffer());
-  const mimeType = file.type || "application/octet-stream";
-  return `data:${mimeType};base64,${buffer.toString("base64")}`;
-}
-
 export async function parseEstimateUploads(
   formData: FormData,
 ): Promise<{ uploads: ParsedEstimateUploads; error?: string }> {
   const uploads: ParsedEstimateUploads = {};
+  let hasFiles = false;
 
   for (const fieldId of ESTIMATE_FILE_UPLOAD_FIELD_IDS) {
     const entries = formData
@@ -40,6 +40,23 @@ export async function parseEstimateUploads(
       };
     }
 
+    if (entries.length > 0) {
+      hasFiles = true;
+    }
+  }
+
+  if (hasFiles && !isCloudinaryConfigured()) {
+    return {
+      uploads,
+      error: "Photo uploads are not configured on the server",
+    };
+  }
+
+  for (const fieldId of ESTIMATE_FILE_UPLOAD_FIELD_IDS) {
+    const entries = formData
+      .getAll(fieldId)
+      .filter((entry): entry is File => entry instanceof File && entry.size > 0);
+
     const parsedFiles: Array<{ url: string; filename: string }> = [];
 
     for (const file of entries) {
@@ -50,10 +67,18 @@ export async function parseEstimateUploads(
         };
       }
 
-      parsedFiles.push({
-        url: await fileToDataUrl(file),
-        filename: sanitizeFilename(file.name),
-      });
+      const filename = sanitizeFilename(file.name);
+
+      try {
+        const url = await uploadFileToCloudinary(file, filename);
+        parsedFiles.push({ url, filename });
+      } catch (err) {
+        console.error("[estimate] Cloudinary upload failed", err);
+        return {
+          uploads,
+          error: "Unable to upload one or more files. Please try again.",
+        };
+      }
     }
 
     if (parsedFiles.length > 0) {
@@ -64,81 +89,23 @@ export async function parseEstimateUploads(
   return { uploads };
 }
 
-type FilloutStoredFile = {
-  url?: string;
-  filename?: string;
-  name?: string;
-};
-
-/** Read FileUpload URLs stored on a Fillout submission (e.g. S3 links). */
-export function fileUploadsFromFilloutQuestions(
-  questions: Array<{ id: string; type?: string; value?: unknown }>,
+/** Keep only hosted HTTPS file URLs (never data: URLs) for notification emails. */
+export function hostedUploadsForEmail(
+  uploads: ParsedEstimateUploads,
 ): ParsedEstimateUploads {
-  const uploads: ParsedEstimateUploads = {};
-
-  for (const question of questions) {
-    if (question.type !== "FileUpload" || !question.value) continue;
-    if (
-      !ESTIMATE_FILE_UPLOAD_FIELD_IDS.includes(
-        question.id as EstimateFileUploadFieldId,
-      )
-    ) {
-      continue;
-    }
-
-    const entries = Array.isArray(question.value) ? question.value : [];
-    const files = entries
-      .filter(
-        (entry): entry is FilloutStoredFile =>
-          Boolean(entry) && typeof entry === "object" && "url" in entry,
-      )
-      .map((entry) => ({
-        url: typeof entry.url === "string" ? entry.url : "",
-        filename:
-          typeof entry.filename === "string"
-            ? entry.filename
-            : typeof entry.name === "string"
-              ? entry.name
-              : "upload",
-      }))
-      .filter((file) => file.url.length > 0);
-
-    if (files.length > 0) {
-      uploads[question.id as EstimateFileUploadFieldId] = files;
-    }
-  }
-
-  return uploads;
-}
-
-/** Prefer HTTPS Fillout-hosted URLs when available; fall back to local uploads. */
-export function mergeEstimateUploadsForEmail(
-  localUploads: ParsedEstimateUploads,
-  filloutUploads: ParsedEstimateUploads,
-): ParsedEstimateUploads {
-  const merged: ParsedEstimateUploads = { ...localUploads };
+  const hosted: ParsedEstimateUploads = {};
 
   for (const fieldId of ESTIMATE_FILE_UPLOAD_FIELD_IDS) {
-    const filloutFiles = filloutUploads[fieldId];
-    const localFiles = localUploads[fieldId];
-    if (!filloutFiles?.length && !localFiles?.length) continue;
+    const files = uploads[fieldId];
+    if (!files?.length) continue;
 
-    if (!filloutFiles?.length) continue;
-
-    merged[fieldId] = filloutFiles.map((filloutFile, index) => {
-      const localFile = localFiles?.[index];
-      const preferFilloutUrl =
-        filloutFile.url.startsWith("http://") ||
-        filloutFile.url.startsWith("https://");
-
-      return {
-        url: preferFilloutUrl ? filloutFile.url : localFile?.url ?? filloutFile.url,
-        filename: filloutFile.filename || localFile?.filename || "upload",
-      };
-    });
+    const httpsFiles = files.filter((file) => isHostedHttpsUrl(file.url));
+    if (httpsFiles.length > 0) {
+      hosted[fieldId] = httpsFiles;
+    }
   }
 
-  return merged;
+  return hosted;
 }
 
 export function parseEstimateValues(raw: unknown) {
