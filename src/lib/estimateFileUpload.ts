@@ -5,22 +5,20 @@ import {
   type EstimateFileUploadFieldId,
 } from "@/lib/estimateForm";
 
+export type ParsedEstimateFile = {
+  url: string;
+  filename: string;
+  /** Included in admin notification emails when the file is not hosted at an https URL. */
+  attachment?: { content: Buffer; contentType: string };
+};
+
 export type ParsedEstimateUploads = Partial<
-  Record<
-    EstimateFileUploadFieldId,
-    Array<{ url: string; filename: string }>
-  >
+  Record<EstimateFileUploadFieldId, Array<ParsedEstimateFile>>
 >;
 
 function sanitizeFilename(name: string): string {
   const base = name.split(/[/\\]/).pop() ?? "upload";
   return base.replace(/[^\w.\-() ]+/g, "_").slice(0, 180) || "upload";
-}
-
-async function fileToDataUrl(file: File): Promise<string> {
-  const buffer = Buffer.from(await file.arrayBuffer());
-  const mimeType = file.type || "application/octet-stream";
-  return `data:${mimeType};base64,${buffer.toString("base64")}`;
 }
 
 export async function parseEstimateUploads(
@@ -40,7 +38,7 @@ export async function parseEstimateUploads(
       };
     }
 
-    const parsedFiles: Array<{ url: string; filename: string }> = [];
+    const parsedFiles: ParsedEstimateFile[] = [];
 
     for (const file of entries) {
       if (file.size > ESTIMATE_MAX_FILE_BYTES) {
@@ -50,9 +48,13 @@ export async function parseEstimateUploads(
         };
       }
 
+      const buffer = Buffer.from(await file.arrayBuffer());
+      const contentType = file.type || "application/octet-stream";
+
       parsedFiles.push({
-        url: await fileToDataUrl(file),
+        url: `data:${contentType};base64,${buffer.toString("base64")}`,
         filename: sanitizeFilename(file.name),
+        attachment: { content: buffer, contentType },
       });
     }
 

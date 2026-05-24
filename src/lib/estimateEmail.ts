@@ -40,16 +40,25 @@ function formatAddress(address: EstimateFormValues["address"]): string {
   return lines.join("\n");
 }
 
+function isHostedFileUrl(url: string): boolean {
+  return url.startsWith("https://") || url.startsWith("http://");
+}
+
 function collectUploadedFiles(
   uploads: ParsedEstimateUploads,
-): Array<{ url: string; filename: string }> {
-  const files: Array<{ url: string; filename: string }> = [];
+): Array<{ url: string; filename: string; hasAttachment: boolean }> {
+  const files: Array<{ url: string; filename: string; hasAttachment: boolean }> =
+    [];
 
   for (const fieldFiles of Object.values(uploads)) {
     if (!fieldFiles?.length) continue;
     for (const file of fieldFiles) {
       if (file.url) {
-        files.push(file);
+        files.push({
+          url: file.url,
+          filename: file.filename,
+          hasAttachment: Boolean(file.attachment),
+        });
       }
     }
   }
@@ -57,16 +66,44 @@ function collectUploadedFiles(
   return files;
 }
 
+function collectEmailAttachments(
+  uploads: ParsedEstimateUploads,
+): Array<{ filename: string; content: Buffer; contentType: string }> {
+  const attachments: Array<{
+    filename: string;
+    content: Buffer;
+    contentType: string;
+  }> = [];
+
+  for (const fieldFiles of Object.values(uploads)) {
+    if (!fieldFiles?.length) continue;
+    for (const file of fieldFiles) {
+      if (file.attachment && !isHostedFileUrl(file.url)) {
+        attachments.push({
+          filename: file.filename,
+          content: file.attachment.content,
+          contentType: file.attachment.contentType,
+        });
+      }
+    }
+  }
+
+  return attachments;
+}
+
 function formatUploadedFilesPlainText(uploads: ParsedEstimateUploads): string {
   const files = collectUploadedFiles(uploads);
   if (files.length === 0) return "—";
 
   return files
-    .map((file) =>
-      file.url.startsWith("http://") || file.url.startsWith("https://")
-        ? `${file.filename}: ${file.url}`
-        : file.filename,
-    )
+    .map((file) => {
+      if (isHostedFileUrl(file.url)) {
+        return `${file.filename}: ${file.url}`;
+      }
+      return file.hasAttachment
+        ? `${file.filename} (attached)`
+        : file.filename;
+    })
     .join("\n");
 }
 
@@ -77,9 +114,16 @@ function formatUploadedFilesHtml(uploads: ParsedEstimateUploads): string {
   return files
     .map((file) => {
       const label = escapeHtml(file.filename || "upload");
-      if (!file.url) return label;
 
-      return `<a href="${escapeHtmlAttr(file.url)}" style="color:#2563eb;text-decoration:underline;">${label}</a>`;
+      if (isHostedFileUrl(file.url)) {
+        return `<a href="${escapeHtmlAttr(file.url)}" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;">${label}</a>`;
+      }
+
+      if (file.hasAttachment) {
+        return `${label} <span style="color:#6b7280;">(attached)</span>`;
+      }
+
+      return label;
     })
     .join("<br>");
 }
@@ -252,6 +296,12 @@ export async function sendEstimateNotificationEmail(
     `${values.firstName.trim()} ${values.lastName.trim()}`.trim() || "Unknown";
   const subject = `Estimate quote request — ${customerName}`;
 
+  const attachments = collectEmailAttachments(uploads).map((file) => ({
+    filename: file.filename,
+    content: file.content,
+    contentType: file.contentType,
+  }));
+
   await transporter.sendMail({
     from: smtpUser,
     to: smtpUser,
@@ -259,5 +309,6 @@ export async function sendEstimateNotificationEmail(
     subject,
     text: buildPlainTextBody(values, uploads, submissionId),
     html: buildNotificationHtml(values, uploads, submissionId),
+    attachments,
   });
 }

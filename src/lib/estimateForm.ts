@@ -425,7 +425,10 @@ export function buildEstimateFilloutQuestions(
     for (const fieldId of ESTIMATE_FILE_UPLOAD_FIELD_IDS) {
       const files = uploadedFiles[fieldId];
       if (files && files.length > 0) {
-        questions.push({ id: fieldId, value: files });
+        questions.push({
+          id: fieldId,
+          value: files.map(({ url, filename }) => ({ url, filename })),
+        });
       }
     }
   }
