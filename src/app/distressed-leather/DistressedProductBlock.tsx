@@ -201,11 +201,11 @@ export default function DistressedProductBlock() {
   return (
     <section
       id="distressed-collection"
-      className="pt-0"
+      className="-mx-2 pt-0 sm:mx-0"
       aria-labelledby="distressed-heading"
     >
       <div
-        className="border-4 p-6 sm:p-8"
+        className="border-4 p-4 sm:p-8"
         style={{ backgroundColor: "#23262f", borderColor: ACCENT }}
       >
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
@@ -247,16 +247,20 @@ export default function DistressedProductBlock() {
                 className="flex min-w-0 flex-1 basis-0 items-center justify-center gap-2 border-2 border-black px-3 py-3 font-sans text-sm font-bold text-black transition hover:bg-black hover:text-white sm:px-5 sm:text-base"
                 style={{ backgroundColor: ACCENT }}
               >
-                <i className="fa fa-shopping-cart fa-lg shrink-0" aria-hidden />
+                <i
+                  className="fa fa-shopping-cart fa-lg hidden shrink-0 sm:inline"
+                  aria-hidden
+                />
                 Get Quote
               </Link>
               <button
                 type="button"
                 onClick={handlePreviewClick}
+                aria-label="Preview video"
                 className="flex min-w-0 flex-1 basis-0 items-center justify-center gap-2 border-2 border-black bg-red-600 px-3 py-3 font-sans text-sm font-bold text-white transition hover:bg-black sm:px-5 sm:text-base"
               >
                 <i className="fab fa-youtube fa-lg shrink-0" aria-hidden />
-                Preview
+                <span className="hidden sm:inline">Preview</span>
               </button>
             </div>
           </div>
@@ -285,7 +289,7 @@ export default function DistressedProductBlock() {
                 return (
                   <div
                     key={swatch.id}
-                    className={`relative ${selected ? "ring-2 ring-releather-orange ring-offset-2 ring-offset-[#23262f]" : ""}`}
+                    className={`relative w-fit shrink-0 ${selected ? "ring-2 ring-releather-orange ring-offset-2 ring-offset-[#23262f]" : ""}`}
                   >
                     <button
                       type="button"

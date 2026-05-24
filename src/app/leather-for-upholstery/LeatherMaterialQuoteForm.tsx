@@ -385,7 +385,7 @@ export default function LeatherMaterialQuoteForm() {
                   height={LEATHER_QUOTE_SWATCH_SIZE}
                   className="aspect-square w-full object-contain"
                 />
-                <span className="block border-t-2 border-black bg-transparent px-1 py-1.5 text-center font-sans text-[11px] font-semibold leading-tight text-black sm:text-xs">
+                <span className="block border-t-2 border-black bg-transparent px-1 py-1.5 text-center font-sans text-sm font-semibold leading-tight text-black sm:text-xs">
                   {option.label}
                 </span>
               </label>
