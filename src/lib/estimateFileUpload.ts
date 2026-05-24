@@ -4,11 +4,6 @@ import {
   ESTIMATE_MAX_FILES_PER_FIELD,
   type EstimateFileUploadFieldId,
 } from "@/lib/estimateForm";
-import {
-  isCloudinaryConfigured,
-  isHostedHttpsUrl,
-  uploadFileToCloudinary,
-} from "@/lib/cloudinaryUpload";
 
 export type ParsedEstimateUploads = Partial<
   Record<
@@ -22,11 +17,16 @@ function sanitizeFilename(name: string): string {
   return base.replace(/[^\w.\-() ]+/g, "_").slice(0, 180) || "upload";
 }
 
+async function fileToDataUrl(file: File): Promise<string> {
+  const buffer = Buffer.from(await file.arrayBuffer());
+  const mimeType = file.type || "application/octet-stream";
+  return `data:${mimeType};base64,${buffer.toString("base64")}`;
+}
+
 export async function parseEstimateUploads(
   formData: FormData,
 ): Promise<{ uploads: ParsedEstimateUploads; error?: string }> {
   const uploads: ParsedEstimateUploads = {};
-  let hasFiles = false;
 
   for (const fieldId of ESTIMATE_FILE_UPLOAD_FIELD_IDS) {
     const entries = formData
@@ -40,23 +40,6 @@ export async function parseEstimateUploads(
       };
     }
 
-    if (entries.length > 0) {
-      hasFiles = true;
-    }
-  }
-
-  if (hasFiles && !isCloudinaryConfigured()) {
-    return {
-      uploads,
-      error: "Photo uploads are not configured on the server",
-    };
-  }
-
-  for (const fieldId of ESTIMATE_FILE_UPLOAD_FIELD_IDS) {
-    const entries = formData
-      .getAll(fieldId)
-      .filter((entry): entry is File => entry instanceof File && entry.size > 0);
-
     const parsedFiles: Array<{ url: string; filename: string }> = [];
 
     for (const file of entries) {
@@ -67,18 +50,10 @@ export async function parseEstimateUploads(
         };
       }
 
-      const filename = sanitizeFilename(file.name);
-
-      try {
-        const url = await uploadFileToCloudinary(file, filename);
-        parsedFiles.push({ url, filename });
-      } catch (err) {
-        console.error("[estimate] Cloudinary upload failed", err);
-        return {
-          uploads,
-          error: "Unable to upload one or more files. Please try again.",
-        };
-      }
+      parsedFiles.push({
+        url: await fileToDataUrl(file),
+        filename: sanitizeFilename(file.name),
+      });
     }
 
     if (parsedFiles.length > 0) {
@@ -87,25 +62,6 @@ export async function parseEstimateUploads(
   }
 
   return { uploads };
-}
-
-/** Keep only hosted HTTPS file URLs (never data: URLs) for notification emails. */
-export function hostedUploadsForEmail(
-  uploads: ParsedEstimateUploads,
-): ParsedEstimateUploads {
-  const hosted: ParsedEstimateUploads = {};
-
-  for (const fieldId of ESTIMATE_FILE_UPLOAD_FIELD_IDS) {
-    const files = uploads[fieldId];
-    if (!files?.length) continue;
-
-    const httpsFiles = files.filter((file) => isHostedHttpsUrl(file.url));
-    if (httpsFiles.length > 0) {
-      hosted[fieldId] = httpsFiles;
-    }
-  }
-
-  return hosted;
 }
 
 export function parseEstimateValues(raw: unknown) {

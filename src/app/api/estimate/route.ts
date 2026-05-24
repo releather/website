@@ -4,11 +4,7 @@ import {
   validateEstimateForm,
   type EstimateFormValues,
 } from "@/lib/estimateForm";
-import {
-  hostedUploadsForEmail,
-  parseEstimateUploads,
-  parseEstimateValues,
-} from "@/lib/estimateFileUpload";
+import { parseEstimateUploads, parseEstimateValues } from "@/lib/estimateFileUpload";
 import { sendEstimateNotificationEmail } from "@/lib/estimateEmail";
 import { createEstimateSubmission } from "@/lib/fillout";
 
@@ -55,7 +51,7 @@ export async function POST(request: Request) {
     try {
       await sendEstimateNotificationEmail(
         values as EstimateFormValues,
-        hostedUploadsForEmail(uploads),
+        uploads,
         result.submissionId,
       );
     } catch (emailErr) {

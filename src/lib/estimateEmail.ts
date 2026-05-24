@@ -8,7 +8,6 @@ import {
   type EstimateFormValues,
 } from "@/lib/estimateForm";
 import type { ParsedEstimateUploads } from "@/lib/estimateFileUpload";
-import { isHostedHttpsUrl } from "@/lib/cloudinaryUpload";
 
 const SMTP_HOST = "smtp.office365.com";
 const SMTP_PORT = 587;
@@ -41,7 +40,7 @@ function formatAddress(address: EstimateFormValues["address"]): string {
   return lines.join("\n");
 }
 
-function collectHostedUploadedFiles(
+function collectUploadedFiles(
   uploads: ParsedEstimateUploads,
 ): Array<{ url: string; filename: string }> {
   const files: Array<{ url: string; filename: string }> = [];
@@ -49,7 +48,7 @@ function collectHostedUploadedFiles(
   for (const fieldFiles of Object.values(uploads)) {
     if (!fieldFiles?.length) continue;
     for (const file of fieldFiles) {
-      if (file.url && isHostedHttpsUrl(file.url)) {
+      if (file.url) {
         files.push(file);
       }
     }
@@ -59,20 +58,28 @@ function collectHostedUploadedFiles(
 }
 
 function formatUploadedFilesPlainText(uploads: ParsedEstimateUploads): string {
-  const files = collectHostedUploadedFiles(uploads);
+  const files = collectUploadedFiles(uploads);
   if (files.length === 0) return "—";
 
-  return files.map((file) => `${file.filename}: ${file.url}`).join("\n");
+  return files
+    .map((file) =>
+      file.url.startsWith("http://") || file.url.startsWith("https://")
+        ? `${file.filename}: ${file.url}`
+        : file.filename,
+    )
+    .join("\n");
 }
 
 function formatUploadedFilesHtml(uploads: ParsedEstimateUploads): string {
-  const files = collectHostedUploadedFiles(uploads);
+  const files = collectUploadedFiles(uploads);
   if (files.length === 0) return "—";
 
   return files
     .map((file) => {
       const label = escapeHtml(file.filename || "upload");
-      return `<a href="${escapeHtmlAttr(file.url)}" target="_blank" rel="noopener noreferrer" style="color:#2563eb;text-decoration:underline;">${label}</a>`;
+      if (!file.url) return label;
+
+      return `<a href="${escapeHtmlAttr(file.url)}" style="color:#2563eb;text-decoration:underline;">${label}</a>`;
     })
     .join("<br>");
 }
