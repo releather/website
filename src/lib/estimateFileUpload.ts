@@ -64,6 +64,83 @@ export async function parseEstimateUploads(
   return { uploads };
 }
 
+type FilloutStoredFile = {
+  url?: string;
+  filename?: string;
+  name?: string;
+};
+
+/** Read FileUpload URLs stored on a Fillout submission (e.g. S3 links). */
+export function fileUploadsFromFilloutQuestions(
+  questions: Array<{ id: string; type?: string; value?: unknown }>,
+): ParsedEstimateUploads {
+  const uploads: ParsedEstimateUploads = {};
+
+  for (const question of questions) {
+    if (question.type !== "FileUpload" || !question.value) continue;
+    if (
+      !ESTIMATE_FILE_UPLOAD_FIELD_IDS.includes(
+        question.id as EstimateFileUploadFieldId,
+      )
+    ) {
+      continue;
+    }
+
+    const entries = Array.isArray(question.value) ? question.value : [];
+    const files = entries
+      .filter(
+        (entry): entry is FilloutStoredFile =>
+          Boolean(entry) && typeof entry === "object" && "url" in entry,
+      )
+      .map((entry) => ({
+        url: typeof entry.url === "string" ? entry.url : "",
+        filename:
+          typeof entry.filename === "string"
+            ? entry.filename
+            : typeof entry.name === "string"
+              ? entry.name
+              : "upload",
+      }))
+      .filter((file) => file.url.length > 0);
+
+    if (files.length > 0) {
+      uploads[question.id as EstimateFileUploadFieldId] = files;
+    }
+  }
+
+  return uploads;
+}
+
+/** Prefer HTTPS Fillout-hosted URLs when available; fall back to local uploads. */
+export function mergeEstimateUploadsForEmail(
+  localUploads: ParsedEstimateUploads,
+  filloutUploads: ParsedEstimateUploads,
+): ParsedEstimateUploads {
+  const merged: ParsedEstimateUploads = { ...localUploads };
+
+  for (const fieldId of ESTIMATE_FILE_UPLOAD_FIELD_IDS) {
+    const filloutFiles = filloutUploads[fieldId];
+    const localFiles = localUploads[fieldId];
+    if (!filloutFiles?.length && !localFiles?.length) continue;
+
+    if (!filloutFiles?.length) continue;
+
+    merged[fieldId] = filloutFiles.map((filloutFile, index) => {
+      const localFile = localFiles?.[index];
+      const preferFilloutUrl =
+        filloutFile.url.startsWith("http://") ||
+        filloutFile.url.startsWith("https://");
+
+      return {
+        url: preferFilloutUrl ? filloutFile.url : localFile?.url ?? filloutFile.url,
+        filename: filloutFile.filename || localFile?.filename || "upload",
+      };
+    });
+  }
+
+  return merged;
+}
+
 export function parseEstimateValues(raw: unknown) {
   if (!raw || typeof raw !== "object") return null;
   const body = raw as Record<string, unknown>;

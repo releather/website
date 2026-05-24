@@ -12,6 +12,12 @@ import type { ParsedEstimateUploads } from "@/lib/estimateFileUpload";
 const SMTP_HOST = "smtp.office365.com";
 const SMTP_PORT = 587;
 
+type EmailRow = {
+  label: string;
+  value: string;
+  htmlValue?: string;
+};
+
 function escapeHtml(value: string): string {
   return value
     .replace(/&/g, "&amp;")
@@ -19,6 +25,10 @@ function escapeHtml(value: string): string {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+function escapeHtmlAttr(value: string): string {
+  return escapeHtml(value);
 }
 
 function formatAddress(address: EstimateFormValues["address"]): string {
@@ -30,24 +40,55 @@ function formatAddress(address: EstimateFormValues["address"]): string {
   return lines.join("\n");
 }
 
-function formatUploadedFiles(uploads: ParsedEstimateUploads): string {
-  const lines: string[] = [];
+function collectUploadedFiles(
+  uploads: ParsedEstimateUploads,
+): Array<{ url: string; filename: string }> {
+  const files: Array<{ url: string; filename: string }> = [];
 
-  for (const files of Object.values(uploads)) {
-    if (!files?.length) continue;
-    for (const file of files) {
-      lines.push(file.filename);
+  for (const fieldFiles of Object.values(uploads)) {
+    if (!fieldFiles?.length) continue;
+    for (const file of fieldFiles) {
+      if (file.url) {
+        files.push(file);
+      }
     }
   }
 
-  return lines.length > 0 ? lines.join("\n") : "—";
+  return files;
+}
+
+function formatUploadedFilesPlainText(uploads: ParsedEstimateUploads): string {
+  const files = collectUploadedFiles(uploads);
+  if (files.length === 0) return "—";
+
+  return files
+    .map((file) =>
+      file.url.startsWith("http://") || file.url.startsWith("https://")
+        ? `${file.filename}: ${file.url}`
+        : file.filename,
+    )
+    .join("\n");
+}
+
+function formatUploadedFilesHtml(uploads: ParsedEstimateUploads): string {
+  const files = collectUploadedFiles(uploads);
+  if (files.length === 0) return "—";
+
+  return files
+    .map((file) => {
+      const label = escapeHtml(file.filename || "upload");
+      if (!file.url) return label;
+
+      return `<a href="${escapeHtmlAttr(file.url)}" style="color:#2563eb;text-decoration:underline;">${label}</a>`;
+    })
+    .join("<br>");
 }
 
 function buildRows(
   values: EstimateFormValues,
   uploads: ParsedEstimateUploads,
-): Array<{ label: string; value: string }> {
-  const rows: Array<{ label: string; value: string }> = [
+): EmailRow[] {
+  const rows: EmailRow[] = [
     {
       label: "Name",
       value: `${values.firstName.trim()} ${values.lastName.trim()}`.trim() || "—",
@@ -96,7 +137,8 @@ function buildRows(
   if (values.attachPhotos) {
     rows.push({
       label: "Uploaded files",
-      value: formatUploadedFiles(uploads),
+      value: formatUploadedFilesPlainText(uploads),
+      htmlValue: formatUploadedFilesHtml(uploads),
     });
   }
 
@@ -128,7 +170,7 @@ function buildNotificationHtml(
             ${escapeHtml(row.label)}
           </th>
           <td valign="top" style="padding:10px 12px;border-bottom:1px solid #e5e7eb;font-family:Arial,sans-serif;font-size:14px;color:#374151;white-space:pre-wrap;">
-            ${escapeHtml(row.value)}
+            ${row.htmlValue ?? escapeHtml(row.value)}
           </td>
         </tr>`,
     )

@@ -66,3 +66,36 @@ export async function createEstimateSubmission(
 ): Promise<CreateFilloutSubmissionResult> {
   return createFilloutSubmission(ESTIMATE_FORM_ID, questions);
 }
+
+type FilloutSubmissionQuestion = {
+  id: string;
+  type?: string;
+  value?: unknown;
+};
+
+type FilloutSubmissionResponse = {
+  submission?: {
+    questions?: FilloutSubmissionQuestion[];
+  };
+};
+
+export async function getFilloutSubmission(
+  formId: string,
+  submissionId: string,
+): Promise<FilloutSubmissionQuestion[]> {
+  const response = await fetch(
+    `${getFilloutApiBaseUrl()}/forms/${formId}/submissions/${submissionId}`,
+    {
+      headers: {
+        Authorization: `Bearer ${getFilloutApiKey()}`,
+      },
+    },
+  );
+
+  if (!response.ok) {
+    return [];
+  }
+
+  const data = (await response.json()) as FilloutSubmissionResponse;
+  return data.submission?.questions ?? [];
+}

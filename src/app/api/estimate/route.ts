@@ -4,9 +4,15 @@ import {
   validateEstimateForm,
   type EstimateFormValues,
 } from "@/lib/estimateForm";
-import { parseEstimateUploads, parseEstimateValues } from "@/lib/estimateFileUpload";
+import { ESTIMATE_FORM_ID } from "@/lib/estimateForm";
+import {
+  fileUploadsFromFilloutQuestions,
+  mergeEstimateUploadsForEmail,
+  parseEstimateUploads,
+  parseEstimateValues,
+} from "@/lib/estimateFileUpload";
 import { sendEstimateNotificationEmail } from "@/lib/estimateEmail";
-import { createEstimateSubmission } from "@/lib/fillout";
+import { createEstimateSubmission, getFilloutSubmission } from "@/lib/fillout";
 
 export const runtime = "nodejs";
 
@@ -48,10 +54,22 @@ export async function POST(request: Request) {
     );
     const result = await createEstimateSubmission(questions);
 
+    let emailUploads = uploads;
+    if (result.submissionId) {
+      const filloutQuestions = await getFilloutSubmission(
+        ESTIMATE_FORM_ID,
+        result.submissionId,
+      );
+      emailUploads = mergeEstimateUploadsForEmail(
+        uploads,
+        fileUploadsFromFilloutQuestions(filloutQuestions),
+      );
+    }
+
     try {
       await sendEstimateNotificationEmail(
         values as EstimateFormValues,
-        uploads,
+        emailUploads,
         result.submissionId,
       );
     } catch (emailErr) {
