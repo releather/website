@@ -12,6 +12,7 @@ const HOW_IT_WORKS_STEPS = [
   {
     title: "Get Quote",
     description: "Choose leather. Fill out form.",
+    titleHref: "#leather-material-quote" as const,
   },
   {
     title: "Place Order",
@@ -27,10 +28,12 @@ function QuickToolStepCard({
   stepNumber,
   title,
   description,
+  titleHref,
 }: {
   stepNumber: number;
   title: string;
   description: string;
+  titleHref?: string;
 }) {
   return (
     <div className={quickToolCardClassName}>
@@ -44,7 +47,17 @@ function QuickToolStepCard({
         >
           {stepNumber}
         </span>
-        {title}
+        {titleHref ? (
+          <Link
+            href={titleHref}
+            title="Get a leather material quote"
+            className="text-releather-orange underline decoration-black decoration-2 underline-offset-4 transition-colors hover:text-black hover:decoration-releather-orange"
+          >
+            {title}
+          </Link>
+        ) : (
+          title
+        )}
       </span>
     </div>
   );
@@ -65,6 +78,7 @@ export default function LeatherForUpholsteryQuickTools() {
                 stepNumber={index + 1}
                 title={step.title}
                 description={step.description}
+                titleHref={"titleHref" in step ? step.titleHref : undefined}
               />
             </li>
           ))}

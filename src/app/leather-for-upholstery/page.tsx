@@ -16,7 +16,6 @@ import {
   leatherForUpholsteryFaqItems,
   leatherForUpholsteryFaqSchema,
 } from "./leatherForUpholsteryFaq";
-import { LEATHER_MATERIAL_QUOTE_URL } from "@/lib/upholsteryLeatherCollections";
 
 const title = "Leather for Upholstery | ReLeather";
 const description =
@@ -48,10 +47,10 @@ export default function LeatherForUpholsteryPage() {
               </>
             }
             primaryCta={{
-              href: LEATHER_MATERIAL_QUOTE_URL,
-              title: "Leather for Upholstery Material Estimate",
-              "aria-label": "Leather for Upholstery Material Estimate",
-              label: "Get Leather Material Quote!",
+              href: "#collections",
+              title: "Browse upholstery leather collections",
+              "aria-label": "Browse our leathers",
+              label: "Browse our Leathers",
             }}
             leftContent={<LeatherForUpholsteryQuickTools />}
             rightContent={<LeatherMaterialQuoteEmbed />}
