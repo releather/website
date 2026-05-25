@@ -30,7 +30,7 @@ export default function LeatherForUpholsteryGuideContent() {
 
       <div
         id="how-made"
-        className="not-prose mx-auto mt-12 max-w-[1280px] scroll-mt-24 bg-white [text-shadow:none]"
+        className="not-prose mx-auto mt-12 max-w-[1280px] scroll-mt-24 bg-white"
       >
         <h3 className={upholsterySectionHeadingCenteredClassName}>
           How Are Upholstery Leather Hides Made?
@@ -81,7 +81,7 @@ export default function LeatherForUpholsteryGuideContent() {
         ranges={leatherForUpholsteryThicknessRanges}
       />
 
-      <div className="not-prose mx-auto mt-12 max-w-[1280px] bg-white [text-shadow:none]">
+      <div className="not-prose mx-auto mt-12 max-w-[1280px] bg-white">
         <h3
           id="leather-upholstery-choice-heading"
           className={upholsterySectionHeadingCenteredClassName}

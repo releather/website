@@ -4,10 +4,10 @@ export const leatherGuideLinkClassName =
   "font-semibold text-releather-orange underline decoration-2 underline-offset-2 hover:text-black";
 
 export const leatherGuideHeadingClassName =
-  "font-display text-3xl font-normal tracking-tight text-black [text-shadow:none] sm:text-4xl";
+  "font-display text-3xl font-normal tracking-tight text-black sm:text-4xl";
 
 export const leatherGuideFeaturedHeadingClassName =
-  "border-b-[6px] border-releather-orange pb-3 font-display text-5xl font-normal tracking-tight text-black [text-shadow:none] sm:text-6xl";
+  "border-b-[6px] border-releather-orange pb-3 font-display text-5xl font-normal tracking-tight text-black sm:text-6xl";
 
 type LeatherGuideCalloutProps = {
   title: string;
@@ -30,7 +30,7 @@ export default function LeatherGuideCallout({
 }: LeatherGuideCalloutProps) {
   return (
     <div
-      className={`not-prose bg-white p-5 sm:p-8 [text-shadow:none] ${className}`}
+      className={`not-prose bg-white p-5 sm:p-8 ${className}`}
     >
       <div
         className={

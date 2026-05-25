@@ -114,17 +114,17 @@ export default function LeatherMaterialCalculator({
 
   return (
     <section
-      className="not-prose mx-auto my-10 max-w-[1280px] scroll-mt-24 bg-white [text-shadow:none]"
+      className="not-prose mx-auto my-10 max-w-[1280px] scroll-mt-24 bg-white"
       aria-labelledby={headingId}
     >
       <HeadingTag
         id={headingId}
-        className="text-balance text-center font-display text-3xl font-black uppercase leading-none tracking-tight text-black [text-shadow:none] sm:text-4xl md:text-5xl lg:text-6xl"
+        className="text-balance text-center font-display text-3xl font-black uppercase leading-none tracking-tight text-black sm:text-4xl md:text-5xl lg:text-6xl"
       >
         How Much Leather Do I Need?
       </HeadingTag>
 
-      <p className="mt-6 text-balance text-center font-display text-xl font-black uppercase tracking-tight text-releather-orange [text-shadow:none] sm:text-2xl md:text-3xl">
+      <p className="mt-6 text-balance text-center font-display text-xl font-black uppercase tracking-tight text-releather-orange sm:text-2xl md:text-3xl">
         Material Calculator &amp; Measurement Converter
       </p>
 
@@ -140,7 +140,7 @@ export default function LeatherMaterialCalculator({
           <div className={brutalistInnerClassName}>
             <h4
               id="yardage-converter-heading"
-              className="border-b-[6px] border-releather-orange pb-3 font-display text-2xl font-black uppercase leading-none tracking-tight text-black [text-shadow:none] sm:text-3xl"
+              className="border-b-[6px] border-releather-orange pb-3 font-display text-2xl font-black uppercase leading-none tracking-tight text-black sm:text-3xl"
             >
               Fabric Yardage → Sq Ft
             </h4>
@@ -200,7 +200,7 @@ export default function LeatherMaterialCalculator({
                   <p className="font-display text-sm font-black uppercase tracking-wide text-black sm:text-base">
                     Approximate leather needed
                   </p>
-                  <p className="mt-2 font-display text-4xl font-black uppercase leading-none text-releather-orange [text-shadow:none] sm:text-5xl">
+                  <p className="mt-2 font-display text-4xl font-black uppercase leading-none text-releather-orange sm:text-5xl">
                     {formatNumber(yardageResult)} sq ft
                   </p>
                 </div>
@@ -213,7 +213,7 @@ export default function LeatherMaterialCalculator({
           <div className={brutalistInnerClassName}>
             <h4
               id="hide-estimator-heading"
-              className="border-b-[6px] border-releather-orange pb-3 font-display text-2xl font-black uppercase leading-none tracking-tight text-black [text-shadow:none] sm:text-3xl"
+              className="border-b-[6px] border-releather-orange pb-3 font-display text-2xl font-black uppercase leading-none tracking-tight text-black sm:text-3xl"
             >
               Hide Estimator
             </h4>
@@ -291,7 +291,7 @@ export default function LeatherMaterialCalculator({
                   <p className="font-display text-sm font-black uppercase tracking-wide text-black sm:text-base">
                     Approximate hides needed
                   </p>
-                  <p className="mt-2 font-display text-4xl font-black uppercase leading-none text-releather-orange [text-shadow:none] sm:text-5xl">
+                  <p className="mt-2 font-display text-4xl font-black uppercase leading-none text-releather-orange sm:text-5xl">
                     {formatHideEstimate(hideResult.hides)}
                   </p>
                   <p className="mt-3 font-sans text-sm font-semibold text-black">

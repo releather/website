@@ -46,11 +46,11 @@ export default function Faq({ heading, items, id, defaultOpenFirst }: FaqProps) 
       aria-labelledby={heading && id ? `${id}-heading` : undefined}
     >
       {heading && (
-        <header className="mb-10 text-center">
-          <div className="inline-block rounded-none border-4 border-black bg-releather-orange px-6 py-4 text-center sm:px-8 sm:py-5">
+        <header className="mb-8 text-center">
+          <div className="inline-block rounded-none border-4 border-black bg-releather-orange px-5 py-3 text-center sm:px-6 sm:py-4">
             <h2
               id={id ? `${id}-heading` : undefined}
-              className="font-display text-4xl font-black uppercase leading-snug tracking-tight text-black sm:text-5xl sm:leading-normal lg:text-6xl lg:leading-normal"
+              className="font-display text-2xl font-black uppercase leading-snug tracking-tight text-black sm:text-3xl sm:leading-normal lg:text-4xl lg:leading-normal"
             >
               {heading}
             </h2>
@@ -74,8 +74,8 @@ export default function Faq({ heading, items, id, defaultOpenFirst }: FaqProps) 
               });
             }}
           >
-            <summary className="flex cursor-pointer list-none items-center gap-2 border-b-4 border-black bg-releather-dark px-5 py-4 font-sans text-xl font-light capitalize text-white transition hover:bg-releather-orange hover:text-black [&::-webkit-details-marker]:hidden">
-              <span className="text-2xl" aria-hidden>
+            <summary className="flex cursor-pointer list-none items-center gap-2 border-b-4 border-black bg-releather-dark px-4 py-3 font-sans text-base font-light capitalize text-white transition hover:bg-releather-orange hover:text-black sm:px-5 sm:text-lg [&::-webkit-details-marker]:hidden">
+              <span className="text-lg sm:text-xl" aria-hidden>
                 &#x2753;
               </span>
               <span className="min-w-0 flex-1">
@@ -88,7 +88,7 @@ export default function Faq({ heading, items, id, defaultOpenFirst }: FaqProps) 
                 ) : null}
               </span>
             </summary>
-            <div className="faq-answer border-t-0 border-black bg-white px-5 py-4 font-sans text-base leading-relaxed text-gray-800 [&_a]:font-medium [&_a]:text-releather-orange [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-black [&_img]:my-2 [&_img]:rounded [&_p]:mt-3 [&_p]:first:mt-0">
+            <div className="faq-answer border-t-0 border-black bg-white px-4 py-3 font-sans text-sm leading-relaxed text-gray-800 sm:px-5 sm:py-4 sm:text-base [&_a]:font-medium [&_a]:text-releather-orange [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-black [&_img]:my-2 [&_img]:rounded [&_p]:mt-2 [&_p]:first:mt-0 sm:[&_p]:mt-3">
               {item.answer}
             </div>
           </details>

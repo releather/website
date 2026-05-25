@@ -37,6 +37,8 @@ const productLinks = [
   { href: "/leather-conditioner", label: "Leather Conditioner" },
   { href: "/leather-for-upholstery", label: "Leather for Upholstery" },
   { href: "/leather-calculator", label: "Leather Calculator" },
+  { href: "/leather-match", label: "Leather Color Matcher" },
+  { href: "/color-selector", label: "Shop by Leather Color" },
 ];
 
 const upholsteryLeatherCollectionLinks = [

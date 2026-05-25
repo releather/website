@@ -85,7 +85,7 @@ function FeatureItem({
 export default function LeatherGrainComparison() {
   return (
     <section
-      className="not-prose mx-auto my-10 max-w-[1280px] bg-white [text-shadow:none]"
+      className="not-prose mx-auto my-10 max-w-[1280px] bg-white"
       aria-labelledby="leather-grain-comparison-heading"
     >
       <h3

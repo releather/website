@@ -33,14 +33,14 @@ export default function LeatherForUpholsteryPage() {
     <>
       <JsonLd data={leatherForUpholsteryFaqSchema} />
       <HeaderWrapper />
-      <main className="min-h-screen bg-white">
+      <main className="leather-for-upholstery-page min-h-screen bg-white">
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
           <IntroductionSection
             title="Leather for Upholstery"
             subtitle={
               <>
                 <em className="text-releather-orange">
-                  Express any decorating style
+                  Craft quality home decor
                 </em>
                 <br />
                 with our Italian leather!

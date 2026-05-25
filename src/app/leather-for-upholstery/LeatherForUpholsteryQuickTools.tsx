@@ -35,10 +35,7 @@ function QuickToolStepCard({
 }) {
   return (
     <div className={quickToolCardClassName}>
-      <span className="block font-sans text-sm font-semibold leading-snug text-black sm:text-base">
-        {description}
-      </span>
-      <span className="mt-2 flex items-center gap-3 font-display text-lg font-normal tracking-tight text-releather-orange md:text-xl md:font-black md:uppercase md:leading-none">
+      <div className="quick-tool-flat-heading flex items-center gap-3 font-display text-lg font-normal tracking-tight text-releather-orange md:text-xl md:font-black md:uppercase md:leading-none">
         <span
           className="flex h-9 w-9 shrink-0 items-center justify-center border-2 border-black bg-releather-orange text-base font-black text-black"
           aria-hidden
@@ -56,14 +53,17 @@ function QuickToolStepCard({
         ) : (
           title
         )}
-      </span>
+      </div>
+      <p className="mt-2 mb-0 font-sans text-sm font-semibold leading-snug text-black sm:text-base">
+        {description}
+      </p>
     </div>
   );
 }
 
 export default function LeatherForUpholsteryQuickTools() {
   return (
-    <div className="not-prose space-y-8 [text-shadow:none]">
+    <div className="not-prose space-y-8">
       <section id="how-it-works" className="scroll-mt-24" aria-labelledby="how-it-works-heading">
         <h2 id="how-it-works-heading" className={upholsterySidebarHeadingClassName}>
           How it works
@@ -91,6 +91,46 @@ export default function LeatherForUpholsteryQuickTools() {
         <ul className="mt-4 list-none space-y-3 p-0">
           <li>
             <Link
+              href="/color-selector"
+              title="Shop by Leather Color — browse upholstery leather by color family"
+              className={quickToolLinkClassName}
+            >
+              <span className="block font-sans text-sm font-semibold leading-snug text-black sm:text-base">
+                What leather colors are available?
+              </span>
+              <span className="quick-tool-flat-heading mt-2 flex items-center gap-2 font-display text-lg font-black uppercase leading-none tracking-tight text-releather-orange sm:text-xl">
+                Shop by Leather Color
+                <span
+                  className="text-black transition-colors group-hover:text-releather-orange"
+                  aria-hidden
+                >
+                  →
+                </span>
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/leather-match"
+              title="Leather Color Matcher — upload a photo and find matching leather colors"
+              className={quickToolLinkClassName}
+            >
+              <span className="block font-sans text-sm font-semibold leading-snug text-black sm:text-base">
+                Which leather matches this color?
+              </span>
+              <span className="quick-tool-flat-heading mt-2 flex items-center gap-2 font-display text-lg font-black uppercase leading-none tracking-tight text-releather-orange sm:text-xl">
+                Leather Color Matcher
+                <span
+                  className="text-black transition-colors group-hover:text-releather-orange"
+                  aria-hidden
+                >
+                  →
+                </span>
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/leather-calculator"
               title="Leather Calculator — yardage to square feet and hide estimator"
               className={quickToolLinkClassName}
@@ -98,7 +138,7 @@ export default function LeatherForUpholsteryQuickTools() {
               <span className="block font-sans text-sm font-semibold leading-snug text-black sm:text-base">
                 How much leather do I need?
               </span>
-              <span className="mt-2 flex items-center gap-2 font-display text-lg font-black uppercase leading-none tracking-tight text-releather-orange sm:text-xl">
+              <span className="quick-tool-flat-heading mt-2 flex items-center gap-2 font-display text-lg font-black uppercase leading-none tracking-tight text-releather-orange sm:text-xl">
                 Leather Calculator
                 <span
                   className="text-black transition-colors group-hover:text-releather-orange"

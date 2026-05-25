@@ -52,7 +52,7 @@ export default function LeatherThicknessGuide({
 }: LeatherThicknessGuideProps) {
   return (
     <section
-      className="not-prose mx-auto my-10 max-w-[1280px] scroll-mt-24 bg-white [text-shadow:none]"
+      className="not-prose mx-auto my-10 max-w-[1280px] scroll-mt-24 bg-white"
       aria-labelledby={headingId}
     >
       <h3
@@ -84,7 +84,7 @@ export default function LeatherThicknessGuide({
                 : ""
             }`}
           >
-            <h4 className="border-b-[4px] border-releather-orange pb-2 font-display text-base font-black uppercase leading-tight tracking-tight text-black [text-shadow:none] sm:text-lg">
+            <h4 className="border-b-[4px] border-releather-orange pb-2 font-display text-base font-black uppercase leading-tight tracking-tight text-black sm:text-lg">
               {range.title}
             </h4>
             <div className="mt-3 flex-1 font-sans text-xs font-semibold leading-snug text-black sm:text-sm [&_p]:mt-0 [&_strong]:font-bold [&_strong]:text-black">

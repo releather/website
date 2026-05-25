@@ -77,7 +77,7 @@ const UNPROTECTED_LEATHER_ITEMS: readonly { label: string; href?: string; title?
 function DecisionTagLabel({ tag }: { tag: DecisionTag }) {
   if (tag.type === "protected") {
     return (
-      <p className="mt-4 font-display text-base font-black uppercase leading-none tracking-tight text-black [text-shadow:none] lg:text-lg">
+      <p className="mt-4 font-display text-base font-black uppercase leading-none tracking-tight text-black lg:text-lg">
         → <span className="text-releather-orange">Protected Leather</span>
       </p>
     );
@@ -85,14 +85,14 @@ function DecisionTagLabel({ tag }: { tag: DecisionTag }) {
 
   if (tag.type === "unprotected") {
     return (
-      <p className="mt-4 font-display text-base font-black uppercase leading-none tracking-tight text-black [text-shadow:none] lg:text-lg">
+      <p className="mt-4 font-display text-base font-black uppercase leading-none tracking-tight text-black lg:text-lg">
         → <span className="text-releather-orange">Unprotected Leather</span>
       </p>
     );
   }
 
   return (
-    <p className="mt-4 font-display text-base font-black uppercase leading-none tracking-tight text-black [text-shadow:none] lg:text-lg">
+    <p className="mt-4 font-display text-base font-black uppercase leading-none tracking-tight text-black lg:text-lg">
       → <span className="text-releather-orange">Protected</span>{" "}
       <span className="text-black">vs</span>{" "}
       <span className="text-releather-orange">Unprotected</span>
@@ -130,7 +130,7 @@ function LeatherListItem({
 export default function LeatherUpholsteryChoiceGuide() {
   return (
     <section
-      className="not-prose mx-auto my-10 max-w-[1280px] bg-white [text-shadow:none]"
+      className="not-prose mx-auto my-10 max-w-[1280px] bg-white"
       aria-label="Protected vs unprotected leather decision guide"
     >
       <LeatherGuideCallout
@@ -202,7 +202,7 @@ export default function LeatherUpholsteryChoiceGuide() {
                 className={`fa ${card.iconClass} shrink-0 text-2xl text-black sm:text-3xl`}
                 aria-hidden
               />
-              <h4 className="font-display text-xl font-black uppercase leading-none tracking-tight text-black [text-shadow:none] lg:text-2xl">
+              <h4 className="font-display text-xl font-black uppercase leading-none tracking-tight text-black lg:text-2xl">
                 {card.heading}
               </h4>
             </div>

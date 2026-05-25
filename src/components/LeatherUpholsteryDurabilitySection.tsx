@@ -41,7 +41,7 @@ export default function LeatherUpholsteryDurabilitySection() {
   return (
     <section
       id="how-long-does-upholstery-leather-last"
-      className="not-prose mx-auto my-10 max-w-[1280px] scroll-mt-24 border-4 border-black bg-white shadow-[10px_10px_0_0_#000000] [text-shadow:none]"
+      className="not-prose mx-auto my-10 max-w-[1280px] scroll-mt-24 border-4 border-black bg-white shadow-[10px_10px_0_0_#000000]"
       aria-labelledby="upholstery-leather-durability-heading"
     >
       <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr]">
