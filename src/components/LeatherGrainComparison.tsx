@@ -1,5 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+  upholsteryColumnTitleClassName,
+  upholsterySectionHeadingCenteredClassName,
+  upholsterySummaryStripClassName,
+} from "@/lib/upholsteryBrutalistTypography";
 
 const FULL_GRAIN_IMAGE =
   "https://res.cloudinary.com/releather-com/image/upload/v1779620695/leather/full-grain-leather.jpg";
@@ -85,7 +90,7 @@ export default function LeatherGrainComparison() {
     >
       <h3
         id="leather-grain-comparison-heading"
-        className="text-balance text-center font-display text-3xl font-black uppercase leading-none tracking-tight text-black [text-shadow:none] sm:text-4xl md:text-5xl lg:text-6xl"
+        className={upholsterySectionHeadingCenteredClassName}
       >
         Full Grain{" "}
         <span className="mx-1 text-releather-orange sm:mx-1.5" aria-hidden>
@@ -128,7 +133,7 @@ export default function LeatherGrainComparison() {
               />
             </div>
             <div className="flex flex-1 flex-col p-4 sm:p-5">
-              <p className="border-b-[6px] border-releather-orange pb-3 font-display text-2xl font-black uppercase leading-none tracking-tight text-black [text-shadow:none] sm:text-3xl">
+              <p className={upholsteryColumnTitleClassName}>
                 {column.label}
               </p>
               <ul className="mt-4 list-none space-y-3 p-0">
@@ -164,7 +169,7 @@ export default function LeatherGrainComparison() {
 
       <div className="mt-8 grid grid-cols-1 border-4 border-black bg-white md:grid-cols-[1fr_auto_1fr]">
         <div className="border-b-4 border-black p-5 md:border-b-0 md:border-r-4">
-          <p className="font-display text-xl font-black uppercase leading-tight tracking-tight text-black [text-shadow:none] sm:text-2xl">
+          <p className={upholsterySummaryStripClassName}>
             Full Grain + Top Grain ={" "}
             <span className="text-releather-orange">Outer Grain Layer</span>
           </p>
@@ -174,7 +179,7 @@ export default function LeatherGrainComparison() {
           aria-hidden
         />
         <div className="border-t-4 border-releather-orange p-5 md:border-t-0">
-          <p className="font-display text-xl font-black uppercase leading-tight tracking-tight text-black [text-shadow:none] sm:text-2xl">
+          <p className={upholsterySummaryStripClassName}>
             Split Leather ={" "}
             <span className="text-releather-orange">Lower Layer</span>
           </p>

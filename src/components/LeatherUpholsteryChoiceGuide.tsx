@@ -1,9 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import LeatherGuideCallout, {
-  leatherGuideFeaturedHeadingClassName,
   leatherGuideLinkClassName,
 } from "@/components/LeatherGuideCallout";
+import {
+  upholsteryColumnTitleClassName,
+  upholsteryCompareStripClassName,
+  upholsteryFeaturedCalloutHeadingClassName,
+  upholsteryOrangeSubheadingCenteredClassName,
+  upholsterySectionHeadingCenteredClassName,
+  upholsteryVsBadgeClassName,
+} from "@/lib/upholsteryBrutalistTypography";
 
 type DecisionTag =
   | { type: "protected" }
@@ -129,7 +136,7 @@ export default function LeatherUpholsteryChoiceGuide() {
       <LeatherGuideCallout
         title="Unprotected Leather"
         className="mt-0"
-        titleClassName={leatherGuideFeaturedHeadingClassName}
+        titleClassName={upholsteryFeaturedCalloutHeadingClassName}
         image={{
           src: unprotectedLeatherImageUrl,
           alt: "Unprotected aniline leather swatch",
@@ -209,7 +216,7 @@ export default function LeatherUpholsteryChoiceGuide() {
 
       <div className="mt-8 grid grid-cols-1 border-4 border-black bg-white md:grid-cols-2">
         <article className="border-b-4 border-black p-5 sm:p-6 md:border-b-0 md:border-r-4">
-          <h4 className="border-b-[6px] border-releather-orange pb-3 font-display text-2xl font-black uppercase leading-none tracking-tight text-black [text-shadow:none] sm:text-3xl">
+          <h4 className={`${upholsteryColumnTitleClassName} border-b-4 md:border-b-[6px]`}>
             Protected Leather
           </h4>
           <p className="mt-3 font-sans text-sm font-bold uppercase tracking-wide text-black sm:text-base">
@@ -223,7 +230,7 @@ export default function LeatherUpholsteryChoiceGuide() {
         </article>
 
         <article className="p-5 sm:p-6">
-          <h4 className="border-b-[6px] border-releather-orange pb-3 font-display text-2xl font-black uppercase leading-none tracking-tight text-black [text-shadow:none] sm:text-3xl">
+          <h4 className={`${upholsteryColumnTitleClassName} border-b-4 md:border-b-[6px]`}>
             Unprotected Leather
           </h4>
           <p className="mt-3 font-sans text-sm font-bold uppercase tracking-wide text-black sm:text-base">
@@ -244,11 +251,11 @@ export default function LeatherUpholsteryChoiceGuide() {
       >
         <h3
           id="what-to-avoid-heading"
-          className="text-balance text-center font-display text-3xl font-black uppercase leading-none tracking-tight text-black [text-shadow:none] sm:text-4xl md:text-5xl lg:text-6xl"
+          className={upholsterySectionHeadingCenteredClassName}
         >
           What Upholstery Leather To Avoid?
         </h3>
-        <p className="mt-8 text-balance text-center font-display text-xl font-black uppercase tracking-tight text-releather-orange [text-shadow:none] sm:text-2xl md:text-3xl">
+        <p className={`mt-8 ${upholsteryOrangeSubheadingCenteredClassName}`}>
           Faux Leather, Split Leather, Bonded Leather
         </p>
 
@@ -288,29 +295,29 @@ export default function LeatherUpholsteryChoiceGuide() {
 
       <div className="mt-8 grid grid-cols-1 border-4 border-black bg-white md:grid-cols-[1fr_auto_1fr_auto_1fr]">
         <div className="border-b-4 border-black p-5 md:border-b-0 md:border-r-4">
-          <p className="font-display text-lg font-black uppercase leading-tight tracking-tight text-black [text-shadow:none] sm:text-xl md:text-2xl">
+          <p className={upholsteryCompareStripClassName}>
             Protected ={" "}
             <span className="text-releather-orange">Durability + Easy Care</span>
           </p>
         </div>
         <div className="flex items-center justify-center border-b-4 border-black bg-white px-4 py-3 md:border-b-0 md:border-r-4">
-          <span className="font-display text-3xl font-black uppercase text-releather-orange [text-shadow:none] md:text-4xl">
+          <span className={upholsteryVsBadgeClassName}>
             VS
           </span>
         </div>
         <div className="border-b-4 border-black p-5 md:border-b-0 md:border-r-4">
-          <p className="font-display text-lg font-black uppercase leading-tight tracking-tight text-black [text-shadow:none] sm:text-xl md:text-2xl">
+          <p className={upholsteryCompareStripClassName}>
             Unprotected ={" "}
             <span className="text-releather-orange">Natural Beauty + Patina</span>
           </p>
         </div>
         <div className="flex items-center justify-center border-b-4 border-black bg-white px-4 py-3 md:border-b-0 md:border-r-4">
-          <span className="font-display text-3xl font-black uppercase text-releather-orange [text-shadow:none] md:text-4xl">
+          <span className={upholsteryVsBadgeClassName}>
             VS
           </span>
         </div>
         <div className="p-5">
-          <p className="font-display text-lg font-black uppercase leading-tight tracking-tight text-black [text-shadow:none] sm:text-xl md:text-2xl">
+          <p className={upholsteryCompareStripClassName}>
             Faux ={" "}
             <span className="text-releather-orange">Low Durability + Artificial Feel</span>
           </p>

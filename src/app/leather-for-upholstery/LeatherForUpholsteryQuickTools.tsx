@@ -1,7 +1,5 @@
 import Link from "next/link";
-
-const sectionHeadingClassName =
-  "border-b-[4px] border-releather-orange pb-2 font-display text-xl font-black uppercase tracking-tight text-black sm:text-2xl";
+import { upholsterySidebarHeadingClassName } from "@/lib/upholsteryBrutalistTypography";
 
 const quickToolCardClassName =
   "block border-4 border-black bg-white p-4 shadow-[6px_6px_0_0_#000000] sm:p-5";
@@ -40,7 +38,7 @@ function QuickToolStepCard({
       <span className="block font-sans text-sm font-semibold leading-snug text-black sm:text-base">
         {description}
       </span>
-      <span className="mt-2 flex items-center gap-3 font-display text-lg font-black uppercase leading-none tracking-tight text-releather-orange sm:text-xl">
+      <span className="mt-2 flex items-center gap-3 font-display text-lg font-normal tracking-tight text-releather-orange md:text-xl md:font-black md:uppercase md:leading-none">
         <span
           className="flex h-9 w-9 shrink-0 items-center justify-center border-2 border-black bg-releather-orange text-base font-black text-black"
           aria-hidden
@@ -51,7 +49,7 @@ function QuickToolStepCard({
           <Link
             href={titleHref}
             title="Get a leather material quote"
-            className="text-releather-orange underline decoration-black decoration-2 underline-offset-4 transition-colors hover:text-black hover:decoration-releather-orange"
+            className="text-releather-orange transition-colors hover:text-black"
           >
             {title}
           </Link>
@@ -67,7 +65,7 @@ export default function LeatherForUpholsteryQuickTools() {
   return (
     <div className="not-prose space-y-8 [text-shadow:none]">
       <section id="how-it-works" className="scroll-mt-24" aria-labelledby="how-it-works-heading">
-        <h2 id="how-it-works-heading" className={sectionHeadingClassName}>
+        <h2 id="how-it-works-heading" className={upholsterySidebarHeadingClassName}>
           How it works
         </h2>
 
@@ -86,7 +84,7 @@ export default function LeatherForUpholsteryQuickTools() {
       </section>
 
       <section aria-labelledby="quick-tools-heading">
-        <h2 id="quick-tools-heading" className={sectionHeadingClassName}>
+        <h2 id="quick-tools-heading" className={upholsterySidebarHeadingClassName}>
           Quick Tools
         </h2>
 

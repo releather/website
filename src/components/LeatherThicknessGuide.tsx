@@ -1,5 +1,9 @@
 import Image from "next/image";
 import type { LeatherThicknessRange } from "@/app/leather-for-upholstery/leatherForUpholsteryThicknessInfo";
+import {
+  upholsteryOrangeSubheadingClassName,
+  upholsterySectionHeadingCenteredClassName,
+} from "@/lib/upholsteryBrutalistTypography";
 
 type LeatherThicknessGuideProps = {
   headingId?: string;
@@ -53,7 +57,7 @@ export default function LeatherThicknessGuide({
     >
       <h3
         id={headingId}
-        className="text-balance text-center font-display text-3xl font-black uppercase leading-none tracking-tight text-black [text-shadow:none] sm:text-4xl md:text-5xl lg:text-6xl"
+        className={upholsterySectionHeadingCenteredClassName}
       >
         Leather Thickness
       </h3>
@@ -65,7 +69,7 @@ export default function LeatherThicknessGuide({
       )}
 
       {subheading ? (
-        <p className="mt-6 text-balance text-center font-display text-xl font-black uppercase tracking-tight text-releather-orange [text-shadow:none] sm:text-2xl md:text-3xl">
+        <p className={`mt-6 text-balance text-center ${upholsteryOrangeSubheadingClassName}`}>
           {subheading}
         </p>
       ) : null}

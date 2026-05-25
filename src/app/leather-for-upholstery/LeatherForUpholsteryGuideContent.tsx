@@ -1,9 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import LeatherGuideCallout, {
-  leatherGuideFeaturedHeadingClassName,
   leatherGuideLinkClassName,
 } from "@/components/LeatherGuideCallout";
+import {
+  upholsteryFeaturedCalloutHeadingClassName,
+  upholsteryOrangeSubheadingCenteredClassName,
+  upholsterySectionHeadingCenteredClassName,
+  upholsteryBlackSubheadingCenteredClassName,
+} from "@/lib/upholsteryBrutalistTypography";
 import LeatherGrainComparison from "@/components/LeatherGrainComparison";
 import LeatherUpholsteryChoiceGuide from "@/components/LeatherUpholsteryChoiceGuide";
 import LeatherThicknessGuide from "@/components/LeatherThicknessGuide";
@@ -27,10 +32,10 @@ export default function LeatherForUpholsteryGuideContent() {
         id="how-made"
         className="not-prose mx-auto mt-12 max-w-[1280px] scroll-mt-24 bg-white [text-shadow:none]"
       >
-        <h3 className="text-balance text-center font-display text-3xl font-black uppercase leading-none tracking-tight text-black [text-shadow:none] sm:text-4xl md:text-5xl lg:text-6xl">
+        <h3 className={upholsterySectionHeadingCenteredClassName}>
           How Are Upholstery Leather Hides Made?
         </h3>
-        <p className="mt-8 text-balance text-center font-display text-xl font-black uppercase tracking-tight text-releather-orange [text-shadow:none] sm:text-2xl md:text-3xl">
+        <p className={`mt-8 ${upholsteryOrangeSubheadingCenteredClassName}`}>
           From Raw Hide to Finished Leather
         </p>
       </div>
@@ -79,11 +84,11 @@ export default function LeatherForUpholsteryGuideContent() {
       <div className="not-prose mx-auto mt-12 max-w-[1280px] bg-white [text-shadow:none]">
         <h3
           id="leather-upholstery-choice-heading"
-          className="text-balance text-center font-display text-3xl font-black uppercase leading-none tracking-tight text-black [text-shadow:none] sm:text-4xl md:text-5xl lg:text-6xl"
+          className={upholsterySectionHeadingCenteredClassName}
         >
           How to Choose the Right Leather for Your Home
         </h3>
-        <p className="mt-8 text-balance text-center font-display text-xl font-black uppercase tracking-tight text-black [text-shadow:none] sm:text-2xl md:text-3xl">
+        <p className={`mt-8 ${upholsteryBlackSubheadingCenteredClassName}`}>
           Protected Leather{" "}
           <span className="mx-1 text-releather-orange sm:mx-1.5" aria-hidden>
             VS
@@ -95,7 +100,7 @@ export default function LeatherForUpholsteryGuideContent() {
       <LeatherGuideCallout
         title="Protected Leather"
         className="my-8"
-        titleClassName={leatherGuideFeaturedHeadingClassName}
+        titleClassName={upholsteryFeaturedCalloutHeadingClassName}
         image={{
           src: protectedLeatherImageUrl,
           alt: "Protected leather swatch",

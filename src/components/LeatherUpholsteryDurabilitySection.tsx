@@ -1,6 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { leatherGuideLinkClassName } from "@/components/LeatherGuideCallout";
+import {
+  upholsteryClosingLineClassName,
+  upholsteryFeatureColumnHeadingClassName,
+  upholsteryInlineSubheadingClassName,
+  upholsteryLeftColumnHeadingClassName,
+  upholsteryStatBadgeClassName,
+  upholsteryStatCaptionClassName,
+} from "@/lib/upholsteryBrutalistTypography";
 
 const SOFA_IMAGE_URL =
   "https://res.cloudinary.com/releather-com/image/upload/v1779631452/leather/durable-leather-sofa.jpg";
@@ -41,7 +49,7 @@ export default function LeatherUpholsteryDurabilitySection() {
           <div className="flex items-start justify-between gap-3 sm:gap-4">
             <h3
               id="upholstery-leather-durability-heading"
-              className="text-balance font-display text-3xl font-black uppercase leading-none tracking-tight text-black sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-6xl"
+              className={upholsteryLeftColumnHeadingClassName}
             >
               How Long Does Upholstery Leather Last?
             </h3>
@@ -53,7 +61,7 @@ export default function LeatherUpholsteryDurabilitySection() {
             </span>
           </div>
 
-          <p className="mt-6 font-display text-base font-black uppercase tracking-wide text-releather-orange sm:text-lg md:text-xl">
+          <p className={`mt-6 ${upholsteryInlineSubheadingClassName}`}>
             Durability. Leather Care. Leather Repair Service.
           </p>
 
@@ -93,11 +101,11 @@ export default function LeatherUpholsteryDurabilitySection() {
           <div className="mt-8 border-4 border-black bg-releather-orange p-2 shadow-[6px_6px_0_0_#000000]">
             <div className="flex flex-col border-4 border-black bg-white sm:flex-row">
               <div className="flex shrink-0 items-center justify-center border-b-4 border-black bg-releather-orange px-8 py-6 sm:border-b-0 sm:border-r-4 sm:px-10">
-                <span className="font-display text-6xl font-black uppercase leading-none text-black sm:text-7xl">
+                <span className={upholsteryStatBadgeClassName}>
                   20+
                 </span>
               </div>
-              <p className="mb-0 flex items-center p-5 font-display text-lg font-black uppercase leading-tight tracking-tight text-black sm:p-6 sm:text-xl">
+              <p className={`mb-0 flex items-center p-5 sm:p-6 ${upholsteryStatCaptionClassName}`}>
                 With proper care, leather furniture can last for decades.
               </p>
             </div>
@@ -133,7 +141,7 @@ export default function LeatherUpholsteryDurabilitySection() {
                     className={`fa ${column.iconClass} shrink-0 text-2xl text-releather-orange sm:text-3xl`}
                     aria-hidden
                   />
-                  <h4 className="font-display text-xl font-black uppercase leading-none tracking-tight text-black sm:text-2xl">
+                  <h4 className={upholsteryFeatureColumnHeadingClassName}>
                     {column.heading}
                   </h4>
                 </div>
@@ -167,7 +175,7 @@ export default function LeatherUpholsteryDurabilitySection() {
                 <span aria-hidden>→</span>
               </Link>
             </div>
-            <p className="mb-0 font-display text-base font-black uppercase leading-tight tracking-tight text-black sm:text-lg md:text-xl">
+            <p className={`mb-0 ${upholsteryClosingLineClassName}`}>
               So if you&apos;re looking for furniture that will stand the test of time, leather
               upholstery is definitely worth considering.
             </p>
