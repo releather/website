@@ -50,8 +50,8 @@ export const leatherForUpholsteryFaqItems: FaqItem[] = [
         yards; sectionals and custom pieces vary more. Hides are sold by the square
         foot (typically about 50–55 sq ft per hide). Send dimensions or photos through
         our{" "}
-        <Link href={LEATHER_MATERIAL_QUOTE_URL} className={linkClass}>
-          leather material quote form
+        <Link href="/leather-calculator" className={linkClass}>
+          Leather Calculator
         </Link>{" "}
         and we will estimate quantity for your job.
       </p>
@@ -155,7 +155,7 @@ export const leatherForUpholsteryFaqSchema = {
       name: "How much upholstery leather do I need?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yardage depends on your frame size, cushion style, welt, and whether you are covering arms, backs, and skirts. A standard sofa often requires roughly 15–20 yards; sectionals and custom pieces vary more. Hides are sold by the square foot (typically about 50–55 sq ft per hide). Send dimensions or photos through our leather material quote form and we will estimate quantity for your job.",
+        text: "Yardage depends on your frame size, cushion style, welt, and whether you are covering arms, backs, and skirts. A standard sofa often requires roughly 15–20 yards; sectionals and custom pieces vary more. Hides are sold by the square foot (typically about 50–55 sq ft per hide). Send dimensions or photos through our Leather Calculator at releather.com/leather-calculator and we will estimate quantity for your job.",
       },
     },
     {
