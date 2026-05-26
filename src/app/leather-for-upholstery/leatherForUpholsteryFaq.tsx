@@ -111,10 +111,15 @@ export const leatherForUpholsteryFaqItems: FaqItem[] = [
     questionIcon: "palette",
     answer: (
       <p>
-        Yes. Send us a leather swatch from your existing piece and we can source the
-        most suitable match in color and texture from our Italian upholstery library.
-        Matching works best when we have a physical sample or clear photos in natural
-        light. Include your swatch details on the{" "}
+        Yes. You can try our{" "}
+        <Link href="/leather-match" className={linkClass}>
+          Leather Color Matcher
+        </Link>{" "}
+        to upload a photo and see the closest colors in our library. You can also send us
+        a leather swatch from your existing piece and we can source the most suitable
+        match in color and texture from our Italian upholstery library. Matching works
+        best when we have a physical sample or clear photos in natural light. Include
+        your swatch details on the{" "}
         <Link href={LEATHER_MATERIAL_QUOTE_URL} className={linkClass}>
           material quote form
         </Link>{" "}
@@ -182,7 +187,7 @@ export const leatherForUpholsteryFaqSchema = {
       name: "Can you leather match?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Send us a leather swatch from your existing piece and we can source the most suitable match in color and texture from our Italian upholstery library. Matching works best when we have a physical sample or clear photos in natural light.",
+        text: "Yes. You can try our Leather Color Matcher at releather.com/leather-match to upload a photo and see the closest colors in our library. You can also send us a leather swatch from your existing piece and we can source the most suitable match in color and texture from our Italian upholstery library. Matching works best when we have a physical sample or clear photos in natural light. Include your swatch details on the material quote form or contact us directly.",
       },
     },
   ],

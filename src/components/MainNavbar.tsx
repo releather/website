@@ -14,7 +14,7 @@ const servicesDropdown = [
 ];
 
 const productsDropdown = [
-  { label: "Leather Care", href: "/leather-conditioner", icon: "fa-droplet" },
+  { label: "Leather Conditioner", href: "/leather-conditioner", icon: "fa-droplet" },
   { label: "Leather Material", href: "/leather-for-upholstery", icon: "fa-swatchbook" },
 ];
 
