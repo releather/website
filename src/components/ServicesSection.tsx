@@ -45,7 +45,7 @@ export default function ServicesSection() {
               title={service.titleAttr}
               className="group flex min-h-[5.5rem] items-center justify-center border-4 border-black bg-releather-orange py-5 px-6 transition hover:bg-black sm:min-h-[6rem]"
             >
-              <h3 className="font-display text-center text-2xl font-black uppercase leading-none tracking-tighter text-black group-hover:text-white sm:text-3xl lg:text-4xl">
+              <h3 className="font-display text-center text-2xl font-black uppercase leading-none tracking-wide text-black group-hover:text-white sm:text-3xl lg:text-4xl">
                 {service.title}
               </h3>
             </Link>
@@ -67,7 +67,7 @@ export default function ServicesSection() {
                   loading="lazy"
                   className="h-14 w-14 shrink-0 object-contain sm:h-16 sm:w-16"
                 />
-                <strong className="font-display text-lg font-black uppercase leading-none tracking-tighter text-white sm:text-xl lg:text-2xl">
+                <strong className="font-display text-lg font-black uppercase leading-none tracking-wide text-white sm:text-xl lg:text-2xl">
                   {item.label}
                 </strong>
               </Link>

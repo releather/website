@@ -88,7 +88,7 @@ export default function HighlightsSection() {
                 <p className="font-sans text-sm font-bold uppercase tracking-[0.2em] text-releather-orange">
                   {item.subtitle}
                 </p>
-                <h4 className="mt-2 font-display text-2xl font-black uppercase leading-tight tracking-tighter text-white sm:text-3xl lg:text-4xl">
+                <h4 className="mt-2 font-display text-2xl font-black uppercase leading-tight tracking-wide text-white sm:text-3xl lg:text-4xl">
                   {item.title}
                 </h4>
                 <p className="mt-4 font-sans text-base font-semibold text-gray-400">

@@ -83,13 +83,13 @@ export default function HeroSection() {
 
         {/* Row 3: Hero image left, highlights list right */}
         <div className="mt-8 grid gap-8 lg:grid-cols-2 lg:items-start lg:gap-16">
-          <div className="flex w-full items-center justify-center">
+          <div className="flex w-full items-center justify-center lg:justify-end">
             <Image unoptimized
               src={HERO_COUCH_IMG}
               alt="Leather restoration couch sofa before and after"
               width={520}
               height={450}
-              className="mx-auto w-full max-w-[320px] rounded-lg object-contain sm:max-w-[400px] lg:max-w-[520px]"
+              className="mx-auto w-full max-w-[320px] rounded-lg object-contain sm:max-w-[400px] lg:mx-0 lg:max-w-[520px]"
             />
           </div>
           <div className="space-y-2 lg:space-y-2.5">

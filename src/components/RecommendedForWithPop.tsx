@@ -65,7 +65,7 @@ export default function RecommendedForWithPop() {
               loading="lazy"
               className="object-cover object-center"
             />
-            <strong className="absolute bottom-0 left-0 right-0 bg-black/80 px-4 py-3 font-display text-2xl font-black uppercase leading-none tracking-tighter text-white group-hover:bg-releather-orange group-hover:text-black sm:text-3xl lg:text-4xl">
+            <strong className="absolute bottom-0 left-0 right-0 bg-black/80 px-4 py-3 font-display text-2xl font-black uppercase leading-none tracking-wide text-white group-hover:bg-releather-orange group-hover:text-black sm:text-3xl lg:text-4xl">
               {item.label}
             </strong>
           </button>
