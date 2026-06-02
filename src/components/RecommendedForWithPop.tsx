@@ -15,28 +15,28 @@ type Item = {
 const recommendedForItems: Item[] = [
   {
     label: "Pigmented",
-    imgSrc: "https://res.cloudinary.com/leathera/image/upload/c_fill,w_115,h_100/b_rgb:000000/r_5/f_webp/leather/Colorful/Colorful_Tan.jpg",
+    imgSrc: "https://res.cloudinary.com/leathera/image/upload/b_rgb:000000/r_5/f_webp/leather/Colorful/Colorful_Tan.jpg",
     titleAttr: "Leather Restoration recommended for Pigmented Protected Leather",
     alt: "Leather Restoration recommended for Protected Leather",
     description: "Pigmented leather has a protective top coat and durable finish. It’s the most common type in furniture—tough, easy to clean, and ideal for restoration and redyeing.",
   },
   {
     label: "Aniline",
-    imgSrc: "https://res.cloudinary.com/leathera/image/upload/c_fill,w_115,h_100/b_rgb:000000/r_5/f_webp/leather/Restoration/Restoration_Leather_Saddle.jpg",
+    imgSrc: "https://res.cloudinary.com/leathera/image/upload/b_rgb:000000/r_5/f_webp/leather/Restoration/Restoration_Leather_Saddle.jpg",
     titleAttr: "Leather Restoration recommended for Aniline Leather",
     alt: "Leather Restoration recommended for Aniline Leather",
     description: "Pure aniline leather is dyed through with no top coat. It shows natural grain and character and is considered premium. We clean, condition, and restore it with care.",
   },
   {
     label: "Semi-Aniline",
-    imgSrc: "https://res.cloudinary.com/leathera/image/upload/c_fill,w_115,h_100/b_rgb:000000/r_5/f_webp/leather/Antique/Antique_Leather_Cashew.jpg",
+    imgSrc: "https://res.cloudinary.com/leathera/image/upload/b_rgb:000000/r_5/f_webp/leather/Antique/Antique_Leather_Cashew.jpg",
     titleAttr: "Leather Restoration recommended for Semi Aniline Leather",
     alt: "Leather Restoration recommended for Semi Aniline Leather",
     description: "Semi-aniline leather has a light surface coating for protection while keeping a natural look. We restore color, condition, and repair it for furniture and automotive.",
   },
   {
     label: "Nubuck",
-    imgSrc: "https://res.cloudinary.com/leathera/image/upload/c_fill,w_115,h_100/b_rgb:000000/r_5/f_webp/leather/Soft/Soft_Leather_Chestnut.jpg",
+    imgSrc: "https://res.cloudinary.com/leathera/image/upload/b_rgb:000000/r_5/f_webp/leather/Soft/Soft_Leather_Chestnut.jpg",
     titleAttr: "Leather Restoration recommended for Nubuck Leather",
     alt: "Leather Restoration recommended for Nubuck Leather",
     description: "Nubuck is buffed on the surface for a velvety feel. It’s sensitive and needs specialist cleaning and restoration—we handle it with the right products and techniques.",
