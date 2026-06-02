@@ -4,7 +4,7 @@ import LiteYouTube from "@/components/LiteYouTube";
 const HERO_BG =
   "https://res.cloudinary.com/releather-com/image/upload/f_auto/f_webp/v1654065902/background/background-leather-gradient.png";
 const HERO_COUCH_IMG =
-  "https://res.cloudinary.com/releather-com/image/upload/f_webp/v1672061616/before-after/Leather-Restoration-Couch-Sofa.jpg";
+  "https://res.cloudinary.com/releather-com/image/upload/v1780395725/before-after/Leather-Restoration-Couch-Sofa-0.png";
 
 function CheckIcon({ className }: { className?: string }) {
   return (
@@ -73,21 +73,23 @@ export default function HeroSection() {
         {/* Row 2: H1 on its own line */}
         <h1
           id="hero-heading"
-          className="mt-6 text-center font-display text-4xl font-normal leading-[1.15] tracking-normal text-white sm:text-5xl lg:text-6xl"
+          className="mt-6 text-center font-display text-2xl font-normal leading-tight tracking-normal text-white sm:text-5xl sm:leading-[1.15] lg:text-6xl"
           style={{ wordSpacing: "0.08em" }}
         >
-          Leather Restoration Specialists in Orange County
+          Leather Restoration Specialists
+          <br />
+          in Orange County
         </h1>
 
         {/* Row 3: Hero image left, highlights list right */}
         <div className="mt-8 grid gap-8 lg:grid-cols-2 lg:items-start lg:gap-16">
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex w-full items-center justify-center">
             <Image unoptimized
               src={HERO_COUCH_IMG}
               alt="Leather restoration couch sofa before and after"
               width={520}
               height={450}
-              className="w-full max-w-[320px] rounded-lg object-contain sm:max-w-[400px] lg:max-w-full"
+              className="mx-auto w-full max-w-[320px] rounded-lg object-contain sm:max-w-[400px] lg:max-w-[520px]"
             />
           </div>
           <div className="space-y-2 lg:space-y-2.5">
