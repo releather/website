@@ -169,7 +169,7 @@ export const antiquePageContent = {
         id: "pinto",
         label: "Pinto",
         lifestyleSrc:
-          "https://res.cloudinary.com/leathera/image/upload/c_crop,g_south,h_0.88/v1729509422/leather/Antique/examples/Here_is_the_luxury_bar_stool_upholstered_in_dark_brown_leather_Pinto.webp",
+          "https://res.cloudinary.com/leathera/image/upload/c_crop,g_north,h_0.58/v1729509422/leather/Antique/examples/Here_is_the_luxury_bar_stool_upholstered_in_dark_brown_leather_Pinto.webp",
         lifestyleAlt:
           "Luxury bar stool upholstered in dark brown Pinto antique leather in a high-end bar setting",
         lifestyleWidth: 900,
@@ -237,7 +237,7 @@ export const antiquePageContent = {
             {
               type: "text",
               value:
-                "When I choose antique leather for a project, I'm usually trying to bring warmth and character into a space that would otherwise feel too flat or modern. The appeal is that it doesn't look manufactured or overly perfect — it feels lived-in from day one. That's something clients respond to immediately, especially in residential living spaces.",
+                "When I choose antique leather for a project, I'm usually drawn to that subtle marbleized finish that reads well in high-end interiors. Clients love the smooth, soft hand from day one — and it works beautifully as a statement piece on sofas, sectionals, and accent seating. That's something they respond to immediately, especially in residential living rooms.",
             },
           ],
         },
@@ -247,7 +247,7 @@ export const antiquePageContent = {
             {
               type: "text",
               value:
-                "What I like most is how it evolves over time, developing a natural patina and tonal shifts that make it look more refined and layered rather than worn.",
+                "What I like most is that it's semi-aniline — protected against everyday wear while still reading natural. A bonus for long-term living room investment.",
             },
           ],
         },
@@ -258,7 +258,7 @@ export const antiquePageContent = {
             {
               type: "text",
               value:
-                "From a design perspective, it's also incredibly forgiving. Natural variation in the hide means you're not fighting imperfections — you're working with them. That makes it ideal for large statement pieces like sofas or lounge chairs where you want texture, depth, and a slightly rustic luxury feel.",
+                "From a design perspective, it's not a flat solid color — you get dimensional two-tone character with consistency built in. That balance of natural aesthetics, durability, and polish makes it ideal for large statement pieces like sofas or lounge chairs where you want refined texture and depth.",
             },
           ],
         },
@@ -292,7 +292,7 @@ export const antiquePageContent = {
             {
               type: "text",
               value:
-                " standpoint, antique leather is one of the most practical materials we work with in higher-end furniture builds at our ",
+                " standpoint, antique leather is one of the most practical hides we work with in higher-end furniture builds at our ",
             },
             {
               type: "link",
@@ -305,14 +305,14 @@ export const antiquePageContent = {
             {
               type: "text",
               value:
-                ". It's durable, but more importantly, it hides the natural signs of use in a way that still looks intentional. That's a big reason it gets specified for hospitality projects.",
+                ". The weight handles easily on delicate frames, and the subtle two-tone finish adds class and character — a reliable go-to when matching older batches or starting fresh.",
             },
           ],
         },
         {
           type: "paragraph",
           parts: [
-            { type: "text", value: "In residential work, we see it used heavily on " },
+            { type: "text", value: "In residential work, we reach for it on " },
             {
               type: "link",
               link: {
@@ -324,7 +324,7 @@ export const antiquePageContent = {
             {
               type: "text",
               value:
-                ", sectionals, and accent chairs. Homeowners like it because it doesn't feel sterile — it feels warm and slightly aged from the start. Even after years of use, it tends to look better rather than worse, which is not something you can say about all finishes.",
+                ", sectionals, and accent chairs — especially when customers bring in a job and want a pretty solid starting point. It's not pure aniline, so it won't fade like softer finishes do. Homeowners get daily family comfort you can reassure them about for years to come.",
             },
           ],
         },
@@ -335,7 +335,7 @@ export const antiquePageContent = {
             {
               type: "text",
               value:
-                "For hotels, restaurants, and lounges, antique leather is ideal for high-traffic seating because its tonal variation helps hide wear while maintaining a refined look.",
+                "For hotels, restaurants, and lounges, antique leather is ideal for commercial spaces — refined, durable, and hard to get wrong on high-traffic seating.",
             },
           ],
         },
