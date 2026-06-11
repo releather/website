@@ -9,6 +9,7 @@ const textureFullUrl =
 export const antiqueCollection = {
   slug: "antique-leather",
   name: "Antique Leather",
+  youtubeVideoId: "_oVsa7CJY10",
   heroPosterUrl:
     "https://res.cloudinary.com/leathera/image/upload/ar_1:1,b_rgb:23262f,bo_5px_solid_rgb:f8991d,c_crop,g_south,w_520/v1716792018/leather/main/Antique-Leather-Main.jpg",
   swatches: [

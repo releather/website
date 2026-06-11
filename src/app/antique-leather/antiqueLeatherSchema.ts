@@ -14,6 +14,11 @@ const schemas = makeLeatherCollectionPageSchemas({
     "Request a leather material quote for antique upholstery hides.",
   itemListDescription:
     "Antique upholstery leather color swatches available from ReLeather.",
+  video: {
+    name: "Antique leather preview video",
+    description:
+      "Preview of European antique upholstery leather grain, color, and two-tone sauvage character for furniture projects.",
+  },
 });
 
 export const antiqueLeatherBreadcrumbSchema = schemas.breadcrumbSchema;
