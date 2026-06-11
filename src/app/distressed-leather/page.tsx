@@ -11,6 +11,8 @@ import {
   distressedLeatherBreadcrumbSchema,
   distressedLeatherColorItemListSchema,
   distressedLeatherProductSchema,
+  distressedLeatherVideoSchema,
+  distressedLeatherWebPageSchema,
 } from "./distressedLeatherSchema";
 import {
   getUpholsteryLeatherCollection,
@@ -25,8 +27,10 @@ export default function DistressedLeatherPage() {
   return (
     <>
       <JsonLd data={distressedLeatherBreadcrumbSchema} />
+      <JsonLd data={distressedLeatherWebPageSchema} />
       <JsonLd data={distressedLeatherProductSchema} />
       <JsonLd data={distressedLeatherColorItemListSchema} />
+      <JsonLd data={distressedLeatherVideoSchema} />
       <JsonLd data={distressedLeatherFaqSchema} />
       <HeaderWrapper />
       <main className="min-h-screen bg-white">

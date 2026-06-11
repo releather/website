@@ -6,18 +6,18 @@ import { cloudinaryDisplayUrl } from "@/lib/cloudinary";
 const REGULAR_PIGMENTED_LEATHER_COMPARE_URL =
   "https://res.cloudinary.com/leathera/image/upload/c_scale,h_400,w_600/l_image:upload:leather:Colorful:Colorful_Iolite/c_crop,fl_relative,w_0.5/o_100/fl_layer_apply,g_south_east,x_0.03,y_0.02,bo_2px_solid_rgb:ffffff/leather/Colorful/Colorful_Iolite.jpg";
 
-const DISTRESSED_LEATHER_COMPARE_URL =
-  "https://res.cloudinary.com/leathera/image/upload/c_scale,h_400,w_600/l_image:upload:leather:Distressed:Distressed_Leather_Indigo/c_crop,fl_relative,w_0.5/o_100/fl_layer_apply,g_south_east,x_0.03,y_0.02,bo_2px_solid_rgb:ffffff/leather/Distressed/Distressed_Leather_Indigo.jpg";
+const ANTIQUE_LEATHER_COMPARE_URL =
+  "https://res.cloudinary.com/leathera/image/upload/c_scale,h_400,w_600/l_image:upload:leather:Antique:Antique_Leather_Black/c_crop,fl_relative,w_0.5/o_100/fl_layer_apply,g_south_east,x_0.03,y_0.02,bo_2px_solid_rgb:ffffff/leather/Antique/Antique_Leather_Black.jpg";
 
-export const distressedLeatherFaqItems: FaqItem[] = [
+export const antiqueLeatherFaqItems: FaqItem[] = [
   {
-    question: "What is the difference between distressed leather and regular leather?",
+    question: "What is the difference between antique leather and regular leather?",
     questionIcon: "arrows-left-right",
     answer: (
       <>
         <p>
-          Distressed leather is treated with waxes and finishes for a vintage aged
-          effect, while{" "}
+          Antique leather is finished with a two-tone sauvage effect for a dimensional
+          aged look, while{" "}
           <Link href="/types-of-leather" title="Types of leather finishes">
             regular pigmented leather
           </Link>{" "}
@@ -26,7 +26,7 @@ export const distressedLeatherFaqItems: FaqItem[] = [
         <div
           className="mt-5 rounded-md bg-gray-100/90 p-5 sm:mt-6 sm:p-8"
           role="group"
-          aria-label="Regular pigmented leather versus distressed leather"
+          aria-label="Regular pigmented leather versus antique leather"
         >
           <div className="grid grid-cols-1 items-center gap-8 sm:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] sm:gap-4 md:gap-6">
             <div className="min-w-0 text-center">
@@ -53,8 +53,8 @@ export const distressedLeatherFaqItems: FaqItem[] = [
             </div>
             <div className="min-w-0 text-center">
               <Image
-                src={cloudinaryDisplayUrl(DISTRESSED_LEATHER_COMPARE_URL)}
-                alt="Distressed leather in indigo with vintage crackled texture"
+                src={cloudinaryDisplayUrl(ANTIQUE_LEATHER_COMPARE_URL)}
+                alt="Antique leather in black with two-tone sauvage texture"
                 width={600}
                 height={400}
                 unoptimized
@@ -62,7 +62,7 @@ export const distressedLeatherFaqItems: FaqItem[] = [
                 className="mx-auto h-auto w-full max-w-[600px] object-cover"
               />
               <p className="mt-3 font-sans text-sm font-medium text-gray-800 sm:mt-3.5">
-                Distressed leather
+                Antique leather
               </p>
             </div>
           </div>
@@ -71,22 +71,23 @@ export const distressedLeatherFaqItems: FaqItem[] = [
     ),
   },
   {
-    question: "Is distressed leather more expensive?",
+    question: "Is antique leather more expensive?",
     questionIcon: "dollar-sign",
     answer: (
       <p>
-        Distressed leather is often more expensive due to premium hides, artisan
-        finishing, wax treatments, and its unique aged pull-up character.
+        Antique leather is often more expensive due to premium hides, artisan
+        finishing, protected semi-aniline treatments, and its unique two-tone sauvage
+        character.
       </p>
     ),
   },
   {
-    question: "Is distressed leather waterproof?",
+    question: "Is antique leather waterproof?",
     questionIcon: "droplet",
     answer: (
       <p>
-        Distressed leather contains waxes and oils that offer more resistance to
-        water spotting than pure aniline leather, though it still requires regular{" "}
+        Antique leather has a protected finish that offers more resistance to water
+        spotting than pure aniline leather, though it still requires regular{" "}
         <Link href="/aniline-leather-cleaning" title="Aniline leather cleaning">
           leather care
         </Link>
@@ -95,18 +96,18 @@ export const distressedLeatherFaqItems: FaqItem[] = [
     ),
   },
   {
-    question: "Is distressed leather durable?",
+    question: "Is antique leather durable?",
     questionIcon: "shield-halved",
     answer: (
       <p>
-        Distressed leather is durable and designed to age gracefully. It holds up well
+        Antique leather is durable and designed to age gracefully. It holds up well
         against everyday wear, though its lighter finish may fade faster than heavily
         pigmented leather.
       </p>
     ),
   },
   {
-    question: "How do you clean distressed leather?",
+    question: "How do you clean antique leather?",
     questionIcon: "soap",
     answer: (
       <p>
@@ -119,17 +120,17 @@ export const distressedLeatherFaqItems: FaqItem[] = [
     ),
   },
   {
-    question: "Is distressed leather pet-friendly?",
+    question: "Is antique leather pet-friendly?",
     questionIcon: "paw",
     answer: (
       <p>
-        It&apos;s moderately pet-friendly. The waxed surface helps disguise light
+        It&apos;s moderately pet-friendly. The protected surface helps disguise light
         marks, but claws can still leave visible scratches.
       </p>
     ),
   },
   {
-    question: "Does distressed leather scratch easily?",
+    question: "Does antique leather scratch easily?",
     questionIcon: "hand",
     answer: (
       <p>
@@ -137,62 +138,62 @@ export const distressedLeatherFaqItems: FaqItem[] = [
         <Link href="/types-of-leather" title="Types of leather finishes">
           pigmented leather
         </Link>
-        , though many marks blend into the natural aged character.
+        , though many marks blend into the natural two-tone character.
       </p>
     ),
   },
   {
-    question: "Does distressed leather crack?",
+    question: "Does antique leather crack?",
     questionIcon: "triangle-exclamation",
     answer: (
       <p>
-        It resists cracking well thanks to oils and waxes, but poor care or dryness
-        over time can still cause surface cracking.
+        It resists cracking well thanks to its protected finish, but poor care or
+        dryness over time can still cause surface cracking.
       </p>
     ),
   },
 ];
 
-/** Plain-text answers for FAQPage JSON-LD (matches distressedLeatherFaqItems). */
-export const distressedLeatherFaqSchema = {
+/** Plain-text answers for FAQPage JSON-LD (matches antiqueLeatherFaqItems). */
+export const antiqueLeatherFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
     {
       "@type": "Question",
-      name: "What is the difference between distressed leather and regular leather?",
+      name: "What is the difference between antique leather and regular leather?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Distressed leather is treated with waxes and finishes for a vintage aged effect, while regular pigmented leather has a uniform, coated surface color. Distressed leather shows natural variation, pull-up tone shift, and timeworn character; pigmented leather offers a more even color and coated surface. Compare the two finishes side by side when selecting upholstery leather for furniture.",
+        text: "Antique leather is finished with a two-tone sauvage effect for a dimensional aged look, while regular pigmented leather has a uniform, coated surface color. Antique leather shows natural variation, sauvage tone shift, and timeworn character; pigmented leather offers a more even color and coated surface. Compare the two finishes side by side when selecting upholstery leather for furniture.",
       },
     },
     {
       "@type": "Question",
-      name: "Is distressed leather more expensive?",
+      name: "Is antique leather more expensive?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Distressed leather is often more expensive due to premium hides, artisan finishing, wax treatments, and its unique aged pull-up character.",
+        text: "Antique leather is often more expensive due to premium hides, artisan finishing, protected semi-aniline treatments, and its unique two-tone sauvage character.",
       },
     },
     {
       "@type": "Question",
-      name: "Is distressed leather waterproof?",
+      name: "Is antique leather waterproof?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Distressed leather contains waxes and oils that offer more resistance to water spotting than pure aniline leather, though it still requires regular leather care.",
+        text: "Antique leather has a protected finish that offers more resistance to water spotting than pure aniline leather, though it still requires regular leather care.",
       },
     },
     {
       "@type": "Question",
-      name: "Is distressed leather durable?",
+      name: "Is antique leather durable?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Distressed leather is durable and designed to age gracefully. It holds up well against everyday wear, though its lighter finish may fade faster than heavily pigmented leather.",
+        text: "Antique leather is durable and designed to age gracefully. It holds up well against everyday wear, though its lighter finish may fade faster than heavily pigmented leather.",
       },
     },
     {
       "@type": "Question",
-      name: "How do you clean distressed leather?",
+      name: "How do you clean antique leather?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Use a wax-free leather lotion such as ReLeather Leather Conditioner. Wipe gently first, then apply lightly to maintain softness and finish.",
@@ -200,26 +201,26 @@ export const distressedLeatherFaqSchema = {
     },
     {
       "@type": "Question",
-      name: "Is distressed leather pet-friendly?",
+      name: "Is antique leather pet-friendly?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "It's moderately pet-friendly. The waxed surface helps disguise light marks, but claws can still leave visible scratches.",
+        text: "It's moderately pet-friendly. The protected surface helps disguise light marks, but claws can still leave visible scratches.",
       },
     },
     {
       "@type": "Question",
-      name: "Does distressed leather scratch easily?",
+      name: "Does antique leather scratch easily?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, it can show scratches more easily than pigmented leather, though many marks blend into the natural aged character.",
+        text: "Yes, it can show scratches more easily than pigmented leather, though many marks blend into the natural two-tone character.",
       },
     },
     {
       "@type": "Question",
-      name: "Does distressed leather crack?",
+      name: "Does antique leather crack?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "It resists cracking well thanks to oils and waxes, but poor care or dryness over time can still cause surface cracking.",
+        text: "It resists cracking well thanks to its protected finish, but poor care or dryness over time can still cause surface cracking.",
       },
     },
   ],

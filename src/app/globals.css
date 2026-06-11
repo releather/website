@@ -34,9 +34,9 @@ body {
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.18);
 }
 
-/* Hero quick tools — flat display titles, no ink shadow */
-.leather-for-upholstery-page .quick-tool-flat-heading,
-.leather-for-upholstery-page .quick-tool-flat-heading a {
+/* Quick tool / sidebar display titles — flat, no ink shadow */
+.quick-tool-flat-heading,
+.quick-tool-flat-heading a {
   text-shadow: none;
 }
 

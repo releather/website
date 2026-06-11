@@ -36,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url("/leather-match", now),
     url("/color-selector", now),
     url("/distressed-leather", now),
+    url("/antique-leather", now),
     // Services (sub)
     url("/services/leather-cleaning", now),
     url("/services/leather-restoration", now),

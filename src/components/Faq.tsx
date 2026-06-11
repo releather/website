@@ -78,15 +78,15 @@ export default function Faq({ heading, items, id, defaultOpenFirst }: FaqProps) 
               <span className="text-lg sm:text-xl" aria-hidden>
                 &#x2753;
               </span>
-              <span className="min-w-0 flex-1">
-                {item.question}
+              <h3 className="m-0 flex min-w-0 flex-1 items-center gap-0 p-0 font-sans text-base font-light capitalize sm:text-lg">
+                <span className="min-w-0 flex-1">{item.question}</span>
                 {item.questionIcon ? (
                   <i
                     className={faqQuestionIconClassName(item.questionIcon)}
                     aria-hidden
                   />
                 ) : null}
-              </span>
+              </h3>
             </summary>
             <div className="faq-answer border-t-0 border-black bg-white px-4 py-3 font-sans text-sm leading-relaxed text-gray-800 sm:px-5 sm:py-4 sm:text-base [&_a]:font-medium [&_a]:text-releather-orange [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-black [&_img]:my-2 [&_img]:rounded [&_p]:mt-2 [&_p]:first:mt-0 sm:[&_p]:mt-3">
               {item.answer}

@@ -8,6 +8,7 @@ export const LEATHER_MATERIAL_QUOTE_URL =
 /** Collection slugs with a published dedicated page (hub swatches may exist for others). */
 export const UPHOLSTERY_LEATHER_PUBLISHED_PAGE_SLUGS = [
   "distressed-leather",
+  "antique-leather",
 ] as const;
 
 export function upholsteryLeatherCollectionHref(slug: string): string {
@@ -67,9 +68,9 @@ export const UPHOLSTERY_LEATHER_COLLECTIONS: UpholsteryLeatherCollection[] = [
     name: "Antique Leather",
     overlayText: "Antique",
     imageFile: "Antique-Leather-Main.jpg",
-    metaTitle: "Antique Leather for Upholstery | Italian Hides | ReLeather",
+    metaTitle: "Antique Leather for Upholstery | European Hides | ReLeather",
     metaDescription:
-      "Antique-style upholstery leather for chairs, sofas, and hospitality. Warm, classic furniture leather hides from Italy. Get a leather material quote.",
+      "Antique upholstery leather with two-tone sauvage finish for furniture, hospitality, and handbags. European semi-aniline hides with protected patina. Order swatches from ReLeather.",
     tagline:
       "Classic warmth and old-world charm—beautiful on traditional frames and mixed-finish interiors.",
     paragraphs: [
@@ -361,6 +362,7 @@ export function makeLeatherCollectionMetadata(
       title: c.metaTitle,
       description: c.metaDescription,
       type: "website",
+      locale: "en_US",
       images: [
         {
           url: ogImage,
@@ -374,6 +376,7 @@ export function makeLeatherCollectionMetadata(
       card: "summary_large_image",
       title: c.metaTitle,
       description: c.metaDescription,
+      images: [ogImage],
     },
   };
 }

@@ -43,6 +43,7 @@ const productLinks = [
 
 const upholsteryLeatherCollectionLinks = [
   { href: "/distressed-leather", label: "Distressed Leather" },
+  { href: "/antique-leather", label: "Antique Leather" },
 ];
 
 const worksLinks = [
