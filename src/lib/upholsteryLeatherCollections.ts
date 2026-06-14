@@ -9,6 +9,7 @@ export const LEATHER_MATERIAL_QUOTE_URL =
 export const UPHOLSTERY_LEATHER_PUBLISHED_PAGE_SLUGS = [
   "distressed-leather",
   "antique-leather",
+  "vintage-leather",
 ] as const;
 
 export function upholsteryLeatherCollectionHref(slug: string): string {
@@ -218,9 +219,9 @@ export const UPHOLSTERY_LEATHER_COLLECTIONS: UpholsteryLeatherCollection[] = [
     name: "Vintage Leather",
     overlayText: "Vintage",
     imageFile: "Vintage-Leather-Main.jpg",
-    metaTitle: "Vintage Leather for Upholstery | Italian Hides | ReLeather",
+    metaTitle: "Vintage Leather for Upholstery | Italian Pull-Up Hides | ReLeather",
     metaDescription:
-      "Vintage-look upholstery leather for classic frames, libraries, and curated residential seating. Italian leather hides for furniture. Request samples and a quote.",
+      "Vintage upholstery leather with wax oil pull-up patina for furniture, bags, and garments. Italian aniline hides with natural grain character. Order swatches from ReLeather.",
     tagline:
       "Timeworn depth and softened color—specified when the frame deserves a believable aged finish.",
     paragraphs: [

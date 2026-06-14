@@ -155,11 +155,11 @@ export default function LeatherCollectionProductBlock({
   return (
     <section
       id={ids.section}
-      className="-mx-2 pt-0 sm:mx-0"
+      className="w-full max-lg:pt-0"
       aria-labelledby={ids.heading}
     >
       <div
-        className="border-4 p-4 sm:p-8"
+        className="w-full border-4 p-4 sm:p-8"
         style={{ backgroundColor: "#23262f", borderColor: ACCENT }}
       >
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
@@ -234,14 +234,6 @@ export default function LeatherCollectionProductBlock({
                 </button>
               ) : null}
             </div>
-
-            <div className="mt-8">
-              <UpholsteryQuickToolsSidebar
-                quoteHref={hero.quoteSidebarHref}
-                theme="dark"
-                quickToolsLinks="calculator-only"
-              />
-            </div>
           </div>
 
           <div
@@ -252,7 +244,7 @@ export default function LeatherCollectionProductBlock({
               Color Swatches
             </h2>
             <p className="mt-2 font-sans text-sm text-gray-400">
-              Tap swatch to preview · Check to order sample
+              Click to view · Check to order sample
             </p>
             <div
               className={`mt-4 flex flex-wrap gap-3 ${
@@ -317,10 +309,14 @@ export default function LeatherCollectionProductBlock({
                 );
               })}
             </div>
-            <p className="mt-4 font-sans text-sm leading-relaxed text-gray-400">
-              <strong className="font-semibold text-white">$25 for 1–4 samples.</strong>{" "}
-              <strong className="font-semibold text-white">$5</strong> for each additional.
-            </p>
+            <div className="mt-8">
+              <UpholsteryQuickToolsSidebar
+                quoteHref={hero.quoteSidebarHref}
+                theme="dark"
+                quickToolsLinks="calculator-only"
+                showHowItWorks={false}
+              />
+            </div>
           </div>
         </div>
 
@@ -466,6 +462,7 @@ export default function LeatherCollectionProductBlock({
         </div>
       </div>
 
+      <div className="px-4 sm:px-6 lg:px-0">
       <section
         className="border-t-4 border-black pt-12"
         aria-labelledby={ids.whatHeading}
@@ -679,9 +676,11 @@ export default function LeatherCollectionProductBlock({
                       className="h-auto w-full object-cover"
                     />
                   </div>
-                  <figcaption className="mt-3 font-sans text-sm leading-relaxed text-gray-700">
-                    {article.image.caption}
-                  </figcaption>
+                  {article.image.caption ? (
+                    <figcaption className="mt-3 font-sans text-sm leading-relaxed text-gray-700">
+                      {article.image.caption}
+                    </figcaption>
+                  ) : null}
                 </figure>
                 {article.blocks.map((block, i) => renderInsightBlock(block, i))}
                 <div className="clear-both" aria-hidden="true" />
@@ -690,6 +689,7 @@ export default function LeatherCollectionProductBlock({
           ))}
         </div>
       </section>
+      </div>
 
       {popImage && (
         <div

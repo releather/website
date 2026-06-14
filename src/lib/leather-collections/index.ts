@@ -1,5 +1,6 @@
 import { distressedCollection } from "./distressed";
 import { antiqueCollection } from "./antique";
+import { vintageCollection } from "./vintage";
 import type { LeatherCollectionDetail } from "./types";
 
 export type { LeatherCollectionDetail, LeatherSpecs, LeatherSwatch, LeatherTextureSpec } from "./types";
@@ -10,6 +11,7 @@ export type { SampleCartItem, SampleCartCheckoutItem } from "./sampleCartTypes";
 export { SAMPLE_CART_STORAGE_KEY, SAMPLE_CART_MINIMIZED_KEY, sampleCartItemKey } from "./sampleCartTypes";
 export { distressedCollection } from "./distressed";
 export { antiqueCollection } from "./antique";
+export { vintageCollection } from "./vintage";
 
 /** Registry of collection detail configs keyed by URL slug. */
 export const LEATHER_COLLECTION_DETAILS: Record<
@@ -18,6 +20,7 @@ export const LEATHER_COLLECTION_DETAILS: Record<
 > = {
   [distressedCollection.slug]: distressedCollection,
   [antiqueCollection.slug]: antiqueCollection,
+  [vintageCollection.slug]: vintageCollection,
 };
 
 export const LEATHER_COLLECTION_SLUGS = Object.keys(

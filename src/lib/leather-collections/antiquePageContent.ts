@@ -78,7 +78,7 @@ export const antiquePageContent = {
           " without a uniform look. Durable and protective, it's recommended for:",
       },
     ],
-    useCases: ["Furniture", "Hospitality", "Garments, Handbags"],
+    useCases: ["Furniture", "Garments", "Bags"],
     useCaseImage: {
       src: "https://res.cloudinary.com/leathera/image/upload/l_image:upload:leather:Antique:Antique_Leather_Bayou/c_scale,fl_relative,w_0.13/o_100/fl_layer_apply,g_south_east,x_0.03,y_0.04/g_south_west,x_20,y_20,l_text:montserrat_75_style_light:Bayou,co_rgb:ffffff/bo_1px_solid_rgb:000000/v1728727463/leather/antique/examples/Here_is_the_luxurious_armchair_upholstered_in_the_deep_blue_Bayou_leather_perfectly_suited_for_a_high-end_setting.webp",
       alt: "Luxurious armchair upholstered in deep blue Bayou antique leather in a high-end interior setting",
@@ -341,5 +341,10 @@ export const antiquePageContent = {
         },
       ],
     },
+  },
+  originFlag: {
+    url: "https://res.cloudinary.com/leathera/image/upload/ar_1:1,b_rgb:ffffff,bo_1px_solid_rgb:555555,g_south,w_35,h_20/v1716563273/icons/flag-of-italy.jpg",
+    alt: "Italy",
+    title: "Italy",
   },
 } as const satisfies CollectionPageContent;

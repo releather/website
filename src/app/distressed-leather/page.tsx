@@ -34,8 +34,10 @@ export default function DistressedLeatherPage() {
       <JsonLd data={distressedLeatherFaqSchema} />
       <HeaderWrapper />
       <main className="min-h-screen bg-white">
-        <div className="mx-auto max-w-7xl px-2 pb-6 pt-3 sm:px-6 sm:pt-4 lg:px-8 lg:pb-8">
+        <div className="max-lg:max-w-none max-lg:px-0 lg:mx-auto lg:max-w-7xl lg:px-8 lg:pt-4">
           <DistressedProductBlock />
+        </div>
+        <div className="mx-auto max-w-7xl px-2 pb-6 sm:px-6 lg:px-8 lg:pb-8">
           <Faq
             id="faq"
             heading="Frequently Asked Questions"

@@ -101,13 +101,13 @@ export const antiqueCollection = {
   specs: {
     size: "53 sq ft +/-",
     thickness: "0.9-1.1 mm / 2.25-2.75 oz",
-    origin: "European",
+    origin: "Italy",
     material: "Cowhide",
     type: "Semi Aniline",
-    finish: "Protected, Two-Tone, Antique, Marbleized",
+    finish: "Two-Tone",
     grain: "Top Grain",
     category: "Protected",
-    uses: "Furniture, Hospitality, Garments, Handbags",
+    uses: "Furniture, Garments, Bags",
     texture: {
       label: "Natural Fine Grain",
       thumbUrl: textureThumbUrl,

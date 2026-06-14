@@ -79,7 +79,7 @@ function CollapsiblePanel({
 }) {
   const summaryClassName =
     theme === "dark"
-      ? "quick-tool-flat-heading flex cursor-pointer list-none items-center justify-between gap-3 border-b-[4px] border-releather-orange pb-2 font-display text-xl font-normal tracking-tight text-white md:text-2xl md:font-black md:uppercase [&::-webkit-details-marker]:hidden"
+      ? "quick-tool-flat-heading flex cursor-pointer list-none items-center justify-between gap-3 border-b-[4px] border-releather-orange pb-2 font-display text-xl font-normal tracking-tight text-gray-300 md:text-2xl md:font-black md:uppercase [&::-webkit-details-marker]:hidden"
       : `quick-tool-flat-heading flex cursor-pointer list-none items-center justify-between gap-3 ${upholsterySidebarHeadingClassName} [&::-webkit-details-marker]:hidden`;
 
   return (
