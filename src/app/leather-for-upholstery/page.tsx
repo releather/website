@@ -49,8 +49,8 @@ export default function LeatherForUpholsteryPage() {
             primaryCta={{
               href: "#collections",
               title: "Browse upholstery leather collections",
-              "aria-label": "Browse our leather",
-              label: "Browse our leather",
+              "aria-label": "Browse Leather",
+              label: "Browse Leather",
             }}
             leftContent={<LeatherForUpholsteryQuickTools />}
             rightContent={<LeatherMaterialQuoteEmbed />}

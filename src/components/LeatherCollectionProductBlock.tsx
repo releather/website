@@ -464,7 +464,7 @@ export default function LeatherCollectionProductBlock({
 
       <div className="px-4 sm:px-6 lg:px-0">
       <section
-        className="border-t-4 border-black pt-12"
+        className="pt-12"
         aria-labelledby={ids.whatHeading}
       >
         <h2
