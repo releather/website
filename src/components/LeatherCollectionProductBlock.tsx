@@ -159,7 +159,7 @@ export default function LeatherCollectionProductBlock({
       aria-labelledby={ids.heading}
     >
       <div
-        className="w-full border-4 p-4 sm:p-8"
+        className="w-full border-0 p-4 sm:p-8 lg:border-4"
         style={{ backgroundColor: "#23262f", borderColor: ACCENT }}
       >
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
