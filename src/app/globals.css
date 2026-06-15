@@ -9,9 +9,15 @@
   --releather-dark: #23262f;
 }
 
-/* Default font size: 1.5rem (24px) site-wide; 1rem = 24px */
+/* Root scale: mobile uses a 16px base (1rem) for practical readability; lg+ keeps the existing 24px scale site-wide. */
 html {
-  font-size: 1.5rem;
+  font-size: 16px;
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 24px;
+  }
 }
 
 body {
