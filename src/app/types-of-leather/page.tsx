@@ -70,6 +70,18 @@ const leatherTypes = [
     paragraphs: [
       " Pigmented leather also known as protected leather  is treated with a coating and finish that ensures color consistency and makes it resistant to staining and moisture. This treatment can be applied to both full-grain and top-grain leather, and it helps to extend the lifespan of the material. Pigmented leather is often used in furniture upholstery, as well as in auto upholstery, clothing and accessories. It is available in a wide range of colors, and the finish can be either glossy or matte. The main advantage of protected leather is that it requires less maintenance than uncoated leather. However, it is important to note that the coating can eventually wear away, exposing the underlying leather to damage. For this reason, it is important to follow the manufacturer's instructions when cleaning and caring for pigmented leather. With proper care, pigmented leather can last for many years.",
     ],
+    notes: [
+      {
+        id: "drum-dyed",
+        title: "Drum Dyed Leather",
+        body: "Some pigmented leathers are drum dyed before the protective finish is applied, allowing the color to penetrate deeper into the leather. When the surface finish wears, the underlying leather is often closer in color, making wear less noticeable and helping restorations blend more naturally.",
+      },
+      {
+        id: "surface-color",
+        title: "Surface Color Finish",
+        body: "Some pigmented leathers rely primarily on a factory-applied surface color coating rather than color that penetrates deeply into the leather. As this finish wears, the underlying layer may become visible. Due to the characteristics of this finish system, standard Leather Restoration cannot guarantee long-term durability, and restored areas may exhibit similar wear over time.",
+      },
+    ],
   },
   {
     slug: "corrected-leather",
@@ -131,7 +143,11 @@ export default function TypesOfLeatherPage() {
               aria-labelledby={type.slug}
               className="mt-12 border-t-4 border-black pt-12"
             >
-              <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
+              <div
+                className={`grid grid-cols-1 gap-8 lg:grid-cols-2 ${
+                  "notes" in type && type.notes ? "lg:items-start" : "lg:items-center"
+                }`}
+              >
                 <div>
                   <h2
                     id={type.slug}
@@ -145,7 +161,9 @@ export default function TypesOfLeatherPage() {
                     </p>
                   ))}
                 </div>
-                <div className="flex justify-center"><Image unoptimized
+                <div className="flex justify-center self-start">
+                  <Image
+                    unoptimized
                     src={type.imgSrc}
                     alt={type.alt}
                     width={550}
@@ -155,6 +173,24 @@ export default function TypesOfLeatherPage() {
                   />
                 </div>
               </div>
+              {"notes" in type && type.notes
+                ? type.notes.map((note) => (
+                    <div
+                      key={note.id}
+                      className="mt-8 border-l-4 border-releather-orange bg-gray-50 px-4 py-3"
+                    >
+                      <h3
+                        id={note.id}
+                        className="scroll-mt-24 font-display text-lg font-normal tracking-tight text-black"
+                      >
+                        {note.title}
+                      </h3>
+                      <p className="mt-2 font-sans text-base leading-relaxed text-gray-800">
+                        {note.body}
+                      </p>
+                    </div>
+                  ))
+                : null}
             </section>
           ))}
         </div>
