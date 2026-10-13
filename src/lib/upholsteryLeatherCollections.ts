@@ -10,6 +10,7 @@ export const UPHOLSTERY_LEATHER_PUBLISHED_PAGE_SLUGS = [
   "distressed-leather",
   "antique-leather",
   "vintage-leather",
+  "waxed-leather",
 ] as const;
 
 export function upholsteryLeatherCollectionHref(slug: string): string {
@@ -86,12 +87,12 @@ export const UPHOLSTERY_LEATHER_COLLECTIONS: UpholsteryLeatherCollection[] = [
     imageFile: "Waxed-Leather-Main.jpg",
     metaTitle: "Waxed Leather for Upholstery | Italian Hides | ReLeather",
     metaDescription:
-      "Waxed upholstery leather hides with pull-up character for furniture. Durable sofa leather options finished in Italy. Request samples and a quote.",
+      "Italian semi-aniline waxed leather hides with a hand-antiqued finish for residential and contract upholstery. Order swatches and request a material quote from ReLeather.",
     tagline:
-      "Pull-up motion, soft hand, and a finish that tells a story as the piece is used.",
+      "Hand-antiqued wax and a soft fine grain—Italian hides for residential and contract seating.",
     paragraphs: [
-      "Waxed leather is prized for the way oils and waxes migrate under stress, creating lighter highs and richer lows across cushions and arms. It is a standout leather upholstery material when you want visible craft on sectionals, ottomans, and lounge seating.",
-      "This category is ideal for clients who understand that character is a feature: expect variation across hides and plan yardage accordingly for large sofa leather layouts.",
+      "Waxed leather is a semi-aniline hide finished with oils and waxes. The surface stays soft and slightly antiqued, with the natural fine grain still visible and a light coat that helps it stand up to everyday sitting.",
+      "Specify it for residential sofas, club chairs, and dining, and for contract lounges and offices where the room needs real hide character with more protection than an open aniline.",
     ],
   },
   {

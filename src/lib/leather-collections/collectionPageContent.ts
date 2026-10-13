@@ -112,6 +112,8 @@ export type CollectionInsightArticle = {
 export type CollectionIndustryInsightsContent = {
   designArticle: CollectionInsightArticle;
   workshopArticle: CollectionInsightArticle;
+  /** Which article renders first. Defaults to the design article. */
+  leadArticle?: "design" | "workshop";
 };
 
 export type CollectionPageContent = {

@@ -53,8 +53,13 @@ function renderInsightBlock(block: CollectionInsightBlock, key: number): ReactNo
     ) : null;
 
   if (block.type === "caption") {
+    // flow-root keeps the caption box beside a floated insight image.
+    // A normal block's background and border run underneath the float.
     return (
-      <div key={key} className="brutalist-caption [&_p]:m-0 font-sans text-lg not-italic">
+      <div
+        key={key}
+        className="brutalist-caption flow-root [&_p]:m-0 font-sans text-lg not-italic"
+      >
         <p>
           {renderProseParts(block.parts)}
           {quoteRightIcon}
@@ -643,10 +648,15 @@ export default function LeatherCollectionProductBlock({
 
         <div className="space-y-10">
           {(
-            [
-              [ids.insightsDesignHeading, industryInsights.designArticle] as const,
-              [ids.insightsWorkshopHeading, industryInsights.workshopArticle] as const,
-            ]
+            industryInsights.leadArticle === "workshop"
+              ? [
+                  [ids.insightsWorkshopHeading, industryInsights.workshopArticle] as const,
+                  [ids.insightsDesignHeading, industryInsights.designArticle] as const,
+                ]
+              : [
+                  [ids.insightsDesignHeading, industryInsights.designArticle] as const,
+                  [ids.insightsWorkshopHeading, industryInsights.workshopArticle] as const,
+                ]
           ).map(([headingId, article]) => (
             <article key={headingId} aria-labelledby={headingId}>
               <h3
