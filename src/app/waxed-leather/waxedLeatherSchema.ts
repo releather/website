@@ -9,7 +9,7 @@ const schemas = makeLeatherCollectionPageSchemas({
   mpn: "WAXED-UPHOLSTERY-IT",
   material: "Italian waxed semi-aniline leather hide",
   countryOfOrigin: "Italy",
-  sampleOfferName: "Waxed leather swatch sample",
+  sampleOfferName: "Waxed leather swatch",
   quoteOfferDescription:
     "Request a leather material quote for waxed upholstery hides.",
   itemListDescription:

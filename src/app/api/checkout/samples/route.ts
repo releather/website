@@ -108,7 +108,7 @@ function buildProductDescription(lines: ValidatedSampleLine[]): string {
       `${collectionName}: ${swatchNames.join(", ")}`,
   );
 
-  const description = `Samples — ${parts.join("; ")}`;
+  const description = `Swatches — ${parts.join("; ")}`;
   if (description.length <= MAX_DESCRIPTION_LENGTH) {
     return description;
   }
@@ -147,8 +147,8 @@ export async function POST(request: Request) {
     const isMultiCollection = collectionSlugs.length > 1;
 
     const productName = isMultiCollection
-      ? `Leather Samples (${validSwatchCount}) — ${collectionSlugs.length} collections`
-      : `${lines[0].collectionName} — Leather Samples (${validSwatchCount})`;
+      ? `Leather Swatches (${validSwatchCount}) — ${collectionSlugs.length} collections`
+      : `${lines[0].collectionName} — Leather Swatches (${validSwatchCount})`;
 
     const stripe = getStripe();
     const session = await stripe.checkout.sessions.create({

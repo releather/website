@@ -225,7 +225,7 @@ export const distressedPageContent = {
       imageFloat: "right",
       image: {
         src: "https://res.cloudinary.com/leathera/image/upload/c_crop,g_north,h_0.9/leather/Distressed/examples/distressed-leather-interior-design-selection.png",
-        alt: "Distressed leather color swatches and samples laid out for interior design selection",
+        alt: "Distressed leather color swatches laid out for interior design selection",
         title: "Distressed leather interior design selection",
         caption: "Designer selects colorways",
       },

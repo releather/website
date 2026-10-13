@@ -249,7 +249,7 @@ export default function LeatherCollectionProductBlock({
               Color Swatches
             </h2>
             <p className="mt-2 font-sans text-sm text-gray-400">
-              Click to view · Check to order sample
+              Click to view · Check to order swatch
             </p>
             <div
               className={`mt-4 flex flex-wrap gap-3 ${
@@ -289,7 +289,7 @@ export default function LeatherCollectionProductBlock({
                     <label
                       htmlFor={checkboxId}
                       className="absolute left-0.5 top-0.5 flex h-4 w-4 cursor-pointer items-center justify-center border border-black bg-black/70 transition hover:bg-black"
-                      title={`Order ${swatch.name} sample`}
+                      title={`Order ${swatch.name} swatch`}
                       onClick={(e) => e.stopPropagation()}
                     >
                       <input
@@ -299,7 +299,7 @@ export default function LeatherCollectionProductBlock({
                         checked={selected}
                         disabled={sampleCart.isSubmitting}
                         onChange={() => sampleCart.toggleSwatch(swatch)}
-                        aria-label={`Order ${swatch.name} sample`}
+                        aria-label={`Order ${swatch.name} swatch`}
                       />
                       <span
                         className={`flex h-full w-full items-center justify-center border border-white/30 peer-checked:border-releather-orange peer-checked:bg-releather-orange peer-checked:text-black ${

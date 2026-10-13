@@ -162,7 +162,7 @@ export const UPHOLSTERY_LEATHER_COLLECTIONS: UpholsteryLeatherCollection[] = [
     imageFile: "Nubuck-Leather-Main.jpg",
     metaTitle: "Nubuck Leather for Upholstery | Italian Hides | ReLeather",
     metaDescription:
-      "Nubuck upholstery leather with a refined, velvety nap for premium seating. Understand care, then specify with confidence. Samples from ReLeather.",
+      "Nubuck upholstery leather with a refined, velvety nap for premium seating. Understand care, then specify with confidence. Swatches from ReLeather.",
     tagline:
       "Velvet-like grain break and a couture hand—specified intentionally, maintained carefully.",
     paragraphs: [

@@ -480,7 +480,7 @@ export default function LeatherColorMatcher({
 
       <p className="mx-auto mt-8 max-w-3xl border-l-[6px] border-releather-orange bg-white px-4 py-3 text-center font-sans text-sm font-semibold leading-relaxed text-black sm:text-base">
         Colors on screen can vary by monitor, lighting, and camera settings. Use
-        these matches as a starting point and order leather samples before
+        these matches as a starting point and order leather swatches before
         committing to a full hide order.
       </p>
     </section>

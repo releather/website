@@ -225,7 +225,7 @@ export const antiquePageContent = {
       imageFloat: "right",
       image: {
         src: "https://res.cloudinary.com/leathera/image/upload/c_crop,g_north,h_0.9/v1728811006/leather/Antique/examples/A_luxury_modern_hotel_lobby_lounge_couch_upholstered_in_deep_red_pomegranate-colored_leather_with_a_subtle_texture._The_couch_design_is_sleek_with_cle_irpvej.webp",
-        alt: "Antique leather color swatches and samples laid out for interior design selection",
+        alt: "Antique leather color swatches laid out for interior design selection",
         title: "Antique leather interior design selection",
         caption: "Designer selects colorways",
       },

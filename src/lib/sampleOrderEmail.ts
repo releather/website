@@ -124,7 +124,7 @@ function buildNotificationHtml(details: SampleOrderEmailDetails): string {
     { label: "Ship to (name)", value: details.shippingName },
     { label: "Shipping address", value: details.shippingAddress },
     { label: "Collections", value: details.collectionNames },
-    { label: "Sample count", value: details.sampleCount },
+    { label: "Swatch count", value: details.sampleCount },
     {
       label: "Amount paid",
       value: formatAmount(details.amountTotalCents, details.currency),
@@ -151,12 +151,12 @@ function buildNotificationHtml(details: SampleOrderEmailDetails): string {
     <div style="max-width:640px;margin:0 auto;border:2px solid #000;">
       <div style="padding:16px 20px;background:#f8991d;border-bottom:2px solid #000;">
         <h1 style="margin:0;font-family:Arial,sans-serif;font-size:20px;font-weight:700;color:#000;">
-          New leather sample order
+          New leather swatch order
         </h1>
       </div>
       <div style="padding:20px;">
         <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:14px;color:#374151;">
-          A customer completed sample checkout on Stripe.
+          A customer completed swatch checkout on Stripe.
         </p>
         <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;border:1px solid #e5e7eb;margin-bottom:16px;">
           ${tableRows}
@@ -178,7 +178,7 @@ function buildNotificationHtml(details: SampleOrderEmailDetails): string {
 
 function buildPlainTextBody(details: SampleOrderEmailDetails): string {
   return [
-    "New leather sample order",
+    "New leather swatch order",
     "",
     `Name: ${details.customerName}`,
     `Email: ${details.customerEmail}`,
@@ -186,7 +186,7 @@ function buildPlainTextBody(details: SampleOrderEmailDetails): string {
     `Ship to (name): ${details.shippingName}`,
     `Shipping address: ${details.shippingAddress.replace(/\n/g, ", ")}`,
     `Collections: ${details.collectionNames}`,
-    `Sample count: ${details.sampleCount}`,
+    `Swatch count: ${details.sampleCount}`,
     `Amount paid: ${formatAmount(details.amountTotalCents, details.currency)}`,
     "",
     "Swatches ordered:",
@@ -219,7 +219,7 @@ export async function sendSampleOrderNotificationEmail(
     },
   });
 
-  const subject = `Leather sample order — ${details.customerName}`;
+  const subject = `Leather swatch order — ${details.customerName}`;
 
   await transporter.sendMail({
     from: smtpUser,

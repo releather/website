@@ -149,14 +149,14 @@ export const distressedLeatherProductSchema = {
     },
     {
       "@type": "Offer",
-      name: "Distressed leather swatch sample",
+      name: "Distressed leather swatch",
       url: `${PAGE_URL}#order-samples`,
       price: "25.00",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
       itemCondition: "https://schema.org/NewCondition",
       description:
-        "$25 flat for 1–4 swatch samples total, then $5 for each additional swatch.",
+        "$25 flat for 1–4 swatches total, then $5 for each additional swatch.",
       eligibleQuantity: {
         "@type": "QuantitativeValue",
         minValue: 1,

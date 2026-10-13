@@ -9,7 +9,7 @@ const schemas = makeLeatherCollectionPageSchemas({
   mpn: "ANTIQUE-UPHOLSTERY-IT",
   material: "Italian semi-aniline antique leather hide",
   countryOfOrigin: "Italy",
-  sampleOfferName: "Antique leather swatch sample",
+  sampleOfferName: "Antique leather swatch",
   quoteOfferDescription:
     "Request a leather material quote for antique upholstery hides.",
   itemListDescription:

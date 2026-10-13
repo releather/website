@@ -34,7 +34,7 @@ export default function LeatherSampleCheckoutBar({
     <div className={className}>
       {showPricingNote ? (
         <p className="mt-4 font-sans text-sm leading-relaxed text-gray-400">
-          <strong className="font-semibold text-white">$25 flat for 1–4 samples</strong>
+          <strong className="font-semibold text-white">$25 flat for 1–4 swatches</strong>
           , then <strong className="font-semibold text-white">$5</strong> for each
           additional {collection.name} swatch.
         </p>
@@ -60,7 +60,7 @@ export default function LeatherSampleCheckoutBar({
         <div className="sticky bottom-4 z-20 flex flex-col gap-3 border-4 border-black bg-[#23262f] p-4 shadow-[6px_6px_0_#f8991d] sm:flex-row sm:items-center sm:justify-between">
           <div className="font-sans text-white">
             <p className="text-sm font-bold uppercase tracking-wider text-releather-orange">
-              Sample order
+              Swatch order
             </p>
             <p className="mt-1 text-base sm:text-lg">
               <span className="font-semibold">{selectedCount}</span>{" "}
@@ -84,7 +84,7 @@ export default function LeatherSampleCheckoutBar({
             ) : (
               <>
                 <i className="fa fa-lock" aria-hidden />
-                Order Samples
+                Order Swatches
               </>
             )}
           </button>
@@ -114,7 +114,7 @@ export function LeatherSampleCheckoutGrid({
         isSubmitting ? "pointer-events-none opacity-60" : ""
       }`}
       role="group"
-      aria-label={`${collection.name} sample swatches`}
+      aria-label={`${collection.name} swatches`}
     >
       {collection.swatches.map((swatch) => {
         const selected = isSelected(swatch.id);
@@ -141,7 +141,7 @@ export function LeatherSampleCheckoutGrid({
             <Image
               unoptimized
               src={cloudinaryDisplayUrl(swatch.thumbUrl)}
-              alt={`${collection.name} ${swatch.name} sample swatch`}
+              alt={`${collection.name} ${swatch.name} swatch`}
               width={90}
               height={90}
               loading="lazy"
@@ -190,16 +190,16 @@ export function LeatherSampleCheckoutSection({
           id="order-samples-heading"
           className="font-display text-xl font-normal text-releather-orange sm:text-2xl"
         >
-          Order Leather Samples
+          Order Leather Swatches
         </h3>
         <p className="mt-2 max-w-2xl font-sans text-sm leading-relaxed text-gray-300 sm:text-base">
           Select the {collection.name} colors you want to evaluate. Pricing is based on
-          your total sample count across all collections:{" "}
+          your total swatch count across all collections:{" "}
           <strong className="font-semibold text-white">
-            $25 flat for 1–4 samples
+            $25 flat for 1–4 swatches
           </strong>
           , then <strong className="font-semibold text-white">$5</strong> for each
-          additional swatch. Use the sample cart at the bottom of the page to checkout.
+          additional swatch. Use the swatch cart at the bottom of the page to checkout.
         </p>
       </header>
 

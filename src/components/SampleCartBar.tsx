@@ -103,7 +103,7 @@ export default function SampleCartBar() {
         type="button"
         onClick={restoreCart}
         className="fixed bottom-4 left-1/2 z-[10001] flex max-w-[calc(100vw-2rem)] -translate-x-1/2 items-center gap-3 border-4 border-black bg-releather-orange px-4 py-3 font-sans text-base font-bold text-black shadow-[6px_6px_0_#000] transition-colors hover:border-[#f8991d] hover:bg-black hover:text-releather-orange focus:outline-none focus-visible:ring-4 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:gap-4 sm:px-5 sm:py-3.5 md:bottom-6 md:left-auto md:right-[calc(1.5rem+3rem+0.75rem)] md:max-w-none md:translate-x-0"
-        aria-label={`Open sample cart, ${itemCount} ${itemCount === 1 ? "item" : "items"}`}
+        aria-label={`Open swatch cart, ${itemCount} ${itemCount === 1 ? "item" : "items"}`}
       >
         <span className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-black bg-black text-releather-orange sm:h-11 sm:w-11">
           <i className="fa fa-shopping-cart text-lg sm:text-xl" aria-hidden />
@@ -123,7 +123,7 @@ export default function SampleCartBar() {
     <div
       className="fixed inset-x-0 bottom-0 z-[10001]"
       role="region"
-      aria-label="Leather sample cart"
+      aria-label="Leather swatch cart"
     >
       <div className="mx-auto flex max-w-4xl justify-end px-4 sm:px-6">
         <button
@@ -131,7 +131,7 @@ export default function SampleCartBar() {
           onClick={minimizeCart}
           disabled={isSubmitting}
           className="inline-flex min-h-[48px] items-center gap-2.5 border-4 border-b-0 border-black bg-releather-orange px-5 py-2.5 font-sans text-sm font-bold text-black shadow-[4px_-4px_0_#000] transition hover:bg-black hover:text-releather-orange disabled:cursor-not-allowed disabled:opacity-60 sm:min-h-[52px] sm:gap-3 sm:px-6 sm:text-base"
-          aria-label="Hide sample cart footer"
+          aria-label="Hide swatch cart footer"
         >
           <i className="fa fa-chevron-down text-lg" aria-hidden />
           Hide
@@ -159,7 +159,7 @@ export default function SampleCartBar() {
           <div className="max-h-[45vh] overflow-y-auto border-b border-gray-600 px-4 py-3">
             <div className="mx-auto flex max-w-4xl items-center justify-between gap-3">
               <p className="font-sans text-sm font-bold uppercase tracking-wider text-releather-orange">
-                Your sample selection
+                Your swatch selection
               </p>
               <button
                 type="button"
@@ -199,7 +199,7 @@ export default function SampleCartBar() {
                           }
                           disabled={isSubmitting}
                           className="shrink-0 font-sans text-xs font-semibold text-gray-400 underline hover:text-white disabled:opacity-50"
-                          aria-label={`Remove ${item.swatchName} sample`}
+                          aria-label={`Remove ${item.swatchName} swatch`}
                         >
                           Remove
                         </button>
@@ -210,7 +210,7 @@ export default function SampleCartBar() {
               ))}
             </ul>
             <p className="mx-auto mt-3 max-w-4xl font-sans text-xs text-gray-400">
-              $25 flat for 1–4 samples total, then $5 for each additional swatch
+              $25 flat for 1–4 swatches total, then $5 for each additional swatch
               across all collections.
             </p>
           </div>
@@ -219,7 +219,7 @@ export default function SampleCartBar() {
         <div className="mx-auto flex max-w-4xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="min-w-0 font-sans text-white">
             <p className="text-sm font-bold uppercase tracking-wider text-releather-orange">
-              Sample cart
+              Swatch cart
             </p>
             <p className="mt-0.5 text-base sm:text-lg">
               <span className="font-semibold">{itemCount}</span>{" "}
@@ -260,7 +260,7 @@ export default function SampleCartBar() {
               ) : (
                 <>
                   <i className="fa fa-lock" aria-hidden />
-                  Order Samples
+                  Order Swatches
                 </>
               )}
             </button>

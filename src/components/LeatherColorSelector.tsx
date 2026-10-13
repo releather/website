@@ -211,7 +211,7 @@ export default function LeatherColorSelector({
 
       <p className="mx-auto mt-8 max-w-3xl border-l-[6px] border-releather-orange bg-white px-4 py-3 text-center font-sans text-sm font-semibold leading-relaxed text-black sm:text-base">
         Leather colors can look different in person depending on finish, lighting, and
-        hide variation. Order samples before committing to a full upholstery order.
+        hide variation. Order swatches before committing to a full upholstery order.
       </p>
 
       <LeatherSwatchPreviewModal

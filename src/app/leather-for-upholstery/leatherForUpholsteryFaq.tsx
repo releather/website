@@ -74,12 +74,12 @@ export const leatherForUpholsteryFaqItems: FaqItem[] = [
     ),
   },
   {
-    question: "Can I order samples?",
+    question: "Can I order swatches?",
     questionIcon: "swatchbook",
     answer: (
       <p>
         Yes. Order leather swatches to review color, grain, and hand in your own
-        lighting before you buy. Many collections offer individual color samples—check
+        lighting before you buy. Many collections offer individual color swatches—check
         the swatch sections on collection pages such as{" "}
         <Link href="/distressed-leather" className={linkClass}>
           Distressed Leather
@@ -101,7 +101,7 @@ export const leatherForUpholsteryFaqItems: FaqItem[] = [
         semi-aniline upholstery leathers resist scratches and stains better than pure
         aniline. Hair wipes off easily compared with fabric, and minor scuffs often
         blend into natural grain. No leather is claw-proof—trim nails and consider
-        darker or textured hides for active households. Samples help you test how a
+        darker or textured hides for active households. Swatches help you test how a
         color reads in your space.
       </p>
     ),
@@ -168,10 +168,10 @@ export const leatherForUpholsteryFaqSchema = {
     },
     {
       "@type": "Question",
-      name: "Can I order samples?",
+      name: "Can I order swatches?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Order leather swatches to review color, grain, and hand in your own lighting before you buy. Many collections offer individual color samples on collection pages, or note your preferred colors when you request a quote.",
+        text: "Yes. Order leather swatches to review color, grain, and hand in your own lighting before you buy. Many collections offer individual color swatches on collection pages, or note your preferred colors when you request a quote.",
       },
     },
     {
