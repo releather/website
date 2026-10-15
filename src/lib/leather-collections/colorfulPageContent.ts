@@ -203,6 +203,24 @@ export const colorfulPageContent = {
         description:
           "White colorful leather—pale, even, and protected. Laguna Niguel dining chair after a full reupholstery in dark brown and white, finished so the seats read clean again.",
       },
+      {
+        id: "tan",
+        label: "Tan",
+        lifestyleSrc: projectPhoto(
+          "full-leather-reupholstery-chair-tan-tufted-palette-tan-saddle-los-angeles-after.png",
+          "repair-after",
+        ),
+        lifestyleAlt:
+          "Tufted chair in Los Angeles after a full reupholstery in tan Colorful leather",
+        lifestyleWidth: 1200,
+        lifestyleHeight: 800,
+        swatchSrc: showcaseSwatch("Tan", "Colorful_Tan.jpg"),
+        swatchWidth: 400,
+        swatchHeight: 80,
+        swatchAlt: "Tan colorful leather swatch with a warm saddle tone",
+        description:
+          "Tan colorful leather—warm saddle tone, matte coat, pebble grain. A tufted chair in Los Angeles after a full reupholstery, with the color and the wear holding across the whole piece.",
+      },
     ],
   },
   industryInsights: {
