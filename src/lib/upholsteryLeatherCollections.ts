@@ -11,6 +11,7 @@ export const UPHOLSTERY_LEATHER_PUBLISHED_PAGE_SLUGS = [
   "antique-leather",
   "vintage-leather",
   "waxed-leather",
+  "colorful-leather",
 ] as const;
 
 export function upholsteryLeatherCollectionHref(slug: string): string {
@@ -102,12 +103,12 @@ export const UPHOLSTERY_LEATHER_COLLECTIONS: UpholsteryLeatherCollection[] = [
     imageFile: "Colorful-Leather-Main.jpg",
     metaTitle: "Colorful Leather for Upholstery | Italian Hides | ReLeather",
     metaDescription:
-      "Bold colorful upholstery leather for modern furniture, accents, and commercial seating. Italian leather hides for furniture in statement hues.",
+      "Italian aniline colorful leather hides with a protected matte finish for residential and contract upholstery. Order swatches and request a material quote from ReLeather.",
     tagline:
-      "Jewel tones, modern brights, and confident color for upholstery that leads the room.",
+      "Even color and a fine pebble grain—Italian protected hides for residential and contract seating.",
     paragraphs: [
-      "Colorful leather is how you move beyond default browns and greys while still specifying real hides rather than coated imitations. These collections are built for designers who treat furniture leather as a primary finish, not an afterthought.",
-      "When you are specifying leather hides for furniture with strong color, always validate under your project's lighting. Our sampling workflow helps you match adjacent materials and trim.",
+      "Colorful leather is an aniline-dyed hide with a protective matte coat and a fine pebble grain. The color stays even, and the surface is smooth enough for sofas, dining, and lounge seating.",
+      "Specify it for residential and contract rooms that need a real hide with more protection than an open aniline — from cream and grey through espresso and stronger hues. Order swatches and check them in the room's light.",
     ],
   },
   {

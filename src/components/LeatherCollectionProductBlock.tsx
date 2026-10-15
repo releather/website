@@ -252,7 +252,7 @@ export default function LeatherCollectionProductBlock({
               Click to view · Check to order swatch
             </p>
             <div
-              className={`mt-4 flex flex-wrap gap-3 ${
+              className={`mt-4 grid grid-cols-3 gap-2 sm:flex sm:flex-wrap sm:gap-3 ${
                 sampleCart.isSubmitting ? "pointer-events-none opacity-60" : ""
               }`}
               role="group"
@@ -265,13 +265,13 @@ export default function LeatherCollectionProductBlock({
                 return (
                   <div
                     key={swatch.id}
-                    className={`relative w-fit shrink-0 ${selected ? "ring-2 ring-releather-orange ring-offset-2 ring-offset-[#23262f]" : ""}`}
+                    className={`relative min-w-0 sm:w-fit sm:min-w-[auto] sm:shrink-0 ${selected ? "ring-2 ring-releather-orange sm:ring-offset-2 sm:ring-offset-[#23262f]" : ""}`}
                   >
                     <button
                       type="button"
                       onClick={() => openSwatch(swatch)}
                       title={`${swatchLabels.namePrefix} ${swatch.name}`}
-                      className="block opacity-90 transition hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
+                      className="block w-full opacity-90 transition hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
                     >
                       <Image
                         unoptimized
@@ -280,7 +280,7 @@ export default function LeatherCollectionProductBlock({
                         width={90}
                         height={90}
                         loading="lazy"
-                        className={`h-[90px] w-[90px] border-2 object-cover ${
+                        className={`aspect-square h-auto w-full border-2 object-cover sm:h-[90px] sm:w-[90px] ${
                           selected ? "border-releather-orange" : ""
                         }`}
                         style={selected ? undefined : { borderColor: ACCENT }}
@@ -288,7 +288,7 @@ export default function LeatherCollectionProductBlock({
                     </button>
                     <label
                       htmlFor={checkboxId}
-                      className="absolute left-0.5 top-0.5 flex h-4 w-4 cursor-pointer items-center justify-center border border-black bg-black/70 transition hover:bg-black"
+                      className="absolute left-0.5 top-0.5 z-10 flex h-11 w-11 cursor-pointer items-center justify-center border border-black bg-black/70 transition hover:bg-black sm:h-4 sm:w-4"
                       title={`Order ${swatch.name} swatch`}
                       onClick={(e) => e.stopPropagation()}
                     >
@@ -307,7 +307,7 @@ export default function LeatherCollectionProductBlock({
                         }`}
                         aria-hidden
                       >
-                        <i className="fa fa-check text-[8px]" />
+                        <i className="fa fa-check text-sm sm:text-[8px]" />
                       </span>
                     </label>
                   </div>
