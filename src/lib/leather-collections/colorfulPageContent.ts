@@ -1,9 +1,5 @@
 import type { CollectionPageContent } from "./collectionPageContent";
 
-function hideCloseup(file: string): string {
-  return `https://res.cloudinary.com/leathera/image/upload/c_fill,g_auto,w_900,h_600/leather/Colorful/${file}`;
-}
-
 function showcaseSwatch(label: string, file: string): string {
   return `https://res.cloudinary.com/leathera/image/upload/c_crop,h_80,w_400/c_scale,g_south_west,x_20,y_20,l_text:montserrat_35_style_light:${encodeURIComponent(label)},co_rgb:ffffff/bo_1px_solid_rgb:000000/leather/Colorful/${file}`;
 }
