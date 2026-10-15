@@ -83,6 +83,17 @@ function insightImageFloatClass(float: CollectionInsightArticle["imageFloat"]): 
     : "float-none mx-auto mb-6 block w-full max-w-[280px] text-center sm:float-left sm:mx-0 sm:mb-4 sm:mr-6 sm:w-[320px] sm:shrink-0 sm:text-left";
 }
 
+/** Color names are centered in the Cloudinary thumb. On phones the order checkbox covers that, so the mobile URL sits the same label on the bottom edge. */
+function swatchThumbMobileSrc(url: string): string {
+  const textAt = url.indexOf("l_text:");
+  if (textAt === -1) return url;
+  const colorAt = url.indexOf(",co_rgb:ffffff", textAt);
+  if (colorAt === -1) return url;
+  const insertion = colorAt + ",co_rgb:ffffff".length;
+  if (url.slice(insertion, insertion + 8) === ",g_south") return url;
+  return `${url.slice(0, insertion)},g_south,y_50${url.slice(insertion)}`;
+}
+
 /** Same crop chain as desktop (`…h_80,w_400`), resized for narrow screens — keeps 5:1 strip. */
 function showcaseSwatchSrcMobile(fullSrc: string): string {
   return fullSrc.replace(
@@ -273,18 +284,25 @@ export default function LeatherCollectionProductBlock({
                       title={`${swatchLabels.namePrefix} ${swatch.name}`}
                       className="block w-full opacity-90 transition hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-releather-orange"
                     >
-                      <Image
-                        unoptimized
-                        src={cloudinaryDisplayUrl(swatch.thumbUrl)}
-                        alt={`${swatchLabels.swatchAltPrefix} ${swatch.name} swatch`}
-                        width={90}
-                        height={90}
-                        loading="lazy"
-                        className={`aspect-square h-auto w-full border-2 object-cover sm:h-[90px] sm:w-[90px] ${
-                          selected ? "border-releather-orange" : ""
-                        }`}
-                        style={selected ? undefined : { borderColor: ACCENT }}
-                      />
+                      <picture>
+                        <source
+                          media="(min-width: 640px)"
+                          srcSet={cloudinaryDisplayUrl(swatch.thumbUrl)}
+                        />
+                        {/* picture is required so phones load the bottom-aligned label and desktop keeps the centered one. */}
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={cloudinaryDisplayUrl(swatchThumbMobileSrc(swatch.thumbUrl))}
+                          alt={`${swatchLabels.swatchAltPrefix} ${swatch.name} swatch`}
+                          width={90}
+                          height={90}
+                          loading="lazy"
+                          className={`aspect-square h-auto w-full border-2 object-cover sm:h-[90px] sm:w-[90px] ${
+                            selected ? "border-releather-orange" : ""
+                          }`}
+                          style={selected ? undefined : { borderColor: ACCENT }}
+                        />
+                      </picture>
                     </button>
                     <label
                       htmlFor={checkboxId}
@@ -739,7 +757,10 @@ export default function LeatherCollectionProductBlock({
                 className="max-h-[75vh] w-auto max-w-full object-contain"
               />
             </div>
-            <p className="mt-3 text-center font-display text-lg font-bold uppercase tracking-tight text-black">
+            <p
+              className="mt-3 text-center font-display text-lg font-bold uppercase tracking-tight text-black"
+              style={{ textShadow: "none" }}
+            >
               {popImage.name}
             </p>
           </div>
