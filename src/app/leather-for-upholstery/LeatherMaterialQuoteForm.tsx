@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState, type ReactNode } from "react";
+import { useCallback, useRef, useState, type ReactNode } from "react";
 import Image from "next/image";
 import {
   EMPTY_LEATHER_MATERIAL_QUOTE_FORM,
@@ -12,6 +12,7 @@ import {
   type LeatherMaterialQuoteFormValues,
 } from "@/lib/leatherMaterialQuoteForm";
 import { formatPhoneInput } from "@/lib/formatPhoneInput";
+import { QUOTE_HONEYPOT_FIELD } from "@/lib/formSpam";
 
 const inputClassName =
   "w-full border-2 border-black bg-white px-3 py-2 font-sans text-sm text-black placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-releather-orange focus:ring-offset-1";
@@ -93,6 +94,8 @@ export default function LeatherMaterialQuoteForm() {
   const [values, setValues] = useState<LeatherMaterialQuoteFormValues>(
     EMPTY_LEATHER_MATERIAL_QUOTE_FORM,
   );
+  const [honeypot, setHoneypot] = useState("");
+  const startedAtRef = useRef(Date.now());
   const [errors, setErrors] = useState<LeatherMaterialQuoteFieldErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -108,9 +111,13 @@ export default function LeatherMaterialQuoteForm() {
       setErrors((prev) => {
         const next = { ...prev };
         if (key === "name") delete next.name;
+        if (key === "company") delete next.company;
         if (key === "phone") delete next.phone;
         if (key === "email") delete next.email;
         if (key === "leatherServiceOptionId") delete next.leatherService;
+        if (key === "colors") delete next.colors;
+        if (key === "quantity") delete next.quantity;
+        if (key === "furtherDetails") delete next.furtherDetails;
         delete next.form;
         return next;
       });
@@ -156,7 +163,11 @@ export default function LeatherMaterialQuoteForm() {
       const response = await fetch("/api/leather-material-quote", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ values }),
+        body: JSON.stringify({
+          values,
+          [QUOTE_HONEYPOT_FIELD]: honeypot,
+          startedAt: startedAtRef.current,
+        }),
       });
 
       const data = (await response.json()) as { error?: string };
@@ -200,10 +211,25 @@ export default function LeatherMaterialQuoteForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="space-y-4"
+      className="relative space-y-4"
       noValidate
       aria-label="Leather material quote form"
     >
+      <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
+        <label htmlFor="rl-hp">Fax</label>
+        <input
+          id="rl-hp"
+          type="text"
+          name={QUOTE_HONEYPOT_FIELD}
+          tabIndex={-1}
+          autoComplete="off"
+          autoCorrect="off"
+          data-1p-ignore="true"
+          data-lpignore="true"
+          value={honeypot}
+          onChange={(event) => setHoneypot(event.target.value)}
+        />
+      </div>
       <div>
         <FieldLabel htmlFor="quote-name" required>
           Name
@@ -233,7 +259,10 @@ export default function LeatherMaterialQuoteForm() {
           disabled={isSubmitting}
           onChange={(e) => update("company", e.target.value)}
           className={inputClassName}
+          aria-invalid={Boolean(errors.company)}
+          aria-describedby={errors.company ? "quote-company-error" : undefined}
         />
+        <FieldError id="quote-company-error" message={errors.company} />
       </div>
 
       <fieldset className="space-y-3 border-0 p-0">
@@ -406,7 +435,10 @@ export default function LeatherMaterialQuoteForm() {
           disabled={isSubmitting}
           onChange={(e) => update("colors", e.target.value)}
           className={inputClassName}
+          aria-invalid={Boolean(errors.colors)}
+          aria-describedby={errors.colors ? "quote-colors-error" : undefined}
         />
+        <FieldError id="quote-colors-error" message={errors.colors} />
       </div>
 
       <div>
@@ -419,7 +451,10 @@ export default function LeatherMaterialQuoteForm() {
           disabled={isSubmitting}
           onChange={(e) => update("quantity", e.target.value)}
           className={inputClassName}
+          aria-invalid={Boolean(errors.quantity)}
+          aria-describedby={errors.quantity ? "quote-quantity-error" : undefined}
         />
+        <FieldError id="quote-quantity-error" message={errors.quantity} />
       </div>
 
       <ToggleSwitch
@@ -442,7 +477,12 @@ export default function LeatherMaterialQuoteForm() {
             disabled={isSubmitting}
             onChange={(e) => update("furtherDetails", e.target.value)}
             className={`${inputClassName} resize-y min-h-[6rem]`}
+            aria-invalid={Boolean(errors.furtherDetails)}
+            aria-describedby={
+              errors.furtherDetails ? "quote-details-error" : undefined
+            }
           />
+          <FieldError id="quote-details-error" message={errors.furtherDetails} />
         </div>
       ) : null}
 

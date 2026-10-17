@@ -6,9 +6,16 @@ import {
 } from "@/lib/leatherMaterialQuoteForm";
 import { createLeatherMaterialQuoteSubmission } from "@/lib/fillout";
 import { sendLeatherMaterialQuoteNotificationEmail } from "@/lib/leatherMaterialQuoteEmail";
+import {
+  QUOTE_HONEYPOT_FIELD,
+  isQuoteHoneypotTripped,
+  isQuoteSubmittedTooFast,
+} from "@/lib/formSpam";
 
 type LeatherMaterialQuoteRequestBody = {
   values?: unknown;
+  startedAt?: unknown;
+  [QUOTE_HONEYPOT_FIELD]?: unknown;
 };
 
 function isAddress(value: unknown): value is LeatherMaterialQuoteFormValues["address"] {
@@ -60,6 +67,14 @@ export async function POST(request: Request) {
     const values = parseFormValues(body.values);
     if (!values) {
       return NextResponse.json({ error: "Invalid form values" }, { status: 400 });
+    }
+
+    if (
+      isQuoteHoneypotTripped(body[QUOTE_HONEYPOT_FIELD]) ||
+      isQuoteSubmittedTooFast(body.startedAt)
+    ) {
+      console.warn("[leather-material-quote] dropped suspected bot submission");
+      return NextResponse.json({ ok: true, submissionId: null });
     }
 
     const errors = validateLeatherMaterialQuoteForm(values);

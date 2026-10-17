@@ -1,4 +1,5 @@
 import type { FilloutQuestionSubmission } from "@/lib/filloutTypes";
+import { isDotStuffedEmail, isGibberishText } from "@/lib/formSpam";
 
 export type { FilloutQuestionSubmission };
 
@@ -133,6 +134,7 @@ export type LeatherMaterialQuoteFormValues = {
 export type LeatherMaterialQuoteFieldErrors = Partial<
   Record<
     | "name"
+    | "company"
     | "address"
     | "city"
     | "state"
@@ -140,6 +142,9 @@ export type LeatherMaterialQuoteFieldErrors = Partial<
     | "phone"
     | "email"
     | "leatherService"
+    | "colors"
+    | "quantity"
+    | "furtherDetails"
     | "form",
     string
   >
@@ -174,16 +179,24 @@ export function validateLeatherMaterialQuoteForm(
 
   if (!values.name.trim()) {
     errors.name = "Name is required";
+  } else if (isGibberishText(values.name)) {
+    errors.name = "Enter your name with normal spacing, for example Jane Smith";
   }
 
   if (!values.address.address.trim()) {
     errors.address = "Street address is required";
+  } else if (isGibberishText(values.address.address)) {
+    errors.address = "Enter a street address";
   }
   if (!values.address.city.trim()) {
     errors.city = "City is required";
+  } else if (isGibberishText(values.address.city)) {
+    errors.city = "Enter a city name";
   }
   if (!values.address.state.trim()) {
     errors.state = "State is required";
+  } else if (isGibberishText(values.address.state)) {
+    errors.state = "Enter a state";
   }
   if (!values.address.zipCode.trim()) {
     errors.zipCode = "ZIP code is required";
@@ -198,8 +211,24 @@ export function validateLeatherMaterialQuoteForm(
 
   if (!values.email.trim()) {
     errors.email = "Email is required";
-  } else if (!EMAIL_PATTERN.test(values.email.trim())) {
+  } else if (
+    !EMAIL_PATTERN.test(values.email.trim()) ||
+    isDotStuffedEmail(values.email)
+  ) {
     errors.email = "Enter a valid email address";
+  }
+
+  if (values.company.trim() && isGibberishText(values.company)) {
+    errors.company = "Enter the company name in normal words";
+  }
+  if (values.colors.trim() && isGibberishText(values.colors)) {
+    errors.colors = "Describe the colors in words, for example cognac or black";
+  }
+  if (values.quantity.trim() && isGibberishText(values.quantity)) {
+    errors.quantity = "Enter a quantity, for example 3 hides or 50 sq. ft.";
+  }
+  if (values.furtherDetails.trim() && isGibberishText(values.furtherDetails)) {
+    errors.furtherDetails = "Describe the project in a sentence or two";
   }
 
   if (
