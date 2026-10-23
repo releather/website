@@ -10,7 +10,7 @@ const EMBED_MIN_HEIGHT_PX = 500;
 
 /**
  * Official Fillout standard embed for the estimate form.
- * Script loads after hydration (non-blocking). Native form remains in the codebase but hidden on the page.
+ * Script loads after hydration (non-blocking). The older native form is not rendered.
  */
 export default function EstimateFilloutEmbed() {
   return (

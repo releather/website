@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Footer from "@/components/Footer";
-import EstimateForm from "./EstimateForm";
 import EstimateFilloutEmbed from "./EstimateFilloutEmbed";
 
 const title = "Estimate | ReLeather";
@@ -46,9 +45,6 @@ export default function EstimatePage() {
               </div>
               <div className="min-w-0">
                 <EstimateFilloutEmbed />
-                <div className="hidden" aria-hidden="true" data-native-estimate-form>
-                  <EstimateForm />
-                </div>
               </div>
             </div>
           </section>
